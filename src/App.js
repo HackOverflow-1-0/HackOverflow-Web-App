@@ -6,6 +6,7 @@ import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Schedule } from "./components/Schedule";
+import HackathonOverview from "./components/HackthonOverview";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Skills />
       <Schedule />
+      <HackathonOverview />
       <Contact />
       <Footer />
     </div>
