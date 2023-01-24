@@ -7,6 +7,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Schedule } from "./components/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
+import { env } from "process";
 import About from "./components/About";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Schedule />
       <HackathonOverview />
       <Contact />
-      
+
       <Footer />
     </div>
   );
