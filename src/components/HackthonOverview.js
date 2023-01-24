@@ -1,36 +1,31 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import CountUp from "react-countup";
-import TrackVisibility from "react-on-screen";
+import CountUp, { useCountUp } from "react-countup";
 import "./HackathonOverview.css";
+import HackOverflowStrokeAnimation from "./HackOverflowStrokeAnimation";
 const HackathonOverview = (props) => {
-  // useEffect(()=>{
-
-  // },[TrackVisibility])
+  const [show,setShow]=useState(false)
+  
+  
   return (
     <Container>
-      <h1>Hack OverFlow 1.0</h1>
-      <TrackVisibility>
-        {({ isVisible }) => {
-          <div
-            className={isVisible ? "animate__animated animate__fadeIn" : ""}
-          ></div>;
-        }}
-        <Row>
-          <Col lg={2}>
-            <CountUp start={0} end={1} duration={2.75} suffix="Lakh+" />
+        {/* <HackOverflowStrokeAnimation/> */}
+        <Row >
+          <Col lg={2} onScroll={()=>{console.log('scrolled')}} >
+            <CountUp start={0} end={1} duration={2.75} suffix="Lakh+" enableScrollSpy="true" />
             <p>Prize Pool</p>
+            
           </Col>
           <Col lg={2}>
-            <CountUp start={0} end={500} duration={2.75} suffix="+" />
+            <CountUp start={0} end={500} duration={2.75} suffix="+" enableScrollSpy="true"/>
             <p>Participants</p>
           </Col>
           <Col lg={2}>
-            <CountUp start={0} end={50} duration={2.75} suffix="+" />
+            <CountUp start={0} end={50} duration={2.75} suffix="+" enableScrollSpy="true"/>
             <p>Teams</p>
           </Col>
         </Row>
-      </TrackVisibility>
+        
     </Container>
   );
 };

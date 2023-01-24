@@ -12,7 +12,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "17th March 2023",
+    "16th March 2023",
     "Compete with the best",
     "Register today on Devfolio",
   ];
@@ -73,7 +73,7 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "17th March 2023", "Compete with the best", "Register today on Devfolio" ]'
+                      data-rotate='[ "16th March 2023", "Compete with the best", "Register today on Devfolio" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
@@ -86,7 +86,7 @@ export const Banner = () => {
                     type specimen book.
                   </p>
                   <button onClick={() => console.log("connect")}>
-                    Register <ArrowRightCircle size={25} />
+                    Register
                   </button>
                 </div>
               )}

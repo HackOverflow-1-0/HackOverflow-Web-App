@@ -49,7 +49,7 @@ export const Schedule = () => {
                           <div className="container text-center">
                             <div className={`row ${classes.cardGrid}`}>
                               <h1>Day 1</h1>
-                              <div className={`col-4 ${classes.dayCard}`}>
+                              <div className={`col-lg-4 col-md-4 col-sm-12 ${classes.dayCard}`}>
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since

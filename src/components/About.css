@@ -1,0 +1,10 @@
+#aboutSection{
+    margin-top: 10px;
+}
+
+.maps-card{
+    background-image: url('../assets/img/maps.PNG');
+    border-radius: 10px;
+    height: 250px;
+    width: 400px;
+}
