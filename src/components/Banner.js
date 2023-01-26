@@ -5,6 +5,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
+import Countdown from "react-countdown";
+import AlternateTimeline from "./AlternateTimeline";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -17,7 +19,7 @@ export const Banner = () => {
     "Register today on Devfolio",
   ];
   const period = 2000;
-
+  let date = new Date("2023-02-16");
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -67,7 +69,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <h1>
                     {`HackOverflow 1.0`}{" "}
                     <span
@@ -78,6 +80,27 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
+                  <Countdown
+                    date={date + 10000}
+                    renderer={({ days, hours, minutes, seconds }) => {
+                      return (
+                        <>
+                          <span className="tagline">Starts In</span>
+                          <h1>
+                            <span className={classes.countDown}>{days}d</span>:
+                            <span className={classes.countDown}>{hours}h</span>:
+                            <span className={classes.countDown}>
+                              {minutes}m
+                            </span>
+                            :
+                            <span className={classes.countDown}>
+                              {seconds}s
+                            </span>
+                          </h1>
+                        </>
+                      );
+                    }}
+                  />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's

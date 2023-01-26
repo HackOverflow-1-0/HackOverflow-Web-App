@@ -1,4 +1,11 @@
+.line-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #canvas {
+
     top: 0;
     left: 0;
     position: relative;

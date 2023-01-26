@@ -159,7 +159,7 @@ const LineCanvas = (props) => {
   });
 
   return (
-    <div className="App">
+    <div className="line-canvas">
       <canvas id="canvas" ref={canvasRef}></canvas>
       <div id="overlay">{props.children}</div>
     </div>

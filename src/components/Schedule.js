@@ -5,12 +5,14 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import LineCanvas from "./LineCanvas";
+import { Route, Routes } from "react-router";
+import AlternateTimeline from "./AlternateTimeline";
 
 export const Schedule = () => {
   return (
-    <section className="project" id="project">
-      <Container>
-        <LineCanvas>
+    <section className="schedule" id="schedule">
+      <LineCanvas>
+        <Container>
           <Row>
             <Col size={12}>
               <TrackVisibility>
@@ -49,13 +51,29 @@ export const Schedule = () => {
                           <div className="container text-center">
                             <div className={`row ${classes.cardGrid}`}>
                               <h1>Day 1</h1>
-                              <div className={`col-lg-4 col-md-4 col-sm-12 ${classes.dayCard}`}>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                              <div
+                                className={`col-lg-12 col-md-4 col-sm-12 ${classes.dayCard}`}
+                              >
+                                <div
+                                  id="slideInUp"
+                                  className={
+                                    isVisible
+                                      ? "animate__animated animate__slideInUp"
+                                      : ""
+                                  }
+                                >
+                                  <AlternateTimeline
+                                    events={[
+                                      "Attendance & ID card collection",
+                                      "Lunch",
+                                      "Orientation & Opening Ceremony",
+                                      "Lab allotment & Setup",
+                                      "Hackathon Begins",
+                                      "Dinner",
+                                      "Networking",
+                                    ]}
+                                  />
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -64,13 +82,27 @@ export const Schedule = () => {
                           <div className="container text-center">
                             <div className={`row ${classes.cardGrid}`}>
                               <h1>Day 2</h1>
-                              <div className={`col-4 ${classes.dayCard}`}>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                              <div className={`col-12 ${classes.dayCard}`}>
+                                <div
+                                  id="slideInUp"
+                                  className={
+                                    isVisible
+                                      ? "animate__animated animate__slideInUp"
+                                      : ""
+                                  }
+                                >
+                                  <AlternateTimeline
+                                    events={[
+                                      "Attendance & ID card collection",
+                                      "Lunch",
+                                      "Orientation & Opening Ceremony",
+                                      "Lab allotment & Setup",
+                                      "Hackathon Begins",
+                                      "Dinner",
+                                      "Networking",
+                                    ]}
+                                  />
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -79,13 +111,27 @@ export const Schedule = () => {
                           <div className="container text-center">
                             <div className={`row ${classes.cardGrid}`}>
                               <h1>Day 3</h1>
-                              <div className={`col-4 ${classes.dayCard}`}>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                              <div className={`col-12 ${classes.dayCard}`}>
+                                <div
+                                  id="slideInUp"
+                                  className={
+                                    isVisible
+                                      ? "animate__animated animate__slideInUp"
+                                      : ""
+                                  }
+                                >
+                                  <AlternateTimeline
+                                    events={[
+                                      "Attendance & ID card collection",
+                                      "Lunch",
+                                      "Orientation & Opening Ceremony",
+                                      "Lab allotment & Setup",
+                                      "Hackathon Begins",
+                                      "Dinner",
+                                      "Networking",
+                                    ]}
+                                  />
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -97,8 +143,9 @@ export const Schedule = () => {
               </TrackVisibility>
             </Col>
           </Row>
-        </LineCanvas>
-      </Container>
+        </Container>
+      </LineCanvas>
+
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
