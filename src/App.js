@@ -12,6 +12,7 @@ import About from "./components/About";
 import { Fragment } from "react";
 import { Route, Routes } from "react-router";
 import AlternateTimeline from "./components/AlternateTimeline";
+import HighlightText from "./components/HighlightText";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Skills />
       <Schedule />
       <HackathonOverview />
+      <HighlightText />
       <Contact />
       <Footer />
     </Fragment>

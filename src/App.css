@@ -17,6 +17,22 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: Helvetica;
+  src: url('./assets/font/Helvetica.ttf');
+}
+
+@font-face {
+  font-family: Helvetica Bold;
+  src: url('./assets/font/Helvetica-Bold.ttf');
+}
+
+@font-face {
+  font-family: Helvetica Light;
+  src: url('./assets/font//helvetica-light-587ebe5a59211.ttf');
+}
+
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -35,7 +51,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: 'Helvetica', sans-serif !important;
 }
 
 h1,
@@ -713,4 +729,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #main-text {
+    font-size: 35px;
+  }
+
+  .countDown {
+    font-size: 35px;
+  }
 }

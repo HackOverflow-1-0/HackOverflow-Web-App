@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/api-programming.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -19,7 +19,7 @@ export const Banner = () => {
     "Register today on Devfolio",
   ];
   const period = 2000;
-  let date = new Date("2023-02-16");
+  let date = new Date("2023-03-16");
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -70,7 +70,7 @@ export const Banner = () => {
                   }
                 >
                   {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                  <h1>
+                  <h1 id="main-text">
                     {`HackOverflow 1.0`}{" "}
                     <span
                       className="txt-rotate"

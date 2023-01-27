@@ -5,6 +5,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import "./AlternateTimeline.css";
 import TrackVisibility from "react-on-screen";
 
 export default function AlternateTimeline(props) {
@@ -15,7 +16,7 @@ export default function AlternateTimeline(props) {
           <TimelineItem id="time-line-item">
             <TimelineSeparator>
               <TimelineDot />
-              <TimelineConnector />
+              <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent>{event}</TimelineContent>
           </TimelineItem>
