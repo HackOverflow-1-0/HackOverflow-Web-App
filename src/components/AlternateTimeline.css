@@ -1,0 +1,3 @@
+.connector:nth-child() {
+    visibility: hidden;
+}

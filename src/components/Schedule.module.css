@@ -1,0 +1,24 @@
+.cardGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dayCard {
+    margin-top: 20px;
+    background: black;
+    box-shadow: 10px 10px 25px #4A2FBD;
+    padding: 2rem;
+    border: 2px solid;
+    border-image-source: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    border-image-slice: 1;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .schedule {
+        height: inherit;
+
+    }
+}

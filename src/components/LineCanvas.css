@@ -1,0 +1,19 @@
+.line-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: black;
+}
+
+#overlay {
+    position: absolute;
+    top: 20px;
+    left: auto;
+}

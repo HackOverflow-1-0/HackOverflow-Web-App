@@ -1,0 +1,51 @@
+#aboutSection {
+    margin-top: 10px;
+}
+
+#about-us-text {
+    margin-bottom: 0.5rem;
+}
+
+.maps-card {
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+}
+
+.maps-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-maps {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.open-maps :hover {
+    color: #fff;
+}
+
+.open-maps ::before {
+    content: "";
+    background: #121212;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.open-maps :hover::before {
+    width: 100%;
+}
