@@ -3,8 +3,8 @@ body {
 }
 
 #sky {
-    width: 100vw;
-    height: 100vh;
+    width: inherit;
+    height: inherit;
     position: fixed;
     overflow: hidden;
     margin: 0;

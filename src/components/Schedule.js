@@ -7,8 +7,10 @@ import classes from "./Schedule.module.css";
 import LineCanvas from "./LineCanvas";
 import { Route, Routes } from "react-router";
 import AlternateTimeline from "./AlternateTimeline";
+import { useState } from "react";
 
 export const Schedule = () => {
+  const [path, setPath] = useState("offline");
   return (
     <section className="schedule" id="schedule">
       <LineCanvas>
@@ -62,17 +64,52 @@ export const Schedule = () => {
                                       : ""
                                   }
                                 >
-                                  <AlternateTimeline
-                                    events={[
-                                      "Attendance & ID card collection",
-                                      "Lunch",
-                                      "Orientation & Opening Ceremony",
-                                      "Lab allotment & Setup",
-                                      "Hackathon Begins",
-                                      "Dinner",
-                                      "Networking",
-                                    ]}
-                                  />
+                                  <div
+                                    className={`container ${classes.pathSelectors} mb-3`}
+                                  >
+                                    <div className="row">
+                                      <div
+                                        className={`col-6 ${classes.pathButton2}`}
+                                      >
+                                        <button
+                                          onClick={() => {
+                                            setPath("offline");
+                                          }}
+                                        >
+                                          Offline
+                                        </button>
+                                      </div>
+                                      <div
+                                        className={`col-6 ${classes.pathButton1}`}
+                                      >
+                                        <button
+                                          onClick={() => {
+                                            setPath("online");
+                                          }}
+                                        >
+                                          Online
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  {path === "offline" && (
+                                    <AlternateTimeline
+                                      events={[
+                                        "Attendance & ID card collection",
+                                        "Lunch",
+                                        "Orientation & Opening Ceremony",
+                                        "Lab allotment & Setup",
+                                        "Hackathon Begins",
+                                        "Dinner",
+                                        "Networking",
+                                      ]}
+                                    />
+                                  )}
+                                  {path === "online" && (
+                                    <AlternateTimeline
+                                      events={["Orientation", "Coding Begins"]}
+                                    />
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -91,17 +128,52 @@ export const Schedule = () => {
                                       : ""
                                   }
                                 >
-                                  <AlternateTimeline
-                                    events={[
-                                      "Attendance & ID card collection",
-                                      "Lunch",
-                                      "Orientation & Opening Ceremony",
-                                      "Lab allotment & Setup",
-                                      "Hackathon Begins",
-                                      "Dinner",
-                                      "Networking",
-                                    ]}
-                                  />
+                                  <div
+                                    className={`container ${classes.pathSelectors} mb-3`}
+                                  >
+                                    <div className="row">
+                                      <div
+                                        className={`col-6 ${classes.pathButton2}`}
+                                      >
+                                        <button
+                                          onClick={() => {
+                                            setPath("offline");
+                                          }}
+                                        >
+                                          Offline
+                                        </button>
+                                      </div>
+                                      <div
+                                        className={`col-6 ${classes.pathButton1}`}
+                                      >
+                                        <button
+                                          onClick={() => {
+                                            setPath("online");
+                                          }}
+                                        >
+                                          Online
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  {path === "offline" && (
+                                    <AlternateTimeline
+                                      events={[
+                                        "Attendance & ID card collection",
+                                        "Lunch",
+                                        "Orientation & Opening Ceremony",
+                                        "Lab allotment & Setup",
+                                        "Hackathon Begins",
+                                        "Dinner",
+                                        "Networking",
+                                      ]}
+                                    />
+                                  )}
+                                  {path === "online" && (
+                                    <AlternateTimeline
+                                      events={["Orientation", "Coding Begins"]}
+                                    />
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -120,17 +192,52 @@ export const Schedule = () => {
                                       : ""
                                   }
                                 >
-                                  <AlternateTimeline
-                                    events={[
-                                      "Attendance & ID card collection",
-                                      "Lunch",
-                                      "Orientation & Opening Ceremony",
-                                      "Lab allotment & Setup",
-                                      "Hackathon Begins",
-                                      "Dinner",
-                                      "Networking",
-                                    ]}
-                                  />
+                                  <div
+                                    className={`container ${classes.pathSelectors} mb-3`}
+                                  >
+                                    <div className="row">
+                                      <div
+                                        className={`col-6 ${classes.pathButton2}`}
+                                      >
+                                        <button
+                                          onClick={() => {
+                                            setPath("offline");
+                                          }}
+                                        >
+                                          Offline
+                                        </button>
+                                      </div>
+                                      <div
+                                        className={`col-6 ${classes.pathButton1}`}
+                                      >
+                                        <button
+                                          onClick={() => {
+                                            setPath("online");
+                                          }}
+                                        >
+                                          Online
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  {path === "offline" && (
+                                    <AlternateTimeline
+                                      events={[
+                                        "Attendance & ID card collection",
+                                        "Lunch",
+                                        "Orientation & Opening Ceremony",
+                                        "Lab allotment & Setup",
+                                        "Hackathon Begins",
+                                        "Dinner",
+                                        "Networking",
+                                      ]}
+                                    />
+                                  )}
+                                  {path === "online" && (
+                                    <AlternateTimeline
+                                      events={["Orientation", "Coding Begins"]}
+                                    />
+                                  )}
                                 </div>
                               </div>
                             </div>
