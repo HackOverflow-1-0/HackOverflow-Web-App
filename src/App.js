@@ -13,6 +13,7 @@ import { Fragment } from "react";
 import { Route, Routes } from "react-router";
 import AlternateTimeline from "./components/AlternateTimeline";
 import HighlightText from "./components/HighlightText";
+import Themes from "./components/Themes";
 
 function App() {
   return (
@@ -25,10 +26,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<Footer />} />
       </Routes> */}
+
       <NavBar />
       <Banner />
       <Skills />
       <Schedule />
+      <Themes />
       <HackathonOverview />
       <HighlightText />
       <Contact />
