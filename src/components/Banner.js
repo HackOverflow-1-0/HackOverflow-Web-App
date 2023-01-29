@@ -20,7 +20,7 @@ export const Banner = () => {
     "Register today on Devfolio",
   ];
   const period = 2000;
-  let date = new Date("2023-03-16");
+  let date = new Date("03-16-2023, 17:00:00");
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();

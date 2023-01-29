@@ -35,3 +35,11 @@
         background-position: center 100%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .gradient-effect-text p {
+        font-size: 20px;
+        line-height: 2.0;
+        padding: 0;
+    }
+}

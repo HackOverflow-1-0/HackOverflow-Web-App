@@ -3,6 +3,10 @@
     margin-bottom: 20px;
 }
 
+#themes-section h1 {
+    font-family: 'Helvetica Bold';
+}
+
 .themes-tiles img {
     height: 200px;
     width: 200px;
