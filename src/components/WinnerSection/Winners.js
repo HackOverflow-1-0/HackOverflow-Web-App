@@ -4,44 +4,42 @@
 // import 'react-multi-carousel/lib/styles.css';
 // import arrow1 from "../../assets/img/arrow1.svg";
 // import arrow2 from "../../assets/img/arrow2.svg";
-import { React, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import colorSharp from "../../assets/img/color-sharp.png"
-import projImg1 from "../../assets/img/project-img1.png"
+import { React, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import colorSharp from "../../assets/img/color-sharp.png";
+import projImg1 from "../../assets/img/project-img1.png";
 // import projImg1 from "../../assets/img/first.png"
 import banner from "../../assets/img/banner-bg.png";
 import one from "../../assets/img/1st.jpg";
-import podiumData from './data'
-import Podium from './Podium'
+import podiumData from "./data";
+import Podium from "./Podium";
 // import PriceCard from '../PriceCard';
 // import TrophyCard from '../TrophyCard';/
-import { ProjectCard } from '../ProjectCard';
+import { ProjectCard } from "../ProjectCard";
 
-
-
-export const Skills = () => {
+export const Winners = () => {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
 
   return (
@@ -75,9 +73,27 @@ export const Skills = () => {
                 <div>
                   <div className="py-8 flex flex-col items-center sm:flex sm:flex-row sm:items-start justify-around md:space-x-6">
                     {/* <PriceCard image={projImg1} /> */}
-                    <ProjectCard title="Third Prize" desc1="Total Prize of Worth $10,000" desc2="Cash Prize of INR 15,000" imgUrl={projImg1} dataAos="fade-right" />
-                    <ProjectCard title="First Prize" desc1="Total Prize of Worth $15,000" desc2="Cash Prize of INR 35,000" imgUrl={projImg1} dataAos="fade-up" />
-                    <ProjectCard title="Second Prize" desc1="Total Prize of Worth $12,500" desc2="Cash Prize of INR 25,000" imgUrl={projImg1} dataAos="fade-left" />
+                    <ProjectCard
+                      title="Third Prize"
+                      desc1="Total Prize of Worth $10,000"
+                      desc2="Cash Prize of INR 15,000"
+                      imgUrl={projImg1}
+                      dataAos="fade-right"
+                    />
+                    <ProjectCard
+                      title="First Prize"
+                      desc1="Total Prize of Worth $15,000"
+                      desc2="Cash Prize of INR 35,000"
+                      imgUrl={projImg1}
+                      dataAos="fade-up"
+                    />
+                    <ProjectCard
+                      title="Second Prize"
+                      desc1="Total Prize of Worth $12,500"
+                      desc2="Cash Prize of INR 25,000"
+                      imgUrl={projImg1}
+                      dataAos="fade-left"
+                    />
                   </div>
                 </div>
               </div>
@@ -87,5 +103,5 @@ export const Skills = () => {
       </div>
       <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  )
-}
+  );
+};
