@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CountUp, { useCountUp } from "react-countup";
-import groupProgramming from "../assets/img/pair-programming.gif";
+import groupProgramming from "../assets/img/banner-illustration.png";
 import "./HackathonOverview.css";
 
 const HackathonOverview = (props) => {
