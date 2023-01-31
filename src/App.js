@@ -7,12 +7,12 @@ import { Footer } from "./components/Footer";
 import { Schedule } from "./components/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 
-import About from "./components/About";
 import { Fragment } from "react";
-import HighlightText from "./components/HighlightText";
+
 import Themes from "./components/Themes";
 import { Sponsors } from "./components/Sponsors";
 import { Winners } from "./components/WinnerSection/Winners";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
       <Themes />
       <Sponsors />
       <HackathonOverview />
-      <HighlightText />
+      <FAQ />
       <Contact />
       <Footer />
     </Fragment>

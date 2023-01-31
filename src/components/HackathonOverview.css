@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 #hackathon-overview-section {
-    background: #151515;
+    background: #121212;
     padding: 0 0 50px 0;
     position: relative;
-    margin-top: 40px;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .counters {
@@ -17,12 +18,9 @@
     background: black;
     text-align: center;
     padding: 60px 50px;
-    margin-top: -0px;
-    height: 580px;
+
     box-shadow: 10px 10px 25px #4A2FBD;
-    border: 2px solid;
-    border-image-source: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    border-image-slice: 1;
+    border-radius: 50px;
 }
 
 .overview-box p {

@@ -8,7 +8,7 @@ import GeneralSponsorsCard from "./GeneralSponsorsCard";
 
 export const Sponsors = () => {
   return (
-    <section className="project" id="project">
+    <section className="sponsors" id="sponsors">
       <Container>
         <div className="relative p-4 lg:py-10 w-full">
           <h1

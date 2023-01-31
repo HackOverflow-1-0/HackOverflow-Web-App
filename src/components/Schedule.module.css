@@ -6,12 +6,13 @@
 
 .dayCard {
     margin-top: 20px;
-    background: black;
-    box-shadow: 10px 10px 25px #4A2FBD;
+    border-radius: 50px;
+    background: #121212;
+    box-shadow: 10px 10px 25px #000000;
     padding: 2rem;
-    border: 2px solid;
+    /* border: 2px solid;
     border-image-source: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    border-image-slice: 1;
+    border-image-slice: 1; */
     font-size: 1.5rem;
 }
 
@@ -21,21 +22,17 @@
 }
 
 .pathButton1 {
-    border: 2px solid;
-    border-image-source: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    border-image-slice: 1;
     font-size: 1.5rem;
     border-left: none;
-
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .pathButton2 {
-    border: 2px solid;
-    border-image-source: linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%);
-    border-image-slice: 1;
     font-size: 1.5rem;
     border-right: none;
-
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .pathButton1:hover {
@@ -48,10 +45,20 @@
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.keyDatesCards {
+    border-radius: 10px;
+    background: #121212;
+    box-shadow: 10px 10px 25px #000000;
+}
+
 @media only screen and (max-width: 600px) {
 
     .schedule {
         height: inherit;
+    }
 
+    .pathButton1,
+    .pathButton2 {
+        font-size: 1.2rem;
     }
 }

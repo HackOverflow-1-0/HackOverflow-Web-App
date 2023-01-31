@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/api-programming.png";
+import headerImg from "../assets/img/banner-illustration.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
-import AlternateTimeline from "./AlternateTimeline";
-import StarrySky from "./StarrySky";
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -60,83 +59,77 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <StarrySky>
-        <Container>
-          <Row className="aligh-items-center">
-            <Col xs={12} md={6} xl={7}>
-              <TrackVisibility>
-                {({ isVisible }) => (
-                  <div
-                    className={
-                      isVisible ? "animate__animated animate__fadeIn" : ""
-                    }
-                  >
-                    {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                    <h1 id="main-text">
-                      {`HackOverflow 1.0`}{" "}
-                      <span
-                        className="txt-rotate"
-                        dataPeriod="1000"
-                        data-rotate='[ "16th March 2023", "Compete with the best", "Register today on Devfolio" ]'
-                      >
-                        <span className="wrap">{text}</span>
-                      </span>
-                    </h1>
-                    <Countdown
-                      date={date + 10000}
-                      renderer={({ days, hours, minutes, seconds }) => {
-                        return (
-                          <>
-                            <span className="tagline">Starts In</span>
-                            <h1>
-                              <span className={classes.countDown}>{days}d</span>
-                              :
-                              <span className={classes.countDown}>
-                                {hours}h
-                              </span>
-                              :
-                              <span className={classes.countDown}>
-                                {minutes}m
-                              </span>
-                              :
-                              <span className={classes.countDown}>
-                                {seconds}s
-                              </span>
-                            </h1>
-                          </>
-                        );
-                      }}
-                    />
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
-                    </p>
-                    <button onClick={() => console.log("connect")}>
-                      Register
-                    </button>
-                  </div>
-                )}
-              </TrackVisibility>
-            </Col>
-            <Col xs={12} md={6} xl={5}>
-              <TrackVisibility>
-                {({ isVisible }) => (
-                  <div
-                    className={
-                      isVisible ? "animate__animated animate__zoomIn" : ""
-                    }
-                  >
-                    <img src={headerImg} alt="Header Img" />
-                  </div>
-                )}
-              </TrackVisibility>
-            </Col>
-          </Row>
-        </Container>
-      </StarrySky>
+      <Container>
+        <Row className="aligh-items-center">
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
+                  <h1 id="main-text">
+                    {`HackOverflow 1.0`}{" "}
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "16th March 2023", "Compete with the best", "Register today on Devfolio" ]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <Countdown
+                    date={date + 10000}
+                    renderer={({ days, hours, minutes, seconds }) => {
+                      return (
+                        <>
+                          <span className="tagline">Starts In</span>
+                          <h1 id={classes.countDown}>
+                            <span className={classes.countDown}>{days}d</span>:
+                            <span className={classes.countDown}>{hours}h</span>:
+                            <span className={classes.countDown}>
+                              {minutes}m
+                            </span>
+                            :
+                            <span className={classes.countDown}>
+                              {seconds}s
+                            </span>
+                          </h1>
+                        </>
+                      );
+                    }}
+                  />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                  <button onClick={() => console.log("connect")}>
+                    Register
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

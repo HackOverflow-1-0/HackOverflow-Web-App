@@ -111,7 +111,28 @@ p.danger {
   color: red;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #121212;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
 /************ Navbar Css ************/
+#logo {
+  height: 80px;
+  width: 80px;
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
