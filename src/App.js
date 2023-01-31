@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import  Footer  from "./components/Footer.js";
 import { Schedule } from "./components/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 
@@ -25,8 +25,9 @@ function App() {
       <Sponsors />
       <HackathonOverview />
       <FAQ />
-      <Contact />
+      
       <Footer />
+      {/* <Contact /> */}
     </Fragment>
   );
 }
