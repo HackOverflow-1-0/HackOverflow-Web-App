@@ -4,7 +4,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "./Contact.css";
 import pp from "../assets/img/pp.png";
-import rm from "../assets/img/rm.png";
+
 export const Contact = () => {
   return (
     <section className="contact" id="connect">
@@ -24,13 +24,6 @@ export const Contact = () => {
                   <h6>+91 9152117191</h6>
                   <h6>prathamesh@mes.ac.in</h6>
                 </div>
-                {/* <div className="col-lg-5 contact-card">
-                  <img src={rm} />
-                  <h4>Mr.Rishabh Mehta</h4>
-                  <h5>Developement Head</h5>
-                  <h6>+91 8369530805</h6>
-                  <h6>rishabh@mes.ac.in</h6>
-                </div> */}
               </div>
             </div>
             <div
