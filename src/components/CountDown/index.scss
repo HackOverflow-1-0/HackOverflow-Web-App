@@ -1,0 +1,92 @@
+//primary colors
+$grayish-blue: hsl(237, 18%, 59%);
+$soft-red: hsl(345, 95%, 68%);
+//neutral colors
+$white: hsl(0, 0%, 100%);
+$dark-saturated: hsl(236, 21%, 26%);
+$dark-blue: hsl(235, 16%, 14%);
+$blackish-blue: hsl(234, 17%, 12%);
+
+.countdown__container {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  .countdown__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 20%;
+    .countdown__card__bg {
+      position: relative;
+      height: 0;
+      padding-bottom: 100%;
+      background-color: $dark-saturated;
+      box-shadow: 0px 8px 0px 1px $blackish-blue;
+      border-radius: 10px;
+      transition: all 0.175s linear;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: calc(50% - 1vh);
+        width: 6px;
+        height: 12px;
+        border-radius: 0 15px 15px 0;
+        background-color: $blackish-blue;
+        z-index: 10;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: calc(50% - 1vh);
+        width: 6px;
+        height: 12px;
+        border-radius: 15px 0 0 15px;
+        background-color: $blackish-blue;
+        z-index: 10;
+      }
+      .countdown__card__number {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        font-size: 6vw;
+        color: $soft-red;
+        @media only screen and (max-width: 400px) {
+          font-size: 40px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 50%;
+          background-color: $dark-blue;
+          opacity: 0.35;
+          z-index: 10;
+        }
+      }
+    }
+  }
+  .countdown__card__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1vw;
+    letter-spacing: 5px;
+    color: $grayish-blue;
+    @media only screen and (max-width: 400px) {
+      font-size: 10px;
+    }
+  }
+}
+.rotate {
+  transform: rotateX(360deg);
+}
