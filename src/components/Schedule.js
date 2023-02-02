@@ -26,7 +26,7 @@ export const Schedule = () => {
 
   return (
     <section className="schedule" id="schedule">
-      <div className="container">
+      <div className="container-fluid">
         <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
           Schedule
         </h1>
@@ -67,6 +67,8 @@ export const Schedule = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
           <h1 className="text-center">Key Dates</h1>
           <div
