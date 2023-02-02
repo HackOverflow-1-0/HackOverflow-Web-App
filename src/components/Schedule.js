@@ -1,260 +1,170 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import offlineDesktopView from "../assets/img/HO_roadmap_desktop_view_off.png";
+import offlineMobileView from "../assets/img/HO_roadmap_mobile_view.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
-
-import AlternateTimeline from "./AlternateTimeline";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Schedule = () => {
   const [path, setPath] = useState("offline");
+
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  });
+
   return (
     <section className="schedule" id="schedule">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>Schedule</h2>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Day 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Day 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Day 3</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="first">
-                        <div className="container text-center">
-                          <div className={`row ${classes.cardGrid}`}>
-                            <h1>Day 1</h1>
-                            <div
-                              className={`col-lg-12 col-md-4 col-sm-12 ${classes.dayCard}`}
-                            >
-                              <div
-                                id="slideInUp"
-                                className={
-                                  isVisible
-                                    ? "animate__animated animate__slideInUp"
-                                    : ""
-                                }
-                              >
-                                <div
-                                  className={`container ${classes.pathSelectors} mb-3`}
-                                >
-                                  <div
-                                    className="row"
-                                    style={{
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "center",
-                                    }}
-                                  >
-                                    <div
-                                      className={`col-4 ${classes.pathButton2}`}
-                                    >
-                                      <button
-                                        onClick={() => {
-                                          setPath("offline");
-                                        }}
-                                      >
-                                        Offline
-                                      </button>
-                                    </div>
-                                    <div
-                                      className={`col-4 ${classes.pathButton1}`}
-                                    >
-                                      <button
-                                        onClick={() => {
-                                          setPath("online");
-                                        }}
-                                      >
-                                        Online
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                                {path === "offline" && (
-                                  <AlternateTimeline
-                                    events={[
-                                      "Attendance & ID card collection",
-                                      "Lunch",
-                                      "Orientation & Opening Ceremony",
-                                      "Lab allotment & Setup",
-                                      "Hackathon Begins",
-                                      "Dinner",
-                                      "Networking",
-                                    ]}
-                                  />
-                                )}
-                                {path === "online" && (
-                                  <AlternateTimeline
-                                    events={["Orientation", "Coding Begins"]}
-                                  />
-                                )}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <div className="container text-center">
-                          <div className={`row ${classes.cardGrid}`}>
-                            <h1>Day 2</h1>
-                            <div className={`col-12 ${classes.dayCard}`}>
-                              <div
-                                id="slideInUp"
-                                className={
-                                  isVisible
-                                    ? "animate__animated animate__slideInUp"
-                                    : ""
-                                }
-                              >
-                                <div
-                                  className={`container ${classes.pathSelectors} mb-3`}
-                                >
-                                  <div className="row">
-                                    <div
-                                      className={`col-6 ${classes.pathButton2}`}
-                                    >
-                                      <button
-                                        onClick={() => {
-                                          setPath("offline");
-                                        }}
-                                      >
-                                        Offline
-                                      </button>
-                                    </div>
-                                    <div
-                                      className={`col-6 ${classes.pathButton1}`}
-                                    >
-                                      <button
-                                        onClick={() => {
-                                          setPath("online");
-                                        }}
-                                      >
-                                        Online
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                                {path === "offline" && (
-                                  <AlternateTimeline
-                                    events={[
-                                      "Attendance & ID card collection",
-                                      "Lunch",
-                                      "Orientation & Opening Ceremony",
-                                      "Lab allotment & Setup",
-                                      "Hackathon Begins",
-                                      "Dinner",
-                                      "Networking",
-                                    ]}
-                                  />
-                                )}
-                                {path === "online" && (
-                                  <AlternateTimeline
-                                    events={["Orientation", "Coding Begins"]}
-                                  />
-                                )}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <div className="container text-center">
-                          <div className={`row ${classes.cardGrid}`}>
-                            <h1>Day 3</h1>
-                            <div className={`col-12 ${classes.dayCard}`}>
-                              <div
-                                id="slideInUp"
-                                className={
-                                  isVisible
-                                    ? "animate__animated animate__slideInUp"
-                                    : ""
-                                }
-                              >
-                                <div
-                                  className={`container ${classes.pathSelectors} mb-3`}
-                                >
-                                  <div className="row">
-                                    <div
-                                      className={`col-6 ${classes.pathButton2}`}
-                                    >
-                                      <button
-                                        onClick={() => {
-                                          setPath("offline");
-                                        }}
-                                      >
-                                        Offline
-                                      </button>
-                                    </div>
-                                    <div
-                                      className={`col-6 ${classes.pathButton1}`}
-                                    >
-                                      <button
-                                        onClick={() => {
-                                          setPath("online");
-                                        }}
-                                      >
-                                        Online
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                                {path === "offline" && (
-                                  <AlternateTimeline
-                                    events={[
-                                      "Attendance & ID card collection",
-                                      "Lunch",
-                                      "Orientation & Opening Ceremony",
-                                      "Lab allotment & Setup",
-                                      "Hackathon Begins",
-                                      "Dinner",
-                                      "Networking",
-                                    ]}
-                                  />
-                                )}
-                                {path === "online" && (
-                                  <AlternateTimeline
-                                    events={["Orientation", "Coding Begins"]}
-                                  />
-                                )}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
+      <div className="container-fluid">
+        <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+          Schedule
+        </h1>
+        <div className="row">
+          <div id={classes.schedule}>
+            <div className={classes.pathSelectors}>
+              <button
+                onClick={() => {
+                  setPath("offline");
+                }}
+              >
+                <span>Offline</span>
+              </button>
+              <button
+                onClick={() => {
+                  setPath("online");
+                }}
+              >
+                <span>Online</span>
+              </button>
+            </div>
+          </div>
+          <div className="col">
+            {path === "offline" && (
+              <img
+                src={
+                  windowSize[0] > 600 || windowSize[1] > 2000
+                    ? offlineDesktopView
+                    : offlineMobileView
+                }
+                style={{ marginTop: "40px" }}
+              />
+            )}
+            {path === "online" && (
+              <>
+                <h1>Comming Soon..</h1>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row" style={{ marginTop: "40px" }}>
+          <h1 className="text-center">Key Dates</h1>
+          <div
+            className="col"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className={`${classes.keyDatesCards} mt-4`}>
+              <div className="row">
+                <div className="col-5" style={{ padding: "2rem" }}>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>10th</h1>
+                  <h3 style={{ fontSize: "25px" }}>February</h3>
                 </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-
+                <div className="col-7" style={{ padding: "2rem" }}>
+                  <h1>Registerations Starts</h1>
+                  <h5>Registerations starts, register yourself soon</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className={`${classes.keyDatesCards} mt-4`}>
+              <div className="row">
+                <div className="col-5" style={{ padding: "2rem" }}>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>15th</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
+                </div>
+                <div className="col-7" style={{ padding: "2rem" }}>
+                  <h1>Registerations Ends</h1>
+                  <h5>
+                    Registerations ends, get your name registered by this date
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className={`${classes.keyDatesCards} mt-4`}>
+              <div className="row">
+                <div className="col-5" style={{ padding: "2rem" }}>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>17th</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
+                </div>
+                <div className="col-7" style={{ padding: "2rem" }}>
+                  <h1>Hackathon Starts!!!</h1>
+                  <h5>
+                    Get your programming skills ready as the event will start
+                    soon.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className={`${classes.keyDatesCards} mt-4`}>
+              <div className="row">
+                <div className="col-5" style={{ padding: "2rem" }}>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>19th</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
+                </div>
+                <div className="col-7" style={{ padding: "2rem" }}>
+                  <h1>Hackathon Ends</h1>
+                  <h5>
+                    36 hour long hackathon will end and winners will be
+                    announced.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
