@@ -1,0 +1,115 @@
+.top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/img/hackathon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5.28rem !important;
+}
+.top .topContainer {
+  padding: 10% 6.25vw;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  background: rgba(15, 15, 15, 0.65);
+}
+
+.Description {
+  border: 4px solid #fff;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: ease-in 0.3s;
+  padding: 4px;
+}
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+  background-color: #92239D;
+  border-radius: 4px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
+  /* color: rgb(248, 0, 0);
+  background: #5767fe;
+  border: 4px solid #fff; */
+}
+
+/* .carousel-control-next-icon{
+  padding-left: 2px;
+}
+
+.carousel-control-prev-icon{
+  padding-right: 2px;
+} */
+
+/* .carousel-control-next-icon, .carousel-control-prev-icon:hover {
+  background: #5767fe;
+} */
+.top .joinButton:hover {
+  background-color: #5767fe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.top .joinButton:active {
+  background-color: #6574f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (orientation: landscape) {
+  .top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/hackathon.jpg");
+  }
+  .top .topContainer {
+    padding: 5vw 6.25vw;
+  }
+  .top h1 {
+    margin: 0 auto 5%;
+    font-size: 2.4rem;
+  }
+  .top .joinButton {
+    margin: 5% auto 0;
+    font-size: 1.25rem;
+    width: auto;
+    padding: 1rem 2.5rem;
+  }
+}
+@media screen and (min-width: 43.75rem) {
+  .top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/hackathon.jpg");
+  }
+  .top h1 {
+    margin-bottom: 7.5%;
+    font-size: 2.5rem;
+  }
+  .top .joinButton {
+    margin: 7.5% auto 0;
+    font-size: 1.75rem;
+    width: auto;
+    padding: 1rem 2.5rem;
+  }
+}
+@media screen and (min-width: 43.75rem) and (orientation: landscape) {
+  .top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/hackathon.jpg");
+    padding: 0;
+  }
+  .top .topContainer {
+    padding: 5vw 12.25vw;
+  }
+  .top h1 {
+    margin: 0 auto 5%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
