@@ -14,6 +14,7 @@ import { Sponsors } from "./components/Sponsors";
 
 import FAQ from "./components/FAQ";
 import Prizes from "./components/Prizes/Prizes";
+import About from "./components/About";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <HackathonOverview />
       <FAQ />
       <Contact />
+      <About />
       <Footer />
     </Fragment>
   );

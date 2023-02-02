@@ -106,9 +106,9 @@ export const Banner = () => {
                     Join us on 17th March 2023 with students from across the
                     nation for 36 hours of creation, innovation, & fun.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Register
-                  </button>
+                  <div className={classes.registerButton}>
+                    <button>Register</button>
+                  </div>
                 </div>
               )}
             </TrackVisibility>
