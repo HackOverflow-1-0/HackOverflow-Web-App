@@ -78,10 +78,6 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h1 id="main-text" style={{ height: "160px" }}>
-                    {`HackOverflow 1.0`}
-                    <br />
-                  </h1>
                   {/* <Countdown
                     date={date + 10000}
                     renderer={({ days, hours, minutes, seconds }) => {

@@ -1,6 +1,8 @@
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import offlineDesktopView from "../assets/img/HO_roadmap_desktop_view_off.png";
 import offlineMobileView from "../assets/img/HO_roadmap_mobile_view.png";
+import onlineDesktopView from "../assets/img/HO_roadmap_desktop_view_online.png";
+import onlineMobileView from "../assets/img/HO_roadmap_mobile_view_online.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
@@ -61,9 +63,14 @@ export const Schedule = () => {
               />
             )}
             {path === "online" && (
-              <>
-                <h1>Comming Soon..</h1>
-              </>
+              <img
+                src={
+                  windowSize[0] > 600 || windowSize[1] > 2000
+                    ? onlineDesktopView
+                    : onlineMobileView
+                }
+                style={{ marginTop: "40px" }}
+              />
             )}
           </div>
         </div>
