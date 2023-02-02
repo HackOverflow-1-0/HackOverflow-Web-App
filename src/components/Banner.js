@@ -3,39 +3,37 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/banner-illustration.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
 import CountDownTimer from "./CountDown/CountDownTimer";
 export const Banner = () => {
-
-
   const Slogan = () => {
     return (
       // eslint-disable-next-line
-      <span className={'slogan sloganBeginning'} role="text">
-        <h1 className={'sloganBeginning'}>
+      <span className={"slogan sloganBeginning"} role="text">
+        <h1 className={"sloganBeginning"}>
           HackOverflow 1.0
           <h2 className="animatedtext text-[#8D1F97] text-[2rem]">
-          &nbsp;
-            <span className={'typewriterPlaceholder'}><TypewriterWelcome /></span>
+            &nbsp;
+            <span className={"typewriterPlaceholder"}>
+              <TypewriterWelcome />
+            </span>
           </h2>
         </h1>
       </span>
     );
-
   };
 
   const TypewriterWelcome = () => {
     const [displayPlaceholder, setDisplayPlaceholder] = useState(true);
     const strings = [
-      'Save the date 16th March 2023.',
-      'Compete with the best.',
-      'Register today on Devfolio.',
-      'Explore Different Themes.',
-
+      "Save the date 16th March 2023.",
+      "Compete with the best.",
+      "Register today on Devfolio.",
+      "Explore Different Themes.",
     ];
     const typewriterInit = (typewriter) => {
       if (displayPlaceholder) {
@@ -52,7 +50,7 @@ export const Banner = () => {
     return (
       <>
         {displayPlaceholder && (
-          <span className={'typewriterPlaceholder'}>inspiration.</span>
+          <span className={"typewriterPlaceholder"}>inspiration.</span>
         )}
         <Typewriter
           options={{
@@ -72,13 +70,7 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-                  <Slogan />
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.</p>
+            <Slogan />
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -86,18 +78,6 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-      
-                  <h1 id="main-text" style={{ height: "160px" }}>
-                    {`HackOverflow 1.0`}
-                    <br />
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "16th March 2023", "Compete with the best", "Register today on Devfolio" ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h1>
                   {/* <Countdown
                     date={date + 10000}
                     renderer={({ days, hours, minutes, seconds }) => {
@@ -133,8 +113,7 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-          </Col>
+          <Col xs={12} md={6} xl={5}></Col>
         </Row>
       </Container>
     </section>
