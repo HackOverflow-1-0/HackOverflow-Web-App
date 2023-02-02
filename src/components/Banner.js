@@ -5,6 +5,10 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import Typewriter from 'typewriter-effect';
 
+import TrackVisibility from "react-on-screen";
+import classes from "./Banner.module.css";
+import Countdown from "react-countdown";
+import CountDownTimer from "./CountDown/CountDownTimer";
 export const Banner = () => {
 
 
@@ -74,11 +78,60 @@ export const Banner = () => {
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    type specimen book.</p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+      
+                  <h1 id="main-text" style={{ height: "160px" }}>
+                    {`HackOverflow 1.0`}
+                    <br />
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "16th March 2023", "Compete with the best", "Register today on Devfolio" ]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  {/* <Countdown
+                    date={date + 10000}
+                    renderer={({ days, hours, minutes, seconds }) => {
+                      return (
+                        <>
+                          <span className="tagline">Starts In</span>
+                          <h1 id={classes.countDown}>
+                            <span className={classes.countDown}>{days}d</span>:
+                            <span className={classes.countDown}>{hours}h</span>:
+                            <span className={classes.countDown}>
+                              {minutes}m
+                            </span>
+                            :
+                            <span className={classes.countDown}>
+                              {seconds}s
+                            </span>
+                          </h1>
+                        </>
+                      );
+                    }}
+                  /> */}
+                  <div className="">
+                    <CountDownTimer />
+                  </div>
+                  <p className="banner-content" style={{ fontSize: "1.5vw" }}>
+                    Join us on 17th March 2023 with students from across the
+                    nation for 36 hours of creation, innovation, & fun.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Register
                   </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
           </Col>

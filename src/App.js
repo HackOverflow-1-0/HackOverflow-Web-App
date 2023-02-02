@@ -13,21 +13,20 @@ import Themes from "./components/Themes";
 import { Sponsors } from "./components/Sponsors";
 import { Winners } from "./components/WinnerSection/Winners";
 import FAQ from "./components/FAQ";
-import About from "./components/About";
+import Prizes from "./components/Prizes/Prizes";
 
 function App() {
   return (
     <Fragment>
       <NavBar />
       <Banner />
-      <Winners />
+      <Prizes />
       <Schedule />
       <Themes />
       <Sponsors />
       <HackathonOverview />
       <FAQ />
       <Contact />
-      <About/>
       <Footer />
     </Fragment>
   );
