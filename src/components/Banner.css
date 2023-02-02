@@ -1,0 +1,15 @@
+.slogan .sloganBeginning {
+  margin: 0.67em 0;
+  font-size: inherit;
+  font-weight: 800;
+}
+
+.animatedtext {
+  display: flex;
+  font-size: 10rem;
+  
+}
+
+.slogan .typewriterPlaceholder {
+  font-weight: bold;
+}

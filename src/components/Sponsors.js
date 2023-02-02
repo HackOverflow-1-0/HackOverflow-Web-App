@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import hack2skill from "../assets/img/h2skill.png";
+import hack2skill from "../assets/img/comingsoon.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TitleSponsorsCard from "./TitleSponsorsCard";
