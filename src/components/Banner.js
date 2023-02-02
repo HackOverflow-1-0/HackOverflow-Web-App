@@ -6,7 +6,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
-
+import CountDownTimer from "./CountDown/CountDownTimer";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -70,8 +70,9 @@ export const Banner = () => {
                   }
                 >
                   {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                  <h1 id="main-text">
-                    {`HackOverflow 1.0`}{" "}
+                  <h1 id="main-text" style={{ height: "160px" }}>
+                    {`HackOverflow 1.0`}
+                    <br />
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -80,7 +81,7 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <Countdown
+                  {/* <Countdown
                     date={date + 10000}
                     renderer={({ days, hours, minutes, seconds }) => {
                       return (
@@ -100,13 +101,13 @@ export const Banner = () => {
                         </>
                       );
                     }}
-                  />
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                  /> */}
+                  <div className="">
+                    <CountDownTimer />
+                  </div>
+                  <p className="banner-content" style={{ fontSize: "1.5vw" }}>
+                    Join us on 17th March 2023 with students from across the
+                    nation for 36 hours of creation, innovation, & fun.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Register
