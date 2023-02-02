@@ -93,8 +93,8 @@ export const Schedule = () => {
                   <h3 style={{ fontSize: "25px" }}>February</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
-                  <h1>Registerations Starts</h1>
-                  <h5>Registerations starts, register yourself soon</h5>
+                  <h1>Registrations Starts</h1>
+                  <h5>Registrations starts, register yourself soon</h5>
                 </div>
               </div>
             </div>
@@ -114,9 +114,9 @@ export const Schedule = () => {
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
-                  <h1>Registerations Ends</h1>
+                  <h1>Registrations Ends</h1>
                   <h5>
-                    Registerations ends, get your name registered by this date
+                    Registrations ends, get your name registered by this date
                   </h5>
                 </div>
               </div>
