@@ -1,14 +1,15 @@
+import React from "react";
+
+import "./Footer.css";
 import {
   Facebook,
-  Instagram,
+  InsertPageBreakOutlined,
+  LinkedIn,
   Twitter,
   YouTube,
-  LinkedIn,
-} from "@material-ui/icons";
-import React from "react";
-import "./Footer.css";
+} from "@mui/icons-material";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footerContainer">
@@ -16,7 +17,10 @@ function Footer() {
           <p>Follow us on:</p>
           <p>
             <a href=" " target="_blank">
-              <Instagram className="icons instagram" fontSize="large" />
+              <InsertPageBreakOutlined
+                className="icons instagram"
+                fontSize="large"
+              />
             </a>
             <a href=" " target="_blank">
               <YouTube className="icons youtube" fontSize="large" />
@@ -44,6 +48,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
