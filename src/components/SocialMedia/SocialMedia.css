@@ -1,0 +1,16 @@
+.socialmedia .socialmedia-links li::marker {
+  display: none;
+}
+
+ol, ul {
+  padding-left: 0;
+}
+
+.socialmedia  a svg {
+  transition: 0.2s ease-in-out;
+}
+
+
+.socialmedia  a:hover svg {
+  fill: #861697;
+}
