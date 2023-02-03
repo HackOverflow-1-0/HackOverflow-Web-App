@@ -30,6 +30,7 @@ function App() {
       <Contact />
       <About />
       <Footer />
+      {/* <Contact /> */}
     </Fragment>
   );
 }
