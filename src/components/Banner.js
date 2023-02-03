@@ -73,25 +73,22 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <Slogan />
           </Col>
-
         </div>
 
         <SocialMedia />
         <div className="px-28">
           <Col xs={12} md={6} xl={7}>
-
             <CountDownTimer />
             <p className="banner-content" style={{ fontSize: "1.5vw" }}>
-              Join us on 17th March 2023 with students from across the
-              nation for 36 hours of creation, innovation, & fun.
+              Join us on 17th March 2023 with students from across the nation
+              for 36 hours of creation, innovation, & fun.
             </p>
             <div className={classes.registerButton}>
               <button>Register</button>
             </div>
           </Col>
-
         </div>
-      </section >
+      </section>
     </>
   );
 };
