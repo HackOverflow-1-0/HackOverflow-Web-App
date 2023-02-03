@@ -1,12 +1,18 @@
 import { Container } from "react-bootstrap";
-import hack2skill from "../assets/img/comingsoon.png";
+import { useEffect } from "react";
+import hack2skill from "../assets/img/comingsoon.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import TitleSponsorsCard from "./TitleSponsorsCard";
 import MediumSponsorsCard from "./MediumSponsorsCard";
 import GeneralSponsorsCard from "./GeneralSponsorsCard";
 
 export const Sponsors = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section className="sponsors" id="sponsors">
       <Container>
@@ -24,27 +30,31 @@ export const Sponsors = () => {
             Title Sponsor
           </h1>
         </div>
-        <TitleSponsorsCard image={hack2skill} dataAos="fade-up" />
+        <TitleSponsorsCard image={hack2skill} dataAos="fade-up" weblink={'#'} />
         <div className="p-4 fonts-space-grotesk">
           <hr className="text-[#767676] dark:text-[#767676]" />
         </div>
         <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-3">
           <MediumSponsorsCard
+            weblink={'#'}
             title="Event Sponsors"
             image={hack2skill}
             dataAos="fade-right"
           />
           <MediumSponsorsCard
+            weblink={'#'}
             title="Associate Sponsors"
             image={hack2skill}
             dataAos="fade-left"
           />
           <MediumSponsorsCard
+            weblink={'#'}
             title="Upskilling Sponsors"
             image={hack2skill}
             dataAos="fade-right"
           />
           <MediumSponsorsCard
+            weblink={'#'}
             title="Silver Sponsors"
             image={hack2skill}
             dataAos="fade-left"

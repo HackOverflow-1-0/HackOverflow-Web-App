@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/hack-overflow-logo.png";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
+import ProgressBar from "./progressBar/ProgressBar";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -27,6 +27,7 @@ export const NavBar = () => {
   };
 
   return (
+    <>
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand>
@@ -76,19 +77,21 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <div className="social-icon">
+            {/* <div className="social-icon">
               <a href="#">
                 <img src={navIcon3} alt="" />
               </a>
-            </div>
+            </div> */}
             <HashLink to="#connect">
               <button className="vvd">
-                <span>Register</span>
+                <span>Brochure</span>
               </button>
             </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>
+      <ProgressBar/>
     </Navbar>
+    </>
   );
 };
