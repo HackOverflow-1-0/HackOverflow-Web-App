@@ -10,10 +10,12 @@ EDIT ON */
   text-align: center;
   background: #121212;
 }
+
 #cards_landscape_wrap-2 .container {
   padding-top: 80px;
   padding-bottom: 100px;
 }
+
 #cards_landscape_wrap-2 .container .toRelative {
   display: flex;
   justify-content: center;
@@ -25,6 +27,7 @@ EDIT ON */
   text-decoration: none;
   outline: none;
 }
+
 #cards_landscape_wrap-2 .card-flyer {
   position: relative;
   display: flex;
@@ -32,6 +35,7 @@ EDIT ON */
   border-radius: 5px;
   width: 200px;
 }
+
 #cards_landscape_wrap-2 .card-flyer .image-box {
   display: flex;
   align-items: center;
@@ -44,6 +48,7 @@ EDIT ON */
   /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5); */
   border-radius: 5px;
 }
+
 #cards_landscape_wrap-2 .card-flyer .image-box img {
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
@@ -52,6 +57,7 @@ EDIT ON */
   width: 100%;
   height: 350px;
 }
+
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img {
   opacity: 0.7;
   -webkit-transform: scale(1.15);
@@ -60,6 +66,7 @@ EDIT ON */
   -o-transform: scale(1.15);
   transform: scale(1.15);
 }
+
 #cards_landscape_wrap-2 .card-flyer .text-box {
   text-align: center;
 }
@@ -69,6 +76,7 @@ EDIT ON */
   position: absolute;
   bottom: 0;
 }
+
 #cards_landscape_wrap-2 .card-flyer {
   background: #ffffff;
   margin-top: 50px;
@@ -79,6 +87,7 @@ EDIT ON */
   transition: all 0.2s ease-in;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 }
+
 #cards_landscape_wrap-2 .card-flyer:hover {
   background: #fff;
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
@@ -89,6 +98,7 @@ EDIT ON */
   transition: all 0.2s ease-in;
   margin-top: 50px;
 }
+
 #cards_landscape_wrap-2 .card-flyer .text-box p {
   /* position: absolute; */
   margin-top: 10px;
@@ -99,6 +109,7 @@ EDIT ON */
   letter-spacing: 1px;
   color: #000000;
 }
+
 #cards_landscape_wrap-2 .card-flyer .text-box h6 {
   font-family: "Centra";
   margin-top: 0px;
@@ -110,6 +121,7 @@ EDIT ON */
   /* letter-spacing: 1px; */
   color: #00acc1;
 }
+
 #cards_landscape_wrap-2 .card-flyer .lottie {
   position: absolute;
   border-radius: 50%;
@@ -130,6 +142,7 @@ EDIT ON */
 #cards_landscape_wrap-2 .thirdPrize {
   height: 510px;
 }
+
 #cards_landscape_wrap-2 .card-flyer {
   position: absolute;
   bottom: 0;
@@ -141,7 +154,9 @@ EDIT ON */
     position: static;
   }
 }
+
 @media only screen and (max-width: 400px) {
+
   .blockContainer1,
   .blockContainer2,
   .blockContainer3 {
@@ -165,6 +180,7 @@ EDIT ON */
     display: flex;
     flex-direction: column;
   }
+
   .blockContainer1 {
     order: 2;
   }
