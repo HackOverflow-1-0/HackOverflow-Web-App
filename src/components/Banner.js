@@ -9,6 +9,7 @@ import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
 import CountDownTimer from "./CountDown/CountDownTimer";
+import SocialMedia from "./SocialMedia/SocialMedia";
 export const Banner = () => {
   const Slogan = () => {
     return (
@@ -66,56 +67,31 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
+    <>
+      <section className="banner" id="home">
+        <div className="px-28">
           <Col xs={12} md={6} xl={7}>
             <Slogan />
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  {/* <Countdown
-                    date={date + 10000}
-                    renderer={({ days, hours, minutes, seconds }) => {
-                      return (
-                        <>
-                          <span className="tagline">Starts In</span>
-                          <h1 id={classes.countDown}>
-                            <span className={classes.countDown}>{days}d</span>:
-                            <span className={classes.countDown}>{hours}h</span>:
-                            <span className={classes.countDown}>
-                              {minutes}m
-                            </span>
-                            :
-                            <span className={classes.countDown}>
-                              {seconds}s
-                            </span>
-                          </h1>
-                        </>
-                      );
-                    }}
-                  /> */}
-                  <div className="">
-                    <CountDownTimer />
-                  </div>
-                  <p className="banner-content" style={{ fontSize: "1.5vw" }}>
-                    Join us on 17th March 2023 with students from across the
-                    nation for 36 hours of creation, innovation, & fun.
-                  </p>
-                  <div className={classes.registerButton}>
-                    <button>Register</button>
-                  </div>
-                </div>
-              )}
-            </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}></Col>
-        </Row>
-      </Container>
-    </section>
+
+        </div>
+
+        <SocialMedia />
+        <div className="px-28">
+          <Col xs={12} md={6} xl={7}>
+
+            <CountDownTimer />
+            <p className="banner-content" style={{ fontSize: "1.5vw" }}>
+              Join us on 17th March 2023 with students from across the
+              nation for 36 hours of creation, innovation, & fun.
+            </p>
+            <div className={classes.registerButton}>
+              <button>Register</button>
+            </div>
+          </Col>
+
+        </div>
+      </section >
+    </>
   );
 };
