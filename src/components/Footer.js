@@ -1,36 +1,49 @@
-import { Container, Row, Col } from "react-bootstrap";
-import ImageSlider, { Slide } from "react-auto-image-slider";
-import logo from "../assets/img/hack-overflow-logo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  YouTube,
+  LinkedIn,
+} from "@material-ui/icons";
+import React from "react";
+import "./Footer.css";
 
-
-export const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
-      <Container>
-        <Row className="align-items-center">
-
-          <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="Icon" />
-              </a>
-              <a href="#">
-                <img src={navIcon2} alt="Icon" />
-              </a>
-              <a href="#">
-                <img src={navIcon3} alt="Icon" />
-              </a>
-            </div>
-            <p>Copyright 2023. All Rights Reserved</p>
-          </Col>
-        </Row>
-      </Container>
+      <div className="footerContainer">
+        <div>
+          <p>Follow us on:</p>
+          <p>
+            <a href=" " target="_blank">
+              <Instagram className="icons instagram" fontSize="large" />
+            </a>
+            <a href=" " target="_blank">
+              <YouTube className="icons youtube" fontSize="large" />
+            </a>
+            <a href=" " target="_blank">
+              <Facebook className="icons linkedin" fontSize="large" />
+            </a>
+            <a href=" " target="_blank">
+              <Twitter className="icons twitter" fontSize="large" />
+            </a>
+            <a href=" " target="_blank">
+              <LinkedIn className="icons linkedin" fontSize="large" />
+            </a>
+          </p>
+        </div>
+        <div>
+          <p>© 2023 HackOverflow 1.0</p>
+          <p>
+            {" "}
+            <a href="mailto:hackathon@phcet.tech">
+              Email: hackathon@phcet.tech
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
   );
-};
+}
+
+export default Footer;

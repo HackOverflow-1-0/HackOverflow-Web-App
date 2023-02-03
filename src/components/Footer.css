@@ -1,0 +1,35 @@
+.footer {
+    background-color: #0000;
+  }
+  .footerContainer {
+    padding: 1rem 0;
+  }
+  .footerContainer p {
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  }
+  .footerContainer a {
+    color: #94d6ff;
+  }
+  .footerContainer div .icons{
+    margin: 4px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  /* .instagram{
+  
+  } */
+  
+  /* .youtube{
+    color: #f00 !important;
+  }
+  .linkedin{
+    color: #007bff !important;
+  }
+  .twitter{
+    color:rgb(29, 161, 242)!important;
+  } */
