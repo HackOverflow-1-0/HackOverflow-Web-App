@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/hack-overflow-logo.png";
 import { HashLink } from "react-router-hash-link";
 import ProgressBar from "./progressBar/ProgressBar";
+import MobileNavbar from "./MobileNavbar/MobileNavbar";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -19,7 +20,9 @@ export const NavBar = () => {
 
     window.addEventListener("scroll", onScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   const onUpdateActiveLink = (value) => {
