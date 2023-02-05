@@ -29,9 +29,9 @@ const About = () => {
   }, []);
   return (
     <>
-      <div id="aboutSection" className="px-24">
-        <h1 id="about-us-text">About Us</h1>
+      <section id="about">
         <div className="container">
+          <h1 id="about-us-text">About Us</h1>
           <div className="row">
             <div className="col-lg-6 col-sm-12">
               <h2>About PHCET</h2>
@@ -39,17 +39,18 @@ const About = () => {
                 style={{
                   fontFamily: "Helvetica",
                   fontSize: "1.2rem",
+                  margin: "0",
                 }}
               >
-                Pillai HOC College of Engineering and Technology is proud to offer
-                a state-of-the-art learning environment for students with a
-                passion for technology and innovation. Our 14-acre campus boasts
-                top-of-the-line amenities, including a 3,000 square-foot facility
-                with spacious classrooms, well-equipped laboratories and
-                workshops, modern computer facilities, and an extensive library.
-                Additionally, our distinguished faculty includes seasoned
-                professors who are dedicated to fostering a stimulating and
-                nurturing environment for students.
+                Pillai HOC College of Engineering and Technology is proud to
+                offer a state-of-the-art learning environment for students with
+                a passion for technology and innovation. Our 14-acre campus
+                boasts top-of-the-line amenities, including a 3,000 square-foot
+                facility with spacious classrooms, well-equipped laboratories
+                and workshops, modern computer facilities, and an extensive
+                library. Additionally, our distinguished faculty includes
+                seasoned professors who are dedicated to fostering a stimulating
+                and nurturing environment for students.
               </p>
             </div>
             <div className="col-lg-6 col-sm-12">
@@ -68,7 +69,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <CollegeClub />
     </>
   );

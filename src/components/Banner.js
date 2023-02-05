@@ -74,10 +74,9 @@ export const Banner = () => {
             <Slogan />
           </Col>
         </div>
-
         <SocialMedia />
         <div className="px-28">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} sm={12}>
             <CountDownTimer />
             <p className="banner-content" style={{ fontSize: "1.5vw" }}>
               Join us on 17th March 2023 with students from across the nation
