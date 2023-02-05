@@ -1,15 +1,158 @@
-.slogan .sloganBeginning {
-  margin: 0.67em 0;
-  font-size: inherit;
-  font-weight: 800;
-}
-
-.animatedtext {
+.bannerWrap {
   display: flex;
-  font-size: 10rem;
-  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.welcometoText {
+  font-size: 4rem;
+  font-family: Centra;
 }
 
-.slogan .typewriterPlaceholder {
-  font-weight: bold;
+@media only screen and (max-width: 400px) {
+  .welcometoText {
+    font-size: 8vw;
+  }
+}
+
+svg {
+  font-family: Centra;
+  /* position: absolute; */
+  /* width: 70%; */
+  /* height: 70%; */
+  animation: back 5s;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: white;
+  /* background-color: white; */
+}
+svg text {
+  /* text-transform: uppercase; */
+  animation: stroke 5s;
+  stroke-width: 2;
+  /* animation-delay: 250ms; */
+  /* stroke: #3b4d6a; */
+  /* font-size: 140px; */
+  font-size: 12rem;
+  font-weight: 900;
+  font-family: "Teko", sans-serif;
+  fill: black;
+}
+
+@media only screen and (max-width: 400px) {
+  svg text {
+    font-size: 50vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  svg {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: white;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: white;
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: white;
+    stroke-width: 3;
+  }
+  100% {
+    fill: white;
+    stroke: white;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.orgText {
+  font-family: Centra;
+  font-style: italic;
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+@media only screen and (max-width: 400px) {
+  .orgText {
+    margin-top: 10px;
+    font-size: 2.5vw;
+  }
+}
+
+.orgText span {
+  font-weight: 700;
+}
+.middleTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+  .middleTitle {
+    width: 95%;
+  }
+}
+
+.slogan {
+  font-size: 2.5rem;
+  font-family: Centra;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 400px) {
+  .slogan {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes back {
+  0% {
+    background-color: #121212;
+  }
+  70% {
+    background-color: #121212;
+  }
+  80% {
+    background-color: #121212;
+  }
+  100% {
+    background-color: #121212;
+  }
+}
+.flip-clock {
+  /* --fcc-flip-duration: 0.5s; transition duration when flip card */
+  --fcc-digit-block-width: 80px; /* width of digit card */
+  --fcc-digit-block-height: 80px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 20px; /* font size of digit */
+  /* --fcc-digit-color: white; /* color of digit */
+  /* --fcc-label-font-size: 10px; font size of label */
+  /* --fcc-label-color: #ffffff; color of label */
+  /* --fcc-background: black; background of digit card */
+  /* --fcc-divider-color: white; color of divider */
+  /* --fcc-divider-height: 1px; height of divider */
+  /* --fcc-separator-size: 6px; size of colon */
+  /* --fcc-separator-color: red; color of colon */
+}
+
+.countDownContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
