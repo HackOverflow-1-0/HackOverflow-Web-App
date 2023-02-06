@@ -22,8 +22,9 @@
   width: 300px;
   height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: flex-end; */
   background: #060c21;
   margin: 40px;
 }
@@ -82,4 +83,83 @@
 .box .content {
   padding: 20px;
   color: #fff;
+}
+
+.box .winnerHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.box h1 {
+  font-size: calc(10px + 10vh);
+  /* line-height: calc(20px + 20vh); */
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #2196f3, 0 0 15px #2196f3, 0 0 20px #2196f3,
+    0 0 40px #2196f3, 0 0 60px #772aff, 0 0 10px #ff8d00, 0 0 98px #772aff;
+  color: #c6e2ff;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    /*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #2196f3, 0 0 15px #2196f3, 0 0 20px #2196f3,
+      0 0 40px #2196f3, 0 0 60px #772aff, 0 0 10px #ff8d00, 0 0 98px #772aff;
+    color: #fff6a9;
+  }
+}
+
+.box .upper_numbers {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .boxesWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .no1 {
+    order: 1;
+  }
+  .no2 {
+    order: 2;
+  }
+  .no3 {
+    order: 3;
+  }
+
+  .box:nth-child(1) {
+    height: 280px;
+  }
+  .box:nth-child(2) {
+    height: 280px;
+  }
+  .box:nth-child(3) {
+    height: 280px;
+  }
 }
