@@ -1,206 +1,85 @@
-/* HTML CSSResult Skip Results Iframe
-EDIT ON */
-/*----  Main Style  ----*/
-#cards_landscape_wrap-2 {
+.boxesContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  /* height: 500px; */
-  text-align: center;
-  background: #121212;
+  flex-direction: column;
 }
-
-#cards_landscape_wrap-2 .container {
-  padding-top: 80px;
-  padding-bottom: 100px;
+.prizesHead {
+  /* align-self: self-start; */
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-family: Consolas;
 }
-
-#cards_landscape_wrap-2 .container .toRelative {
+.boxesWrapper {
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.box {
+  font-family: consolas;
   position: relative;
-}
-
-#cards_landscape_wrap-2 a {
-  text-decoration: none;
-  outline: none;
-}
-
-#cards_landscape_wrap-2 .card-flyer {
-  position: relative;
+  width: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  border-radius: 5px;
-  width: 200px;
+  align-items: flex-end;
+  background: #060c21;
+  margin: 40px;
 }
-
-#cards_landscape_wrap-2 .card-flyer .image-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  padding-top: 10px;
-  overflow: hidden;
-  width: 200px;
-
-  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5); */
-  border-radius: 5px;
-}
-
-#cards_landscape_wrap-2 .card-flyer .image-box img {
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  width: 100%;
-  height: 350px;
-}
-
-#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
-  opacity: 0.7;
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  -o-transform: scale(1.15);
-  transform: scale(1.15);
-}
-
-#cards_landscape_wrap-2 .card-flyer .text-box {
-  text-align: center;
-}
-
-#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
-  padding: 3px 18px;
+.box:before {
+  content: "";
   position: absolute;
-  bottom: 0;
-}
-
-#cards_landscape_wrap-2 .card-flyer {
-  background: #ffffff;
-  margin-top: 50px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-}
-
-#cards_landscape_wrap-2 .card-flyer:hover {
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   background: #fff;
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  margin-top: 50px;
+  z-index: -1;
 }
-
-#cards_landscape_wrap-2 .card-flyer .text-box p {
-  /* position: absolute; */
-  margin-top: 10px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  font-size: 14px;
-
-  letter-spacing: 1px;
-  color: #000000;
-}
-
-#cards_landscape_wrap-2 .card-flyer .text-box h6 {
-  font-family: "Centra";
-  margin-top: 0px;
-  /* margin-bottom: 4px; */
-  font-size: 1.5vw;
-  font-weight: bold;
-  /* text-transform: uppercase; */
-  /* font-family: "Roboto Black", sans-serif; */
-  /* letter-spacing: 1px; */
-  color: #00acc1;
-}
-
-#cards_landscape_wrap-2 .card-flyer .lottie {
+.box:after {
+  content: "";
   position: absolute;
-  border-radius: 50%;
-  background-color: transparent;
-  margin-top: -130px;
-
-  justify-self: center;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
 }
-
-#cards_landscape_wrap-2 .firstPrize {
-  height: 280px;
-}
-
-#cards_landscape_wrap-2 .secondPrize {
+.box:nth-child(1) {
   height: 360px;
 }
-
-#cards_landscape_wrap-2 .thirdPrize {
+.box:nth-child(2) {
   height: 510px;
 }
-
-#cards_landscape_wrap-2 .card-flyer {
+.box:nth-child(3) {
+  height: 280px;
+}
+.box:nth-child(1):before,
+.box:nth-child(1):after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.box .glass {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
 }
-
-@media only screen and (max-width: 400px) {
-  #cards_landscape_wrap-2 .card-flyer {
-    height: 300px;
-    position: static;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .blockContainer1,
-  .blockContainer2,
-  .blockContainer3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .lottie {
-    width: 170px;
-    height: 170px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .toRelative {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blockContainer1 {
-    order: 2;
-  }
-
-  .blockContainer2 {
-    order: 1;
-  }
-
-  .blockContainer3 {
-    order: 2;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #cards_landscape_wrap-2 .card-flyer .text-box .text-container {
-    position: static;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #cards_landscape_wrap-2 .card-flyer .text-box h6 {
-    font-size: 4vw;
-  }
+.box .content {
+  padding: 20px;
+  color: #fff;
 }
