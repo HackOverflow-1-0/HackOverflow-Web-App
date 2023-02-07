@@ -103,11 +103,10 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
-  main .container {
-    max-width: 100%;
-    padding: 0 150px;
-  }
+.container {
+  max-width: 786px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 p.success {
@@ -761,9 +760,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
-/* .section {
-  padding: 2rem 5rem 4rem;
-} */
+
 .footer img {
   width: 26%;
 }

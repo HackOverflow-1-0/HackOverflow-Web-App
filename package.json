@@ -21,6 +21,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.10.3",
     "cors": "^2.8.5",
+    "dracula-ui": "^1.0.6",
     "express": "^4.18.1",
     "framer-motion": "^8.5.5",
     "lottie-react": "^2.3.1",
