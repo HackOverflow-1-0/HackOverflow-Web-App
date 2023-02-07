@@ -110,6 +110,8 @@ EDIT ON */
   color: #000000;
 }
 
+
+
 #cards_landscape_wrap-2 .card-flyer .text-box h6 {
   font-family: "Centra";
   margin-top: 0px;
@@ -125,9 +127,7 @@ EDIT ON */
 #cards_landscape_wrap-2 .card-flyer .lottie {
   position: absolute;
   border-radius: 50%;
-  background-color: transparent;
   margin-top: -130px;
-
   justify-self: center;
 }
 
@@ -156,6 +156,7 @@ EDIT ON */
 }
 
 @media only screen and (max-width: 400px) {
+
   .blockContainer1,
   .blockContainer2,
   .blockContainer3 {
