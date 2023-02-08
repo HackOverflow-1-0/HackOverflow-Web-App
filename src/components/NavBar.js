@@ -87,11 +87,18 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div> */}
-              <HashLink to="#connect">
-                <button className="vvd">
-                  <span>Brochure</span>
-                </button>
-              </HashLink>
+
+              <button className="vvd">
+                <span>
+                  <a
+                    href="https://phcet.tech/brochure"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Brochure
+                  </a>
+                </span>
+              </button>
             </span>
           </Navbar.Collapse>
         </Container>

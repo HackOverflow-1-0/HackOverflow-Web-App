@@ -1,12 +1,17 @@
+.banner {
+  background-image: linear-gradient(180deg, #aa367c 0%, #121212 100%);
+}
+
 .bannerWrap {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .welcometoText {
   font-size: 4rem;
-  font-family: Centra;
+  font-family: "Helvetica";
 }
 
 @media only screen and (max-width: 400px) {
@@ -15,8 +20,8 @@
   }
 }
 
-svg {
-  font-family: Centra;
+#title-animation {
+  font-family: "Helvetica Bold";
   /* position: absolute; */
   /* width: 70%; */
   /* height: 70%; */
@@ -27,31 +32,33 @@ svg {
   background-color: white;
   /* background-color: white; */
 }
-svg text {
+
+#title-animation text {
   /* text-transform: uppercase; */
   animation: stroke 5s;
   stroke-width: 2;
   /* animation-delay: 250ms; */
   /* stroke: #3b4d6a; */
   /* font-size: 140px; */
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 900;
-  font-family: "Teko", sans-serif;
+  font-family: "Helvetica Bold";
   fill: black;
 }
 
 @media only screen and (max-width: 400px) {
-  svg text {
-    font-size: 50vw;
+  #title-animation text {
+    font-size: 8rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  svg {
+  #title-animation {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
+
 @keyframes stroke {
   0% {
     fill: rgba(72, 138, 20, 0);
@@ -65,11 +72,13 @@ svg text {
     fill: rgba(72, 138, 20, 0);
     stroke: white;
   }
+
   80% {
     fill: rgba(72, 138, 20, 0);
     stroke: white;
     stroke-width: 3;
   }
+
   100% {
     fill: white;
     stroke: white;
@@ -80,11 +89,12 @@ svg text {
 }
 
 .orgText {
-  font-family: Centra;
-  font-style: italic;
+  font-family: "Helvetica";
+
   font-size: 1.2rem;
   align-self: flex-end;
 }
+
 @media only screen and (max-width: 400px) {
   .orgText {
     margin-top: 10px;
@@ -95,6 +105,7 @@ svg text {
 .orgText span {
   font-weight: 700;
 }
+
 .middleTitle {
   display: flex;
   flex-direction: column;
@@ -115,6 +126,7 @@ svg text {
   font-family: Centra;
   margin-bottom: 35px;
 }
+
 @media only screen and (max-width: 400px) {
   .slogan {
     font-size: 1.5rem;
@@ -125,12 +137,15 @@ svg text {
   0% {
     background-color: #121212;
   }
+
   70% {
     background-color: #121212;
   }
+
   80% {
     background-color: #121212;
   }
+
   100% {
     background-color: #121212;
   }

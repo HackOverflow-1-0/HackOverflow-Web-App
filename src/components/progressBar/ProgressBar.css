@@ -16,7 +16,7 @@ html {
   
   
 #progressBar {
-    background: linear-gradient(to left, rgb(208, 0, 255), rgb(255, 0, 255));
+    background: linear-gradient(to left, rgb(208, 0, 255), hsl(300, 100%, 50%));
     transform-origin: top left;
     transform: scale(0,0);
     border-radius: 40px;

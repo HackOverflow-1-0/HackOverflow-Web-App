@@ -120,8 +120,7 @@
   -webkit-animation: blink 12s infinite;
 }
 
-@-webkit-keyframes blink {
-
+@keyframes blink {
   20%,
   24%,
   55% {
@@ -150,7 +149,7 @@
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 600px) {
   .boxesWrapper {
     display: flex;
     align-items: center;

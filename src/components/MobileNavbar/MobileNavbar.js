@@ -2,6 +2,7 @@ import { Flare, Home, Info, Schedule } from "@mui/icons-material";
 import { BottomNavigation, BottomNavigationAction } from "@mui/material";
 import { useState } from "react";
 import { Nav } from "react-bootstrap";
+
 import "./MobileNavbar.css";
 const MobileNavbar = (props) => {
   const [value, setValue] = useState("home");
@@ -13,18 +14,31 @@ const MobileNavbar = (props) => {
         setValue(newValue);
       }}
       className="bottom-navbar"
+      style={{ backgroundColor: "#121212" }}
     >
       <Nav.Link href="#home">
-        <BottomNavigationAction label="Home" icon={<Home />} />
+        <BottomNavigationAction
+          label="Home"
+          icon={<Home style={{ fill: "#aa367c" }} />}
+        />
       </Nav.Link>
       <Nav.Link href="#schedule">
-        <BottomNavigationAction label="Schedule" icon={<Schedule />} />
+        <BottomNavigationAction
+          label="Schedule"
+          icon={<Schedule style={{ fill: "#aa367c" }} />}
+        />
       </Nav.Link>
       <Nav.Link href="#sponsors">
-        <BottomNavigationAction label="Sponsors" icon={<Flare />} />
+        <BottomNavigationAction
+          label="Sponsors"
+          icon={<Flare style={{ fill: "#aa367c" }} />}
+        />
       </Nav.Link>
       <Nav.Link href="#about">
-        <BottomNavigationAction label="About" icon={<Info />} />
+        <BottomNavigationAction
+          label="About"
+          icon={<Info style={{ fill: "#aa367c" }} />}
+        />
       </Nav.Link>
     </BottomNavigation>
   );

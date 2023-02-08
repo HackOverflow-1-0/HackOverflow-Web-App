@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/banner-illustration.png";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
-
+import SocialMedia from "./SocialMedia/SocialMedia";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./Banner.css";
@@ -32,7 +30,7 @@ export const Banner = () => {
         <div className="bannerWrap">
           <div className="welcometoText">Welcome to</div>
           <div className="middleTitle">
-            <svg viewBox="0 0 1320 230">
+            <svg viewBox="0 0 1320 230" id="title-animation">
               <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                 HackOverflow 1.0
               </text>
@@ -41,12 +39,14 @@ export const Banner = () => {
               Organized by <span>Computer department of PHCET</span>
             </div>
           </div>
-          <div className="slogan">Think. Code. Innovate.</div>
+          <div className="slogan" style={{ fontFamily: "Helvetica" }}>
+            Think. Code. Innovate.
+          </div>
           <div className="countDownContainer">
             <FlipClockCountdown
               to={date}
               labelStyle={{
-                fontFamily: "Centra",
+                fontFamily: "Helvetica",
                 textTransform: "uppercase",
                 paddingTop: "5px",
                 fontWeight: 500,
@@ -56,7 +56,7 @@ export const Banner = () => {
                 width: width > 400 ? 50 : 30,
                 height: width > 400 ? 60 : 40,
                 fontSize: width > 400 ? "40px" : "25px",
-                fontFamily: "Aldrich",
+                fontFamily: "Helvetica",
                 backgroundColor: "purple",
               }}
             />
