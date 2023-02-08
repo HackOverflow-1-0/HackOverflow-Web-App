@@ -89,7 +89,14 @@ export const NavBar = () => {
             </div> */}
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Brochure</span>
+                  <span>
+                    <a
+                      href="https://phcet.tech/brochure"
+                      style={{ textDecoration: "none" }}
+                    >
+                      Brochure
+                    </a>
+                  </span>
                 </button>
               </HashLink>
             </span>
