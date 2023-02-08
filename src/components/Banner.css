@@ -6,7 +6,7 @@
 }
 .welcometoText {
   font-size: 4rem;
-  font-family: Centra;
+  font-family: "Helvetica";
 }
 
 @media only screen and (max-width: 400px) {
@@ -16,7 +16,7 @@
 }
 
 svg {
-  font-family: Centra;
+  font-family: "Helvetica Bold";
   /* position: absolute; */
   /* width: 70%; */
   /* height: 70%; */
@@ -34,9 +34,9 @@ svg text {
   /* animation-delay: 250ms; */
   /* stroke: #3b4d6a; */
   /* font-size: 140px; */
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 900;
-  font-family: "Teko", sans-serif;
+  font-family: "Helvetica Bold";
   fill: black;
 }
 
@@ -80,8 +80,8 @@ svg text {
 }
 
 .orgText {
-  font-family: Centra;
-  font-style: italic;
+  font-family: "Helvetica";
+
   font-size: 1.2rem;
   align-self: flex-end;
 }

@@ -15,7 +15,7 @@ const MobileNavbar = (props) => {
       className="bottom-navbar"
     >
       <Nav.Link href="#home">
-        <BottomNavigationAction label="Home" icon={<Home />} />
+        <BottomNavigationAction label="Home" icon={<Home style={{backgroundColor:"#aa367c"}} />} />
       </Nav.Link>
       <Nav.Link href="#schedule">
         <BottomNavigationAction label="Schedule" icon={<Schedule />} />

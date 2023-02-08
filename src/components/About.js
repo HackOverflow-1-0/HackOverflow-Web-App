@@ -4,7 +4,7 @@ import * as tt from "@tomtom-international/web-sdk-maps";
 import { useEffect, useRef } from "react";
 import { env } from "process";
 // import TrackVisibility from "react-on-screen";
-import CollegeClub from "./CollegeClub/CollegeClub";
+
 const About = () => {
   const mapElement = useRef();
 
@@ -70,7 +70,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <CollegeClub />
     </>
   );
 };

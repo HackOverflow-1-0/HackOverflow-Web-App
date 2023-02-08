@@ -41,12 +41,14 @@ export const Banner = () => {
               Organized by <span>Computer department of PHCET</span>
             </div>
           </div>
-          <div className="slogan">Think. Code. Innovate.</div>
+          <div className="slogan" style={{ fontFamily: "Helvetica" }}>
+            Think. Code. Innovate.
+          </div>
           <div className="countDownContainer">
             <FlipClockCountdown
               to={date}
               labelStyle={{
-                fontFamily: "Centra",
+                fontFamily: "Helvetica",
                 textTransform: "uppercase",
                 paddingTop: "5px",
                 fontWeight: 500,
@@ -56,7 +58,7 @@ export const Banner = () => {
                 width: width > 400 ? 50 : 30,
                 height: width > 400 ? 60 : 40,
                 fontSize: width > 400 ? "40px" : "25px",
-                fontFamily: "Aldrich",
+                fontFamily: "Helvetica",
                 backgroundColor: "purple",
               }}
             />
