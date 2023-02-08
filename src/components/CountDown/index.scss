@@ -55,6 +55,7 @@ $blackish-blue: hsl(234, 17%, 12%);
         place-content: center;
         place-items: center;
         font-size: 6vw;
+        font-family:"Helvetica";
         color: $soft-red;
         @media only screen and (max-width: 400px) {
           font-size: 40px;
@@ -81,6 +82,7 @@ $blackish-blue: hsl(234, 17%, 12%);
     text-transform: uppercase;
     font-size: 1vw;
     letter-spacing: 5px;
+    font-family:"Helvetica";
     color: $grayish-blue;
     @media only screen and (max-width: 400px) {
       font-size: 10px;

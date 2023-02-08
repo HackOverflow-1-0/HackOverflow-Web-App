@@ -1,0 +1,51 @@
+#app-section {
+  background-color: #121212;
+  margin-top: "40px";
+}
+.app-preview1{
+    width:inherit;
+    height: inherit;
+}
+.app-preview1 img{
+    float:right;
+}
+.app-preview2{
+    width: inherit;
+    height: inherit;
+}
+.side-text1 {
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-size: 70px;
+  line-height: 100px;
+  text-align: left;
+
+  background: linear-gradient(
+    107deg,
+    #aa367c 16.1%,
+    rgba(150, 127, 214, 0.7) 54.35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+.side-text2 {
+  font-family: "Helvetica Bold";
+  font-style: normal;
+
+  font-size: 70px;
+  line-height: 100px;
+  text-align: right;
+
+  background: linear-gradient(
+    107deg,
+    #aa367c 16.1%,
+    rgba(150, 127, 214, 0.7) 54.35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
