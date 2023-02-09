@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Background from "../components/Background";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -13,7 +14,6 @@ export const Banner = () => {
   const [width, setWindowWidth] = useState(0);
   useEffect(() => {
     updateDimensions();
-
     window.addEventListener("resize", updateDimensions);
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
@@ -25,7 +25,7 @@ export const Banner = () => {
   const date = new Date("2023-03-17");
   const toggleText = tickerVisible ? "Hide Countdown" : "Show Countdown";
   return (
-    <section className="section banner" id="home">
+    <section className="section banner" id="home" style={{ zIndex: "1" }}>
       <div className="container">
         <div className="bannerWrap">
           <div className="welcometoText">Welcome to</div>
