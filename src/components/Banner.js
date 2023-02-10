@@ -8,6 +8,7 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./Banner.css";
+import ScrollDown from "./ScrollDown/ScrollDown";
 
 export const Banner = () => {
   const [width, setWindowWidth] = useState(0);
@@ -42,26 +43,32 @@ export const Banner = () => {
           <div className="slogan" style={{ fontFamily: "Helvetica" }}>
             Think. Code. Innovate.
           </div>
-          <div className="countDownContainer">
-            <FlipClockCountdown
-              to={date}
-              labelStyle={{
-                fontFamily: "Helvetica",
-                textTransform: "uppercase",
-                paddingTop: "5px",
-                fontWeight: 500,
-                fontSize: width > 400 ? "24px" : "12px",
-              }}
-              digitBlockStyle={{
-                width: width > 400 ? 50 : 30,
-                height: width > 400 ? 60 : 40,
-                fontSize: width > 400 ? "40px" : "25px",
-                fontFamily: "Helvetica",
-                backgroundColor: "purple",
-              }}
-            />
-          </div>
         </div>
+      </div>
+      <div className="countDownContainer">
+        <FlipClockCountdown
+          to={date}
+          labelStyle={{
+            fontFamily: "Helvetica",
+            textTransform: "uppercase",
+            paddingTop: "5px",
+            fontWeight: 500,
+            fontSize: width > 400 ? "24px" : "12px",
+          }}
+          digitBlockStyle={{
+            width: width > 400 ? 50 : 30,
+            height: width > 400 ? 60 : 40,
+            fontSize: width > 400 ? "40px" : "25px",
+            fontFamily: "Helvetica",
+            backgroundColor: "purple",
+          }}
+        />
+      </div>
+      <div className="socialMedia">
+        <SocialMedia />
+      </div>
+      <div className="socialMain">
+        <ScrollDown />
       </div>
     </section>
   );

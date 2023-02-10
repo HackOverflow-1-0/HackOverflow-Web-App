@@ -14,6 +14,7 @@ import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 import AppFeature from "./components/AppFeature/AppFeature";
+import { PreLoader } from "./components/PreLoader/PreLoader";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <Fragment>
+      {/* <PreLoader /> */}
       <NavBar />
       <Banner />
       <HackathonOverview />
