@@ -10,7 +10,7 @@ import { useEffect, useRef, useState } from "react";
 import { Stack } from "@mui/material";
 import gapi from "gapi-script";
 
-export const Schedule = () => {
+` export const Schedule = () => {
   const [path, setPath] = useState("offline");
 
   const [windowSize, setWindowSize] = useState([
