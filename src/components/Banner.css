@@ -1,5 +1,5 @@
 .banner {
-  background-image: linear-gradient(180deg, #aa367c 0%, #121212 100%);
+  background: transparent;
 }
 
 .bannerWrap {
@@ -127,9 +127,20 @@
   margin-bottom: 35px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .slogan {
     font-size: 1.5rem;
+  }
+  video {
+    height: 600px;
+    max-width: inherit;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  video {
+    height: 700px;
+    max-width: inherit;
   }
 }
 
@@ -156,4 +167,29 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.socialMedia {
+  display: none;
+  top: 25rem;
+  font-size: 2.5rem;
+  left: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.socialMain {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .socialMedia {
+    display: block;
+  }
+  .socialMain {
+    display: block;
+  }
 }

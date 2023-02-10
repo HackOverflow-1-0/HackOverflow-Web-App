@@ -1,11 +1,11 @@
 import "./Themes.css";
 import agriculture from "../assets/img/Farmer.gif";
-import health from "../assets/img/OnlineDoctor.gif";
-import finance from "../assets/img/Financeapp.gif";
-import education from "../assets/img/Nerd.gif";
-import blockchain from "../assets/img/BitcoinP2P.gif";
-import ai from "../assets/img/Artificial-intelligence.gif";
-import environment from "../assets/img/Nature.gif";
+import health from "../assets/img/health.gif";
+import finance from "../assets/img/Finance.gif";
+import education from "../assets/img/education.gif";
+import blockchain from "../assets/img/blockchain.gif";
+import ai from "../assets/img/ai.gif";
+import environment from "../assets/img/environment.gif";
 const Themes = () => {
   return (
     <section id="themes-section">

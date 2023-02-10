@@ -2,13 +2,11 @@ import "./About.css";
 import "@tomtom-international/web-sdk-maps/dist/maps.css";
 import * as tt from "@tomtom-international/web-sdk-maps";
 import { useEffect, useRef } from "react";
-import { env } from "process";
+
 // import TrackVisibility from "react-on-screen";
 
 const About = () => {
   const mapElement = useRef();
-
-  const key = env.TOM_TOM_MAPS_API;
 
   useEffect(() => {
     let maps = tt.map({
@@ -31,7 +29,6 @@ const About = () => {
     <>
       <section id="about">
         <div className="container">
-          <h1 id="about-us-text">About Us</h1>
           <div className="row">
             <div className="col-lg-6 col-sm-12">
               <h2>About PHCET</h2>

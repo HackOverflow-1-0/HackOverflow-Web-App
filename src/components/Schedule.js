@@ -7,6 +7,8 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import { useEffect, useRef, useState } from "react";
+import { Stack } from "@mui/material";
+import gapi from "gapi-script";
 
 export const Schedule = () => {
   const [path, setPath] = useState("offline");
@@ -171,6 +173,11 @@ export const Schedule = () => {
             </div>
           </div>
         </div>
+        {/* <div className="row">
+          <Stack>
+            <button>Add to Calendar</button>
+          </Stack>
+        </div> */}
       </div>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
