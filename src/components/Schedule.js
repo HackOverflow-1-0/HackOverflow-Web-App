@@ -173,11 +173,11 @@ export const Schedule = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <Stack>
             <button>Add to Calendar</button>
           </Stack>
-        </div>
+        </div> */}
       </div>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>

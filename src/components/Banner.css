@@ -1,6 +1,6 @@
-/* .banner {
-  background-image: linear-gradient(180deg, #aa367c 0%, #121212 100%);
-} */
+.banner {
+  background: transparent;
+}
 
 .bannerWrap {
   display: flex;
@@ -127,9 +127,20 @@
   margin-bottom: 35px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .slogan {
     font-size: 1.5rem;
+  }
+  video {
+    height: 600px;
+    max-width: inherit;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  video {
+    height: 700px;
+    max-width: inherit;
   }
 }
 
