@@ -8,9 +8,8 @@ import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import { useEffect, useRef, useState } from "react";
 import { Stack } from "@mui/material";
-import gapi from "gapi-script";
 
-` export const Schedule = () => {
+export const Schedule = () => {
   const [path, setPath] = useState("offline");
 
   const [windowSize, setWindowSize] = useState([
@@ -79,7 +78,9 @@ import gapi from "gapi-script";
       </div>
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
-          <h1 className="text-center">Key Dates</h1>
+          <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+            Key Dates
+          </h1>
           <div
             className="col"
             style={{

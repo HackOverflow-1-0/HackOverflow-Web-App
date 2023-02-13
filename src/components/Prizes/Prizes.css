@@ -9,7 +9,7 @@
   /* align-self: self-start; */
   padding-bottom: 10px;
   font-size: 2.5rem;
-  font-family: Consolas;
+  font-family: "Helvetica Bold";
 }
 
 .boxesWrapper {
@@ -20,7 +20,6 @@
 }
 
 .box {
-  font-family: consolas;
   position: relative;
   width: 300px;
   height: 400px;
@@ -69,17 +68,17 @@
 
 .box:nth-child(1):before,
 .box:nth-child(1):after {
-  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+  background: linear-gradient(235deg, #967fd6b3, #121212, #aa367c);
 }
 
 .box:nth-child(2):before,
 .box:nth-child(2):after {
-  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+  background: linear-gradient(235deg, #aa367c, #121212, #967fd6b3);
 }
 
 .box:nth-child(3):before,
 .box:nth-child(3):after {
-  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+  background: linear-gradient(235deg, #aa367c, #121212, #967fd6b3);
 }
 
 .box .glass {
@@ -114,10 +113,14 @@
   text-shadow: 0 0 5px #2196f3, 0 0 15px #2196f3, 0 0 20px #2196f3,
     0 0 40px #2196f3, 0 0 60px #772aff, 0 0 10px #ff8d00, 0 0 98px #772aff;
   color: #c6e2ff;
-  font-family: "Sacramento", cursive;
+  font-family: "Helvetica Bold";
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
+}
+
+.content {
+  font-family: "Helvetica";
 }
 
 @keyframes blink {
