@@ -11,7 +11,7 @@ const Themes = () => {
     <section id="themes-section">
       <div className="container">
         <h1>Themes</h1>
-        <div class="absolute h-[2px] bg-[#7b1072] w-56" />
+        {/* <div class="absolute h-[2px] bg-[#7b1072] w-56" /> */}
         <div className="row">
           <div className="col-lg-3 themes-tiles">
             <img src={agriculture} />

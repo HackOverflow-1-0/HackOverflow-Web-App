@@ -31,7 +31,9 @@ const AppFeature = () => {
                   <p>Download our app on Play Store.</p>
                 </h1>
                 <div className="play-store">
-                  <img src={playStore} />
+                  <a href="https://phcet.tech/app" target="_blank">
+                    <img src={playStore} />
+                  </a>
                 </div>
               </motion.div>
             )}

@@ -78,7 +78,9 @@ export const Schedule = () => {
       </div>
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
-          <h1 className="text-center">Key Dates</h1>
+          <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+            Key Dates
+          </h1>
           <div
             className="col"
             style={{

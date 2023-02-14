@@ -1,11 +1,7 @@
 import React from "react";
 import "./Prizes.css";
-import Lottie from "lottie-react";
-import { Container, Row, Col } from "react-bootstrap";
-import firstPosition from "../../assets/Lotties/104002-gold-badge.json";
-import secondPosition from "../../assets/Lotties/104344-2nd-position.json";
-import thirdPosition from "../../assets/Lotties/104345-badge-3rd.json";
-import trophyData from "../../assets/Lotties/677-trophy.json";
+import Certificates from "../Certificates/Certificates";
+
 import "dracula-ui/styles/dracula-ui.css";
 import { Card, Text } from "dracula-ui";
 function Prizes() {
@@ -31,7 +27,7 @@ function Prizes() {
 
             <div class="content">
               <h2>Second Price</h2>
-              <p>Total Prize of Worth $15,000 Cash Prize of INR 35,000</p>
+              <p>Cash Prize of INR 30,000</p>
             </div>
           </div>
           <div class="box no1">
@@ -41,7 +37,7 @@ function Prizes() {
             <div class="glass"></div>
             <div class="content">
               <h2>First Prize</h2>
-              <p>Total Prize of Worth $12,500 Cash Prize of INR 25,000</p>
+              <p>Cash Prize of INR 20,000</p>
             </div>
           </div>
           <div class="box no3">
@@ -52,11 +48,12 @@ function Prizes() {
 
             <div class="content">
               <h2>Third Prize</h2>
-              <p>Total Prize of Worth $10,000 Cash Prize of INR 15,000</p>
+              <p>Cash Prize of INR 5,000</p>
             </div>
           </div>
         </div>
       </div>
+      <Certificates />
     </>
   );
 }

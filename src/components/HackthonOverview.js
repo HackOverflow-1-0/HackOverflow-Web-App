@@ -17,7 +17,7 @@ const HackathonOverview = (props) => {
           <Col lg={6}>
             <h1 style={{ fontFamily: "Helvetica Bold", marginBottom: "20px" }}>
               What is HackOverflow 1.0?
-              <div class="absolute h-[2px] bg-[#7b1072] w-80" />
+              {/* <div class="absolute h-[2px] bg-[#7b1072] w-80" /> */}
             </h1>
 
             <p
