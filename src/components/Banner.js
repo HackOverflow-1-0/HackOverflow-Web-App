@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Background from "../components/Background";
-
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";

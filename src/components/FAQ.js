@@ -25,10 +25,7 @@ const FAQ = (props) => {
   return (
     <section id="faq-section">
       <div className="container">
-        <h1
-          className="text-center"
-          style={{ fontFamily: "Helvetica Bold", marginBottom: "20px" }}
-        >
+        <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
           How can we help?
         </h1>
         <div className="row">
