@@ -27,7 +27,7 @@ function Prizes() {
 
             <div class="content">
               <h2>Second Price</h2>
-              <p>Cash Prize of INR 30,000</p>
+              <p>Cash Prize of TBA</p>
             </div>
           </div>
           <div class="box no1">
@@ -37,7 +37,7 @@ function Prizes() {
             <div class="glass"></div>
             <div class="content">
               <h2>First Prize</h2>
-              <p>Cash Prize of INR 20,000</p>
+              <p>Cash Prize of TBA</p>
             </div>
           </div>
           <div class="box no3">
@@ -48,7 +48,7 @@ function Prizes() {
 
             <div class="content">
               <h2>Third Prize</h2>
-              <p>Cash Prize of INR 5,000</p>
+              <p>Cash Prize TBA</p>
             </div>
           </div>
         </div>

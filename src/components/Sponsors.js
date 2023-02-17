@@ -14,7 +14,7 @@ export const Sponsors = () => {
     AOS.init();
   }, []);
   return (
-    <section className="sponsors" id="sponsors">
+    <section className="sponsors mt-5" id="sponsors">
       <Container>
         <h1
           style={{

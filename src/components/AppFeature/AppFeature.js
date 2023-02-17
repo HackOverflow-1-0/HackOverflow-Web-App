@@ -24,7 +24,7 @@ const AppFeature = () => {
             {visible && (
               <motion.div
                 initial={{ x: -800 }}
-                animate={{ x: 0, transition: " 5s" }}
+                animate={{ x: 0, transition: " 4s" }}
                 className="col-lg-6 col-sm-12"
               >
                 <h1 className="side-text1">
@@ -42,7 +42,7 @@ const AppFeature = () => {
               {visible && (
                 <motion.div
                   initial={{ x: 800 }}
-                  animate={{ x: 0, transition: " 5s" }}
+                  animate={{ x: 0, transition: " 4s" }}
                   className="app-preview1"
                 >
                   <img src={app1} />
@@ -62,7 +62,7 @@ const AppFeature = () => {
               {visible2 && (
                 <motion.div
                   initial={{ x: -800 }}
-                  animate={{ x: 0, transition: " 2s" }}
+                  animate={{ x: 0, transition: " 4s" }}
                   className="app-preview2"
                 >
                   <img src={app2} />
@@ -73,7 +73,7 @@ const AppFeature = () => {
               {visible2 && (
                 <motion.div
                   initial={{ x: 800 }}
-                  animate={{ x: 0, transition: "2s" }}
+                  animate={{ x: 0, transition: "4s" }}
                 >
                   <h1 className="side-text2">
                     <p>
