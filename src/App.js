@@ -14,6 +14,8 @@ import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 import AppFeature from "./components/AppFeature/AppFeature";
+import Register from "./components/Register/Register";
+import RegisterMobile from "./components/Register/RegisterMobile";
 import { PreLoader } from "./components/PreLoader/PreLoader";
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
       {/* <PreLoader /> */}
       <NavBar />
       <Banner />
+      {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
       <HackathonOverview />
       <Prizes />
       <Schedule />

@@ -25,53 +25,51 @@ export const Banner = () => {
   const date = new Date("2023-03-17");
   const toggleText = tickerVisible ? "Hide Countdown" : "Show Countdown";
   return (
-    <Background>
-      <section className="section banner" id="home" style={{ postion: "" }}>
-        <div className="container">
-          <div className="bannerWrap">
-            <div className="welcometoText">Welcome to</div>
-            <div className="middleTitle">
-              <svg viewBox="0 0 1320 230" id="title-animation">
-                <text x="50%" y="50%" dy=".35em" textAnchor="middle">
-                  HackOverflow 1.0
-                </text>
-              </svg>
-              <div className="orgText">
-                Organized by <span>Computer department of PHCET</span>
-              </div>
-            </div>
-            <div className="slogan" style={{ fontFamily: "Helvetica" }}>
-              Think. Code. Innovate.
+    <section className="section banner" id="home" style={{ postion: "" }}>
+      <div className="container">
+        <div className="bannerWrap">
+          <div className="welcometoText">Welcome to</div>
+          <div className="middleTitle">
+            <svg viewBox="0 0 1320 230" id="title-animation">
+              <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+                HackOverflow 1.0
+              </text>
+            </svg>
+            <div className="orgText">
+              Organized by <span>Computer department of PHCET</span>
             </div>
           </div>
+          <div className="slogan" style={{ fontFamily: "Helvetica" }}>
+            Think. Code. Innovate.
+          </div>
         </div>
-        <div className="countDownContainer">
-          <FlipClockCountdown
-            to={date}
-            labelStyle={{
-              fontFamily: "Helvetica",
-              textTransform: "uppercase",
-              paddingTop: "5px",
-              fontWeight: 500,
-              fontSize: width > 400 ? "24px" : "12px",
-            }}
-            digitBlockStyle={{
-              width: width > 400 ? 50 : 30,
-              height: width > 400 ? 60 : 40,
-              fontSize: width > 400 ? "40px" : "25px",
-              fontFamily: "Helvetica",
-              backgroundColor: "purple",
-            }}
-          />
-        </div>
-        <div className="socialMedia">
-          <SocialMedia />
-        </div>
-        <div className="socialMain">
-          <ScrollDown />
-        </div>
-      </section>
-    </Background>
+      </div>
+      <div className="countDownContainer">
+        <FlipClockCountdown
+          to={date}
+          labelStyle={{
+            fontFamily: "Helvetica",
+            textTransform: "uppercase",
+            paddingTop: "5px",
+            fontWeight: 500,
+            fontSize: width > 400 ? "24px" : "12px",
+          }}
+          digitBlockStyle={{
+            width: width > 400 ? 50 : 30,
+            height: width > 400 ? 60 : 40,
+            fontSize: width > 400 ? "40px" : "25px",
+            fontFamily: "Helvetica",
+            backgroundColor: "purple",
+          }}
+        />
+      </div>
+      <div className="socialMedia">
+        <SocialMedia />
+      </div>
+      <div className="socialMain">
+        <ScrollDown />
+      </div>
+    </section>
   );
 };
 

@@ -44,11 +44,9 @@
   line-height: 100px;
   text-align: right;
 
-  background: linear-gradient(
-    107deg,
-    #aa367c 16.1%,
-    rgba(150, 127, 214, 0.7) 54.35%
-  );
+  background: linear-gradient(107deg,
+      #aa367c 16.1%,
+      rgba(150, 127, 214, 0.702) 54.35%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,6 +54,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+
   .side-text1,
   .side-text2 {
     font-size: 40px;
