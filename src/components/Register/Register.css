@@ -1,0 +1,58 @@
+.register-h1 {
+    font-family: "Helvetica Bold";
+    margin-top: 30px;
+}
+
+.online-registerations,
+.offline-registerations {
+    margin-top: 40px;
+}
+
+.online-tag {
+    font-family: "Helvetica Bold";
+    transform: translate(470px, 0px);
+    color: #967fd6;
+}
+
+.offline-tag {
+    font-family: "Helvetica Bold";
+    color: #aa367c;
+    transform: translate(90px, 0px);
+}
+
+#arrow-left {
+    transform: translate(140px, -150px);
+    height: 500px;
+    width: 500px;
+}
+
+#arrow-right {
+    transform: translate(-60px, -90px);
+    height: 460px;
+    width: 460px;
+}
+
+.dev-folio {
+    transform: translate(100px, -250px);
+}
+
+/* @media only screen and (max-width: 1270px) {
+    .online-tag {
+        transform: translate(inherit, inherit);
+    }
+
+    .offline-tag {
+        transform: translate(inherit, inherit);
+    }
+
+    #arrow-left {
+        transform: translate(inherit, inherit);
+        width: 150px;
+    }
+
+    #arrow-right {
+        transform: translate(inherit, inherit);
+        height: 130px;
+        width: 130px;
+    }
+} */
