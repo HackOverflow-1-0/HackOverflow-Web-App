@@ -36,6 +36,10 @@
     transform: translate(100px, -250px);
 }
 
+.offline-register-btn {
+    transform: translate(330px, -200px);
+}
+
 /* @media only screen and (max-width: 1270px) {
     .online-tag {
         transform: translate(inherit, inherit);
