@@ -1,5 +1,6 @@
 import "./Register.css";
 import DevFolio from "../DevFolio/DevFolioButton";
+import { Button } from "@mui/material";
 
 const Register = () => {
   return (
@@ -106,6 +107,25 @@ const Register = () => {
                       </marker>
                     </defs>
                   </svg>
+                  <div className="offline-register-btn">
+                    <a
+                      href="https://phcet.tech/offline"
+                      target="_blank"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button
+                        variant="contained"
+                        style={{
+                          background: "#aa367c",
+                          height: "44px",
+                          width: "312px",
+                          fontFamily: "Helvetica Bold",
+                        }}
+                      >
+                        Register Offline
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
