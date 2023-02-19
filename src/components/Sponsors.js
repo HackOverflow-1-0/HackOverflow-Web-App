@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import hack2skill from "../assets/img/comingsoon.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import TitleSponsorsCard from "./TitleSponsorsCard";
 import MediumSponsorsCard from "./MediumSponsorsCard";
 import GeneralSponsorsCard from "./GeneralSponsorsCard";
@@ -13,7 +13,7 @@ import "./Sponsor.css";
 export const Sponsors = () => {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
   return (
     <>
       <section className="container sm:my-5 p-5">

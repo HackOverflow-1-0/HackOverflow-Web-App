@@ -1,0 +1,19 @@
+.online-h2 {
+    font-family: "Helvetica Bold";
+    color: #967fd6;
+}
+
+.offline-h2 {
+    font-family: "Helvetica Bold";
+    color: #aa367c;
+}
+
+.online-holder {
+    transform: translate(50px, 0);
+}
+
+.offline-holder {
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+}

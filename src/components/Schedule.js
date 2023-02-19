@@ -1,14 +1,13 @@
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import offlineDesktopView from "../assets/img/HO_roadmap_desktop_view_off.png";
-import offlineMobileView from "../assets/img/HO_roadmap_mobile_view.png";
-import onlineDesktopView from "../assets/img/HO_roadmap_desktop_view_online.png";
-import onlineMobileView from "../assets/img/HO_roadmap_mobile_view_online.png";
+import offlineDesktopView from "../assets/img/offline_web.png";
+import offlineMobileView from "../assets/img/offline_mobile.png";
+import onlineDesktopView from "../assets/img/online_web.png";
+import onlineMobileView from "../assets/img/online_mobile.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import { useEffect, useRef, useState } from "react";
 import { Stack } from "@mui/material";
-// import gapi from "gapi-script";
 
 export const Schedule = () => {
   const [path, setPath] = useState("offline");
@@ -79,7 +78,9 @@ export const Schedule = () => {
       </div>
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
-          <h1 className="text-center">Key Dates</h1>
+          <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+            Key Dates
+          </h1>
           <div
             className="col"
             style={{
@@ -88,10 +89,10 @@ export const Schedule = () => {
               justifyContent: "center",
             }}
           >
-            <div className={`${classes.keyDatesCards} mt-4`}>
+            <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div className="col-5" style={{ padding: "2rem" }}>
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>10th</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>18th</h1>
                   <h3 style={{ fontSize: "25px" }}>February</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
@@ -109,10 +110,10 @@ export const Schedule = () => {
               justifyContent: "center",
             }}
           >
-            <div className={`${classes.keyDatesCards} mt-4`}>
+            <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div className="col-5" style={{ padding: "2rem" }}>
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>15th</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>10th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
@@ -132,10 +133,10 @@ export const Schedule = () => {
               justifyContent: "center",
             }}
           >
-            <div className={`${classes.keyDatesCards} mt-4`}>
+            <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div className="col-5" style={{ padding: "2rem" }}>
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>17th</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>16th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
@@ -156,10 +157,10 @@ export const Schedule = () => {
               justifyContent: "center",
             }}
           >
-            <div className={`${classes.keyDatesCards} mt-4`}>
+            <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div className="col-5" style={{ padding: "2rem" }}>
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>19th</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>18th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>

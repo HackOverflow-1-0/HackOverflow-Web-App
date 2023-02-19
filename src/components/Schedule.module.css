@@ -1,69 +1,72 @@
 #schedule {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 20px 0;
 }
 
 .pathSelectors button {
-
-    font-weight: 700;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 24px;
-    font-size: 18px;
-    margin-left: 18px;
-    position: relative;
-    background-color: transparent;
-    transition: 0.3s ease-in-out;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 24px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
 
 .pathSelectors button span {
-    z-index: 1;
+  z-index: 1;
 }
 
 .pathSelectors button::before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    background-color: #fff;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
 }
 
 .pathSelectors button:hover {
-    color: #121212;
+  color: #121212;
 }
 
 .pathSelectors button:hover::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-
-
 
 .keyDatesCards {
-    border-radius: 10px;
-    background: #121212;
-    box-shadow: 10px 10px 25px #000000;
-    display: block;
-    width: 560px;
-    height: 230px;
+  border-radius: 10px;
+
+  background: #121212;
+  box-shadow: #ab367c 0px 20px 20px, #967fd6b3 0px -12px 30px,
+    #ab367c 0px 4px 6px, #967fd6b3 0px 12px 13px, #ab367c 0px -3px 5px;
+
+  display: block;
+  width: 560px;
+  height: 230px;
 }
 
+/* .keyDatesCards::after {
+  background: linear-gradient(107deg, #ab367c 16.1%, #967fd6b3 54.35%);
+} */
+
 @media only screen and (max-width: 600px) {
+  .schedule {
+    height: inherit;
+  }
 
-    .schedule {
-        height: inherit;
-    }
-
-    .pathButton1,
-    .pathButton2 {
-        font-size: 1.2rem;
-    }
+  .pathButton1,
+  .pathButton2 {
+    font-size: 1.2rem;
+  }
 }
