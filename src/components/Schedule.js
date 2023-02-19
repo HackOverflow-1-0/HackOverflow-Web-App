@@ -8,7 +8,7 @@ import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import { useEffect, useRef, useState } from "react";
 import { Stack } from "@mui/material";
-import gapi from "gapi-script";
+// import gapi from "gapi-script";
 
 export const Schedule = () => {
   const [path, setPath] = useState("offline");

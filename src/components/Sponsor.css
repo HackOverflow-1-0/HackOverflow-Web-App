@@ -1,0 +1,138 @@
+.CotentRow {
+  margin-top: 0px;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid #555;
+  border-bottom: 25px solid transparent;
+}
+
+.spon_head {
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-size: 20px;
+  background: linear-gradient(
+    107deg,
+    #aa367c 16.1%,
+    rgba(150, 127, 214, 0.7) 54.35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.spon_p {
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-size: 10px;
+  background: linear-gradient(
+    107deg,
+    #aa367c 16.1%,
+    rgba(150, 127, 214, 0.7) 54.35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.spon_us {
+  width: 23rem;
+  height: 12rem;
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  border-radius: 20px;
+  margin: auto;
+  background: url("/src/assets/img/SPIN.png") 105% 120% / 20% no-repeat
+    transparent;
+  padding: 3rem 6rem 3rem 5rem;
+  background-repeat: no-repeat;
+  background-position: 105% 120%;
+}
+
+.spon_right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+}
+
+.boxx {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.boxx a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  transition: 0.2s ease-in-out;
+}
+
+.spon_coll:hover {
+  background: #320549;
+}
+
+.spon_coll {
+  transition: 0.3s ease;
+  font-family: "Helvetica";
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  gap: 15px;
+  letter-spacing: 1px;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  /* font-size: 1.8rem; */
+}
+
+/* .linkClass{
+  font-size: 8px;
+} */
+
+@media only screen and (max-width: 767.5px) {
+  .spon_us {
+    padding: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .CotentRow {
+    margin-top: 2rem;
+  }
+  .spon_us {
+    width: 71rem;
+    height: 27rem;
+  }
+  .spon_head {
+    font-size: 70px;
+  }
+  .spon_p{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .spon_coll {
+    font-size: 2px;
+  }
+  .spon_us {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
