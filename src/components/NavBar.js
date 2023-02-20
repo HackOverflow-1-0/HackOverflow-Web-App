@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/hack-overflow-logo.png";
-import { HashLink } from "react-router-hash-link";
 import ProgressBar from "./progressBar/ProgressBar";
-import MobileNavbar from "./MobileNavbar/MobileNavbar";
+// import MobileNavbar from "./MobileNavbar/MobileNavbar";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -82,18 +81,12 @@ export const NavBar = () => {
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
-              {/* <div className="social-icon">
-              <a href="#">
-                <img src={navIcon3} alt="" />
-              </a>
-            </div> */}
-
-              <button className="vvd">
+              <button>
                 <span>
                   <a
+                    rel="noreferrer"
                     href="https://phcet.tech/brochure"
                     target="_blank"
-                    style={{ textDecoration: "none", color: "white" }}
                   >
                     Brochure
                   </a>

@@ -200,7 +200,7 @@ span.navbar-text {
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #250404;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -222,8 +222,9 @@ span.navbar-text {
 }
 
 .navbar-text button {
+  border-radius: 50px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
@@ -233,11 +234,23 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 
+
 .navbar-text button span {
   z-index: 1;
 }
 
+.navbar-text button span a {
+  color: #fbf5f9;
+  text-decoration: none;
+}
+
+.navbar-text button span a:hover {
+  color: #660A99;
+  text-decoration: none;
+}
+
 .navbar-text button::before {
+  border-radius: 50px;
   content: "";
   width: 0%;
   height: 100%;
@@ -247,13 +260,17 @@ span.navbar-text {
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  color: #660A99;
 }
 
 .navbar-text button:hover {
-  color: #121212;
+  color: #660A99;
 }
 
 .navbar-text button:hover::before {
+  border: 3px solid #660A99;
+  border-radius: 50px;
+  color: #660A99;
   content: "";
   width: 100%;
   height: 100%;

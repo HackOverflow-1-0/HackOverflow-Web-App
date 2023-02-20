@@ -37,7 +37,7 @@ export const Sponsors = () => {
                 <p className="spon_p"></p>
                 <div className="boxx">
                   <a href="https://phcet.tech/brochure" target="_blank" rel="noreferrer"><div className="spon_coll"><span className="text-[9px] md:text-[22px]">Brochure</span></div></a>
-                  <a href="#" target="_blank" rel="noreferrer"><div className="spon_coll mt-4"><nowrap><span className="text-[9px] md:text-[22px]">Fill the form</span></nowrap></div></a>
+                  <a href="https://phcet.tech/sponsors" target="_blank" rel="noreferrer"><div className="spon_coll mt-4"><nowrap><span className="text-[9px] md:text-[22px]">Fill the form</span></nowrap></div></a>
                 </div>
               </div>
             </div>
