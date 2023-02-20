@@ -3,15 +3,21 @@
   /* border-radius: 15px; */
   overflow: hidden;
   transition: 0.3s ease-in-out;
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 2);
+  /* box-shadow: 2px 3px 10px rgba(0, 0, 0, 2); */
+  box-shadow: rgb(48, 3, 54) 0px 4px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .mediumcard:hover {
   transition: 0.3s ease-in-out;
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.7);
+  /* box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.7); */
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
 }
 .mediumcard img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-position: center;
   background-size: cover;
 }
