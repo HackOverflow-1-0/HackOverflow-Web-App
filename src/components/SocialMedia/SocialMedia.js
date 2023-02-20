@@ -16,8 +16,9 @@ const SocialMedia = () => {
           <ul className="socialmedia-link">
             <li className="my-4">
               <a
+                rel="noreferrer"
                 target="_blank"
-                href="https://www.instagram.com/hackoverflow.tech/"
+                href="https://phcet.tech/insta"
               >
                 <svg
                   fill="#eee"
@@ -31,7 +32,7 @@ const SocialMedia = () => {
               </a>
             </li>
             <li className="my-4">
-              <a target="_blank" href="https://github.com/HackOverflow-1-0">
+              <a target="_blank" href="https://phcet.tech/github" rel="noreferrer">
                 <svg
                   fill="#eee"
                   width="28"
@@ -44,7 +45,7 @@ const SocialMedia = () => {
               </a>
             </li>
             <li className="my-4">
-              <a target="_blank" href="https://twitter.com/HackOverflow_">
+              <a target="_blank" href="https://phcet.tech/twitter" rel="noreferrer">
                 <svg
                   fill="#eee"
                   width="28"
@@ -57,7 +58,7 @@ const SocialMedia = () => {
               </a>
             </li>
             <li className="my-4">
-              <a target="_blank" href="#">
+              <a target="_blank" href="https://phcet.tech/linkedin" rel="noreferrer">
                 <svg
                   fill="#eee"
                   width="28"
