@@ -24,7 +24,7 @@ export const Sponsors = () => {
   }, []);
   return (
     <>
-      <section className="container sm:my-5 p-5">
+      <section className="sm:my-5 p-2 px-2">
         <div className="row pt-5">
           <div className="col-md-10 col-12 spon_us mb-5">
             <div className="row CotentRow">
