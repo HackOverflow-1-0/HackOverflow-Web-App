@@ -35,6 +35,8 @@ export const Banner = () => {
                 HackOverflow 1.0
               </text>
             </svg>
+            {/* <h1 className="banner-title">HackOverflow</h1> */}
+
             <div className="orgText">
               Organized by <span>Computer department of PHCET</span>
             </div>

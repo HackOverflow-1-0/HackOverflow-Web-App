@@ -1,5 +1,19 @@
 .banner {
-  background-image: linear-gradient(to bottom, #aa367c, #aa458f, #a953a1, #a560b3, #a06ec3, #8f6bb8, #7f67ac, #7062a0, #564d79, #3d3955, #272532, #121212);
+  background-image: linear-gradient(
+    to bottom,
+    #aa367c,
+    #aa458f,
+    #a953a1,
+    #a560b3,
+    #a06ec3,
+    #8f6bb8,
+    #7f67ac,
+    #7062a0,
+    #564d79,
+    #3d3955,
+    #272532,
+    #121212
+  );
 }
 
 .bannerWrap {
@@ -31,6 +45,16 @@
   border-radius: 5px;
   background-color: white;
   /* background-color: white; */
+}
+.banner-title {
+  font-family: "Helvetica Bold";
+  font-style: normal;
+  font-size: 170px;
+
+  background: linear-gradient(360deg, #aa367c 73.08%, #967fd6 27.42%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 #title-animation text {
