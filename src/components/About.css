@@ -1,52 +1,71 @@
 #about {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-#about-us-text {
-    margin-bottom: 0.5rem;
-    font-family: "Helvetica Bold";
+.about-us-p {
+  font-family: "Helvetica";
+  font-size: "1.2rem";
+  margin: "0";
 }
 
 .maps-card {
-    border-radius: 10px;
-    height: 250px;
-    width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  width: 100%;
 }
 
 .maps-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .open-maps {
-    font-weight: 700;
-    color: #000;
-    background-color: #fff;
-    padding: 14px 48px;
-    font-size: 18px;
-    margin-top: 25px;
-    border-radius: 0;
-    position: relative;
-    transition: 0.3s ease-in-out;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
 }
 
 .open-maps :hover {
-    color: #fff;
+  color: #fff;
 }
 
 .open-maps ::before {
-    content: "";
-    background: #121212;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    transition: 0.3s ease-in-out;
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .open-maps :hover::before {
-    width: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .clg-desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .about-us-h2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+  }
+  .about-us-p {
+    text-align: justify;
+  }
+  .clg-map h2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+  }
 }

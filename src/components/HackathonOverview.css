@@ -1,60 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 #hackathon-overview-section {
-    background: #121212;
-    padding: 0 0 50px 0;
-    position: relative;
-    margin-top: 6%;
-    margin-bottom: 6%;
+  background: #121212;
+  padding: 0 0 50px 0;
+  position: relative;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .counters {
-    font-size: 28px;
+  font-size: 28px;
 }
 
-
-
 .overview-box {
-    background: black;
-    text-align: center;
-    padding: 60px 50px;
+  background: black;
+  text-align: center;
+  padding: 60px 50px;
 
-    box-shadow: 10px 10px 25px #4A2FBD;
-    border-radius: 50px;
+  box-shadow: 10px 10px 25px #4a2fbd;
+  border-radius: 50px;
 }
 
 .overview-box p {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .hackathon-stroke {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .counters-div iframe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
-    .schedule {
-        height: inherit;
-    }
+  #hackathon-overview-section {
+    margin: 20px auto 20px auto;
+  }
+  .hackathon-overview-text {
+    text-align: justify;
+  }
+  .schedule {
+    height: inherit;
+  }
 
-    .overview-box p {
-        font-size: 25px
-    }
+  .overview-box p {
+    font-size: 25px;
+  }
 
-    .counters {
-        font-size: 25px;
-    }
+  .counters {
+    font-size: 25px;
+  }
 
-    .overview-box {
-        height: inherit;
-    }
+  .overview-box {
+    height: inherit;
+  }
 }
