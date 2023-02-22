@@ -1,4 +1,4 @@
-.banner {
+/* .banner {
   background-image: linear-gradient(
     to bottom,
     #aa367c,
@@ -14,7 +14,14 @@
     #272532,
     #121212
   );
-}
+} */
+
+/* .banner {
+  -webkit-box-shadow: 4px 37px 58px 9px rgba(64, 29, 93, 1);
+  -moz-box-shadow: 4px 37px 58px 9px rgba(64, 29, 93, 1);
+  box-shadow: 4px 37px 58px 9px rgba(64, 29, 93, 1); 
+
+} */
 
 .bannerWrap {
   display: flex;
@@ -49,7 +56,7 @@
 .banner-title {
   font-family: "Helvetica Bold";
   font-style: normal;
-  font-size: 170px;
+  /* font-size: 170px; */
 
   background: linear-gradient(360deg, #aa367c 73.08%, #967fd6 27.42%);
   -webkit-background-clip: text;

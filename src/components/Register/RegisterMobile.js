@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import "./RegisterMobile.css";
 const RegisterMobile = () => {
   return (
-    <div className="container text-center">
+    <div className="container text-center my-5">
       <h1 className="register-h1 my-3">Register Now</h1>
       <div className="row">
         <div className="col">

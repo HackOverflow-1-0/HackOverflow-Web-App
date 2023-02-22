@@ -30,9 +30,10 @@ const About = () => {
       <section id="about">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-sm-12">
-              <h2>About PHCET</h2>
+            <div className="col-lg-6 col-sm-12 clg-desc">
+              <h2 className="about-us-h2">About PHCET</h2>
               <p
+                className="about-us-p"
                 style={{
                   fontFamily: "Helvetica",
                   fontSize: "1.2rem",
@@ -50,7 +51,7 @@ const About = () => {
                 and nurturing environment for students.
               </p>
             </div>
-            <div className="col-lg-6 col-sm-12">
+            <div className="col-lg-6 col-sm-12 clg-map">
               <h2>How to reach..</h2>
               <p>
                 <div className="maps-card" id="map" ref={mapElement} />

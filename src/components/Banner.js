@@ -5,6 +5,8 @@ import TrackVisibility from "react-on-screen";
 import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
 import SocialMedia from "./SocialMedia/SocialMedia";
+import BannerText from "./BannerText/BannerText";
+import NotificationBox from "./NotificationBox/NotificationBox";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./Banner.css";
@@ -25,53 +27,57 @@ export const Banner = () => {
   const date = new Date("2023-03-17");
   const toggleText = tickerVisible ? "Hide Countdown" : "Show Countdown";
   return (
-    <section className="section banner" id="home" style={{ postion: "" }}>
-      <div className="container">
-        <div className="bannerWrap">
-          <div className="welcometoText">Welcome to</div>
-          <div className="middleTitle">
-            <svg viewBox="0 0 1320 230" id="title-animation">
+    <Background>
+      <section className="section banner" id="home">
+        <div className="container">
+          <div className="bannerWrap">
+            <div className="welcometoText">Welcome to</div>
+            <div className="middleTitle">
+              {/* <svg viewBox="0 0 1320 230" id="title-animation">
               <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                 HackOverflow 1.0
               </text>
-            </svg>
-            {/* <h1 className="banner-title">HackOverflow</h1> */}
-
-            <div className="orgText">
-              Organized by <span>Computer department of PHCET</span>
+            </svg> */}
+              {/* <h1 className="banner-title">HackOverflow</h1> */}
+              <BannerText />
+              <div className="orgText">
+                Organized by <span>Computer department of PHCET</span>
+              </div>
             </div>
-          </div>
-          <div className="slogan" style={{ fontFamily: "Helvetica" }}>
-            Think. Code. Innovate.
+            <div className="slogan" style={{ fontFamily: "Helvetica" }}>
+              Think. Code. Innovate.
+            </div>
+
+            {/* <NotificationBox /> */}
           </div>
         </div>
-      </div>
-      <div className="countDownContainer">
-        <FlipClockCountdown
-          to={date}
-          labelStyle={{
-            fontFamily: "Helvetica",
-            textTransform: "uppercase",
-            paddingTop: "5px",
-            fontWeight: 500,
-            fontSize: width > 400 ? "24px" : "12px",
-          }}
-          digitBlockStyle={{
-            width: width > 400 ? 50 : 30,
-            height: width > 400 ? 60 : 40,
-            fontSize: width > 400 ? "40px" : "25px",
-            fontFamily: "Helvetica",
-            backgroundColor: "purple",
-          }}
-        />
-      </div>
-      <div className="socialMedia">
-        <SocialMedia />
-      </div>
-      <div className="socialMain">
-        <ScrollDown />
-      </div>
-    </section>
+        <div className="countDownContainer">
+          <FlipClockCountdown
+            to={date}
+            labelStyle={{
+              fontFamily: "Helvetica",
+              textTransform: "uppercase",
+              paddingTop: "5px",
+              fontWeight: 500,
+              fontSize: width > 400 ? "24px" : "12px",
+            }}
+            digitBlockStyle={{
+              width: width > 400 ? 50 : 30,
+              height: width > 400 ? 60 : 40,
+              fontSize: width > 400 ? "40px" : "25px",
+              fontFamily: "Helvetica",
+              backgroundColor: "purple",
+            }}
+          />
+        </div>
+        <div className="socialMedia">
+          <SocialMedia />
+        </div>
+        <div className="socialMain">
+          <ScrollDown />
+        </div>
+      </section>
+    </Background>
   );
 };
 

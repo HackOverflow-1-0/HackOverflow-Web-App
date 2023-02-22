@@ -1,4 +1,5 @@
-import backgroundVideo from "../assets/img/websiteback.mp4";
+import backgroundVideo from "../assets/img/vid2.mp4";
+import "./Background.css";
 const Background = (props) => {
   return (
     <>
@@ -6,12 +7,14 @@ const Background = (props) => {
         autoPlay
         loop
         muted
-        className="relative"
-        // style={{ postion: "realtive", objectFit: "cover", zIndex: "-1" }}
+        className="relative bg-video"
+        style={{ objectFit: "cover" }}
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
-      <div className="absolute top-0 left-0 right-0">{props.children}</div>
+      <div className="absolute top-0 left-0 right-0 background-video">
+        {props.children}
+      </div>
     </>
   );
 };

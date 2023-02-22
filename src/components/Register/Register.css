@@ -1,43 +1,53 @@
+/* .register {
+  background-image: linear-gradient(
+    to bottom,
+    #401d5d,
+    #301d4b,
+    #241b39,
+    #1a1726,
+    #121212
+  );
+} */
 .register-h1 {
-    font-family: "Helvetica Bold";
-    margin-top: 30px;
+  font-family: "Helvetica Bold";
+  padding-top: 30px;
 }
 
 .online-registerations,
 .offline-registerations {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .online-tag {
-    font-family: "Helvetica Bold";
-    transform: translate(470px, 0px);
-    color: #967fd6;
+  font-family: "Helvetica Bold";
+  transform: translate(470px, 0px);
+  color: #967fd6;
 }
 
 .offline-tag {
-    font-family: "Helvetica Bold";
-    color: #aa367c;
-    transform: translate(90px, 0px);
+  font-family: "Helvetica Bold";
+  color: #aa367c;
+  transform: translate(90px, 0px);
 }
 
 #arrow-left {
-    transform: translate(140px, -150px);
-    height: 500px;
-    width: 500px;
+  transform: translate(140px, -150px);
+  height: 500px;
+  width: 500px;
 }
 
 #arrow-right {
-    transform: translate(-60px, -90px);
-    height: 460px;
-    width: 460px;
+  transform: translate(-60px, -90px);
+  height: 460px;
+  width: 460px;
 }
 
 .dev-folio {
-    transform: translate(100px, -250px);
+  transform: translate(100px, -250px);
 }
 
 .offline-register-btn {
-    transform: translate(330px, -200px);
+  transform: translate(330px, -200px);
 }
 
 /* @media only screen and (max-width: 1270px) {

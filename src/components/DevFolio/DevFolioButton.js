@@ -15,7 +15,7 @@ const DevFolioButton = () => {
       <div
         className="apply-button"
         data-hackathon-slug="phcet"
-        data-button-theme="light"
+        data-button-theme="dark"
       ></div>
     </>
   );
