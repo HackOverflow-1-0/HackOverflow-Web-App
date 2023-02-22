@@ -1,4 +1,4 @@
-import backgroundVideo from "../assets/img/vid2.mp4";
+import backgroundVideo from "../assets/img/PHCET.mp4";
 import "./Background.css";
 const Background = (props) => {
   return (
