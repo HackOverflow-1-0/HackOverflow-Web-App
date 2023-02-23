@@ -4,3 +4,11 @@
     height: 900px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) {
+  video {
+    transform: translateX(-420px);
+    height: 876px;
+    transform: translateX(-590px);
+  }
+}
