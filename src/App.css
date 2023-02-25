@@ -223,7 +223,6 @@ span.navbar-text {
 }
 
 .navbar-text button {
-  border-radius: 50px;
   font-weight: 700;
   /* color: #fff; */
   border: 1px solid #fff;
@@ -250,7 +249,6 @@ span.navbar-text {
 }
 
 .navbar-text button::before {
-  border-radius: 50px;
   content: "";
   width: 0%;
   height: 100%;
@@ -269,7 +267,6 @@ span.navbar-text {
 
 .navbar-text button:hover::before {
   border: 3px solid #660a99;
-  border-radius: 50px;
   color: #660a99;
   content: "";
   width: 100%;

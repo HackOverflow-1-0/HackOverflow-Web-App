@@ -1,0 +1,19 @@
+/* .preloader {
+  height: 50rem;
+  background: rgb(10, 44, 179);
+} */
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1536px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .video {
+      transform: translateX(-570px);
+      height: 900px;
+    }
+  }

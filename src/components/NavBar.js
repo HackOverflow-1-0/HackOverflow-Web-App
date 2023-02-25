@@ -85,7 +85,7 @@ export const NavBar = () => {
                 <span>
                   <a
                     rel="noreferrer"
-                    href="https://phcet.tech/brochure"
+                    href="https://phcet.tech/pdf"
                     target="_blank"
                   >
                     Brochure

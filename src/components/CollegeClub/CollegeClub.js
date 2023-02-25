@@ -9,6 +9,16 @@ import image4 from "../../assets/img/college-club-events/image4.jpg";
 import image5 from "../../assets/img/college-club-events/image5.jpg";
 import image6 from "../../assets/img/college-club-events/image6.jpg";
 import image7 from "../../assets/img/college-club-events/image7.jpg";
+// import image8 from "../../assets/img/college-club-events/image8.jpg";
+import image9 from "../../assets/img/college-club-events/image9.jpg";
+import image10 from "../../assets/img/college-club-events/image10.jpg";
+import image11 from "../../assets/img/college-club-events/image11.jpg";
+import image12 from "../../assets/img/college-club-events/image12.jpg";
+// import image13 from "../../assets/img/college-club-events/image13.jpg";
+import image14 from "../../assets/img/college-club-events/image14.png";
+import image15 from "../../assets/img/college-club-events/image15.png";
+import image16 from "../../assets/img/college-club-events/image16.png";
+
 
 
 import "./CollegeClub.css";
@@ -21,15 +31,22 @@ const CollegeClub = () => {
         <div className="relative topContainer">
           <div class="absolute h-[4px] bg-[#7b1072] w-24" />
           <h1
-            className="text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
+            className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
             style={{ fontFamily: "Helvetica Bold" }}
           >
             Glimpses of PHCET <br />
             Club Events
           </h1>
-          <div className="Description">
+          <div className="Description mt-4 md:mt-2">
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Carousel className="border-white">
+              <Carousel interval={2000} className="border-white">
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image16}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
@@ -79,6 +96,63 @@ const CollegeClub = () => {
                     alt="Second slide"
                   />
                 </Carousel.Item>
+                {/* <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image8}
+                    alt="Second slide"
+                  />
+                </Carousel.Item> */}
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image9}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image10}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image11}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image12}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                {/* <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image13}
+                    alt="Second slide"
+                  />
+                </Carousel.Item> */}
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image14}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="Image9"
+                    src={image15}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+
               </Carousel>
             </div>
           </div>
