@@ -1,6 +1,7 @@
 .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../assets/img/hackathon.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/img/hackathon.jpg"); */
+  background: transparent;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 5.28rem !important;
@@ -10,12 +11,27 @@
   /* display: flex;
   flex-direction: column;
   align-items: flex-start; */
-  background: rgba(15, 15, 15, 0.65);
+  /* background: rgba(15, 15, 15, 0.65); */
+  background: transparent;
 }
 
 .Description {
-  border: 4px solid #fff;
+  border-radius: 23px;
+  /* box-shadow: rgb(202, 28, 225) 0px 4px 10px; */
+  box-shadow: rgb(202, 28, 225) 0px 4px 20px;
   width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.Carousel.Item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Image9 {
+  width: 76rem;
 }
 
 .carousel-indicators {
@@ -64,8 +80,10 @@
 }
 @media screen and (orientation: landscape) {
   .top {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../../assets/img/hackathon.jpg");
+    background: transparent;
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/hackathon.jpg"); */
   }
   .top .topContainer {
     padding: 5vw 6.25vw;
@@ -83,8 +101,10 @@
 }
 @media screen and (min-width: 43.75rem) {
   .top {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../../assets/img/hackathon.jpg");
+    background: transparent;
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/hackathon.jpg"); */
   }
   .top h1 {
     margin-bottom: 7.5%;
@@ -99,8 +119,9 @@
 }
 @media screen and (min-width: 43.75rem) and (orientation: landscape) {
   .top {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../../assets/img/hackathon.jpg");
+    background: transparent;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/img/hackathon.jpg"); */
     padding: 0;
   }
   .top .topContainer {
@@ -117,5 +138,11 @@
     display: inline-block;
     width: 3.5rem;
     height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Description {
+    border-radius: 15px;
   }
 }

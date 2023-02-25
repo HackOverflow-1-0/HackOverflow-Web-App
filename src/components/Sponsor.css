@@ -127,7 +127,7 @@
   .spon_head {
     font-size: 70px;
   }
-  .spon_p{
+  .spon_p {
     font-size: 20px;
   }
 }
@@ -138,5 +138,43 @@
   }
   .spon_us {
     padding: 2rem 1rem 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 393px) {
+  .boxx {
+    margin-bottom: 0rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .boxx {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .spon_us {
+    width: 46rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .spon_us {
+    width: 61rem;
+    padding: 3rem 5rem 3rem 5rem;
+  }
+  .boxx {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .spon_us {
+    width: 71rem;
+    padding: 3rem 5rem 2rem 3rem;
+  }
+  .boxx {
+    margin-bottom: 0rem;
   }
 }

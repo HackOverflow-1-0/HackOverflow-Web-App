@@ -82,7 +82,7 @@ export const Sponsors = () => {
               Gold Sponsor
             </h1>
           </div>
-          <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-6">
+          <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-3 xl:gap-6">
             <GoldSponsorCard
               weblink={'https://replit.com/'}
               image={replitWhite}
