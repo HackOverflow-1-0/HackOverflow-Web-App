@@ -12,7 +12,7 @@ const SocialMedia = () => {
     <>
       <div className="" style={{ height: "296px", width: "28px" }} data-aos="fade-down" data-aos-delay="1000" data-aos-easing="ease-in-out">
         <div className="w-4 flex flex-col items-center justify-start socialmedia">
-          <div class="w-[4px] bg-[#1E1E26] h-12" />
+          <div class="w-[4px] bg-[#aa367c] h-12 Linefit" />
           <ul className="socialmedia-link">
             <li className="my-4">
               <a

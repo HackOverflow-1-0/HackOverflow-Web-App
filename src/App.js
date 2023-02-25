@@ -16,7 +16,7 @@ import CollegeClub from "./components/CollegeClub/CollegeClub";
 import AppFeature from "./components/AppFeature/AppFeature";
 import Register from "./components/Register/Register";
 import RegisterMobile from "./components/Register/RegisterMobile";
-import { PreLoader } from "./components/PreLoader/PreLoader";
+import PreLoader from "./components/PreLoader/PreLoader";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -33,10 +33,20 @@ function App() {
     };
   });
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 13000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <Fragment>
-      {/* <PreLoader /> */}
+    <>  {isLoading ? <PreLoader /> : <Fragment>
+      {/* <Suspense fallback={<PreLoader />}> */}
       <NavBar />
+      {/* </Suspense> */}
       <Banner />
       {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
       <HackathonOverview />
@@ -50,7 +60,7 @@ function App() {
       <CollegeClub />
       <Footer />
       {windowSize[0] < 600 && <MobileNavbar />}
-    </Fragment>
+    </Fragment>}</>
   );
 }
 
