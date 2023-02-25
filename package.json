@@ -39,6 +39,7 @@
     "react-ga": "^3.3.1",
     "react-multi-carousel": "^2.8.1",
     "react-on-screen": "^2.1.1",
+    "react-preloaders": "^3.0.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.7.0",
     "react-router-dom": "^6.7.0",

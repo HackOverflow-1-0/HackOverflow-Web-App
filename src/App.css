@@ -1,20 +1,9 @@
 @font-face {
-  font-family: Fira Code Bold;
-  src: url("./assets/font/FiraCode-Bold.ttf");
+  font-family: Blanka Regular;
+  src: url("./assets/font/Blanka-Regular.otf");
   font-weight: 700;
 }
 
-@font-face {
-  font-family: Fira Code Medium;
-  src: url("./assets/font/FiraCode-Medium.ttf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Fira Code;
-  src: url("./assets/font/FiraCode-Regular.ttf");
-  font-weight: 400;
-}
 
 @font-face {
   font-family: Helvetica;
@@ -30,11 +19,13 @@
   font-family: Helvetica Light;
   src: url("./assets/font//helvetica-light-587ebe5a59211.ttf");
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -53,8 +44,8 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  /* font-family: "Helvetica", sans-serif !important; */
-  font-family: "Fira Code";
+  font-family: "Helvetica", sans-serif !important;
+
 }
 
 html,
@@ -218,8 +209,7 @@ span.navbar-text {
 }
 
 .social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .navbar-text button {
@@ -410,7 +400,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.txt-rotate > .wrap {
+.txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
 

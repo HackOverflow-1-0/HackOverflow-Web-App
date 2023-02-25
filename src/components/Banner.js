@@ -36,6 +36,7 @@ export const Banner = () => {
               {/* <svg viewBox="0 0 1320 230" id="title-animation">
               <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                 HackOverflow 1.0
+
               </text>
             </svg> */}
               {/* <h1 className="banner-title">HackOverflow</h1> */}
