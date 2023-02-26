@@ -1,12 +1,13 @@
 import React from "react";
+import logo from "../assets/img/hack-overflow-logo.png";
 
 import "./Footer.css";
 import {
   Facebook,
-  InsertPageBreakOutlined,
+  GitHub,
+  Instagram,
   LinkedIn,
   Twitter,
-  YouTube,
 } from "@mui/icons-material";
 
 const Footer = () => {
@@ -14,36 +15,32 @@ const Footer = () => {
     <footer className="footer">
       <div className="footerContainer">
         <div>
+          <div className="footer-logo">
+            <img src={logo} />
+          </div>
           <p>Follow us on:</p>
           <p>
-            <a href=" " target="_blank">
-              <InsertPageBreakOutlined
-                className="icons instagram"
-                fontSize="large"
-              />
+            <a href="https://phcet.tech/insta" target="_blank">
+              <Instagram className="icons instagram" fontSize="large" />
             </a>
-            <a href=" " target="_blank">
-              <YouTube className="icons youtube" fontSize="large" />
+
+            <a href="https://phcet.tech/github" target="_blank">
+              <GitHub className="icons twitter" fontSize="large" />
             </a>
-            <a href=" " target="_blank">
-              <Facebook className="icons linkedin" fontSize="large" />
-            </a>
-            <a href=" " target="_blank">
-              <Twitter className="icons twitter" fontSize="large" />
-            </a>
-            <a href=" " target="_blank">
+            <a href="https://phcet.tech/linkedin" target="_blank">
               <LinkedIn className="icons linkedin" fontSize="large" />
+            </a>
+            <a href="https://phcet.tech/twitter" target="_blank">
+              <Twitter className="icons linkedin" fontSize="large" />
             </a>
           </p>
         </div>
         <div>
           <p>© 2023 HackOverflow 1.0</p>
-          <p>
+          {/* <p>
             {" "}
-            <a href="mailto:hackathon@phcet.tech">
-              Email: hackathon@phcet.tech
-            </a>
-          </p>
+            <a href="mailto:hackathon@phcet.tech">hackathon@phcet.tech</a>
+          </p> */}
         </div>
       </div>
     </footer>
