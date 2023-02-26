@@ -19,8 +19,6 @@ import image14 from "../../assets/img/college-club-events/image14.png";
 import image15 from "../../assets/img/college-club-events/image15.png";
 import image16 from "../../assets/img/college-club-events/image16.png";
 
-
-
 import "./CollegeClub.css";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -29,7 +27,7 @@ const CollegeClub = () => {
     <>
       <section className="top">
         <div className="relative topContainer">
-          <div class="absolute h-[4px] bg-[#7b1072] w-24" />
+          {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
           <h1
             className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
             style={{ fontFamily: "Helvetica Bold" }}
@@ -41,11 +39,7 @@ const CollegeClub = () => {
             <div style={{ display: "flex", justifyContent: "center" }}>
               <Carousel interval={2000} className="border-white">
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image16}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image16} alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -104,32 +98,16 @@ const CollegeClub = () => {
                   />
                 </Carousel.Item> */}
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image9}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image9} alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image10}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image10} alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image11}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image11} alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image12}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image12} alt="Second slide" />
                 </Carousel.Item>
                 {/* <Carousel.Item>
                   <img
@@ -139,20 +117,11 @@ const CollegeClub = () => {
                   />
                 </Carousel.Item> */}
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image14}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image14} alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-                    className="Image9"
-                    src={image15}
-                    alt="Second slide"
-                  />
+                  <img className="Image9" src={image15} alt="Second slide" />
                 </Carousel.Item>
-
               </Carousel>
             </div>
           </div>

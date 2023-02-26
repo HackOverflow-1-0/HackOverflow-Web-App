@@ -43,24 +43,32 @@ function App() {
   }, []);
 
   return (
-    <>  {isLoading ? <PreLoader /> : <Fragment>
-      {/* <Suspense fallback={<PreLoader />}> */}
-      <NavBar />
-      {/* </Suspense> */}
-      <Banner />
-      {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
-      <HackathonOverview />
-      <Prizes />
-      <Schedule />
-      <Themes />
-      <AppFeature />
-      <Sponsors />
-      <FAQ />
-      <About />
-      <CollegeClub />
-      <Footer />
-      {windowSize[0] < 600 && <MobileNavbar />}
-    </Fragment>}</>
+    <>
+      {" "}
+      {isLoading && windowSize[0] > 728 ? (
+        <PreLoader />
+      ) : (
+        <Fragment>
+          {/* <Suspense fallback={<PreLoader />}> */}
+          <NavBar />
+          {/* </Suspense> */}
+          <Banner />
+          {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
+          <HackathonOverview />
+          <Prizes />
+          <Schedule />
+          <Themes />
+          <AppFeature />
+          <Sponsors />
+          <FAQ />
+          <About />
+          <CollegeClub />
+
+          <Footer />
+          {windowSize[0] < 600 && <MobileNavbar />}
+        </Fragment>
+      )}
+    </>
   );
 }
 
