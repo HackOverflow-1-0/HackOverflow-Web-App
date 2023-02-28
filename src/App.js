@@ -17,6 +17,8 @@ import AppFeature from "./components/AppFeature/AppFeature";
 import Register from "./components/Register/Register";
 import RegisterMobile from "./components/Register/RegisterMobile";
 import PreLoader from "./components/PreLoader/PreLoader";
+import ScrollToTop from "react-scroll-to-top";
+import InstaFeeds from "./components/InstaDisplay/InstaFeeds"
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -44,14 +46,22 @@ function App() {
 
   return (
     <>
-      {" "}
-      {isLoading && windowSize[0] > 728 ? (
+      {isLoading ? (
         <PreLoader />
       ) : (
+
         <Fragment>
-          {/* <Suspense fallback={<PreLoader />}> */}
+          <ScrollToTop
+            className="scroll-to-top"
+            smooth
+            color="#fff"
+            style={{
+              backgroundColor: '#891A98', borderRadius: '50%', width: '50px',
+              height: '50px',
+              // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
+            }}
+          />
           <NavBar />
-          {/* </Suspense> */}
           <Banner />
           {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
           <HackathonOverview />
@@ -63,7 +73,7 @@ function App() {
           <FAQ />
           <About />
           <CollegeClub />
-
+          <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} />
           <Footer />
           {windowSize[0] < 600 && <MobileNavbar />}
         </Fragment>

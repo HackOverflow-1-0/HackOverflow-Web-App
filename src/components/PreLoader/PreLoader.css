@@ -3,7 +3,7 @@
   background: rgb(10, 44, 179);
 } */
 
-.video {
+.preloadervideo {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .video {
-    transform: translateX(-570px);
+  .preloadervideo {
+    transform: translateX(-580px);
+    /* transform: translateY(-580px); */
+
+  }
+}
+
+@media only screen and (min-width: 293px) {
+  .preloadervideo {
+    width: 1536px;
   }
 }
