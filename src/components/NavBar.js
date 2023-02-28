@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/hack-overflow-logo.png";
+import logo from "../assets/img/HOmain1-purple.png";
 import ProgressBar from "./progressBar/ProgressBar";
 // import MobileNavbar from "./MobileNavbar/MobileNavbar";
 
