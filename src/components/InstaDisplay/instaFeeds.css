@@ -1,0 +1,38 @@
+/* .InstaFeed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 15px;
+} */
+
+.InstaFeed img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 100ms ease-out;
+}
+
+.InstaFeed img:hover {
+  transform: scale(1.04);
+}
+
+.InstaLink {
+  text-decoration: none;
+  background: linear-gradient(
+    107deg,
+    #aa367c 16.1%,
+    rgba(150, 127, 214, 0.7) 54.35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.InstaSvg a svg {
+  transition: 0.2s ease-in-out;
+}
+
+
+.InstaSvg a:hover svg {
+  fill: #891696;
+}

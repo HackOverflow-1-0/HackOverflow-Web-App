@@ -4,7 +4,6 @@
   font-weight: 700;
 }
 
-
 @font-face {
   font-family: Helvetica;
   src: url("./assets/font/Helvetica.ttf");
@@ -45,7 +44,6 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: "Helvetica", sans-serif !important;
-
 }
 
 html,
@@ -93,6 +91,22 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+.scroll-to-top {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: rgb(202, 28, 225) 0px 4px 20px;
+}
+
+.scroll-to-top svg {
+  display: inline-block;
 }
 
 .container {
@@ -209,7 +223,8 @@ span.navbar-text {
 }
 
 .social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .navbar-text button {
@@ -400,7 +415,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.txt-rotate>.wrap {
+.txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
