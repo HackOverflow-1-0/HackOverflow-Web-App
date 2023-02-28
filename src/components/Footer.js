@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/img/hack-overflow-logo.png";
+import logo from "../assets/img/HOmain1-purple.png";
 
 import "./Footer.css";
 import {
