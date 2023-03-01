@@ -18,7 +18,7 @@ import Register from "./components/Register/Register";
 import RegisterMobile from "./components/Register/RegisterMobile";
 import PreLoader from "./components/PreLoader/PreLoader";
 import ScrollToTop from "react-scroll-to-top";
-import InstaFeeds from "./components/InstaDisplay/InstaFeeds"
+import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -46,18 +46,19 @@ function App() {
 
   return (
     <>
-      {isLoading ? (
+      {isLoading && windowSize[0] > 728 ? (
         <PreLoader />
       ) : (
-
         <Fragment>
           <ScrollToTop
             className="scroll-to-top"
             smooth
             color="#fff"
             style={{
-              backgroundColor: '#891A98', borderRadius: '50%', width: '50px',
-              height: '50px',
+              backgroundColor: "#891A98",
+              borderRadius: "50%",
+              width: "50px",
+              height: "50px",
               // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
             }}
           />

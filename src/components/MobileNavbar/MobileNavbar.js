@@ -14,7 +14,7 @@ const MobileNavbar = (props) => {
         setValue(newValue);
       }}
       className="bottom-navbar"
-      style={{ backgroundColor: "#121212" }}
+      style={{ backgroundColor: "#1b1c27" }}
     >
       <Nav.Link href="#home">
         <BottomNavigationAction
