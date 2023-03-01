@@ -48,11 +48,10 @@
   box-shadow: rgb(202, 28, 225) 0px 4px 10px;
   border-radius: 20px;
   margin: auto;
-  background: url("/src/assets/img/SPIN.png") 105% 120% / 20% no-repeat
-    transparent;
+  background: url("/src/assets/img/HO.png") 94% 122% / 42% no-repeat transparent;
   padding: 3rem 6rem 3rem 5rem;
   background-repeat: no-repeat;
-  background-position: 105% 120%;
+  background-position: 106% 120%;
 }
 
 .spon_right {

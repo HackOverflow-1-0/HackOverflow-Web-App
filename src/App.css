@@ -41,7 +41,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #1b1c27 !important;
   color: #fff !important;
   font-family: "Helvetica", sans-serif !important;
 }
@@ -129,7 +129,7 @@ p.danger {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #121212;
+  box-shadow: inset 0 0 5px #1b1c27;
   border-radius: 10px;
 }
 
@@ -157,7 +157,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #1b1c27;
 }
 
 nav.navbar a.navbar-brand {

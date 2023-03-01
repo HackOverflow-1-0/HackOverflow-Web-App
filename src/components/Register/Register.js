@@ -1,5 +1,7 @@
 import "./Register.css";
 import DevFolio from "../DevFolio/DevFolioButton";
+import devfolio from "../../assets/img/dev_folio_btn.png";
+
 import { Button } from "@mui/material";
 
 const Register = () => {
