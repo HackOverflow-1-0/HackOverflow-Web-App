@@ -1,14 +1,14 @@
 import React from 'react';
-import './GoldSponsorCard.css';
+import './GeneralSponsorCard.css';
 
 
-function GoldSponsorCard({ title, image, dataAos, weblink }) {
+function GeneralSponsorCard({ title, image, dataAos, weblink }) {
 
 
     return (
         <div className="flex flex-col items-center justify-center" data-aos={dataAos}>
             <div
-                className={"goldcard"}
+                className={"mediumcard"}
             >
                 <a href={weblink} target="_blank" rel="noreferrer">
                     <img
@@ -22,4 +22,4 @@ function GoldSponsorCard({ title, image, dataAos, weblink }) {
     )
 }
 
-export default GoldSponsorCard;
+export default GeneralSponsorCard;
