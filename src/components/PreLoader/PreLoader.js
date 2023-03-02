@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../../assets/videos/normal2.mp4";
+import video from "../../assets/videos/fast.mp4";
 import "./PreLoader.css";
 
 const PreLoader = () => {

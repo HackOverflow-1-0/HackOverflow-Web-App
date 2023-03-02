@@ -41,32 +41,32 @@ export const Sponsors = () => {
                   WANT TO <br />
                   SPONSOR US
                 </h1>
-                  <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
-                    <a
-                      href="https://phcet.tech/brochure"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <div className="spon_coll">
+                <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
+                  <a
+                    href="https://phcet.tech/brochure"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="spon_coll">
+                      <span className="text-[9px] md:text-[22px]">
+                        Brochure
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://phcet.tech/sponsors"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="spon_coll">
+                      <nowrap>
                         <span className="text-[9px] md:text-[22px]">
-                          Brochure
+                          Fill the form
                         </span>
-                      </div>
-                    </a>
-                    <a
-                      href="https://phcet.tech/sponsors"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <div className="spon_coll">
-                        <nowrap>
-                          <span className="text-[9px] md:text-[22px]">
-                            Fill the form
-                          </span>
-                        </nowrap>
-                      </div>
-                    </a>
-                  </div>
+                      </nowrap>
+                    </div>
+                  </a>
+                </div>
               </div>
 
             </div>
@@ -89,7 +89,7 @@ export const Sponsors = () => {
               Platinum Sponsor
             </h1>
           </div>
-          <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-3 md:gap-10">
+          <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-3 md:gap-10">
             <MediumSponsorsCard
               weblink={"https://devfolio.co/home/"}
               image={devfolioWhite}
@@ -116,7 +116,7 @@ export const Sponsors = () => {
               Gold Sponsor
             </h1>
           </div>
-          <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-3 xl:gap-6">
+          <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-3 xl:gap-6">
             <GoldSponsorCard
               weblink={"https://replit.com/"}
               image={replitWhite}
