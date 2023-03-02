@@ -67,11 +67,14 @@
   text-decoration: none;
   color: white;
   white-space: nowrap;
-  transition: 0.2s ease-in-out;
 }
 
 .spon_coll:hover {
-  background: #320549;
+  background: linear-gradient(
+    107deg,
+    #aa367c 16.1%,
+    rgba(150, 127, 214, 0.7) 54.35%
+  );
 }
 
 .spon_coll {
@@ -91,6 +94,7 @@
   height: fit-content;
   border: 1px solid #fff;
   border-radius: 30px;
+  transition: .5s ease-in-out;
   /* font-size: 1.8rem; */
 }
 

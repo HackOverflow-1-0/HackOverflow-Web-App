@@ -76,7 +76,7 @@ const AppFeature = () => {
                   animate={{ x: 0, transition: "4s" }}
                 >
                   <h1 className="side-text2">
-                    <p>
+                    <p className="pt-16 sm:pt-0">
                       Get all info related to Hackathon.
                       <br />
                       Get digital personalized digital id.
