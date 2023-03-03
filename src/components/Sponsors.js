@@ -68,7 +68,6 @@ export const Sponsors = () => {
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -96,7 +95,7 @@ export const Sponsors = () => {
               dataAos="fade-right"
             />
             <MediumSponsorsCard
-              weblink={'https://aptechpanvel.in/'}
+              weblink={"https://aptechpanvel.in/"}
               image={appTech}
               dataAos="fade-up"
             />
@@ -144,11 +143,11 @@ export const Sponsors = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-1 xl:gap-6">
-            <GeneralSponsorCard
+            {/* <GeneralSponsorCard
               weblink={'https://revatech-ai.com/'}
               image={revaTech}
               dataAos="fade-up"
-            />
+            /> */}
           </div>
 
           {/* <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-3">
