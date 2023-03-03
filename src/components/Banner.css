@@ -171,7 +171,7 @@
 
 @media only screen and (max-width: 1024px) {
   video {
-    height: 700px;
+    /* height: 700px; */
     max-width: inherit;
   }
 }
@@ -221,7 +221,6 @@
   .socialMedia {
     display: block;
   }
-
   .socialMain {
     display: block;
   }
