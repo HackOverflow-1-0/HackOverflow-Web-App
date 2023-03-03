@@ -17,8 +17,7 @@
   box-shadow: rgb(202, 28, 225) 0px 4px 10px;
 }
 .generalcard img {
-  /* width: 100%;
-    height: 100%; */
+  width: 10rem;
   background-position: center;
   background-size: cover;
 }
@@ -42,5 +41,23 @@
     height: 45vw;
     width: 80vw;
     /* margin: 10px; */
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .generalcard img {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .generalcard img {
+    width: 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .generalcard img {
+    width: 13rem;
   }
 }
