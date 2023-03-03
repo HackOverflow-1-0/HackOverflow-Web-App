@@ -143,11 +143,11 @@ export const Sponsors = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-1 xl:gap-6">
-            {/* <GeneralSponsorCard
-              weblink={'https://revatech-ai.com/'}
+            <GeneralSponsorCard
+              weblink={"https://revatech-ai.com/"}
               image={revaTech}
               dataAos="fade-up"
-            /> */}
+            />
           </div>
 
           {/* <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-3">
