@@ -80,19 +80,24 @@ const InstaFeeds = ({ token, ...props }) => {
       </div>
 
       <div className="container InstaFeed grid grid-cols-2 gap-8 md:grid md:grid-cols-3 md:gap-10 p-4 mb-6">
-        {feeds.slice(0, 6).map((feed) => (
-          <>
-            {feed.media_type === "IMAGE" && (
-              <a
-                href={`https://phcet.tech/insta`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Feed key={feed.id} feed={feed} />
-              </a>
-            )}
-          </>
-        ))}
+        {feeds
+          .filter((feed) => {
+            return feed.media_type === "IMAGE";
+          })
+          .slice(0, 9)
+          .map((feed) => (
+            <>
+              {feed.media_type === "IMAGE" && (
+                <a
+                  href={`https://phcet.tech/insta`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Feed key={feed.id} feed={feed} />
+                </a>
+              )}
+            </>
+          ))}
       </div>
     </>
   );
