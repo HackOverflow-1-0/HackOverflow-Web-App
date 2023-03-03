@@ -12,6 +12,14 @@
   transition: all 100ms ease-out;
 }
 
+.InstaFeed video {
+  /* transform: translateY(-50%); */
+  width: 100%;
+  height: 25rem;
+  display: block;
+  transition: all 100ms ease-out;
+}
+
 .InstaFeed img:hover {
   transform: scale(1.04);
 }
@@ -31,7 +39,6 @@
 .InstaSvg a svg {
   transition: 0.2s ease-in-out;
 }
-
 
 .InstaSvg a:hover svg {
   fill: #891696;
