@@ -8,7 +8,7 @@ function GeneralSponsorCard({ title, image, dataAos, weblink }) {
     return (
         <div className="flex flex-col items-center justify-center" data-aos={dataAos}>
             <div
-                className={"mediumcard"}
+                className={"generalcard"}
             >
                 <a href={weblink} target="_blank" rel="noreferrer">
                     <img

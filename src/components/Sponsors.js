@@ -6,6 +6,7 @@ import solanaWhite from "../assets/img/solanaWhite.png";
 import replitWhite from "../assets/img/replitWhite.png";
 import filecoinWhite from "../assets/img/filecoinWhite.png";
 import appTech from "../assets/img/apptech.png";
+import revaTech from "../assets/img/revatech3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import AOS from "aos";

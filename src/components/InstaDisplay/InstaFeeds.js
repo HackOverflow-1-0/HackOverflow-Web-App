@@ -80,7 +80,7 @@ const InstaFeeds = ({ token, ...props }) => {
       </div>
 
       <div className="container InstaFeed grid grid-cols-2 gap-8 md:grid md:grid-cols-3 md:gap-10 p-4 mb-6">
-        {feeds.slice(0, 7).map((feed) => (
+        {feeds.slice(0, 6).map((feed) => (
           <>
             {feed.media_type === "IMAGE" && (
               <a
