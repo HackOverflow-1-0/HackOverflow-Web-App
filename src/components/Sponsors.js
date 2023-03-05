@@ -7,6 +7,8 @@ import replitWhite from "../assets/img/replitWhite.png";
 import filecoinWhite from "../assets/img/filecoinWhite.png";
 import appTech from "../assets/img/apptech.png";
 import revaTech from "../assets/img/revatech3.png";
+import pillais from "../assets/img/pillai.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import AOS from "aos";
@@ -82,6 +84,14 @@ export const Sponsors = () => {
               Our Sponsors
             </h1>
             <div className="absolute h-[2px] bg-[#7b1072] w-56" />
+          </div>
+          <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+            <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
+              Principle Sponsor
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 gap-2 ">
+            <MediumSponsorsCard image={pillais} dataAos="fade-right" />
           </div>
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
             <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
