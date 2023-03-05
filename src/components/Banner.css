@@ -162,11 +162,6 @@
   .slogan {
     font-size: 1.5rem;
   }
-
-  video {
-    height: 600px;
-    max-width: inherit;
-  }
 }
 
 @media only screen and (max-width: 1024px) {

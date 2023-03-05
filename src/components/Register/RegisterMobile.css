@@ -8,9 +8,17 @@
   color: #aa367c;
 }
 
-.online-holder {
-  transform: translate(25px, 0);
+.center-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: column;
 }
+
+/* .online-holder {
+  transform: translate(25px, 0);
+} */
 
 .offline-holder {
   display: "flex";

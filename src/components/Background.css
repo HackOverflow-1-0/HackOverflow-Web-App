@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
   video {
     transform: translateX(-156px);
-    height: 900px;
+    height: 700px;
   }
 }
 

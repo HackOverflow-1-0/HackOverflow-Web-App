@@ -19,13 +19,7 @@ const HackathonOverview = (props) => {
               What is HackOverflow 1.0?
             </h1>
 
-            <p
-              style={{
-                fontFamily: "Helvetica",
-                fontSize: "1.4rem",
-              }}
-              className="hackathon-overview-text"
-            >
+            <p className="hackathon-overview-text">
               HackOverflow, a 3-day National level hackathon organized by the
               Department of Computer Engineering at PHCET, brings together
               students from all over the country to showcase their skills and
@@ -38,74 +32,73 @@ const HackathonOverview = (props) => {
               with participating companies to all participants. (Job Fair)
             </p>
             <div className="counters-grid">
-              <Row className="counters-div">
-                <Col className="counter" lg={4} sm={2}>
-                  <CountUp
-                    start={0}
-                    end={1}
-                    duration={2.75}
-                    suffix="Lakh+"
-                    enableScrollSpy="true"
-                    className="counters"
-                  />
-                  <p>Prize Pool</p>
-                </Col>
-                <Col className="counter" lg={4} sm={2}>
-                  <CountUp
-                    start={0}
-                    end={500}
-                    duration={2.75}
-                    suffix="+"
-                    enableScrollSpy="true"
-                    className="counters"
-                  />
-                  <p>Participants</p>
-                </Col>
-                <Col className="counter" lg={4} sm={2}>
-                  <CountUp
-                    start={0}
-                    end={50}
-                    duration={2.75}
-                    suffix="+"
-                    enableScrollSpy="true"
-                    className="counters"
-                  />
-                  <p>Teams</p>
-                </Col>
-                <Col className="counter" lg={4} sm={2}>
-                  <CountUp
-                    start={0}
-                    end={8}
-                    duration={2.75}
-                    suffix="+"
-                    enableScrollSpy="true"
-                    className="counters"
-                  />
-                  <p>Themes</p>
-                </Col>
-                <Col className="counter" lg={4} sm={2}>
-                  <CountUp
-                    start={0}
-                    end={10}
-                    duration={2.75}
-                    suffix="+"
-                    enableScrollSpy="true"
-                    className="counters"
-                  />
-                  <p>Companies</p>
-                </Col>
-                <Col className="counter" lg={4} sm={2}>
-                  <CountUp
-                    start={0}
-                    end={20}
-                    duration={2.75}
-                    suffix="+"
-                    enableScrollSpy="true"
-                    className="counters"
-                  />
-                  <p>Sponsors</p>
-                </Col>
-              </Row>
+              <div>
+                <CountUp
+                  start={0}
+                  end={1}
+                  duration={2.75}
+                  suffix="Lakh+"
+                  enableScrollSpy="true"
+                  className="counters"
+                />
+                <p>Prize Pool</p>
+              </div>
+              <div>
+                <CountUp
+                  start={0}
+                  end={200}
+                  duration={2.75}
+                  suffix="+"
+                  enableScrollSpy="true"
+                  className="counters"
+                />
+                <p>Registerations</p>
+              </div>
+              <div>
+                <CountUp
+                  start={0}
+                  end={50}
+                  duration={2.75}
+                  suffix="+"
+                  enableScrollSpy="true"
+                  className="counters"
+                />
+                <p>Teams</p>
+              </div>
+
+              <div>
+                <CountUp
+                  start={0}
+                  end={8}
+                  duration={2.75}
+                  suffix="+"
+                  enableScrollSpy="true"
+                  className="counters"
+                />
+                <p>Themes</p>
+              </div>
+              <div>
+                <CountUp
+                  start={0}
+                  end={10}
+                  duration={2.75}
+                  suffix="+"
+                  enableScrollSpy="true"
+                  className="counters"
+                />
+                <p>Companies</p>
+              </div>
+              <div>
+                <CountUp
+                  start={0}
+                  end={20}
+                  duration={2.75}
+                  suffix="+"
+                  enableScrollSpy="true"
+                  className="counters"
+                />
+                <p>Sponsors</p>
+              </div>
             </div>
             <button
               style={{

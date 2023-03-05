@@ -792,7 +792,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 728px) {
   #main-text {
     font-size: 35px;
   }

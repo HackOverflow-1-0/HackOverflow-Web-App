@@ -8,6 +8,17 @@
   margin-bottom: 6%;
 }
 
+.hackathon-overview-text {
+  font-family: "Helvetica";
+  font-size: 1.4rem;
+}
+
+.counters-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .counters {
   font-size: 28px;
 }
@@ -43,6 +54,7 @@
   }
   .hackathon-overview-text {
     text-align: justify;
+    font-size: 0.9rem;
   }
   .schedule {
     height: inherit;
@@ -53,7 +65,7 @@
   }
 
   .counters {
-    font-size: 25px;
+    font-size: 0.9rem;
   }
 
   .overview-box {
