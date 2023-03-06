@@ -8,7 +8,8 @@ import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
 import Themes from "./components/Themes";
 import { Sponsors } from "./components/Sponsors";
-import FAQ from "./components/FAQ";
+import FAQ from "./components/FAQ/FAQ";
+import MobileFAQ from "./components/FAQ/MobileFAQ";
 import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
@@ -71,7 +72,8 @@ function App() {
           <Themes />
           <AppFeature />
           <Sponsors />
-          <FAQ />
+
+          {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
           <About />
           <CollegeClub />
           <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} />

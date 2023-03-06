@@ -1,4 +1,4 @@
-import "./FAQ.css";
+import "./MobileFAQ.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -7,8 +7,23 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const data = [
   {
-    question: "How long will HackOverflow 1.0 last?",
-    answer: "It will be 36 hours long hackathon",
+    question: "What is the maximum number of members allowed in a team?",
+    answer:
+      "Minimum of 3 members and maximum of 4 members are allowed in a team",
+  },
+  {
+    question: "How long is the hackathon going to last?",
+    answer: "The hackathon will be a 36 hour long hackathon",
+  },
+  {
+    question: "What are the perks every participants is going to get?",
+    answer:
+      "Participants will get official HackOverflow swags and goodies such as t-shirts and stickers",
+  },
+  {
+    question: "What is the transport facilities for the out-of state students",
+    answer:
+      "For out of state students, bus facility will be provided from Pillais Panvel campus and personal pickups from railway-station/airport will also be facilitated",
   },
   {
     question: "What are the arrangements for accomodation?",
@@ -21,7 +36,7 @@ const data = [
       "To register for the offline track either you can fill the google form provided or contact the support team for offline registeration.",
   },
 ];
-const FAQ = (props) => {
+const MobileFAQ = (props) => {
   return (
     <section id="faq-section">
       <div className="container">
@@ -49,7 +64,7 @@ const FAQ = (props) => {
                       {faq.question}
                     </Typography>
                   </AccordionSummary>
-                  <AccordionDetails style={{ backgroundColor: "#121212" }}>
+                  <AccordionDetails style={{ backgroundColor: " #1b1c27" }}>
                     <Typography
                       style={{ color: "white", fontFamily: "Helvetica" }}
                     >
@@ -66,4 +81,4 @@ const FAQ = (props) => {
   );
 };
 
-export default FAQ;
+export default MobileFAQ;
