@@ -13,6 +13,7 @@ import MobileFAQ from "./components/FAQ/MobileFAQ";
 import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
+import GlobeComp from "./globe";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 import AppFeature from "./components/AppFeature/AppFeature";
 import Register from "./components/Register/Register";
@@ -67,6 +68,7 @@ function App() {
           <Banner />
           {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
           <HackathonOverview />
+          <GlobeComp />
           <Prizes />
           <Schedule />
           <Themes />
