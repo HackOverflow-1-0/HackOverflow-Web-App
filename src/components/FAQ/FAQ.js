@@ -39,7 +39,7 @@ const FAQ = () => {
     <>
       <div className="container">
         <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
-          Further Asked Questions
+          Frequently Asked Questions
         </h1>
         <div className={`${classes.faqSection} my-5`}>
           <div className={classes.faqBox}>

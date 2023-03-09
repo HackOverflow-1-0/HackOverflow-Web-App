@@ -18,7 +18,11 @@ import image12 from "../../assets/img/college-club-events/image12.jpg";
 import image14 from "../../assets/img/college-club-events/image14.png";
 import image15 from "../../assets/img/college-club-events/image15.png";
 import image16 from "../../assets/img/college-club-events/image16.png";
-
+import image17 from "../../assets/img/college-club-events/image17.JPG";
+import image18 from "../../assets/img/college-club-events/image18.JPG";
+import image19 from "../../assets/img/college-club-events/image19.jpg";
+import image20 from "../../assets/img/college-club-events/image20.jpeg";
+import image21 from "../../assets/img/college-club-events/image21.JPG";
 import "./CollegeClub.css";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -122,6 +126,22 @@ const CollegeClub = () => {
                 <Carousel.Item>
                   <img className="Image9" src={image15} alt="Second slide" />
                 </Carousel.Item>
+                <Carousel.Item>
+                  <img className="Image9" src={image17} alt="Second slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="Image9" src={image18} alt="Second slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="Image9" src={image19} alt="Second slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="Image9" src={image20} alt="Second slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="Image9" src={image21} alt="Second slide" />
+                </Carousel.Item>
+
               </Carousel>
             </div>
           </div>

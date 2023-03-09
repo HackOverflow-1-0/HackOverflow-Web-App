@@ -91,7 +91,10 @@ export const Sponsors = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-2 ">
-            <MediumSponsorsCard image={pillais} dataAos="fade-right" />
+            <MediumSponsorsCard image={pillais} dataAos="fade-right" weblink={"https://phcet.ac.in/"} />
+          </div>
+          <div className="pt-10">
+            <hr className="text-[#767676] dark:text-[#767676]" />
           </div>
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
             <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
