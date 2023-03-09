@@ -70,59 +70,64 @@ export default function GlobeComp() {
   const globeEl = useRef();
   const store = data["entries"];
 
-  // const weightColor = d3
-  //   .scaleSequentialSqrt(d3.interpolateYlOrRd)
-  //   .domain([0.1, 0.2]);
+
+
+  useEffect(() => {
+    globeEl.current.controls().enableZoom = false;
+    globeEl.current.controls().autoRotate = false;
+    globeEl.current.controls().autoRotateSpeed = 0.7;
+  }, []);
+
+  useEffect(() => {
+    const camera = globeEl.current.camera();
+    camera.zoom += 2;
+    globeEl.current.pointOfView({ lat: camera.lat, lng: camera.lng, altitude: camera.altitude });
+  }, []);
+
+
   return (
-    <div className="container z-0">
-      <div className="row">
-        <div className="col-6">
+    <div className="container">
+      <div className="pb-8 flex flex-col sm:flex sm:flex-row sm:item-start sm:justify-between">
+        <div className="">
           <h1 style={{ fontFamily: "Helvetica Bold" }}>
-            Participations from all over India!!!
+            Participations across all over India!!!
           </h1>
         </div>
-        <div className="col-6">
+        <div className="">
           <Globe
+
+            globeRadius={30}
+            initialZoom={30}
             ref={globeEl}
-            onGlobeReady={() =>
-              // start
-              //globeEl.current.pointOfView({ lat: 30, lng: 7, altitude: 2 }, 5000)
-              // init year n
-              //   globeEl.current.pointOfView({ lat: 30, lng: 180, altitude: 0 }, 100)
-              console.log(globeEl.current.getCurrentPosition())
+            onGlobeReady={() => {
+              globeEl.current.pointOfView({ lat: 20.0903616, lng: 78.4533449 })
+              globeEl.current.camera().zoom = 20;
+            }
             }
             globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
             backgroundColor="#1b1c27"
-            // edges
             arcsData={store["arcs"]}
             arcDashLength={(d) => d.stroke - 0.1 + 0.3}
-            // arcDashLength={(d) => d.stroke - 0.1}
             arcDashGap={(d) => 0.1 + (1 - (d.stroke - 0.1))}
             arcDashAnimateTime={(d) => (1.1 - d.stroke) * 5000 + 2000}
             arcStroke={"stroke"}
-            //arcCircularResolution={64}
-            // arcLabel={() => "test"}
-            // labels
             labelsData={store["loc"]}
             labelLat={(d) => d.lat}
             labelLng={(d) => d.lng}
             labelText={(d) => d.name}
             labelSize={(d) => 0.5 + d.size}
             labelDotRadius={(d) => 0.5 + d.size}
-            // labelColor={(d) => weightColor(d.size)}
             labelResolution={2}
-            // bars
             hexBinPointsData={store["loc"]}
             hexBinPointWeight="size"
-            // hexAltitude={(d) => d.sumWeight / 4}
             hexBinResolution={4}
-            // hexTopColor={(d) => weightColor(d.sumWeight)}
-            // hexSideColor={(d) => weightColor(d.sumWeight)}
             hexBinMerge={true}
-            enablePointerInteraction={false}
+            enablePointerInteraction={true}
           />
+
         </div>
       </div>
     </div>
+
   );
 }
