@@ -51,7 +51,7 @@ const MobileFAQ = (props) => {
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
                     aria-controls="panel1a-content"
-                    id="panel1a-header"
+                    id="panel1a-header" 
                     style={{ backgroundColor: "#1b1c27 " }}
                   >
                     <Typography
