@@ -1,7 +1,7 @@
 import Globe from "react-globe.gl";
-// import data from "./data";
-import { useRef, useState, useEffect } from "react";
-import locationImages from "./assets/img/coder-01.png";
+import './globe.css'
+import { useRef, useEffect } from "react";
+// import locationImages from "./assets/img/coder-01.png";
 const data = {
   entries: {
     loc: [
@@ -11,6 +11,31 @@ const data = {
         lng: 77.1103381,
         size: 0.1,
         color: "white",
+        icon: './assets/img/coder-01.png'
+      },
+      {
+        name: "Gujarat",
+        lat: 22.6708,
+        lng: 71.5724,
+        size: 0.1,
+        color: "white",
+        icon: './assets/img/coder-01.png'
+      },
+      {
+        name: "Lucknow",
+        lat: 26.8467,
+        lng: 80.9462,
+        size: 0.1,
+        color: "white",
+        icon: './assets/img/coder-01.png'
+      },
+      {
+        name: "Orissa",
+        lat: 20.2376,
+        lng: 84.2700,
+        size: 0.1,
+        color: "white",
+        icon: './assets/img/coder-01.png'
       },
       {
         name: "Bengaluru",
@@ -18,6 +43,8 @@ const data = {
         lng: 77.3507357,
         size: 0.1,
         color: "white",
+        icon: './assets/img/coder-01.png'
+
       },
       {
         name: "Kolkata",
@@ -25,13 +52,16 @@ const data = {
         lng: 88.2773118,
         size: 0.1,
         color: "white",
+        icon: './assets/img/coder-01.png'
+
       },
       {
-        name: "phcet",
+        name: "HackOverflow",
         lat: 18.8932418,
         lng: 73.1741628,
-        size: 0.1,
-        color: "white",
+        size: 0.6,
+        color: "purple",
+        icon: './assets/img/coder-01.png'
       },
     ],
     arcs: [
@@ -42,7 +72,34 @@ const data = {
         endLat: 18.8932418,
         endLng: 73.1741628,
         color: ["white"],
-        stroke: 0.1,
+        stroke: 0.5,
+      },
+      {
+        name: "Gujarat",
+        startLat: 22.6708,
+        startLng: 71.5724,
+        endLat: 18.8932418,
+        endLng: 73.1741628,
+        color: ["white"],
+        stroke: 0.5,
+      },
+      {
+        name: "Lucknow",
+        startLat: 26.8467,
+        startLng: 80.9462,
+        endLat: 18.8932418,
+        endLng: 73.1741628,
+        color: ["white"],
+        stroke: 0.5,
+      },
+      {
+        name: "Orissa",
+        startLat: 20.2376,
+        startLng: 84.2700,
+        endLat: 18.8932418,
+        endLng: 73.1741628,
+        color: ["white"],
+        stroke: 0.5,
       },
       {
         name: "Kolkata",
@@ -51,7 +108,7 @@ const data = {
         endLat: 18.8932418,
         endLng: 73.1741628,
         color: ["white"],
-        stroke: 0.1,
+        stroke: 0.5,
       },
       {
         name: "Bengaluru",
@@ -60,42 +117,57 @@ const data = {
         endLat: 18.8932418,
         endLng: 73.1741628,
         color: ["white"],
-        stroke: 0.1,
+        stroke: 0.5,
       },
     ],
   },
 };
+
+;
 
 export default function GlobeComp() {
   const globeEl = useRef();
   const store = data["entries"];
 
 
-
   useEffect(() => {
     globeEl.current.controls().enableZoom = false;
     globeEl.current.controls().autoRotate = false;
+    globeEl.current.controls().Rotate = false;
     globeEl.current.controls().autoRotateSpeed = 0.7;
   }, []);
 
   useEffect(() => {
     const camera = globeEl.current.camera();
-    camera.zoom += 2;
+    camera.zoom += 1.8;
     globeEl.current.pointOfView({ lat: camera.lat, lng: camera.lng, altitude: camera.altitude });
   }, []);
 
 
   return (
-    <div className="container">
+    <div className="sm:my-5 p-2 sm:px-4">
       <div className="pb-8 flex flex-col sm:flex sm:flex-row sm:item-start sm:justify-between">
         <div className="">
-          <h1 style={{ fontFamily: "Helvetica Bold" }}>
+          <h2 className="" style={{ fontFamily: "Helvetica Bold" }}>
             Participations across all over India!!!
-          </h1>
+          </h2>
         </div>
-        <div className="">
+        <div className="globe">
           <Globe
-
+            // labelsRenderCallback={({ labelAltitude, labelText, labelColor, labelRotation, labelSize, key, labelData }) => (
+            //   <group key={key}>
+            //     <mesh position={[0, 0, labelAltitude]}>
+            //       <circleBufferGeometry args={[labelSize * 0.07, 32]} />
+            //       <meshStandardMaterial color={labelData.color} />
+            //     </mesh>
+            //     <mesh position={[0, 0, labelAltitude + labelSize * 0.07 + 0.01]}>
+            //       <sprite>
+            //         <texture url={labelData.icon} />
+            //       </sprite>
+            //     </mesh>
+            //   </group>
+            // )}
+            className="globe"
             globeRadius={30}
             initialZoom={30}
             ref={globeEl}
