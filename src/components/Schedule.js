@@ -30,7 +30,10 @@ export const Schedule = () => {
   return (
     <section className="schedule" id="schedule">
       <div className="container-fluid">
-        <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+        <h1
+          className="text-center"
+          style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
+        >
           Schedule
         </h1>
         <div className="row">
@@ -78,7 +81,10 @@ export const Schedule = () => {
       </div>
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
-          <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+          <h1
+            className="text-center"
+            style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
+          >
             Key Dates
           </h1>
           <div

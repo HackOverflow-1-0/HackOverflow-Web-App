@@ -9,7 +9,8 @@
   /* align-self: self-start; */
   padding-bottom: 10px;
   font-size: 2.5rem;
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .boxesWrapper {
@@ -113,14 +114,15 @@
   text-shadow: 0 0 5px #2196f3, 0 0 15px #2196f3, 0 0 20px #2196f3,
     0 0 40px #2196f3, 0 0 60px #772aff, 0 0 10px #ff8d00, 0 0 98px #772aff;
   color: #c6e2ff;
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
 }
 
 .content {
-  font-family: "Helvetica";
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes blink {

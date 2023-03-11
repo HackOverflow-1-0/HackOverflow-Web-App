@@ -1,3 +1,47 @@
 /* .globe {
   box-shadow: rgb(202, 28, 225) 0px 4px 10px;
 } */
+.globe-h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.states-h1 h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+#blue-cyan {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+#purple-pink {
+  background: linear-gradient(98.84deg, #a8519f 43.27%, #644ea0 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#green-yellow {
+  background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#orange-pink {
+  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media screen and (max-width: 420px) {
+  .states-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

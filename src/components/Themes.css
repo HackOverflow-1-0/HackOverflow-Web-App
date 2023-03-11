@@ -4,7 +4,8 @@
 }
 
 #themes-section h1 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   text-align: center;
   margin: 5px 0 20px 0;
 }
@@ -15,7 +16,8 @@
 }
 
 .themes-tiles figcaption {
-  font-family: "Helvetica";
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   text-align: center;
   font-size: 23px;
 }

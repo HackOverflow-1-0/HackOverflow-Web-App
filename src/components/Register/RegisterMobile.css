@@ -1,10 +1,12 @@
 .online-h2 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   color: #967fd6;
 }
 
 .offline-h2 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   color: #aa367c;
 }
 

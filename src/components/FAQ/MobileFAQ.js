@@ -40,8 +40,11 @@ const MobileFAQ = (props) => {
   return (
     <section id="faq-section">
       <div className="container">
-        <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
-          How can we help?
+        <h1
+          className="text-center"
+          style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
+        >
+          Frequently Asked Questions
         </h1>
         <div className="row">
           <div className="col">
@@ -51,13 +54,14 @@ const MobileFAQ = (props) => {
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
                     aria-controls="panel1a-content"
-                    id="panel1a-header" 
+                    id="panel1a-header"
                     style={{ backgroundColor: "#1b1c27 " }}
                   >
                     <Typography
                       style={{
                         color: "white",
-                        fontFamily: "Helvetica",
+                        fontFamily: "Poppins,sans-serif",
+                        fontWeight: 400,
                         fontSize: "1.3rem",
                       }}
                     >
@@ -66,7 +70,11 @@ const MobileFAQ = (props) => {
                   </AccordionSummary>
                   <AccordionDetails style={{ backgroundColor: " #1b1c27" }}>
                     <Typography
-                      style={{ color: "white", fontFamily: "Helvetica" }}
+                      style={{
+                        color: "white",
+                        fontFamily: "Poppins,sans-serif",
+                        fontWeight: 400,
+                      }}
                     >
                       {faq.answer}
                     </Typography>

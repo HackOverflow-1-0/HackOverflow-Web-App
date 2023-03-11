@@ -121,7 +121,7 @@ const Register = () => {
                           background: "#aa367c",
                           height: "44px",
                           width: "312px",
-                          fontFamily: "Helvetica Bold",
+                          fontFamily: "Poppins",
                         }}
                       >
                         Register Offline
