@@ -12,7 +12,8 @@
 }
 
 .spon_head {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   font-style: normal;
   /* font-size: 20px; */
   font-size: 27px;
@@ -27,7 +28,8 @@
 }
 
 .spon_p {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
   /* font-size: 10px; */
   font-size: 15px;
@@ -94,7 +96,7 @@
   height: fit-content;
   border: 1px solid #fff;
   border-radius: 30px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   /* font-size: 1.8rem; */
 }
 

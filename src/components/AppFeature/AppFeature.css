@@ -23,10 +23,11 @@
 }
 
 .side-text1 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   font-style: normal;
   font-size: 70px;
-  line-height: 100px;
+  line-height: 60px;
   text-align: left;
 
   background: linear-gradient(107deg, #aa367c 16.1%, #967fd6b3 54.35%);
@@ -37,11 +38,12 @@
 }
 
 .side-text2 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   font-style: normal;
 
   font-size: 70px;
-  line-height: 100px;
+  line-height: 60px;
   text-align: right;
 
   background: linear-gradient(107deg, #aa367c 16.1%, #967fd6b3 54.35%);

@@ -38,7 +38,10 @@ const FAQ = () => {
   return (
     <>
       <div className="container">
-        <h1 className="text-center" style={{ fontFamily: "Helvetica Bold" }}>
+        <h1
+          className="text-center"
+          style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
+        >
           Frequently Asked Questions
         </h1>
         <div className={`${classes.faqSection} my-5`}>

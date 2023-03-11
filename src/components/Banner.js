@@ -6,7 +6,7 @@ import classes from "./Banner.module.css";
 import Countdown from "react-countdown";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import BannerText from "./BannerText/BannerText";
-import NotificationBox from "./NotificationBox/NotificationBox";
+
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./Banner.css";
@@ -32,7 +32,6 @@ export const Banner = () => {
       <section className="section banner" id="home">
         <div className="container">
           <div className="bannerWrap">
-            <div className="welcometoText">Welcome to</div>
             <div className="middleTitle">
               {/* <svg viewBox="0 0 1320 230" id="title-animation">
               <text x="50%" y="50%" dy=".35em" textAnchor="middle">
@@ -49,8 +48,6 @@ export const Banner = () => {
             <div className="slogan" style={{ fontFamily: "Helvetica" }}>
               Think. Code. Innovate.
             </div>
-
-            {/* <NotificationBox /> */}
           </div>
         </div>
         <div className="countDownContainer">

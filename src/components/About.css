@@ -2,10 +2,9 @@
   margin-top: 10px;
 }
 
-.about-us-p {
-  font-family: "Helvetica";
-  font-size: "1.2rem";
-  margin: "0";
+#about h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .maps-card {
