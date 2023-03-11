@@ -31,12 +31,13 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-12 clg-desc">
-              <h2 className="about-us-h2">About PHCET</h2>
+              <h1 className="about-us-h2">About PHCET</h1>
               <p
                 className="about-us-p"
                 style={{
-                  fontFamily: "Helvetica",
-                  fontSize: "1.2rem",
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "1rem",
                   margin: "0",
                 }}
               >
@@ -52,7 +53,7 @@ const About = () => {
               </p>
             </div>
             <div className="col-lg-6 col-sm-12 clg-map">
-              <h2>How to reach..</h2>
+              <h1>How to reach..</h1>
               <p>
                 <div className="maps-card" id="map" ref={mapElement} />
                 <div className="maps-button">

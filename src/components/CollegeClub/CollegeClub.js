@@ -34,10 +34,13 @@ const CollegeClub = () => {
           {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
           <h1
             className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
-            style={{ fontFamily: "Helvetica Bold" }}
+            style={{
+              fontFamily: "Poppins,sans-serif",
+              fontWeight: 700,
+              textAlign: "center",
+            }}
           >
-            Glimpses of PHCET <br />
-            Club Events
+            Glimpses of Computer Department Events
           </h1>
           <div className="Description mt-4 md:mt-2">
             <div style={{ display: "flex", justifyContent: "center" }}>
@@ -141,7 +144,6 @@ const CollegeClub = () => {
                 <Carousel.Item>
                   <img className="Image9" src={image21} alt="Second slide" />
                 </Carousel.Item>
-
               </Carousel>
             </div>
           </div>

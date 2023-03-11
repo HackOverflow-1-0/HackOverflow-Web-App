@@ -1,10 +1,11 @@
 #certificates-heading {
   margin: 20px 0 20px 0;
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .certificates h4 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
 }
 
 .certificates p {

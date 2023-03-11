@@ -1,5 +1,5 @@
 import Globe from "react-globe.gl";
-import './globe.css'
+import "./globe.css";
 import { useRef, useEffect } from "react";
 // import locationImages from "./assets/img/coder-01.png";
 const data = {
@@ -11,7 +11,7 @@ const data = {
         lng: 77.1103381,
         size: 0.1,
         color: "white",
-        icon: './assets/img/coder-01.png'
+        icon: "./assets/img/coder-01.png",
       },
       {
         name: "Vadodara",
@@ -19,7 +19,7 @@ const data = {
         lng: 73.1812,
         size: 0.1,
         color: "white",
-        icon: './assets/img/coder-01.png'
+        icon: "./assets/img/coder-01.png",
       },
       {
         name: "Lucknow",
@@ -27,7 +27,7 @@ const data = {
         lng: 80.9462,
         size: 0.1,
         color: "white",
-        icon: './assets/img/coder-01.png'
+        icon: "./assets/img/coder-01.png",
       },
       {
         name: "Bhubaneswar",
@@ -35,7 +35,7 @@ const data = {
         lng: 85.8245,
         size: 0.1,
         color: "white",
-        icon: './assets/img/coder-01.png'
+        icon: "./assets/img/coder-01.png",
       },
       {
         name: "Bengaluru",
@@ -52,8 +52,7 @@ const data = {
         lng: 88.2773118,
         size: 0.1,
         color: "white",
-        icon: './assets/img/coder-01.png'
-
+        icon: "./assets/img/coder-01.png",
       },
       {
         name: "HackOverflow",
@@ -61,7 +60,7 @@ const data = {
         lng: 73.1741628,
         size: 0.6,
         color: "purple",
-        icon: './assets/img/coder-01.png'
+        icon: "./assets/img/coder-01.png",
       },
     ],
     arcs: [
@@ -123,12 +122,9 @@ const data = {
   },
 };
 
-;
-
 export default function GlobeComp() {
   const globeEl = useRef();
   const store = data["entries"];
-
 
   useEffect(() => {
     globeEl.current.controls().enableZoom = false;
@@ -140,17 +136,30 @@ export default function GlobeComp() {
   useEffect(() => {
     const camera = globeEl.current.camera();
     camera.zoom += 1.8;
-    globeEl.current.pointOfView({ lat: camera.lat, lng: camera.lng, altitude: camera.altitude });
+    globeEl.current.pointOfView({
+      lat: camera.lat,
+      lng: camera.lng,
+      altitude: camera.altitude,
+    });
   }, []);
-
 
   return (
     <div className="sm:my-5 p-2 sm:px-4" style={{ margin: "40px 0", padding: "20px" }}>
       <div className="pb-8 flex flex-col sm:flex sm:flex-row sm:item-start sm:justify-between">
-        <div>
-          <h2 className="" style={{ fontFamily: "Helvetica Bold" }}>
-            Participations across all over India!!!
-          </h2>
+        <div className="">
+          <h2 className="globe-h2">Participations across all over India!!!</h2>
+          <div className="states-h1">
+            <h1 id="blue-cyan">UttarPradesh</h1>
+
+            <h1 id="purple-pink">Maharashtra</h1>
+            <h1 id="orange-pink">West Bengal</h1>
+            <h1 id="green-yellow">Karnataka</h1>
+
+            <h1 id="orange-pink">Telengana</h1>
+            <h1 id="purple-pink">Haryana</h1>
+            <h1 id="blue-cyan">Gujarat</h1>
+            <h1 id="green-yellow">Delhi</h1>
+          </div>
         </div>
         <div className="globe">
           <Globe
@@ -159,10 +168,9 @@ export default function GlobeComp() {
             initialZoom={30}
             ref={globeEl}
             onGlobeReady={() => {
-              globeEl.current.pointOfView({ lat: 20.0903616, lng: 78.4533449 })
+              globeEl.current.pointOfView({ lat: 20.0903616, lng: 78.4533449 });
               globeEl.current.camera().zoom = 20;
-            }
-            }
+            }}
             globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
             backgroundColor="#1b1c27"
             labelsData={store["loc"]}
@@ -191,10 +199,8 @@ export default function GlobeComp() {
               }
             }}
           />
-
         </div>
       </div>
     </div>
-
   );
 }

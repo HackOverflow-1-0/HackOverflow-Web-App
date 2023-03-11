@@ -80,20 +80,29 @@ export const Sponsors = () => {
           <div className="relative p-4 lg:py-10 w-full">
             <h1
               className="text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize"
-              style={{ fontFamily: "Helvetica Bold" }}
+              style={{
+                fontFamily: "Poppins,sans-serif",
+                fontWeight: 700,
+                textAlign: "center",
+              }}
             >
               Our Sponsors
             </h1>
-            <div className="absolute h-[2px] bg-[#7b1072] w-56" />
           </div>
-
-          {/* <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
-            <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
+          <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+            <h1
+              className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+              style={{ fontFamily: "Poppins,sans-serif", fontWeight: 400 }}
+            >
               Principle Sponsor
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-2 ">
-            <MediumSponsorsCard image={pillais} dataAos="fade-right" weblink={"https://phcet.ac.in/"} />
+            <MediumSponsorsCard
+              image={pillais}
+              dataAos="fade-right"
+              weblink={"https://phcet.ac.in/"}
+            />
           </div>
           <div className="pt-10">
             <hr className="text-[#767676] dark:text-[#767676]" />
@@ -101,7 +110,10 @@ export const Sponsors = () => {
 
 
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
-            <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
+            <h1
+              className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+              style={{ fontFamily: "Poppins,sans-serif", fontWeight: 400 }}
+            >
               Platinum Sponsor
             </h1>
           </div>
@@ -128,7 +140,10 @@ export const Sponsors = () => {
           </div>
 
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
-            <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
+            <h1
+              className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+              style={{ fontFamily: "Poppins,sans-serif", fontWeight: 400 }}
+            >
               Gold Sponsor
             </h1>
           </div>
@@ -160,7 +175,10 @@ export const Sponsors = () => {
           </div>
 
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
-            <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
+            <h1
+              className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+              style={{ fontFamily: "Poppins,sans-serif", fontWeight: 400 }}
+            >
               General Sponsor
             </h1>
           </div>
@@ -172,32 +190,6 @@ export const Sponsors = () => {
             />
           </div>
 
-          {/* <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-2 md:gap-3">
-            <MediumSponsorsCard
-              weblink={'#'}
-              title="Event Sponsors"
-              image={hack2skill}
-              dataAos="fade-right"
-            />
-            <MediumSponsorsCard
-              weblink={'#'}
-              title="Associate Sponsors"
-              image={hack2skill}
-              dataAos="fade-left"
-            />
-            <MediumSponsorsCard
-              weblink={'#'}
-              title="Upskilling Sponsors"
-              image={hack2skill}
-              dataAos="fade-right"
-            />
-            <MediumSponsorsCard
-              weblink={'#'}
-              title="Silver Sponsors"
-              image={hack2skill}
-              dataAos="fade-left"
-            />
-          </div> */}
           <div className="pt-10">
             <hr className="text-[#767676] dark:text-[#767676]" />
           </div>

@@ -15,7 +15,13 @@ const HackathonOverview = (props) => {
             <img src={groupProgramming} />
           </Col>
           <Col lg={6}>
-            <h1 style={{ fontFamily: "Helvetica Bold", marginBottom: "20px" }}>
+            <h1
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: 700,
+                marginBottom: "20px",
+              }}
+            >
               What is HackOverflow 1.0?
             </h1>
 

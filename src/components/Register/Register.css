@@ -9,7 +9,8 @@
   );
 } */
 .register-h1 {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   padding-top: 30px;
 }
 
@@ -19,13 +20,15 @@
 }
 
 .online-tag {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   transform: translate(470px, 0px);
   color: #967fd6;
 }
 
 .offline-tag {
-  font-family: "Helvetica Bold";
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   color: #aa367c;
   transform: translate(90px, 0px);
 }
