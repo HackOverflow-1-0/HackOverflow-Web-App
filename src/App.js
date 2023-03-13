@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { Schedule } from "./components/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
-import Themes from "./components/Themes";
+import Themes from "./components/Themes/Themes";
 import { Sponsors } from "./components/Sponsors";
 import FAQ from "./components/FAQ/FAQ";
 import MobileFAQ from "./components/FAQ/MobileFAQ";

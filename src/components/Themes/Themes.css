@@ -1,0 +1,49 @@
+.cards-grid {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.theme-card {
+  height: 300px;
+  width: 200px;
+  background: linear-gradient(
+    131.73deg,
+    #867dbb 0%,
+    rgba(154, 215, 211, 0.82) 100%
+  );
+}
+
+.theme-card h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  transform: rotate(90deg) translate(90px, 80px);
+  color: #1b1c2e;
+}
+
+.theme-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px;
+  transform: translate(10px, -250px);
+}
+.theme-card:nth-child(1) img {
+  height: 200px;
+  transform: translate(49px, 40px);
+  clip-path: inset(0px 50px 0px 0px);
+}
+.theme-card:nth-child(2) {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+
+.theme-card:nth-child(3) {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.theme-card:nth-child(4) {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
