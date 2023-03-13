@@ -11,11 +11,6 @@
 .theme-card {
   height: 300px;
   width: 200px;
-  background: linear-gradient(
-    131.73deg,
-    #867dbb 0%,
-    rgba(154, 215, 211, 0.82) 100%
-  );
 }
 
 .theme-card h1 {
@@ -27,15 +22,33 @@
 
 .theme-card p {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 10px;
-  transform: translate(10px, -250px);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 5px;
+  transform: translate(5px, -250px);
+  color: #1b1c2e;
 }
-.theme-card:nth-child(1) img {
+.theme-card img {
   height: 200px;
   transform: translate(49px, 40px);
   clip-path: inset(0px 50px 0px 0px);
+}
+.theme-card:nth-child(1) {
+  background: linear-gradient(
+    131.73deg,
+    #867dbb 0%,
+    rgba(154, 215, 211, 0.82) 100%
+  );
+}
+
+.theme-card:nth-child(1) h1 {
+  transform: rotate(90deg) translate(60px, 58px);
+}
+.theme-card:nth-child(1) img {
+  transform: translate(49px, -10px);
+}
+.theme-card:nth-child(1) p {
+  transform: translate(5px, -293px);
 }
 .theme-card:nth-child(2) {
   background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
@@ -44,6 +57,60 @@
 .theme-card:nth-child(3) {
   background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
 }
+
+.theme-card:nth-child(3) h1 {
+  transform: rotate(90deg) translate(69px, 58px);
+}
+.theme-card:nth-child(3) img {
+  transform: translate(49px, -10px);
+}
+
+.theme-card:nth-child(3) p {
+  transform: translate(5px, -293px);
+}
 .theme-card:nth-child(4) {
   background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.theme-card:nth-child(5) {
+  background: linear-gradient(
+    131.73deg,
+    #867dbb 0%,
+    rgba(154, 215, 211, 0.82) 100%
+  );
+}
+.theme-card:nth-child(6) {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.theme-card:nth-child(7) {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.theme-card:nth-child(8) {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+
+@media only screen and (max-width: 768px) {
+  .cards-grid {
+    justify-content: center;
+  }
+
+  .theme-card p {
+    font-size: 0.75rem;
+  }
+
+  .theme-card:nth-child(1) p {
+    transform: translate(5px, -270px);
+  }
+  .theme-card:nth-child(2) p {
+    transform: translate(5px, -237px);
+  }
+
+  .theme-card:nth-child(3) h1 {
+    transform: rotate(90deg) translate(91px, 74px);
+  }
+  .theme-card:nth-child(3) p {
+    transform: translate(5px, -240px);
+  }
+  .theme-card:nth-child(4) p {
+    transform: translate(5px, -240px);
+  }
 }
