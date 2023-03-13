@@ -14,9 +14,9 @@ const data = {
         icon: "./assets/img/coder-01.png",
       },
       {
-        name: "Gujarat",
-        lat: 22.6708,
-        lng: 71.5724,
+        name: "Vadodara",
+        lat: 22.3072,
+        lng: 73.1812,
         size: 0.1,
         color: "white",
         icon: "./assets/img/coder-01.png",
@@ -30,9 +30,9 @@ const data = {
         icon: "./assets/img/coder-01.png",
       },
       {
-        name: "Orissa",
-        lat: 20.2376,
-        lng: 84.27,
+        name: "Bhubaneswar",
+        lat: 20.2961,
+        lng: 85.8245,
         size: 0.1,
         color: "white",
         icon: "./assets/img/coder-01.png",
@@ -43,8 +43,9 @@ const data = {
         lng: 77.3507357,
         size: 0.1,
         color: "white",
-        icon: "./assets/img/coder-01.png",
+        icon: './assets/img/coder-01.png'
       },
+
       {
         name: "Kolkata",
         lat: 22.5355708,
@@ -73,9 +74,9 @@ const data = {
         stroke: 0.5,
       },
       {
-        name: "Gujarat",
-        startLat: 22.6708,
-        startLng: 71.5724,
+        name: "Vadodara",
+        startLat: 22.3072,
+        startLng: 73.1812,
         endLat: 18.8932418,
         endLng: 73.1741628,
         color: ["white"],
@@ -91,9 +92,9 @@ const data = {
         stroke: 0.5,
       },
       {
-        name: "Orissa",
-        startLat: 20.2376,
-        startLng: 84.27,
+        name: "Bhubaneswar",
+        startLat: 20.2961,
+        startLng: 85.8245,
         endLat: 18.8932418,
         endLng: 73.1741628,
         color: ["white"],
@@ -143,7 +144,7 @@ export default function GlobeComp() {
   }, []);
 
   return (
-    <div className="sm:my-5 p-2 sm:px-4">
+    <div className="sm:my-5 p-2 sm:px-4" style={{ margin: "40px 0", padding: "20px" }}>
       <div className="pb-8 flex flex-col sm:flex sm:flex-row sm:item-start sm:justify-between">
         <div className="">
           <h2 className="globe-h2">Participations across all over India!!!</h2>
@@ -172,11 +173,6 @@ export default function GlobeComp() {
             }}
             globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
             backgroundColor="#1b1c27"
-            arcsData={store["arcs"]}
-            arcDashLength={(d) => d.stroke - 0.1 + 0.3}
-            arcDashGap={(d) => 0.1 + (1 - (d.stroke - 0.1))}
-            arcDashAnimateTime={(d) => (1.1 - d.stroke) * 5000 + 2000}
-            arcStroke={"stroke"}
             labelsData={store["loc"]}
             labelLat={(d) => d.lat}
             labelLng={(d) => d.lng}
@@ -189,6 +185,19 @@ export default function GlobeComp() {
             hexBinResolution={4}
             hexBinMerge={true}
             enablePointerInteraction={true}
+            arcsData={store["arcs"]}
+            arcStroke="stroke"
+            arcDashLength={(arc) => arc.stroke * 0.1}
+            arcDashGap={(arc) => arc.stroke * 0.09}
+            // arcDashAnimateTime={(arc) => arc.stroke * 2000}
+            arcDashAnimateTime={(d) => (1.1 - d.stroke) * 5000 + 2000}
+            arcColor={(arc) => {
+              if (arc.stroke > 0) {
+                return "#FF80BF"; // Red for large strokes
+              } else {
+                return "#FF80BF"; // White for small strokes
+              }
+            }}
           />
         </div>
       </div>

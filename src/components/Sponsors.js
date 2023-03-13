@@ -7,7 +7,8 @@ import replitWhite from "../assets/img/replitWhite.png";
 import filecoinWhite from "../assets/img/filecoinWhite.png";
 import appTech from "../assets/img/apptech.png";
 import revaTech from "../assets/img/revatech3.png";
-import pillais from "../assets/img/pillai.png";
+// import pillais from "../assets/img/pillai.png";
+import tvsWhite from "../assets/img/tvsWhite.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -88,11 +89,8 @@ export const Sponsors = () => {
               Our Sponsors
             </h1>
           </div>
-          <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
-            <h1
-              className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
-              style={{ fontFamily: "Poppins,sans-serif", fontWeight: 400 }}
-            >
+          {/* <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+            <h1 className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal">
               Principle Sponsor
             </h1>
           </div>
@@ -105,7 +103,9 @@ export const Sponsors = () => {
           </div>
           <div className="pt-10">
             <hr className="text-[#767676] dark:text-[#767676]" />
-          </div>
+          </div> */}
+
+
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
             <h1
               className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
@@ -144,7 +144,12 @@ export const Sponsors = () => {
               Gold Sponsor
             </h1>
           </div>
-          <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-3 xl:gap-6">
+          <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-2">
+            <GoldSponsorCard
+              weblink={"https://www.tvsmotor.com/"}
+              image={tvsWhite}
+              dataAos="fade-left"
+            />
             <GoldSponsorCard
               weblink={"https://replit.com/"}
               image={replitWhite}
@@ -158,7 +163,7 @@ export const Sponsors = () => {
             <GoldSponsorCard
               weblink={"https://filecoin.io/"}
               image={filecoinWhite}
-              dataAos="fade-left"
+              dataAos="fade-down"
             />
           </div>
 
