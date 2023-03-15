@@ -20,13 +20,12 @@
   height: 100%; */
   background-position: center;
   background-size: cover;
+  width: 259px;
 }
 @media screen and (min-width: 64rem) {
   .mediumcard {
-    /* width: 511px; */
-    width: 406px;
-    height: 240px;
-    /* margin: 20px; */
+    width: 303px;
+    height: 190px;
   }
 }
 @media screen and (max-width: 64rem) {

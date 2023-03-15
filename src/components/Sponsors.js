@@ -9,6 +9,11 @@ import appTech from "../assets/img/apptech.png";
 import revaTech from "../assets/img/revatech3.png";
 // import pillais from "../assets/img/pillai.png";
 import tvsWhite from "../assets/img/tvsWhite.png";
+import beeceptorWhite from "../assets/img/beeceptorWhite.png";
+import horusonWhite from "../assets/img/horusonWhite.png";
+
+
+
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -114,7 +119,7 @@ export const Sponsors = () => {
               Platinum Sponsor
             </h1>
           </div>
-          <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-3 md:gap-10">
+          <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-64">
             <MediumSponsorsCard
               weblink={"https://devfolio.co/home/"}
               image={devfolioWhite}
@@ -129,6 +134,11 @@ export const Sponsors = () => {
               weblink={"https://polygon.technology/"}
               image={polygonWhite}
               dataAos="fade-left"
+            />
+            <MediumSponsorsCard
+              weblink={"https://beeceptor.com/"}
+              image={beeceptorWhite}
+              dataAos="fade-down"
             />
           </div>
           {/* <TitleSponsorsCard image={hack2skill} dataAos="fade-up" weblink={'#'} /> */}
@@ -179,11 +189,16 @@ export const Sponsors = () => {
               General Sponsor
             </h1>
           </div>
-          <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-1 xl:gap-6">
+          <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-2 xl:gap-2">
             <GeneralSponsorCard
               weblink={"https://revatech-ai.com/"}
               image={revaTech}
-              dataAos="fade-up"
+              dataAos="fade-left"
+            />
+            <GeneralSponsorCard
+              weblink={"https://www.horuson.com/"}
+              image={horusonWhite}
+              dataAos="fade-right"
             />
           </div>
 
