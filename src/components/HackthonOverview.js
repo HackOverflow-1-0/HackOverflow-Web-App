@@ -22,7 +22,7 @@ const HackathonOverview = (props) => {
                 marginBottom: "20px",
               }}
             >
-              What is HackOverflow 1.0?
+              What is HackOverflow 2.0?
             </h1>
 
             <p className="hackathon-overview-text">
