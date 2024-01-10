@@ -24,8 +24,8 @@ export const Banner = () => {
     setWindowWidth(width);
   };
   const [tickerVisible, setTickerVisible] = useState(false);
-  const date = new Date("2023-03-16");
-  date.setHours(17, 0, 0, 0); // sets the time to 5:00:00 PM
+  const date = new Date("2024-03-14");
+  date.setHours(10, 0, 0, 0); // sets the time to 10:00:00 AM
   const toggleText = tickerVisible ? "Hide Countdown" : "Show Countdown";
   return (
     <Background>
