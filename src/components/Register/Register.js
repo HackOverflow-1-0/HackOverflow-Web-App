@@ -9,10 +9,10 @@ const Register = () => {
     <section className="register">
       <div className="container">
         <h1 className="text-center register-h1">Register Now!!</h1>
-        <div className="row">
+        <div className="row ">
           <div className="col">
             <div className="row">
-              <div className="col-6">
+              {/* <div className="col-6">
                 <div className="online-registerations">
                   <h2 className="online-tag">Online</h2>
                   <svg
@@ -62,10 +62,10 @@ const Register = () => {
                     <DevFolio />
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-6">
                 <div className="offline-registerations">
-                  <h2 className="offline-tag">Offline</h2>
+                  {/* <h2 className="offline-tag">Offline</h2> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"

@@ -36,7 +36,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <p>© 2023 HackOverflow 1.0</p>
+          <p>© 2024 HackOverflow 2.0</p>
           {/* <p>
             {" "}
             <a href="mailto:hackathon@phcet.tech">hackathon@phcet.tech</a>

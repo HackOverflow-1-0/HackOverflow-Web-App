@@ -1,5 +1,5 @@
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import offlineDesktopView from "../assets/img/offline_web.png";
+import offlineDesktopView from "../assets/img/offline_web.webp";
 import offlineMobileView from "../assets/img/offline_mobile.png";
 import onlineDesktopView from "../assets/img/online_web.png";
 import onlineMobileView from "../assets/img/online_mobile.png";
@@ -39,20 +39,20 @@ export const Schedule = () => {
         <div className="row">
           <div id={classes.schedule}>
             <div className={classes.pathSelectors}>
-              <button
+              {/* <button
                 onClick={() => {
                   setPath("offline");
                 }}
               >
                 <span>Offline</span>
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 onClick={() => {
                   setPath("online");
                 }}
               >
                 <span>Online</span>
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="col">

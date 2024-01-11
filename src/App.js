@@ -18,11 +18,13 @@ import CollegeClub from "./components/CollegeClub/CollegeClub";
 import AppFeature from "./components/AppFeature/AppFeature";
 import Register from "./components/Register/Register";
 import RegisterMobile from "./components/Register/RegisterMobile";
-// import PreLoader from "./components/PreLoader/PreLoader";
+import PreLoader from "./components/PreLoader/PreLoader";
 import ScrollToTop from "react-scroll-to-top";
 import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
+import Loadop from "./components/loadop";
 
 function App() {
+
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,
@@ -63,7 +65,7 @@ function App() {
         />
         <NavBar />
         <Banner />
-        {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />}
+        {/* {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />} */}
         <HackathonOverview />
         <GlobeComp />
         <Prizes />
@@ -75,7 +77,7 @@ function App() {
         {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
         <About />
         <CollegeClub />
-        <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} />
+        {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
         <Footer />
         {windowSize[0] < 600 && <MobileNavbar />}
       </Fragment>

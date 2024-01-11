@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../../assets/videos/fast.mp4";
+import video from "../../assets/videos/fast.webm";
 import "./PreLoader.css";
 
 const PreLoader = () => {
@@ -22,7 +22,7 @@ const PreLoader = () => {
         muted
         style={{ objectFit: "cover" }}
       >
-        <source src={video} type="video/mp4" />
+        <source src={video} type="video/webm" />
       </video>
       {/* <Typewriter
         words={['Welcome to Hack-OverFlow!!!', 'Think!!', 'Code!!', 'Innovate!!']}

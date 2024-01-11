@@ -1,4 +1,4 @@
-import backgroundVideo from "../assets/img/PHCET.mp4";
+import backgroundVideo from "../assets/img/PHCET.webm";
 import "./Background.css";
 const Background = (props) => {
   return (
@@ -10,7 +10,7 @@ const Background = (props) => {
         className="relative bg-video"
         style={{ objectFit: "cover" }}
       >
-        <source src={backgroundVideo} type="video/mp4" />
+        <source src={backgroundVideo} type="video/webm" />
       </video>
       <div className="absolute top-0 left-0 right-0 background-video">
         {props.children}
