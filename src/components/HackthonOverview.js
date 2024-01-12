@@ -75,7 +75,7 @@ const HackathonOverview = (props) => {
               <div>
                 <CountUp
                   start={0}
-                  end={8}
+                  end={17}
                   duration={2.75}
                   suffix="+"
                   enableScrollSpy="true"
@@ -107,15 +107,16 @@ const HackathonOverview = (props) => {
               </div>
             </div>
             <button
-              style={{
-                background: "#3770ff",
-                textAlign: "center",
-                color: "white",
-              }}
-              className="btn"
-            >
-              Join Discord Channel
-            </button>
+ style={{
+   background: "#3770ff",
+   textAlign: "center",
+   color: "white",
+ }}
+ className="btn"
+ onClick={() => window.open('https://discord.com/invite/Pkp75qysYZ', '_blank')}
+>
+ Join Discord Channel
+</button>
           </Col>
         </Row>
       </Container>

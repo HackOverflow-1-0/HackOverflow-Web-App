@@ -40,7 +40,7 @@
 }
 
 #arrow-right {
-  transform: translate(-60px, -90px);
+  transform: translate(390px, -120px);
   height: 460px;
   width: 460px;
 }
@@ -50,8 +50,10 @@
 }
 
 .offline-register-btn {
-  transform: translate(330px, -200px);
+  transform: translate(700px, -200px);
 }
+
+
 
 /* @media only screen and (max-width: 1270px) {
     .online-tag {
