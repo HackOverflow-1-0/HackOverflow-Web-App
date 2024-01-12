@@ -49,7 +49,7 @@ const CollegeClub = () => {
               textAlign: "center",
             }}
           >
-            Glimpses of Computer Department Events
+            Glimpses of Hackoverflow 1.0
           </h1>
           <div className="Description mt-4 md:mt-2">
             <div style={{ display: "flex", justifyContent: "center" }}>
