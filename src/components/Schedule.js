@@ -63,7 +63,8 @@ export const Schedule = () => {
                     ? offlineDesktopView
                     : offlineMobileView
                 }
-                style={{ marginTop: "40px" }}
+                alt={"schedule"}
+                // style={{ marginTop: "40px" }}
               />
             )}
             {path === "online" && (
@@ -73,7 +74,8 @@ export const Schedule = () => {
                     ? onlineDesktopView
                     : onlineMobileView
                 }
-                style={{ marginTop: "40px" }}
+                alt={"schedule"}
+                // style={{ marginTop: "40px" }}
               />
             )}
           </div>

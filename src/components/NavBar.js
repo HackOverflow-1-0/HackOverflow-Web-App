@@ -33,7 +33,9 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand className="nav-logo">
-            <img src={logo} alt="Logo" id="logo" />
+            <a href="/">
+              <img src={logo} alt="Logo" id="logo" />
+            </a>
           </Navbar.Brand>
 
           <Navbar.Collapse id="basic-navbar-nav">
@@ -60,6 +62,15 @@ export const NavBar = () => {
                 Schedule
               </Nav.Link>
               <Nav.Link
+                href="#themes"
+                className={
+                  activeLink === "themes" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("themes")}
+              >
+                Themes
+              </Nav.Link>
+              <Nav.Link
                 href="#sponsors"
                 className={
                   activeLink === "sponsors"
@@ -80,7 +91,18 @@ export const NavBar = () => {
                 About
               </Nav.Link>
             </Nav>
-            <span className="navbar-text">
+            <div className="navbar-text flex justify-end">
+              <a
+                href="https://drive.google.com/file/d/1e78HldRa9Wy6NOgx_Tz4cYzJADTiutX0/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+                  Brochure
+                </button>
+              </a>
+            </div>
+            {/* <span className="navbar-text">
               <button>
                 <span>
                   <a
@@ -92,7 +114,7 @@ export const NavBar = () => {
                   </a>
                 </span>
               </button>
-            </span>
+            </span> */}
           </Navbar.Collapse>
         </Container>
         <ProgressBar />

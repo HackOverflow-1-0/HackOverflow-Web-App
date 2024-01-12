@@ -1,4 +1,4 @@
-import { Flare, Home, Info, Schedule } from "@mui/icons-material";
+import { Flare, Home, Info, Schedule, Category } from "@mui/icons-material";
 import { BottomNavigation, BottomNavigationAction } from "@mui/material";
 import { useState } from "react";
 import { Nav } from "react-bootstrap";
@@ -26,6 +26,12 @@ const MobileNavbar = (props) => {
         <BottomNavigationAction
           label="Schedule"
           icon={<Schedule style={{ fill: "#aa367c" }} />}
+        />
+      </Nav.Link>
+      <Nav.Link href="#themes">
+        <BottomNavigationAction
+          label="Themes"
+          icon={<Category style={{ fill: "#aa367c" }} />}
         />
       </Nav.Link>
       <Nav.Link href="#sponsors">

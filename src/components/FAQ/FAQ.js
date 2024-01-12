@@ -37,7 +37,7 @@ const FAQ = () => {
   ];
   return (
     <>
-      <div className="container">
+      <div className="container py-4">
         <h1
           className="text-center"
           style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
@@ -81,6 +81,9 @@ const FAQ = () => {
               return "";
             })}
           </div>
+        </div>
+        <div className="pt-10">
+          <hr className="text-[#767676] dark:text-[#767676]" />
         </div>
       </div>
     </>

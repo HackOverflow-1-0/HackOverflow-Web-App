@@ -27,13 +27,13 @@ const About = () => {
   }, []);
   return (
     <>
-      <section id="about mt-5">
-        <div className="container">
+      <section id="about" className="py-4">
+        <div className="container py-6">
           <div className="row">
             <div className="col-lg-6 col-sm-12 clg-desc">
               <h1 className="about-us-h2">About PHCET</h1>
               <p
-                className="about-us-p"
+                className="about-us-p text-justify"
                 style={{
                   fontFamily: "Poppins, sans-serif",
                   fontWeight: "400",

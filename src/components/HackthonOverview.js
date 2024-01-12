@@ -25,7 +25,7 @@ const HackathonOverview = (props) => {
               What is HackOverflow 2.0?
             </h1>
 
-            <p className="hackathon-overview-text">
+            <p className="hackathon-overview-text text-justify">
               HackOverflow, a 3-day National level hackathon organized by the
               Department of Computer Engineering at PHCET, brings together
               students from all over the country to showcase their skills and

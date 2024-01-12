@@ -45,7 +45,13 @@
 .theme-card:nth-child(1) h1 {
   transform: rotate(90deg) translate(60px, 58px);
 }
+.theme-card:nth-child(2) h1 {
+  transform: rotate(90deg) translate(60px, 58px);
+}
 .theme-card:nth-child(1) img {
+  transform: translate(49px, -10px);
+}
+.theme-card:nth-child(2) img {
   transform: translate(49px, -10px);
 }
 .theme-card:nth-child(1) p {
