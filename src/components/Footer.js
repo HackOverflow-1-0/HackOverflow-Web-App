@@ -16,9 +16,11 @@ const Footer = () => {
       <div className="footerContainer">
         <div>
           <div className="footer-logo">
-            <img src={logo} />
+            <a href="/#home" alt="Logo">
+              <img src={logo} alt="Logo" />
+            </a>
           </div>
-          <p>Follow us on:</p>
+          <p>Follow us on:</p>  
           <p>
             <a href="https://phcet.tech/insta" target="_blank">
               <Instagram className="icons instagram" fontSize="large" />

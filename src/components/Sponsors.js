@@ -35,7 +35,7 @@ export const Sponsors = () => {
   }, []);
   return (
     <>
-      <section className="sm:my-5 p-2 px-2">
+      <section className="sm:my-5 p-2 px-2" id="sponsors">
         <div className="row pt-5">
           <div className="col-md-10 col-12 spon_us mb-5">
             <div className="row CotentRow">
@@ -80,7 +80,7 @@ export const Sponsors = () => {
           </div>
         </div>
       </section>
-      <section className="sponsors" id="sponsors">
+      <section className="sponsors">
         <Container>
           <div className="relative p-4 lg:py-10 w-full">
             <h1

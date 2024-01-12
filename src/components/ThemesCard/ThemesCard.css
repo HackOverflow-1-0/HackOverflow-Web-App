@@ -1,0 +1,30 @@
+.ProjectCard {
+  max-width: 352px;
+  min-height: 435px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: rgb(85, 6, 95) 0px 4px 10px;
+}
+
+.ProjectCard:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+}
+
+/* .ProjectCard .ProjectBand {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+} */
+
+@media screen and (min-width: 640px) {
+  .ProjectCard {
+    max-width: 506px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .PortfolioCard {
+    max-width: 680px;
+  }
+}

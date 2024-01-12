@@ -6,7 +6,8 @@ import Footer from "./components/Footer";
 import { Schedule } from "./components/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
-import Themes from "./components/Themes/Themes";
+// import Themes from "./components/Themes/Themes";
+import NewThemes from "./components/New Themes/NewThemes";
 import { Sponsors } from "./components/Sponsors";
 import FAQ from "./components/FAQ/FAQ";
 import MobileFAQ from "./components/FAQ/MobileFAQ";
@@ -15,12 +16,12 @@ import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import GlobeComp from "./globe";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
-import AppFeature from "./components/AppFeature/AppFeature";
-import Register from "./components/Register/Register";
-import RegisterMobile from "./components/Register/RegisterMobile";
+// import AppFeature from "./components/AppFeature/AppFeature";
+// import Register from "./components/Register/Register";
+// import RegisterMobile from "./components/Register/RegisterMobile";
 import PreLoader from "./components/PreLoader/PreLoader";
 import ScrollToTop from "react-scroll-to-top";
-import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
+// import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
 import Loadop from "./components/loadop";
 
 function App() {
@@ -70,8 +71,9 @@ function App() {
         <GlobeComp />
         <Prizes />
         <Schedule />
-        <Themes />
-        <AppFeature />
+        {/* <Themes /> */}
+        <NewThemes />
+        {/* <AppFeature /> */}
         <Sponsors />
 
         {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
