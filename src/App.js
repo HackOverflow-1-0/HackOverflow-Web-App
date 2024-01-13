@@ -19,26 +19,46 @@ import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import AppFeature from "./components/AppFeature/AppFeature";
 // import Register from "./components/Register/Register";
 // import RegisterMobile from "./components/Register/RegisterMobile";
-import PreLoader from "./components/PreLoader/PreLoader";
+// import PreLoader from "./components/PreLoader/PreLoader";
 import ScrollToTop from "react-scroll-to-top";
 // import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
-import Loadop from "./components/loadop";
+// import Loadop from "./components/loadop";
 
 function App() {
-
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,
   ]);
+
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
     };
+
+    // componentDidMount logic
+    (function () {
+      var kommunicateSettings = {
+        appId: process.env.REACT_APP_CHAT_TOKEN,
+        popupWidget: true,
+        automaticChatOpenOnNavigation: true,
+      };
+
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0];
+      h.appendChild(s);
+      window.kommunicate = window.kommunicate || {};
+      window.kommunicate._globals = kommunicateSettings;
+    })();
+
     window.addEventListener("resize", handleWindowResize);
+
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  });
+  }, []); // Empty dependency array means this effect runs once, similar to componentDidMount
 
   // const [isLoading, setIsLoading] = useState(true);
 
@@ -61,6 +81,8 @@ function App() {
             borderRadius: "50%",
             width: "50px",
             height: "50px",
+            right: "35px",
+            bottom: "100px",
             // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
           }}
         />

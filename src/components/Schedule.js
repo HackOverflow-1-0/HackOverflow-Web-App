@@ -4,9 +4,9 @@ import offlineMobileView from "../assets/img/offline_mobile.png";
 import onlineDesktopView from "../assets/img/online_web.png";
 import onlineMobileView from "../assets/img/online_mobile.png";
 import "animate.css";
-import TrackVisibility from "react-on-screen";
+// import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Stack } from "@mui/material";
 
 export const Schedule = () => {
