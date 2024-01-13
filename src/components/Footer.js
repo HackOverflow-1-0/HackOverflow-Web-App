@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/img/HOmain1-purple.png";
+import logo from "../assets/img/2024-logo.webp";
 
 import "./Footer.css";
 import {
@@ -20,7 +20,7 @@ const Footer = () => {
               <img src={logo} alt="Logo" />
             </a>
           </div>
-          <p>Follow us on:</p>  
+          <p>Follow us on:</p>
           <p>
             <a href="https://phcet.tech/insta" target="_blank">
               <Instagram className="icons instagram" fontSize="large" />
@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="https://phcet.tech/github" target="_blank">
               <GitHub className="icons twitter" fontSize="large" />
             </a>
-            <a href="https://phcet.tech/linkedin" target="_blank">
+            <a href="https://www.linkedin.com/company/hack-overflow/" target="_blank">
               <LinkedIn className="icons linkedin" fontSize="large" />
             </a>
             <a href="https://phcet.tech/twitter" target="_blank">

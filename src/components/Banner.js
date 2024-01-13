@@ -42,19 +42,21 @@ export const Banner = () => {
               {/* <h1 className="banner-title">HackOverflow</h1> */}
               <BannerText />
               <div className="orgText">
-                Organized by <span>Computer department of PHCET</span>
+                Hosted by <span>PHCET's Computer Dept.</span>
               </div>
             </div>
-            <div className="slogan" style={{ fontFamily: "Helvetica" }}>
-              Think. Code. Innovate.
-            </div>
+            <div className="slogan" style={{ fontFamily: "Poppins,sans-serif", fontWeight: "500", opacity: 0.85 }}>
+  Innovate. Code. Transform.
+</div>
+
+
           </div>
-        </div>
+        </div><br/>
         <div className="countDownContainer">
           <FlipClockCountdown
             to={date}
             labelStyle={{
-              fontFamily: "Helvetica",
+              fontFamily: "Poppins,sans-serif",
               textTransform: "uppercase",
               paddingTop: "5px",
               fontWeight: 500,

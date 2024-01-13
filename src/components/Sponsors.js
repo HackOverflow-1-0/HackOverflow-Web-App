@@ -43,7 +43,7 @@ export const Sponsors = () => {
                 {/* <div className="triangle-left"></div> */}
                 <p className="spon_p">
                   Reach hundreds of students and potential customers by
-                  sponsoring HackOverFlow 1.0
+                  sponsoring HackOverFlow 2.0
                 </p>
                 <h1 className="spon_head my-4">
                   WANT TO <br />
@@ -51,7 +51,7 @@ export const Sponsors = () => {
                 </h1>
                 <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
                   <a
-                    href="https://phcet.tech/brochure"
+                    href="https://drive.google.com/file/d/1e78HldRa9Wy6NOgx_Tz4cYzJADTiutX0/view"
                     target="_blank"
                     rel="noreferrer"
                   >

@@ -144,7 +144,7 @@ export const Schedule = () => {
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div className="col-5" style={{ padding: "2rem" }}>
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>16th</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>14th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
@@ -168,7 +168,7 @@ export const Schedule = () => {
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div className="col-5" style={{ padding: "2rem" }}>
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>18th</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>16th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>

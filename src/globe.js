@@ -58,7 +58,7 @@ const data = {
         name: "HackOverflow",
         lat: 18.8932418,
         lng: 73.1741628,
-        size: 0.6,
+        size: 0.7,
         color: "purple",
         icon: "./assets/img/coder-01.png",
       },
