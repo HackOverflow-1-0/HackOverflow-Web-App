@@ -1,18 +1,18 @@
 import React from "react";
 import "./Prizes.css";
-import Certificates from "../Certificates/Certificates";
+// import Certificates from "../Certificates/Certificates";
 
 import "dracula-ui/styles/dracula-ui.css";
-import { Card, Text } from "dracula-ui";
+// import { Card, Text } from "dracula-ui";
 function Prizes() {
-  const defaultOptions = {
-    loop: true,
-    // autoplay: true,
-    // animationData: animationData,
-    // rendererSettings: {
-    //   preserveAspectRatio: "xMidYMid slice",
-    // },
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   // autoplay: true,
+  //   // animationData: animationData,
+  //   // rendererSettings: {
+  //   //   preserveAspectRatio: "xMidYMid slice",
+  //   // },
+  // };
   return (
     // <Container>
     <>
@@ -26,7 +26,7 @@ function Prizes() {
             <div class="glass"></div>
 
             <div class="content">
-              <h2>Second Price</h2>
+              <h2>Second Prize</h2>
               <p>Cash Prize of TBA</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ function Prizes() {
           </div>
         </div>
       </div>
-      <Certificates />
+      {/* <Certificates /> */}
     </>
   );
 }

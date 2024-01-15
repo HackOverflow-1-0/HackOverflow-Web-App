@@ -4,15 +4,22 @@
   background: transparent;
   background-size: cover;
   background-repeat: no-repeat;
-  /* margin-top: 5.28rem !important; */
 }
 .top .topContainer {
-  padding: 10% 6.25vw;
+  padding: 0% 6.25vw;
   /* display: flex;
   flex-direction: column;
   align-items: flex-start; */
   /* background: rgba(15, 15, 15, 0.65); */
   background: transparent;
+}
+
+/* TEXT COLORS */
+#orange-pink {
+  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .Description {
@@ -122,10 +129,9 @@
     background: transparent;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("../../assets/img/hackathon.jpg"); */
-    padding: 0;
   }
   .top .topContainer {
-    padding: 5vw 12.25vw;
+    padding: 0vw 12.25vw;
   }
   .top h1 {
     margin: 0 auto 5%;

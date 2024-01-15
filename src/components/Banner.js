@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Background from "../components/Background";
 import "animate.css";
-import TrackVisibility from "react-on-screen";
-import classes from "./Banner.module.css";
-import Countdown from "react-countdown";
+// import TrackVisibility from "react-on-screen";
+// import classes from "./Banner.module.css";
+// import Countdown from "react-countdown";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import BannerText from "./BannerText/BannerText";
 
@@ -23,10 +23,10 @@ export const Banner = () => {
     const width = window.innerWidth;
     setWindowWidth(width);
   };
-  const [tickerVisible, setTickerVisible] = useState(false);
+  // const [tickerVisible, setTickerVisible] = useState(false);
   const date = new Date("2024-03-14");
   date.setHours(10, 0, 0, 0); // sets the time to 10:00:00 AM
-  const toggleText = tickerVisible ? "Hide Countdown" : "Show Countdown";
+  // const toggleText = tickerVisible ? "Hide Countdown" : "Show Countdown";
   return (
     <Background>
       <section className="section banner" id="home">

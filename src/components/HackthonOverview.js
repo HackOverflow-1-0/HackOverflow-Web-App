@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import CountUp, { useCountUp } from "react-countup";
+import CountUp from "react-countup";
 import groupProgramming from "../assets/img/banner-illustration.png";
 import "./HackathonOverview.css";
 
 const HackathonOverview = (props) => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
   return (
     <section id="hackathon-overview-section">
       <Container>
         <Row>
           <Col lg={6}>
-            <img src={groupProgramming} />
+            <img src={groupProgramming} alt="groupProgramming" />
           </Col>
           <Col lg={6}>
             <h1
@@ -107,16 +107,18 @@ const HackathonOverview = (props) => {
               </div>
             </div>
             <button
- style={{
-   background: "#3770ff",
-   textAlign: "center",
-   color: "white",
- }}
- className="btn"
- onClick={() => window.open('https://discord.com/invite/Pkp75qysYZ', '_blank')}
->
- Join Discord Channel
-</button>
+              style={{
+                background: "#3770ff",
+                textAlign: "center",
+                color: "white",
+              }}
+              className="btn"
+              onClick={() =>
+                window.open("https://discord.com/invite/Pkp75qysYZ", "_blank")
+              }
+            >
+              Join Discord Channel
+            </button>
           </Col>
         </Row>
       </Container>

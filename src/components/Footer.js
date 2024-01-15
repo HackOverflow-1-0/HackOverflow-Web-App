@@ -2,13 +2,7 @@ import React from "react";
 import logo from "../assets/img/2024-logo.webp";
 
 import "./Footer.css";
-import {
-  Facebook,
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Twitter,
-} from "@mui/icons-material";
+import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 
 const Footer = () => {
   return (
@@ -22,17 +16,29 @@ const Footer = () => {
           </div>
           <p>Follow us on:</p>
           <p>
-            <a href="https://phcet.tech/insta" target="_blank">
+            <a href="https://phcet.tech/insta" target="_blank" rel="noreferrer">
               <Instagram className="icons instagram" fontSize="large" />
             </a>
 
-            <a href="https://phcet.tech/github" target="_blank">
+            <a
+              href="https://phcet.tech/github"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHub className="icons twitter" fontSize="large" />
             </a>
-            <a href="https://www.linkedin.com/company/hack-overflow/" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/hack-overflow/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedIn className="icons linkedin" fontSize="large" />
             </a>
-            <a href="https://phcet.tech/twitter" target="_blank">
+            <a
+              href="https://phcet.tech/twitter"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Twitter className="icons linkedin" fontSize="large" />
             </a>
           </p>

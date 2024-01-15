@@ -1,13 +1,14 @@
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import offlineDesktopView from "../assets/img/offline_web.webp";
-import offlineMobileView from "../assets/img/offline_mobile.png";
-import onlineDesktopView from "../assets/img/online_web.png";
-import onlineMobileView from "../assets/img/online_mobile.png";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
+import offlineDesktopView from "../../assets/img/offline_web.webp";
+import offlineMobileView from "../../assets/img/offline_mobile.png";
+import onlineDesktopView from "../../assets/img/online_web.png";
+import onlineMobileView from "../../assets/img/online_mobile.png";
 import "animate.css";
+import "./Schedule.css"
 // import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import { useEffect, useState } from "react";
-import { Stack } from "@mui/material";
+// import { Stack } from "@mui/material";
 
 export const Schedule = () => {
   const [path, setPath] = useState("offline");
@@ -32,6 +33,7 @@ export const Schedule = () => {
       <div className="container-fluid">
         <h1
           className="text-center"
+          id="purple-pink"
           style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
         >
           Schedule
@@ -188,7 +190,7 @@ export const Schedule = () => {
           </Stack>
         </div> */}
       </div>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" alt="hackathon" src={colorSharp2}></img>
     </section>
   );
 };

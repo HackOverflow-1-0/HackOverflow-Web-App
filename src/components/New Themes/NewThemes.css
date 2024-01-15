@@ -319,3 +319,43 @@
     transform: translate(5px, -240px);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .clg-desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .about-us-h2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+  }
+  .about-us-p {
+    text-align: justify;
+  }
+  .clg-map h2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+  }
+}
+
+.CommunityImage {
+  /* max-width: 384px; */
+  border-radius: 0.5rem;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.CommunityImage:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+}
+
+.sdglink {
+  text-decoration: none;
+  background: #891A98;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

@@ -19,9 +19,9 @@ const About = () => {
       center: [73.1741628, 18.8932469],
       zoom: 16,
     });
-    var marker = new tt.Marker()
-      .setLngLat([73.1741628, 18.8932469])
-      .addTo(maps);
+    // var marker = new tt.Marker()
+    //   .setLngLat([73.1741628, 18.8932469])
+    //   .addTo(maps);
     // setMap(maps);
     return () => maps.remove();
   }, []);
@@ -56,12 +56,15 @@ const About = () => {
               <h1>How to reach..</h1>
               <p>
                 <div className="maps-card" id="map" ref={mapElement} />
-                <div className="maps-button">
+                <div className="maps-button navbar-text">
                   <a
                     href="https://www.google.com/maps/place/Pillai+HOC+College+Of+Engineering+%26+Technology/@18.8932468,73.1718668,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7e6af4a9b7a47:0x30dbd3b0d3c14416!8m2!3d18.8932418!4d73.1763515"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <button className="open-maps">Open Maps</button>
+                    <button className="open-maps bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+                      Open Maps
+                    </button>
                   </a>
                 </div>
               </p>
