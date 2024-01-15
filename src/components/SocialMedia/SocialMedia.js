@@ -70,7 +70,7 @@ const SocialMedia = () => {
                 </svg>
               </a>
             </li>
-            <li className="my-4">
+            {/* <li className="my-4">
               <a target="_blank" href="https://phcet.tech/linkedin" rel="noreferrer">
                 <svg
                   fill="#eee"
@@ -82,7 +82,7 @@ const SocialMedia = () => {
                   <path d="M171.274 344.942h74.09v167.296h-74.09V344.942zM0 173.468h126.068l-89.622-85.44 49.591-50.985 85.439 87.829V0h74.086v124.872L331 37.243l49.552 50.785-89.58 85.241L417 173.268v70.502H290.252l90.183 87.63L331 381.192 208.519 258.11 86.037 381.192l-49.591-49.591 90.218-87.631H0v-70.502z"></path>
                 </svg>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

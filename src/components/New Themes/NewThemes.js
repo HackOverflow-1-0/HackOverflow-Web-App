@@ -7,6 +7,8 @@ import "./NewThemes.css";
 import ThemesCard from "../ThemesCard/ThemesCard";
 
 // SDGS IMPORT
+
+import themesintro from "../../assets/img/themes/themesintro.webp";
 import poverty from "../../assets/img/themes/poverty.webp";
 import zerohunger from "../../assets/img/themes/zerohunger.webp";
 import goodhealth from "../../assets/img/themes/goodhealth.webp";
@@ -35,9 +37,74 @@ const NewThemes = () => {
         className="text-center"
         style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
       >
-        Themes - The 17 SDG'S
+        Themes - The 17 SDGs
       </h1>
-      <div className="cards-grid grid grid-cols-1 gap-4 place-items-center md:grid md:grid-cols-2 md:gap-4 lg:grid lg:grid-cols-3 lg:gap-12 xl:grid xl:grid-cols-3 xl:gap-12">
+
+      <section className="pt-4 pb-10">
+        <div className="">
+          <div className="md:py-6 pb-8 px-2 lg:px-10 flex flex-col lg:flex-row justify-center items-center gap-4">
+            <div className="lg:w-1/2 xl:w-[50%] p-6 lg:py-12 flex flex-col items-center justify-center md:items-start">
+              <h2 className="about-us-h2 mb-4" id="blue-cyan">
+                The 17 Sustainable Development Goals of the United Nations
+              </h2>
+              <p
+                className="about-us-p text-justify mb-4"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "1rem",
+                  margin: "0",
+                }}
+              >
+                In 2015, the United Nations created{" "}
+                <span className="text-[#891A98]">
+                  {" "}
+                  <a
+                    href="https://csi.phcet.ac.in/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sdglink"
+                  >
+                    17 Sustainable Development Goals (SDGs)
+                  </a>
+                </span>{" "}
+                and aimed to achieve them by 2030. All 193 United Nations Member
+                States agreed on these 17 goals to end poverty, ensure
+                prosperity, and protect the planet.
+              </p>
+              <p
+                className="about-us-p text-justify"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "1rem",
+                  margin: "0",
+                }}
+              >
+                For the <span id="orange-pink">HackOverflow 2.0</span>, your
+                mission is to create a project that contributes to solving one
+                or more of the 17 Sustainable Development Goals using different
+                technologies.
+              </p>
+            </div>
+            <div className="lg:w-1/2 p-4 lg:p-16">
+              <a
+                href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="CommunityImage object-cover rounded-md transition-shadow"
+                  src={themesintro}
+                  alt="sdg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="cards-grid grid grid-cols-1 gap-4 place-items-center md:grid md:grid-cols-2 md:gap-4 lg:grid lg:grid-cols-3 lg:gap-12 xl:grid xl:grid-cols-3 xl:gap-64">
         <ThemesCard
           title={"No Poverty"}
           image={poverty}

@@ -21,8 +21,6 @@
 
 .open-maps {
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
@@ -31,11 +29,11 @@
   transition: 0.3s ease-in-out;
 }
 
-.open-maps :hover {
+/* .open-maps :hover {
   color: #fff;
-}
+} */
 
-.open-maps ::before {
+/* .open-maps ::before {
   content: "";
   background: #121212;
   width: 0;
@@ -45,11 +43,11 @@
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
-}
+} */
 
-.open-maps :hover::before {
+/* .open-maps :hover::before {
   width: 100%;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .clg-desc {

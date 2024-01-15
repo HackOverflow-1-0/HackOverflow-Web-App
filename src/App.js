@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import Footer from "./components/Footer";
-import { Schedule } from "./components/Schedule";
+import { Schedule } from "./components/Schedule/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
 // import Themes from "./components/Themes/Themes";
@@ -16,6 +16,7 @@ import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import GlobeComp from "./globe";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
+// import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
 // import AppFeature from "./components/AppFeature/AppFeature";
 // import Register from "./components/Register/Register";
 // import RegisterMobile from "./components/Register/RegisterMobile";
@@ -90,7 +91,9 @@ function App() {
         <Banner />
         {/* {windowSize[0] > 1200 ? <Register /> : <RegisterMobile />} */}
         <HackathonOverview />
+        <CollegeClub />
         <GlobeComp />
+        {/* <ImageSeparatorGallery /> */}
         <Prizes />
         <Schedule />
         {/* <Themes /> */}
@@ -100,7 +103,6 @@ function App() {
 
         {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
         <About />
-        <CollegeClub />
         {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
         <Footer />
         {windowSize[0] < 600 && <MobileNavbar />}

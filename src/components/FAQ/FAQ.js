@@ -46,7 +46,7 @@ const FAQ = () => {
         </h1>
         <div className={`${classes.faqSection} my-5`}>
           <div className={classes.faqBox}>
-            <div>
+            <div className="cursor-pointer">
               {questionaire.map((faq, index) => {
                 return (
                   <>

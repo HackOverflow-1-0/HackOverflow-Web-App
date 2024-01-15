@@ -217,7 +217,7 @@ span.navbar-text {
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
+  /* margin-left: 18px; */
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;

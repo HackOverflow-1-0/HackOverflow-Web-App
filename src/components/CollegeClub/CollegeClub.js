@@ -38,10 +38,11 @@ import Carousel from "react-bootstrap/Carousel";
 const CollegeClub = () => {
   return (
     <>
-      <section className="top">
+      <section className="top pb-6">
         <div className="relative topContainer">
           {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
           <h1
+            id="orange-pink"
             className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
             style={{
               fontFamily: "Poppins,sans-serif",
