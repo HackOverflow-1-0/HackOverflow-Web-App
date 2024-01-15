@@ -43,7 +43,7 @@ const data = {
         lng: 77.3507357,
         size: 0.1,
         color: "white",
-        icon: './assets/img/coder-01.png'
+        icon: "./assets/img/coder-01.png",
       },
 
       {
@@ -144,8 +144,11 @@ export default function GlobeComp() {
   }, []);
 
   return (
-    <div className="sm:my-5 p-2 sm:px-4" style={{ margin: "40px 0", padding: "20px" }}>
-      <div className="pb-8 flex flex-col sm:flex sm:flex-row sm:item-start sm:justify-between">
+    <div
+      className="sm:my-5 p-2 sm:px-4"
+      style={{ margin: "40px 0", padding: "20px" }}
+    >
+      <div className="pb-8 flex flex-col items-center justify-center sm:flex sm:flex-row sm:item-start sm:justify-between sm:items-center">
         <div className="">
           <h2 className="globe-h2">Participations across all over India!!!</h2>
           <div className="states-h1">
