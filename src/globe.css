@@ -6,6 +6,44 @@
   font-weight: 700;
 }
 
+@media screen and (max-width: 900px) {
+  .scene-container {
+    width: 376px !important;
+    height: 500px !important;
+  }
+  canvas {
+    width: 376px !important;
+    height: 500px !important;
+    border-radius: 35px;
+    box-shadow: rgb(48, 3, 54) 0px 4px 10px;
+    /* box-shadow: rgb(202, 28, 225) 0px 4px 20px; */
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  .scene-container {
+    width: 600px !important;
+    height: 600px !important;
+  }
+  canvas {
+    width: 600px !important;
+    height: 600px !important;
+    border-radius: 35px;
+    box-shadow: rgb(48, 3, 54) 0px 4px 10px;
+  }
+}
+
+/* @media screen and (min-width: 1536px) {
+  .scene-container {
+    width: 768px !important;
+    height: 936px !important;
+  }
+  canvas {
+    width: 768px !important;
+    height: 936px !important;
+  }
+} */
+
 .states-h1 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
