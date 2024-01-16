@@ -1,0 +1,94 @@
+/* Add a transition for the modal */
+.fixed-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fixed-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Update the modal styles */
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.modal-content {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.modal-controls button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Update button styles */
+.button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add transition to the image cards */
+.grid-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
