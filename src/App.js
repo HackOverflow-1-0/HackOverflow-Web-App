@@ -16,6 +16,7 @@ import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import GlobeComp from "./globe";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
+// import FaceGallery from "./components/FaceGallery/FaceGallery";
 // import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
 // import AppFeature from "./components/AppFeature/AppFeature";
 // import Register from "./components/Register/Register";
@@ -103,6 +104,7 @@ function App() {
 
         {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
         <About />
+        {/* <FaceGallery /> */}
         {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
         <Footer />
         {windowSize[0] < 600 && <MobileNavbar />}
