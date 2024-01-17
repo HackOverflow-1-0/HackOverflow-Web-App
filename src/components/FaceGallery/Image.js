@@ -1,4 +1,5 @@
 import React from "react";
+import "./Image.css";
 
 export const Image = ({
   className,
@@ -10,7 +11,11 @@ export const Image = ({
 }) => {
   return (
     <Component className={className} {...rest}>
-      <img src={image} alt={alt} className={`w-full h-full rounded-lg ${objectCover}`} />
+      <img
+        src={image}
+        alt={alt}
+        className={`ImageGallery w-full h-full rounded-lg ${objectCover}`}
+      />
     </Component>
   );
 };
