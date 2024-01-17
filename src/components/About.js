@@ -19,9 +19,9 @@ const About = () => {
       center: [73.1741628, 18.8932469],
       zoom: 16,
     });
-    // var marker = new tt.Marker()
-    //   .setLngLat([73.1741628, 18.8932469])
-    //   .addTo(maps);
+    var marker = new tt.Marker()
+      .setLngLat([73.1741628, 18.8932469])
+      .addTo(maps);
     // setMap(maps);
     return () => maps.remove();
   }, []);
