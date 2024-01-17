@@ -4,7 +4,7 @@ import offlineMobileView from "../../assets/img/offline_mobile-resize.webp";
 import onlineDesktopView from "../../assets/img/online_web.png";
 import onlineMobileView from "../../assets/img/online_mobile.png";
 import "animate.css";
-import "./Schedule.css"
+import "./Schedule.css";
 // import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
 import { useEffect, useState } from "react";
@@ -190,7 +190,11 @@ export const Schedule = () => {
           </Stack>
         </div> */}
       </div>
-      <img className="background-image-right" alt="hackathon" src={colorSharp2}></img>
+      <img
+        className="background-image-right"
+        alt="hackathon"
+        src={colorSharp2}
+      ></img>
     </section>
   );
 };

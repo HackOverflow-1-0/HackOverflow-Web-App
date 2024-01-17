@@ -92,3 +92,40 @@
 .next-button {
   right: 10px;
 }
+
+.GallerySection {
+  border-radius: 21px;
+  box-shadow: rgb(202, 28, 225) 0px 4px 20px;
+  padding: 50px;
+}
+
+.ImageGallery {
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: rgb(85, 6, 95) 0px 4px 10px;
+  border: 1px solid #891a98;
+}
+
+.ImageGallery:hover {
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+}
+
+.ClickedImage img {
+  height: 370px;
+  width: 370px;
+}
+
+@media screen and (min-width: 640px) {
+  .ClickedImage img {
+    height: 500px;
+    width: 580px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ClickedImage img {
+    height: 500px;
+    width: 880px;
+  } 
+}

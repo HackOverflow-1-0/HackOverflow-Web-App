@@ -34,6 +34,7 @@ import image6 from "../../assets/img/Events/college-club-events-23/image6.webp";
 import image7 from "../../assets/img/Events/college-club-events-23/image7.webp";
 import "./CollegeClub.css";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 
 const CollegeClub = () => {
   return (
@@ -109,6 +110,13 @@ const CollegeClub = () => {
           </div>
         </div>
       </section>
+      <div className="navbar-text flex justify-center">
+        <Link to="/gallery">
+          <button className="SeeMoreButton bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+            See More...
+          </button>
+        </Link>
+      </div>
 
       {/* <div class="bg-cover bg-center h-screen w-full md:h-64 md:w-auto" style={{ backgroundImage: `url(${banneriamge})` }}>
                 <div class="container mx-auto h-full md:h-64">

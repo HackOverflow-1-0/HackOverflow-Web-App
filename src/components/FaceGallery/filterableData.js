@@ -3,30 +3,28 @@ import image2 from "../../assets/img/Events/college-club-events-23/image2.webp";
 import image3 from "../../assets/img/Events/college-club-events-23/image3.webp";
 import image4 from "../../assets/img/Events/college-club-events-23/image4.webp";
 
-
-
 export const filterableData = [
   {
-    name: "nature",
+    name: "day 1",
     // src: "https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=800",
     src: image1,
     title: "Mountains",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    name: "cars",
+    name: "day 1",
     src: image2,
     title: "BMW",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    name: "people",
+    name: "day 2",
     src: image3,
     title: "Modeller",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    name: "nature",
+    name: "day 3",
     src: image4,
     title: "Sea Life",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

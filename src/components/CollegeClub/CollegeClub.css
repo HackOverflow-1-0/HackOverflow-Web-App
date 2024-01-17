@@ -24,8 +24,9 @@
 
 .Description {
   border-radius: 23px;
-  /* box-shadow: rgb(202, 28, 225) 0px 4px 10px; */
-  box-shadow: rgb(202, 28, 225) 0px 4px 20px;
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  /* box-shadow: rgb(202, 28, 225) 0px 4px 20px; */
+  /* box-shadow: rgb(48, 3, 54) 0px 4px 10px; */
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -150,5 +151,21 @@
 @media only screen and (max-width: 768px) {
   .Description {
     border-radius: 15px;
+  }
+}
+
+.SeeMoreButton {
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  transition: 0.5s ease-in-out;
+}
+
+/* .SeeMoreButton:hover {
+  background-color: #5767fe;
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+} */
+
+@media only screen and (min-width: 1280px) {
+  .SeeMoreButton {
+    display: none;
   }
 }

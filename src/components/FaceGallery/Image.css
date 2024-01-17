@@ -1,0 +1,11 @@
+.ImageGallery {
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: rgb(85, 6, 95) 0px 4px 10px;
+}
+
+.ImageGallery:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+}

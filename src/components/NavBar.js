@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/2024-logo.webp";
 import ProgressBar from "./progressBar/ProgressBar";
-// import MobileNavbar from "./MobileNavbar/MobileNavbar";
+import { Link, useLocation } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => {
@@ -24,8 +25,14 @@ export const NavBar = () => {
     };
   }, []);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
+  useEffect(() => {
+    // Update active link based on location.pathname
+    const currentPath = location.pathname.toLowerCase();
+    setActiveLink(currentPath === "/" ? "home" : currentPath.substr(1));
+  }, [location.pathname]);
+
+  const getLinkHref = (section) => {
+    return location.pathname === "/" ? `/#${section}` : `/#${section}`;
   };
 
   return (
@@ -33,62 +40,87 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand className="nav-logo">
-            <a href="/">
+            <Link to="/">
               <img src={logo} alt="Logo" id="logo" />
-            </a>
+            </Link>
           </Navbar.Brand>
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="#home"
+                href={getLinkHref("home")}
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() => setActiveLink("home")}
               >
                 Home
               </Nav.Link>
 
               <Nav.Link
-                href="#schedule"
+                href={getLinkHref("schedule")}
                 className={
                   activeLink === "schedule"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("schedule")}
+                onClick={() => setActiveLink("schedule")}
               >
                 Schedule
               </Nav.Link>
+
               <Nav.Link
-                href="#themes"
+                href={getLinkHref("themes")}
                 className={
                   activeLink === "themes" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("themes")}
+                onClick={() => setActiveLink("themes")}
               >
                 Themes
               </Nav.Link>
+
               <Nav.Link
-                href="#sponsors"
+                href={getLinkHref("sponsors")}
                 className={
                   activeLink === "sponsors"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("sponsors")}
+                onClick={() => setActiveLink("sponsors")}
               >
                 Sponsors
               </Nav.Link>
+
               <Nav.Link
-                href="#about"
+                href={getLinkHref("about")}
                 className={
                   activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("about")}
+                onClick={() => setActiveLink("about")}
               >
                 About
+              </Nav.Link>
+
+              <Nav.Link
+                // href={getLinkHref("about")}
+                className={
+                  activeLink === "gallery"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => setActiveLink("gallery")}
+              >
+                <Link
+                  style={{ textDecoration: "none", color: "#fff" }}
+                  to="/gallery"
+                  className={
+                    activeLink === "gallery"
+                      ? "active navbar-link"
+                      : "navbar-link"
+                  }
+                >
+                  Gallery
+                </Link>
               </Nav.Link>
             </Nav>
             <div className="navbar-text flex justify-end">
@@ -102,19 +134,6 @@ export const NavBar = () => {
                 </button>
               </a>
             </div>
-            {/* <span className="navbar-text">
-              <button>
-                <span>
-                  <a
-                    rel="noreferrer"
-                    href="https://phcet.tech/pdf"
-                    target="_blank"
-                  >
-                    Brochure
-                  </a>
-                </span>
-              </button>
-            </span> */}
           </Navbar.Collapse>
         </Container>
         <ProgressBar />
