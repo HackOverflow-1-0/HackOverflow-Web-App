@@ -19,6 +19,8 @@ import GlobeComp from "./globe";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
 import GalleryLayout from "./components/GalleryLayout";
+// import TeamLayout from "./components/TeamLayout";
+// import Teampage from "./components/Teams/Teams";
 // import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
 // import AppFeature from "./components/AppFeature/AppFeature";
 // import Register from "./components/Register/Register";
@@ -114,6 +116,7 @@ function App() {
         />
 
         <Route path="/gallery" element={<GalleryLayout />} />
+        {/* <Route path="/team" element={<TeamLayout />} /> */}
       </Routes>
     </BrowserRouter>
   );

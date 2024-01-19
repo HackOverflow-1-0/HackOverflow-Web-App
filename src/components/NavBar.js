@@ -101,8 +101,24 @@ export const NavBar = () => {
                 About
               </Nav.Link>
 
+              {/* <Nav.Link
+                className={
+                  activeLink === "team" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => setActiveLink("team")}
+              >
+                <Link
+                  style={{ textDecoration: "none", color: "#fff" }}
+                  to="/team"
+                  className={
+                    activeLink === "team" ? "active navbar-link" : "navbar-link"
+                  }
+                >
+                  Teams
+                </Link>
+              </Nav.Link> */}
+
               <Nav.Link
-                // href={getLinkHref("about")}
                 className={
                   activeLink === "gallery"
                     ? "active navbar-link"
