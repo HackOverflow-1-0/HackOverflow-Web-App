@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "./Button";
 import { filterableData } from "./filterableData";
 import { Image } from "./Image";
@@ -8,9 +8,6 @@ import "./ImageFilter.css";
 const ImageFilter = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-  const [touchStartX, setTouchStartX] = useState(0);
-  const touchThreshold = 50; // Adjust this threshold based on your preference
-  const galleryRef = useRef(null);
   // const buttonCaptions = ["all", "nature", "cars", "people"];
   const buttonCaptions = ["all", "day 1", "day 2", "day 3"];
 
@@ -51,34 +48,6 @@ const ImageFilter = () => {
     });
   };
 
-  const handleTouchStart = (event) => {
-    setTouchStartX(event.touches[0].clientX);
-  };
-
-  const handleTouchMove = (event) => {
-    if (touchStartX - event.touches[0].clientX > touchThreshold) {
-      // Swiped left, show next image
-      handleNextImage();
-    } else if (event.touches[0].clientX - touchStartX > touchThreshold) {
-      // Swiped right, show previous image
-      handlePrevImage();
-    }
-  };
-
-  useEffect(() => {
-    const galleryElement = galleryRef.current;
-
-    if (galleryElement) {
-      galleryElement.addEventListener("touchstart", handleTouchStart);
-      galleryElement.addEventListener("touchmove", handleTouchMove);
-
-      return () => {
-        galleryElement.removeEventListener("touchstart", handleTouchStart);
-        galleryElement.removeEventListener("touchmove", handleTouchMove);
-      };
-    }
-  }, [handleTouchStart, handleTouchMove]);
-
   // Handle keyboard events
   useEffect(() => {
     // Set scroll position to top when the component mounts
@@ -103,7 +72,7 @@ const ImageFilter = () => {
 
   return (
     <section className="PaddingGallery w-full flex flex-col gap-12 py-10 lg:px-16 md:px-10">
-      <div ref={galleryRef} className="GallerySection">
+      <div className="GallerySection">
         <div className="flex w-full justify-center pb-4 md:justify-center items-start md:gap-6 gap-3 flex-wrap">
           {buttonCaptions.map((filter) => (
             <Button
@@ -164,20 +133,21 @@ const ImageFilter = () => {
               image={filteredData[selectedImageIndex].src}
               alt={filteredData[selectedImageIndex].name}
             />
-            <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full">
+            <div className="absolute top-1/2 sm:top-[65%] lg:hidden transform -translate-y-1/2 flex justify-between w-full">
               <Button
                 type="button"
-                className="text-white"
+                className="text-white text-[1rem] bg-[#891A98] rounded-md flex justify-center items-center"
                 onClick={handlePrevImage}
               >
-                {/* &lt; */}
+                <span className="m-2">&lt;</span>
               </Button>
+
               <Button
                 type="button"
-                className="text-white"
+                className="text-white text-[1rem] bg-[#891A98] rounded-md flex justify-center items-center"
                 onClick={handleNextImage}
               >
-                {/* &gt; */}
+                <span className="m-2">&gt;</span>
               </Button>
             </div>
           </div>

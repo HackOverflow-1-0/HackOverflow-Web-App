@@ -40,9 +40,9 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand className="nav-logo">
-            <Link to="/">
+            <a href="/#home" alt="Logo">
               <img src={logo} alt="Logo" id="logo" />
-            </Link>
+            </a>
           </Navbar.Brand>
 
           <Navbar.Collapse id="basic-navbar-nav">
