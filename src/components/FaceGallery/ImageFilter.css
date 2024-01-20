@@ -135,7 +135,7 @@
 @media screen and (min-width: 768px) {
   .ClickedImage img {
     height: 500px;
-    width: 880px;
+    width: 700px;
   }
 }
 
@@ -143,5 +143,9 @@
   .PaddingGallery {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .ClickedImage img {
+    height: 500px;
+    width: 880px;
   }
 }
