@@ -40,7 +40,7 @@
   
   .curtain-right::before {
     background: url('../../assets/img/pastwinners/1stprizeTwo.png') center/cover no-repeat; /* Set the path to your second image */
-    right: -0.1px;
+    right: 0;
   }
   
   .curtain-left.card2::before {
@@ -49,7 +49,7 @@
   
   .curtain-right.card2::before {
     background: url('../../assets/img/pastwinners/2ndprizeTwo.png') center/cover no-repeat; /* Set the path to your fourth image */
-    right: -0.99px;
+    right: 0;
   }
   
   .curtain-left.card3::before {
@@ -58,7 +58,7 @@
   
   .curtain-right.card3::before {
     background: url('../../assets/img/pastwinners/3rdprizeTwo.png') center/cover no-repeat; /* Set the path to your sixth image */
-    right: -0.1px;
+    right: 0;
   }
   
   .curtain-left {

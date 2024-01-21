@@ -2,23 +2,21 @@
 import React from 'react';
 import './WinnerCard.css';
 
-import image1 from "../../assets/img/Events/college-club-events-23/image1.webp";
-import image2 from "../../assets/img/Events/college-club-events-23/image2.webp";
-import image3 from "../../assets/img/Events/college-club-events-23/image3.webp";
+import image1 from "../../assets/img/pastwinners/First.webp";
+import image2 from "../../assets/img/pastwinners/Second.webp";
+import image3 from "../../assets/img/pastwinners/Third.webp";
 
 const WinnerCard = () => {
   return (
-    <div>
-      <div class="container mx-auto my-8 text-center">
-        <h1 class="text-4xl font-bold mb-4" id="orange-pink">Winners of Hackoverflow 1.0</h1>
-      </div>
-      <div className="card-container">
+    <div className="container mx-auto my-8 text-center">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4" id="purple-pink">Winners of Hackoverflow 1.0</h1>
+      <div className="grid gap-4 sm:grid-cols-3">
         <div className="card">
           <div className="curtain-panel curtain-left"></div>
           <div className="curtain-panel curtain-right"></div>
           <div className="card-content">
             {/* Your content here */}
-            <img src={image1} alt="Card Image" />
+            <img src={image1} alt="Card Image" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -27,7 +25,7 @@ const WinnerCard = () => {
           <div className="curtain-panel curtain-right card2"></div>
           <div className="card-content">
             {/* Your content here */}
-            <img src={image2} alt="Card Image" />
+            <img src={image2} alt="Card Image" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -36,7 +34,7 @@ const WinnerCard = () => {
           <div className="curtain-panel curtain-right card3"></div>
           <div className="card-content">
             {/* Your content here */}
-            <img src={image3} alt="Card Image" />
+            <img src={image3} alt="Card Image" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
