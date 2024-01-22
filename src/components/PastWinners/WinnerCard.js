@@ -15,7 +15,7 @@ const WinnerCard = () => {
           <div className="curtain-panel curtain-left"></div>
           <div className="curtain-panel curtain-right"></div>
           <div className="card-content">
-            {/* Your content here */}
+            <div className="card-text">T3 TRIBE</div>
             <img src={image1} alt="Card Image" className="w-full h-full object-cover" />
           </div>
         </div>
@@ -24,7 +24,7 @@ const WinnerCard = () => {
           <div className="curtain-panel curtain-left card2"></div>
           <div className="curtain-panel curtain-right card2"></div>
           <div className="card-content">
-            {/* Your content here */}
+            <div className="card-text">AFKS</div>
             <img src={image2} alt="Card Image" className="w-full h-full object-cover" />
           </div>
         </div>
@@ -33,7 +33,7 @@ const WinnerCard = () => {
           <div className="curtain-panel curtain-left card3"></div>
           <div className="curtain-panel curtain-right card3"></div>
           <div className="card-content">
-            {/* Your content here */}
+            <div className="card-text">PIXLS</div>
             <img src={image3} alt="Card Image" className="w-full h-full object-cover" />
           </div>
         </div>
