@@ -29,6 +29,7 @@ import GalleryLayout from "./components/GalleryLayout";
 import ScrollToTop from "react-scroll-to-top";
 // import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
 // import Loadop from "./components/loadop";
+import WinnerCard from "./components/PastWinners/WinnerCard";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -100,6 +101,7 @@ function App() {
               <Banner />
               <HackathonOverview />
               <CollegeClub />
+              <WinnerCard/>
               <GlobeComp />
               <Prizes />
               <Schedule />
