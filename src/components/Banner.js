@@ -32,27 +32,32 @@ export const Banner = () => {
       <section className="section banner" id="home">
         <div className="container">
           <div className="bannerWrap">
-            <div className="middleTitle">
-              {/* <svg viewBox="0 0 1320 230" id="title-animation">
-              <text x="50%" y="50%" dy=".35em" textAnchor="middle">
-                HackOverflow 1.0
-
-              </text>
-            </svg> */}
-              {/* <h1 className="banner-title">HackOverflow</h1> */}
+            {/* <div className="middleTitle">
+              <svg viewBox="0 0 1320 230" id="title-animation">
+                <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+                  HackOverflow 1.0
+                </text>
+              </svg>
+              <h1 className="banner-title">HackOverflow</h1>
               <BannerText />
               <div className="orgText">
                 Hosted by <span>PHCET's Computer Dept.</span>
               </div>
             </div>
-            <div className="slogan" style={{ fontFamily: "Poppins,sans-serif", fontWeight: "500", opacity: 0.85 }}>
-  Innovate. Code. Transform.
-</div>
-
-
+            <div
+              className="slogan"
+              style={{
+                fontFamily: "Poppins,sans-serif",
+                fontWeight: "500",
+                opacity: 0.85,
+              }}
+            >
+              Innovate. Code. Transform.
+            </div> */}
           </div>
-        </div><br/>
-        <div className="countDownContainer">
+        </div>
+        <br />
+        {/* <div className="countDownContainer">
           <FlipClockCountdown
             to={date}
             labelStyle={{
@@ -70,7 +75,7 @@ export const Banner = () => {
               backgroundColor: "purple",
             }}
           />
-        </div>
+        </div> */}
         <div className="socialMedia">
           <SocialMedia />
         </div>
