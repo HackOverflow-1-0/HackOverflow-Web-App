@@ -103,9 +103,9 @@ function App() {
               <CollegeClub />
               <WinnerCard/>
               <GlobeComp />
-              <Prizes />
+              {/* <Prizes /> */}
               <Schedule />
-              <NewThemes />
+              {/* <NewThemes /> */}
               <Sponsors />
               {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
               <About />

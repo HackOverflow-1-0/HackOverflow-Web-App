@@ -33,6 +33,16 @@
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  video {
+    transform: none;
+    height: 700px;
+    width: 1700px;
+  }
+}
+
+
+
 @media only screen and (min-width: 1536px) {
   video {
     transform: none;
