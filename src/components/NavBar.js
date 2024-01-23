@@ -69,7 +69,7 @@ export const NavBar = () => {
                 Schedule
               </Nav.Link>
 
-              <Nav.Link
+              {/* <Nav.Link
                 href={getLinkHref("themes")}
                 className={
                   activeLink === "themes" ? "active navbar-link" : "navbar-link"
@@ -77,7 +77,7 @@ export const NavBar = () => {
                 onClick={() => setActiveLink("themes")}
               >
                 Themes
-              </Nav.Link>
+              </Nav.Link> */}
 
               <Nav.Link
                 href={getLinkHref("sponsors")}

@@ -42,12 +42,12 @@ const MobileNavbar = (props) => {
           icon={<Schedule style={{ fill: "#aa367c" }} />}
         />
       </Nav.Link>
-      <Nav.Link href={getLinkHref("themes")}>
+      {/* <Nav.Link href={getLinkHref("themes")}>
         <BottomNavigationAction
           label="Themes"
           icon={<Category style={{ fill: "#aa367c" }} />}
         />
-      </Nav.Link>
+      </Nav.Link> */}
       <Nav.Link href={getLinkHref("sponsors")}>
         <BottomNavigationAction
           label="Sponsors"
