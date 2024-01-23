@@ -30,6 +30,7 @@ import ScrollToTop from "react-scroll-to-top";
 // import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
 // import Loadop from "./components/loadop";
 import WinnerCard from "./components/PastWinners/WinnerCard";
+import FAQs from "./components/FAQ/FAQs";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -107,7 +108,8 @@ function App() {
               <Schedule />
               {/* <NewThemes /> */}
               <Sponsors />
-              {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
+              <FAQs/>
+              {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
               <About />
               {/* <FaceGallery /> */}
               {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
