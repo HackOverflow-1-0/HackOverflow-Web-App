@@ -83,7 +83,7 @@ export const Schedule = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      {/* <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
           <h1
             className="text-center"
@@ -189,7 +189,7 @@ export const Schedule = () => {
             <button>Add to Calendar</button>
           </Stack>
         </div> */}
-      </div>
+      {/* </div> */} 
       <img
         className="background-image-right"
         alt="hackathon"
