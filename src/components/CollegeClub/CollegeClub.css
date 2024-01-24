@@ -33,6 +33,12 @@
   overflow: hidden;
 }
 
+@media only screen and (min-width: 1280px) {
+  .Description {
+    width: 70%;
+  }
+}
+
 .Carousel.Item img {
   max-width: 100%;
   height: auto;

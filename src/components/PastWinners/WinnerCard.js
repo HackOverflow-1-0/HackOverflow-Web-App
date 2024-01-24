@@ -14,6 +14,19 @@ const WinnerCard = () => {
       </h1>
       <div className="grid gap-4 sm:grid-cols-3">
         <div className="cursor-pointer card">
+          <div className="curtain-panel curtain-left card3"></div>
+          <div className="curtain-panel curtain-right card3"></div>
+          <div className="card-content">
+            <div className="card-text">PIXLS</div>
+            <img
+              src={image3}
+              alt="Winner Card"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="cursor-pointer card">
           <div className="curtain-panel curtain-left"></div>
           <div className="curtain-panel curtain-right"></div>
           <div className="card-content">
@@ -33,19 +46,6 @@ const WinnerCard = () => {
             <div className="card-text">AFKS</div>
             <img
               src={image2}
-              alt="Winner Card"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="cursor-pointer card">
-          <div className="curtain-panel curtain-left card3"></div>
-          <div className="curtain-panel curtain-right card3"></div>
-          <div className="card-content">
-            <div className="card-text">PIXLS</div>
-            <img
-              src={image3}
               alt="Winner Card"
               className="w-full h-full object-cover"
             />

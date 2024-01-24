@@ -40,7 +40,7 @@ const CollegeClub = () => {
   return (
     <>
       <section className="top pb-6">
-        <div className="relative topContainer">
+        <div className="relative topContainer flex flex-col justify-center items-center">
           {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
           <h1
             id="orange-pink"
@@ -55,52 +55,55 @@ const CollegeClub = () => {
           </h1>
           <div className="Description mt-4 md:mt-2">
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Carousel interval={2000} className="border-white">
+              <Carousel
+                interval={2000}
+                className="border-white d-block h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
+              >
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image1}
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image2}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image3}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image4}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image5}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image6}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image7}
                     alt="Second slide"
                   />
