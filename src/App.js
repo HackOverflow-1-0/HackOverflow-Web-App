@@ -16,7 +16,7 @@ import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import GlobeComp from "./globe";
-import CollegeClub from "./components/CollegeClub/CollegeClub";
+// import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
 import GalleryLayout from "./components/GalleryLayout";
 // import TeamLayout from "./components/TeamLayout";
@@ -30,6 +30,7 @@ import ScrollToTop from "react-scroll-to-top";
 // import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
 // import Loadop from "./components/loadop";
 import WinnerCard from "./components/PastWinners/WinnerCard";
+import FAQs from "./components/FAQ/FAQs";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -100,14 +101,15 @@ function App() {
               <NavBar />
               <Banner />
               <HackathonOverview />
-              <CollegeClub />
+              {/* <CollegeClub /> */}
               <WinnerCard/>
               <GlobeComp />
               {/* <Prizes /> */}
               <Schedule />
               {/* <NewThemes /> */}
               <Sponsors />
-              {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />}
+              <FAQs/>
+              {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
               <About />
               {/* <FaceGallery /> */}
               {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
