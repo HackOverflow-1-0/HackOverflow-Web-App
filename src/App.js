@@ -16,7 +16,7 @@ import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import GlobeComp from "./globe";
-import CollegeClub from "./components/CollegeClub/CollegeClub";
+// import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
 import GalleryLayout from "./components/GalleryLayout";
 // import TeamLayout from "./components/TeamLayout";
@@ -101,7 +101,7 @@ function App() {
               <NavBar />
               <Banner />
               <HackathonOverview />
-              <CollegeClub />
+              {/* <CollegeClub /> */}
               <WinnerCard/>
               <GlobeComp />
               {/* <Prizes /> */}
