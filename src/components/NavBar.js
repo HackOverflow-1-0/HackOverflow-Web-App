@@ -141,7 +141,7 @@ export const NavBar = () => {
             </Nav>
             <div className="navbar-text flex justify-end">
               <a
-                href="https://drive.google.com/file/d/1e78HldRa9Wy6NOgx_Tz4cYzJADTiutX0/view?usp=sharing"
+                href="https://drive.google.com/file/d/1N7_pnYCL_fs8Jf3EPrMLnEvVaNAZqEU_/view"
                 target="_blank"
                 rel="noreferrer"
               >
