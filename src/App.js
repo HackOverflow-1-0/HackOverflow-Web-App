@@ -29,8 +29,9 @@ import GalleryLayout from "./components/GalleryLayout";
 import ScrollToTop from "react-scroll-to-top";
 // import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
 // import Loadop from "./components/loadop";
-import WinnerCard from "./components/PastWinners/WinnerCard";
+// import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
+import Registercard from "./components/Register-Card/register-card";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -101,8 +102,9 @@ function App() {
               <NavBar />
               <Banner />
               <HackathonOverview />
+              {/* <Registercard/>    for register form  */}
               <CollegeClub />
-              <WinnerCard />
+              {/* <WinnerCard /> */}
               <GlobeComp />
               {/* <Prizes /> */}
               <Schedule />
