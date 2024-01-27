@@ -4,48 +4,48 @@
 import image_4 from "../../assets/img/Events/college-club-events-23/image4.webp";
 
 //day 1
-import image1 from "../../assets/img/Events/1.0/day1/DSC_0012.jpg";
-import image2 from "../../assets/img/Events/1.0/day1/DSC_0022.jpg";
-import image3 from "../../assets/img/Events/1.0/day1/DSC_0036.jpg";
-import image4 from "../../assets/img/Events/1.0/day1/DSC_0042.jpg";
-import image5 from "../../assets/img/Events/1.0/day1/DSC_0052.jpg";
-import image6 from "../../assets/img/Events/1.0/day1/DSC_0068.jpg";
-import image7 from "../../assets/img/Events/1.0/day1/DSC_0094.jpg";
-import image8 from "../../assets/img/Events/1.0/day1/DSC_0146.jpg";
-import image9 from "../../assets/img/Events/1.0/day1/DSC_0187.jpg";
-import image10 from "../../assets/img/Events/1.0/day1/DSC_0211.jpg";
-import image11 from "../../assets/img/Events/1.0/day1/DSC_0224.jpg";
-import image12 from "../../assets/img/Events/1.0/day1/DSC_8219.jpg";
+import image1 from "../../assets/img/Events/1.0/day1/DSC_0012.webp";
+import image2 from "../../assets/img/Events/1.0/day1/DSC_0022.webp";
+import image3 from "../../assets/img/Events/1.0/day1/DSC_0036.webp";
+import image4 from "../../assets/img/Events/1.0/day1/DSC_0042.webp";
+import image5 from "../../assets/img/Events/1.0/day1/DSC_0052.webp";
+import image6 from "../../assets/img/Events/1.0/day1/DSC_0068.webp";
+import image7 from "../../assets/img/Events/1.0/day1/DSC_0094.webp";
+import image8 from "../../assets/img/Events/1.0/day1/DSC_0146.webp";
+import image9 from "../../assets/img/Events/1.0/day1/DSC_0187.webp";
+import image10 from "../../assets/img/Events/1.0/day1/DSC_0211.webp";
+import image11 from "../../assets/img/Events/1.0/day1/DSC_0224.webp";
+import image12 from "../../assets/img/Events/1.0/day1/DSC_8219.webp";
 // import image13 from "../../assets/img/Events/1.0/day1/_MG_9817.jpg";
 // import image14 from "../../assets/img/Events/1.0/day1/_MG_9839.jpg";
 // import image15 from "../../assets/img/Events/1.0/day1/_MG_9971.jpg";
 
 //day 2
-import image16 from "../../assets/img/Events/1.0/day2/DSC_0235.jpg";
-import image17 from "../../assets/img/Events/1.0/day2/DSC_0238.jpg";
-import image18 from "../../assets/img/Events/1.0/day2/DSC_0242.jpg";
-import image19 from "../../assets/img/Events/1.0/day2/DSC_0246.jpg";
-import image20 from "../../assets/img/Events/1.0/day2/DSC_0258.jpg";
-import image21 from "../../assets/img/Events/1.0/day2/DSC_0312.jpg";
-import image22 from "../../assets/img/Events/1.0/day2/DSC_0330.jpg";
-import image23 from "../../assets/img/Events/1.0/day2/DSC_0349.jpg";
-import image24 from "../../assets/img/Events/1.0/day2/DSC_0352.jpg";
-import image25 from "../../assets/img/Events/1.0/day2/IMG_0857.jpg";
-import image26 from "../../assets/img/Events/1.0/day2/IMG_0863.jpg";
+import image16 from "../../assets/img/Events/1.0/day2/DSC_0235.webp";
+import image17 from "../../assets/img/Events/1.0/day2/DSC_0238.webp";
+import image18 from "../../assets/img/Events/1.0/day2/DSC_0242.webp";
+import image19 from "../../assets/img/Events/1.0/day2/DSC_0246.webp";
+import image20 from "../../assets/img/Events/1.0/day2/DSC_0258.webp";
+import image21 from "../../assets/img/Events/1.0/day2/DSC_0312.webp";
+import image22 from "../../assets/img/Events/1.0/day2/DSC_0330.webp";
+import image23 from "../../assets/img/Events/1.0/day2/DSC_0349.webp";
+import image24 from "../../assets/img/Events/1.0/day2/DSC_0352.webp";
+import image25 from "../../assets/img/Events/1.0/day2/IMG_0857.webp";
+import image26 from "../../assets/img/Events/1.0/day2/IMG_0863.webp";
 
 //day 3
-import image27 from "../../assets/img/Events/1.0/day3/DSC_0366.jpg";
-import image28 from "../../assets/img/Events/1.0/day3/DSC_0374.jpg";
-import image29 from "../../assets/img/Events/1.0/day3/DSC_0383.jpg";
-import image30 from "../../assets/img/Events/1.0/day3/DSC_0405.jpg";
-import image31 from "../../assets/img/Events/1.0/day3/DSC_0506.jpg";
-import image32 from "../../assets/img/Events/1.0/day3/DSC_0509.jpg";
-import image33 from "../../assets/img/Events/1.0/day3/DSC_0513.jpg";
-import image34 from "../../assets/img/Events/1.0/day3/DSC_0517.jpg";
-import image35 from "../../assets/img/Events/1.0/day3/DSC_0524.jpg";
-// import image36 from "../../assets/img/Events/1.0/day3/IMG_8003.jpg";
-// import image37 from "../../assets/img/Events/1.0/day3/IMG_8059.jpg";
-// import image38 from "../../assets/img/Events/1.0/day3/IMG_8071.jpg";
+import image27 from "../../assets/img/Events/1.0/day3/DSC_0366.webp";
+import image28 from "../../assets/img/Events/1.0/day3/DSC_0374.webp";
+import image29 from "../../assets/img/Events/1.0/day3/DSC_0383.webp";
+import image30 from "../../assets/img/Events/1.0/day3/DSC_0405.webp";
+import image31 from "../../assets/img/Events/1.0/day3/DSC_0506.webp";
+import image32 from "../../assets/img/Events/1.0/day3/DSC_0509.webp";
+import image33 from "../../assets/img/Events/1.0/day3/DSC_0513.webp";
+import image34 from "../../assets/img/Events/1.0/day3/DSC_0517.webp";
+import image35 from "../../assets/img/Events/1.0/day3/DSC_0524.webp";
+import image36 from "../../assets/img/Events/1.0/day3/IMG_8003.webp";
+import image37 from "../../assets/img/Events/1.0/day3/IMG_8059.webp";
+import image38 from "../../assets/img/Events/1.0/day3/IMG_8071.webp";
 // import image39 from "../../assets/img/Events/1.0/day3/ssss.jpg";
 // import image40 from "../../assets/img/Events/1.0/day3/_MG_8030.jpg";
 // import image41 from "../../assets/img/Events/1.0/day3/_MG_8108.jpg";
@@ -164,15 +164,15 @@ export const filterableData = [
   // DAY 3
   {
     name: "day 3",
-    src: image42,
+    src: image36,
   },
   {
     name: "day 3",
-    src: image43,
+    src: image37,
   },
   {
     name: "day 3",
-    src: image44,
+    src: image38,
   },
   {
     name: "day 3",
@@ -209,5 +209,17 @@ export const filterableData = [
   {
     name: "day 3",
     src: image35,
+  },
+  {
+    name: "winners",
+    src: image42,
+  },
+  {
+    name: "winners",
+    src: image43,
+  },
+  {
+    name: "winners",
+    src: image44,
   },
 ];
