@@ -33,7 +33,7 @@ export const Schedule = () => {
       <div className="container-fluid">
         <h1
           className="text-center"
-          id="purple-pink"
+          // id="purple-pink"
           style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
         >
           Schedule

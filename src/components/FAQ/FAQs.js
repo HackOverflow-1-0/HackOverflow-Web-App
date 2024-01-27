@@ -51,8 +51,9 @@ const FAQs = () => {
       </div>
       {faqData.map((faq, index) => (
         <div
+          onClick={() => handleToggle(index)}
           key={index}
-          className={`faq ${activeIndex === index ? "active" : ""}`}
+          className={`cursor-pointer faq ${activeIndex === index ? "active" : ""}`}
         >
           <h3 className="faq-title">{faq.title}</h3>
           <p className="faq-text">{faq.text}</p>
