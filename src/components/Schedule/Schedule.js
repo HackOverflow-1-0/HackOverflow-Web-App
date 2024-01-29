@@ -1,6 +1,6 @@
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import offlineDesktopView from "../../assets/img/offline_web-resize.webp";
-import offlineMobileView from "../../assets/img/offline_mobile-resize.webp";
+import offlineMobileView from "../../assets/img/offline_mobile-resize.png";
 import onlineDesktopView from "../../assets/img/online_web.png";
 import onlineMobileView from "../../assets/img/online_mobile.png";
 import "animate.css";

@@ -12,9 +12,6 @@ import tvsWhite from "../assets/img/tvsWhite.png";
 import beeceptorWhite from "../assets/img/beeceptorWhite.png";
 import horusonWhite from "../assets/img/horusonWhite.png";
 
-
-
-
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import AOS from "aos";
@@ -51,7 +48,7 @@ export const Sponsors = () => {
                 </h1>
                 <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
                   <a
-                    href="https://drive.google.com/file/d/1e78HldRa9Wy6NOgx_Tz4cYzJADTiutX0/view"
+                    href="https://ho2.tech/brochure"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -109,7 +106,6 @@ export const Sponsors = () => {
           <div className="pt-10">
             <hr className="text-[#767676] dark:text-[#767676]" />
           </div> */}
-
 
           <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
             <h1
@@ -216,7 +212,11 @@ export const Sponsors = () => {
             <GeneralSponsorsCard image={hack2skill} dataAos="fade-up" /> */}
           </div>
         </Container>
-        <img className="background-image-right" alt="background" src={colorSharp2}></img>
+        <img
+          className="background-image-right"
+          alt="background"
+          src={colorSharp2}
+        ></img>
       </section>
     </>
   );
