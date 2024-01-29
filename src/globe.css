@@ -11,7 +11,7 @@
     width: 376px !important;
     height: 500px !important;
   }
-  canvas {
+  .globe canvas {
     width: 376px !important;
     height: 500px !important;
     border-radius: 35px;
@@ -25,7 +25,7 @@
     width: 600px !important;
     height: 600px !important;
   }
-  canvas {
+  .globe canvas {
     width: 600px !important;
     height: 600px !important;
     border-radius: 35px;

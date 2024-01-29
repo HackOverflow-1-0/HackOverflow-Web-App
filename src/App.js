@@ -32,6 +32,7 @@ import ScrollToTop from "react-scroll-to-top";
 // import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
 import Registercard from "./components/Register-Card/register-card";
+import { Special } from "./components/Special";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -101,6 +102,7 @@ function App() {
               />
               <NavBar />
               <Banner />
+              <Special />
               <HackathonOverview />
               {/* <Registercard/>    for register form  */}
               <CollegeClub />
