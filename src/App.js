@@ -19,7 +19,7 @@ import GlobeComp from "./globe";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
 import GalleryLayout from "./components/GalleryLayout";
-// import TeamLayout from "./components/TeamLayout";
+import TeamLayout from "./components/TeamLayout";
 // import Teampage from "./components/Teams/Teams";
 // import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
 // import AppFeature from "./components/AppFeature/AppFeature";
@@ -32,7 +32,7 @@ import ScrollToTop from "react-scroll-to-top";
 // import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
 import Registercard from "./components/Register-Card/register-card";
-import { Special } from "./components/Special";
+// import { Special } from "./components/Special";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -102,7 +102,7 @@ function App() {
               />
               <NavBar />
               <Banner />
-              <Special />
+              {/* <Special /> */}
               <HackathonOverview />
               {/* <Registercard/>    for register form  */}
               <CollegeClub />
@@ -124,7 +124,7 @@ function App() {
         />
 
         <Route path="/gallery" element={<GalleryLayout />} />
-        {/* <Route path="/team" element={<TeamLayout />} /> */}
+        <Route path="/team" element={<TeamLayout />} />
       </Routes>
     </BrowserRouter>
   );
