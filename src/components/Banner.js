@@ -11,6 +11,7 @@ import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./Banner.css";
 import ScrollDown from "./ScrollDown/ScrollDown";
+import "./reg-button.css";
 
 export const Banner = () => {
   const [width, setWindowWidth] = useState(0);
@@ -57,6 +58,7 @@ export const Banner = () => {
           </div>
         </div>
         <br />
+
         {/* <div className="countDownContainer">
           <FlipClockCountdown
             to={date}
