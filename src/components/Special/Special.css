@@ -1,0 +1,10 @@
+.SpecialBackgroundImage {
+  top: 20%;
+  left: 0%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  height: 100%;
+  right: 0;
+  z-index: -4;
+}

@@ -106,7 +106,18 @@ const HackathonOverview = (props) => {
                 <p>Sponsors</p>
               </div>
             </div>
-            <button
+            <div className="navbar-text flex">
+              <a
+                href="https://discord.com/invite/Pkp75qysYZ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+                  Join Discord Channel
+                </button>
+              </a>
+            </div>
+            {/* <button
               style={{
                 background: "#3770ff",
                 textAlign: "center",
@@ -118,7 +129,7 @@ const HackathonOverview = (props) => {
               }
             >
               Join Discord Channel
-            </button>
+            </button> */}
           </Col>
         </Row>
       </Container>
