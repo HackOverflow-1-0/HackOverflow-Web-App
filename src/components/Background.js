@@ -8,7 +8,7 @@ const Background = (props) => {
 
   const handleRegisterButtonClick = () => {
     // Replace 'your_registration_link' with the actual registration link
-    window.open('https://ho2.tech/register', '_blank');
+    window.open("https://ho2.tech/register", "_blank");
   };
 
   return (
@@ -18,6 +18,7 @@ const Background = (props) => {
         loop
         muted
         className="relative bg-video"
+        id="home"
         style={{
           objectFit: "cover",
           ...(isMobile && { width: "100%", height: "80vh" }),
