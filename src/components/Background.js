@@ -33,7 +33,7 @@ const Background = (props) => {
       <div className="absolute top-0 left-0 right-0 background-video">
         {props.children}
       </div>
-      <div className="absolute top-[38rem] sm:top-[65rem] md:top-[79rem] lg:top-[30rem] xl:top-[36rem] 2xl:top-[40rem] left-0 right-0 flex justify-center">
+      <div className="absolute top-[33rem] sm:top-[18rem] md:top-[79rem] lg:top-[30rem] xl:top-[36rem] 2xl:top-[40rem] left-0 right-0 flex justify-center">
         <button
           className="button-86"
           role="button"
