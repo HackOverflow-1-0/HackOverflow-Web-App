@@ -61,6 +61,7 @@ const CollegeClub = () => {
               >
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image1}
                     alt="First slide"
@@ -68,6 +69,7 @@ const CollegeClub = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image2}
                     alt="Second slide"
@@ -75,6 +77,7 @@ const CollegeClub = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image3}
                     alt="Second slide"
@@ -82,6 +85,7 @@ const CollegeClub = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image4}
                     alt="Second slide"
@@ -89,6 +93,7 @@ const CollegeClub = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image5}
                     alt="Second slide"
@@ -96,6 +101,7 @@ const CollegeClub = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image6}
                     alt="Second slide"
@@ -103,6 +109,7 @@ const CollegeClub = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                    loading="lazy"
                     className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
                     src={image7}
                     alt="Second slide"
