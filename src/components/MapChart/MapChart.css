@@ -1,0 +1,35 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.MapChart-full-width-height {
+  height: 100vh;
+  width: 100%;
+}
+
+.MapChart-container {
+  width: calc(100% + 40rem);
+  height: calc(100% + 40rem);
+  padding: 16px;
+}
+
+.MapChart-no-margin {
+  margin: 0;
+}
+
+.MapChart-display-flex {
+  display: flex;
+}
+
+.MapChart-fill {
+  flex: 1;
+}
+
+.MapChart-center {
+  text-align: center;
+}
+
+.MapChart-mt16 {
+  margin-top: 16px;
+}
