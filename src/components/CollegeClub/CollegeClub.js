@@ -57,60 +57,53 @@ const CollegeClub = () => {
             <div style={{ display: "flex", justifyContent: "center" }}>
               <Carousel
                 interval={2000}
-                className="border-white d-block h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                className="border-white d-block h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
               >
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image1}
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image2}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image3}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image4}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image5}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image6}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    loading="lazy"
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[500px] xl:h-[500px]"
                     src={image7}
                     alt="Second slide"
                   />

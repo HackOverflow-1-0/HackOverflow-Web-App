@@ -10,14 +10,6 @@ const FAQs = () => {
 
   const faqData = [
     {
-      title: "Can I participate if I'm a beginner?",
-      text: "Yes",
-    },
-    {
-      title: "How to register for the offline?",
-      text: "To register for the offline, you can either fill the provided Google form or contact the support team for offline registration.",
-    },
-    {
       title: "What is the maximum number of members allowed in a team?",
       text: "Minimum of 3 members and maximum of 4 members are allowed in a team.",
     },
@@ -31,31 +23,15 @@ const FAQs = () => {
     },
     {
       title: "What is the transport facility for out-of-state students?",
-      text: "For out-of-state students, bus facilities will be provided from Pillais Panvel campus, and Pickups from Panvel Railway station and nearby stations/airport will also be facilitated.",
+      text: "For out-of-state students, bus facilities will be provided from Pillais Panvel campus, and personal pickups from railway stations/airports will also be facilitated.",
     },
     {
       title: "What are the arrangements for accommodation?",
       text: "The accommodation arrangements are made in the college campus itself. Every need will be taken care of.",
     },
     {
-      title: "What food arrangements are in place for the hackathon event?",
-      text: "All meals, including breakfast, lunch, snacks, and dinner, will be conveniently provided on the campus premises..",
-    },
-    {
-      title: "Is there a code of conduct for participants?",
-      text: "Yes, the code of conduct will be given to participants during the check-in process.",
-    },
-    {
-      title: "Will there be any mentorship sessions?",
-      text: "Yes, there will be experts in technical field to guide you all.",
-    },
-    {
-      title: "Will there be any networking opportunities during the event?",
-      text: "Yes, the organizing committee will be conducting a networking session during the hackathon.",
-    },
-    {
-      title: "Can I submit multiple projects as part of the same registration?",
-      text: "No, you are allowed to submit only one project for the hackathon.",
+      title: "How to register for the offline track?",
+      text: "To register for the offline track, you can either fill the provided Google form or contact the support team for offline registration.",
     },
   ];
 
