@@ -9,9 +9,37 @@
 }
 
 .MapChart-container {
-  width: calc(100% + 40rem);
-  height: calc(100% + 40rem);
+  width: calc(100% + 60rem);
+  height: calc(100% + 60rem);
   padding: 16px;
+}
+
+@media screen and (min-width: 640px) {
+  .MapChart-container {
+    width: calc(100% + 90rem);
+    height: calc(100% + 90rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .MapChart-container {
+    width: calc(100% + 120rem);
+    height: calc(100% + 120rem);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .MapChart-container {
+    width: calc(100% + 65rem);
+    height: calc(100% + 65rem);
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .MapChart-container {
+    width: calc(100% + 80rem);
+    height: calc(100% + 80rem);
+  }
 }
 
 .MapChart-no-margin {

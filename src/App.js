@@ -14,7 +14,8 @@ import { Sponsors } from "./components/Sponsors";
 // import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
-import GlobeComp from "./globe";
+// import GlobeComp from "./globe";
+import { GlobeNewComponent } from "./components/GlobeNewComponent/GlobeNewComponent";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
 import GalleryLayout from "./components/GalleryLayout";
@@ -36,7 +37,7 @@ function App() {
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,
-  ]); 
+  ]);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -105,7 +106,8 @@ function App() {
               {/* <Registercard/>    for register form  */}
               <CollegeClub />
               {/* <WinnerCard /> */}
-              <GlobeComp />
+              {/* <GlobeComp /> */}
+              <GlobeNewComponent />
               {/* <Prizes /> */}
               <Schedule />
               {/* <NewThemes /> */}
