@@ -8,11 +8,10 @@ import { Schedule } from "./components/Schedule/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
 // import Themes from "./components/Themes/Themes";
-import NewThemes from "./components/New Themes/NewThemes";
+// import NewThemes from "./components/New Themes/NewThemes";
 import { Sponsors } from "./components/Sponsors";
-import FAQ from "./components/FAQ/FAQ";
-import MobileFAQ from "./components/FAQ/MobileFAQ";
-import Prizes from "./components/Prizes/Prizes";
+// import MobileFAQ from "./components/FAQ/MobileFAQ";
+// import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import GlobeComp from "./globe";
@@ -31,7 +30,6 @@ import ScrollToTop from "react-scroll-to-top";
 // import Loadop from "./components/loadop";
 // import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
-import Registercard from "./components/Register-Card/register-card";
 import { Special } from "./components/Special/Special";
 
 function App() {
