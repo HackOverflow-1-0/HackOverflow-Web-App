@@ -35,101 +35,101 @@ import { Special } from "./components/Special/Special";
 import Gal from "./components/galleryNew/gal";
 
 function App() {
-const [windowSize, setWindowSize] = useState([
-window.innerWidth,
-window.innerHeight,
-]);
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
 
-useEffect(() => {
-const handleWindowResize = () => {
-setWindowSize([window.innerWidth, window.innerHeight]);
-};
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
 
-// componentDidMount logic
-(function () {
-var kommunicateSettings = {
-appId: process.env.REACT_APP_CHAT_TOKEN,
-popupWidget: true,
-automaticChatOpenOnNavigation: true,
-};
+    // componentDidMount logic
+    (function () {
+      var kommunicateSettings = {
+        appId: process.env.REACT_APP_CHAT_TOKEN,
+        popupWidget: true,
+        automaticChatOpenOnNavigation: true,
+      };
 
-var s = document.createElement("script");
-s.type = "text/javascript";
-s.async = true;
-s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-var h = document.getElementsByTagName("head")[0];
-h.appendChild(s);
-window.kommunicate = window.kommunicate || {};
-window.kommunicate._globals = kommunicateSettings;
-})();
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0];
+      h.appendChild(s);
+      window.kommunicate = window.kommunicate || {};
+      window.kommunicate._globals = kommunicateSettings;
+    })();
 
-window.addEventListener("resize", handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
 
-return () => {
-window.removeEventListener("resize", handleWindowResize);
-};
-}, []); // Empty dependency array means this effect runs once, similar to componentDidMount
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []); // Empty dependency array means this effect runs once, similar to componentDidMount
 
-// const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-// useEffect(() => {
-// const timer = setTimeout(() => {
-// setIsLoading(false);
-// }, 6000);
-// return () => clearTimeout(timer);
-// }, []);
+  // useEffect(() => {
+  // const timer = setTimeout(() => {
+  // setIsLoading(false);
+  // }, 6000);
+  // return () => clearTimeout(timer);
+  // }, []);
 
-return (
-<BrowserRouter>
-<Routes>
-<Route
-path="/"
-element={
-<Fragment>
-<ScrollToTop
-className="scroll-to-top"
-smooth
-color="#fff"
-style={{
-backgroundColor: "#891A98",
-borderRadius: "50%",
-width: "50px",
-height: "50px",
-right: "35px",
-bottom: "100px",
-// boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
-}}
-/>
-<NavBar />
-<Banner />
-<Special />
-<HackathonOverview />
-{/* <Registercard/> for register form */}
-<CollegeClub />
-{/* <WinnerCard /> */}
-{/* <GlobeComp /> */}
-<GlobeNewComponent />
-{/* <Prizes /> */}
-<Schedule />
-{/* <NewThemes /> */}
-<Sponsors />
-{/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
-<FAQs />
-<About />
-{/* <FaceGallery /> */}
-{/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
-<Footer />
-{windowSize[0] < 600 && <MobileNavbar />}
-</Fragment>
-}
-/>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Fragment>
+              <ScrollToTop
+                className="scroll-to-top"
+                smooth
+                color="#fff"
+                style={{
+                  backgroundColor: "#891A98",
+                  borderRadius: "50%",
+                  width: "50px",
+                  height: "50px",
+                  right: "35px",
+                  bottom: "100px",
+                  // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
+                }}
+              />
+              <NavBar />
+              <Banner />
+              <Special />
+              <HackathonOverview />
+              {/* <Registercard/> for register form */}
+              <CollegeClub />
+              {/* <WinnerCard /> */}
+              {/* <GlobeComp /> */}
+              <GlobeNewComponent />
+              {/* <Prizes /> */}
+              <Schedule />
+              {/* <NewThemes /> */}
+              <Sponsors />
+              {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
+              <FAQs />
+              <About />
+              {/* <FaceGallery /> */}
+              {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
+              <Footer />
+              {windowSize[0] < 600 && <MobileNavbar />}
+            </Fragment>
+          }
+        />
 
-<Route path="/gallery" element={<GalleryLayout />} />
-<Route path="/gal" element={<Gal />} />
-{/* <Route path="/team" element={<TeamLayout />} /> */}
-</Routes>
-</BrowserRouter>
-);
+        <Route path="/gallery" element={<GalleryLayout />} />
+        <Route path="/gal" element={<Gal />} />
+        {/* <Route path="/team" element={<TeamLayout />} /> */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
