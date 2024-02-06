@@ -120,7 +120,7 @@ const CollegeClub = () => {
         </div>
       </section>
       <div className="navbar-text flex justify-center">
-        <Link to="/gallery">
+        <Link to="/gal">
           <button className="SeeMoreButton bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
             See More...
           </button>
