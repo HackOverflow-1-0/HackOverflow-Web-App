@@ -120,17 +120,17 @@ export const NavBar = () => {
 
               <Nav.Link
                 className={
-                  activeLink === "gallery"
+                  activeLink === "gal"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => setActiveLink("gallery")}
+                onClick={() => setActiveLink("gal")}
               >
                 <Link
                   style={{ textDecoration: "none", color: "#fff" }}
-                  to="/gallery"
+                  to="/gal"
                   className={
-                    activeLink === "gallery"
+                    activeLink === "gal"
                       ? "active navbar-link"
                       : "navbar-link"
                   }
