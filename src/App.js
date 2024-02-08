@@ -18,7 +18,7 @@ import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import { GlobeNewComponent } from "./components/GlobeNewComponent/GlobeNewComponent";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
-import GalleryLayout from "./components/GalleryLayout";
+// import GalleryLayout from "./components/GalleryLayout";
 // import TeamLayout from "./components/TeamLayout";
 // import Teampage from "./components/Teams/Teams";
 // import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
@@ -124,7 +124,7 @@ function App() {
           }
         />
 
-        <Route path="/gallery" element={<GalleryLayout />} />
+        {/* <Route path="/gallery" element={<GalleryLayout />} /> */}
         <Route path="/gal" element={<Gal />} />
         {/* <Route path="/team" element={<TeamLayout />} /> */}
       </Routes>
