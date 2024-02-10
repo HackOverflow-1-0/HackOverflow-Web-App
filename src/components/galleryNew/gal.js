@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { NavBar } from "../NavBar";
 import Footer from "../Footer";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
-import Button from "../FaceGallery/Button";
+// import Button from "../FaceGallery/Button";
 // import "../FaceGallery/ImageFilter.css";
 import "./gal.css";
 // import ImageModal from "./ImageModal";
@@ -17,8 +17,9 @@ const Gal = () => {
         window.innerWidth,
         window.innerHeight,
     ]);
-
     const [selectedCategory, setSelectedCategory] = useState("all");
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     useEffect(() => {
         const handleWindowResize = () => {
@@ -28,7 +29,7 @@ const Gal = () => {
         return () => {
             window.removeEventListener("resize", handleWindowResize);
         };
-    }, []); // Empty dependency array means this effect runs once, similar to componentDidMount
+    }, []);
 
     const allImages = importAll(
         require.context(
@@ -96,6 +97,28 @@ const Gal = () => {
         // You can add more properties if needed
     }));
 
+    const handleImageClick = ({ index }, event) => {
+        event.preventDefault();
+        const selectedImageUrl = getFilteredImages()[index];
+        console.log("hello");
+        setSelectedImage(selectedImageUrl);
+        setIsModalOpen(true);
+    };
+    
+
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+
+    const modal = isModalOpen && selectedImage && (
+        <div className="modal-overlay" onClick={handleCloseModal}>
+            <div className="modal-content">
+                <img src={selectedImage} alt="Selected" />
+            </div>
+        </div>
+    );
+
     return (
         <>
             <NavBar />
@@ -151,9 +174,16 @@ const Gal = () => {
                     </button>
                 </div>
                 <div className="photo-album-container mt-4">
-                    <PhotoAlbum layout="rows" photos={photos}/>
+                    <PhotoAlbum
+                        layout="rows"
+                        photos={photos}
+                        onClick={(event, { index }) => handleImageClick(index, event)}
+                    />
+
+
                 </div>
             </div>
+            {modal}
             <Footer />
         </>
     );

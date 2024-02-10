@@ -128,7 +128,7 @@ export const NavBar = () => {
               >
                 <Link
                   style={{ textDecoration: "none", color: "#fff" }}
-                  to="/gal"
+                  to="/gallery"
                   className={
                     activeLink === "gallery"
                       ? "active navbar-link"
