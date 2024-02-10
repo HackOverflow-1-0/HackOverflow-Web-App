@@ -18,7 +18,7 @@ import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import { GlobeNewComponent } from "./components/GlobeNewComponent/GlobeNewComponent";
 import CollegeClub from "./components/CollegeClub/CollegeClub";
 // import FaceGallery from "./components/FaceGallery/FaceGallery";
-// import GalleryLayout from "./components/GalleryLayout";
+import GalleryLayout from "./components/GalleryLayout";
 // import TeamLayout from "./components/TeamLayout";
 // import Teampage from "./components/Teams/Teams";
 // import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
@@ -32,7 +32,8 @@ import ScrollToTop from "react-scroll-to-top";
 // import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
 import { Special } from "./components/Special/Special";
-import Gal from "./components/galleryNew/gal";
+// import Gal from "./components/galleryNew/gal";
+import SponsorAwait from "./components/SponsorAwait";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -104,6 +105,7 @@ function App() {
               <Banner />
               <Special />
               <HackathonOverview />
+              <SponsorAwait/>
               {/* <Registercard/> for register form */}
               <CollegeClub />
               {/* <WinnerCard /> */}
@@ -112,7 +114,7 @@ function App() {
               {/* <Prizes /> */}
               <Schedule />
               {/* <NewThemes /> */}
-              <Sponsors />
+              {/* <Sponsors /> */}
               {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
               <FAQs />
               <About />
@@ -124,8 +126,8 @@ function App() {
           }
         />
 
-        {/* <Route path="/gallery" element={<GalleryLayout />} /> */}
-        <Route path="/gal" element={<Gal />} />
+        <Route path="/gallery" element={<GalleryLayout />} />
+        {/* <Route path="/gal" element={<Gal />} /> */}
         {/* <Route path="/team" element={<TeamLayout />} /> */}
       </Routes>
     </BrowserRouter>
