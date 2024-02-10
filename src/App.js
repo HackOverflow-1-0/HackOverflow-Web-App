@@ -33,7 +33,6 @@ import ScrollToTop from "react-scroll-to-top";
 import FAQs from "./components/FAQ/FAQs";
 import { Special } from "./components/Special/Special";
 // import Gal from "./components/galleryNew/gal";
-import SponsorAwait from "./components/SponsorAwait";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -105,7 +104,6 @@ function App() {
               <Banner />
               <Special />
               <HackathonOverview />
-              <SponsorAwait/>
               {/* <Registercard/> for register form */}
               <CollegeClub />
               {/* <WinnerCard /> */}
@@ -114,7 +112,7 @@ function App() {
               {/* <Prizes /> */}
               <Schedule />
               {/* <NewThemes /> */}
-              {/* <Sponsors /> */}
+              <Sponsors />
               {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
               <FAQs />
               <About />
