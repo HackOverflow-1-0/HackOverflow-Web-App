@@ -32,7 +32,7 @@ import ScrollToTop from "react-scroll-to-top";
 // import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
 import { Special } from "./components/Special/Special";
-import Gal from "./components/galleryNew/gal";
+// import Gal from "./components/galleryNew/gal";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -125,7 +125,7 @@ function App() {
         />
 
         <Route path="/gallery" element={<GalleryLayout />} />
-        <Route path="/gal" element={<Gal />} />
+        {/* <Route path="/gal" element={<Gal />} /> */}
         {/* <Route path="/team" element={<TeamLayout />} /> */}
       </Routes>
     </BrowserRouter>

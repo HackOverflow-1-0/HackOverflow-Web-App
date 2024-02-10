@@ -59,14 +59,14 @@ export const Sponsors = () => {
                     </div>
                   </a>
                   <a
-                    href="https://phcet.tech/sponsors"
+                    href="mailto:hackoverflow@mes.ac.in?subject=Sponsor%20request%20for%20HACKOVERFLOW%202.0%20-%20HACKATHON%202024"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <div className="spon_coll">
                       <nowrap>
                         <span className="text-[9px] md:text-[22px]">
-                          Fill the form
+                          E-mail us
                         </span>
                       </nowrap>
                     </div>

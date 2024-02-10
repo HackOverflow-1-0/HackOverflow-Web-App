@@ -1,0 +1,111 @@
+/* gal.css */
+
+
+h1#orange-pink {
+    color: #ff6f61;
+}
+
+/* Add these styles to your gal.css */
+
+/* Default styles for buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.filter-button {
+    /* Existing button styles */
+    padding: 10px 15px;
+    border: 2px solid #6b46c1;
+    background-color: #6b46c1;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button.active {
+    background-color: #5a36ab;
+}
+
+.filter-button:hover {
+    background-color: #5a36ab;
+}
+
+/* Media query for smaller screens (adjust max-width as needed) */
+@media (max-width: 768px) {
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-button {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+/* Styling for the PhotoAlbum section */
+.react-photo-album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.react-photo-album img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added box-shadow transition */
+}
+
+.react-photo-album img:hover {
+    transform: scale(1.05);
+    box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+    /* Box shadow on hover */
+}
+
+.photo-album-container {
+    margin: 20px;
+    /* Adjust the margin as needed */
+}
+
+
+/* Add these styles to your gal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
