@@ -33,12 +33,8 @@ const Background = (props) => {
       <div className="absolute top-0 left-0 right-0 background-video">
         {props.children}
       </div>
-      <div className="absolute top-[33rem] sm:top-[18rem] md:top-[79rem] lg:top-[30rem] xl:top-[36rem] 2xl:top-[45rem] left-0 right-0 flex justify-center">
-        <button
-          className="button-86"
-          role="button"
-          onClick={handleRegisterButtonClick}
-        >
+      <div className="absolute top-[35rem] sm:top-[18rem] md:top-[79rem] lg:top-[30rem] xl:top-[36rem] 2xl:top-[45rem] left-0 right-0 flex justify-center">
+        <button className="button-86" onClick={handleRegisterButtonClick}>
           Register
         </button>
       </div>

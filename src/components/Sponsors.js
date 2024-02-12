@@ -48,7 +48,7 @@ export const Sponsors = () => {
                 </h1>
                 <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
                   <a
-                    href="https://ho2.tech/brochure"
+                    href="https://ho2.tech/sponsor"
                     target="_blank"
                     rel="noreferrer"
                   >
