@@ -45,6 +45,22 @@ export const NavBar = () => {
             </a>
           </Navbar.Brand>
 
+          {/* New button "Brchure mobile button" only shown in mobile view */}
+          <button
+            style={{
+              backgroundColor: "transparent",
+              border: "1px solid white",
+              color: "white",
+              fontWeight: "300", 
+            }}
+            className="hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded d-md-none ml-auto"
+            onClick={() => window.open("https://ho2.tech/brochure", "_blank")}
+          >
+            Brochure
+          </button>
+
+
+
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
@@ -150,6 +166,7 @@ export const NavBar = () => {
                 </button>
               </a>
             </div>
+
           </Navbar.Collapse>
         </Container>
         <ProgressBar />
