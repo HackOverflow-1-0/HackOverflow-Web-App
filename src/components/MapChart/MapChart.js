@@ -76,19 +76,19 @@ const geographyStyle = {
 // will generate random heatmap data on every call
 const getHeatMapData = () => {
   return [
-    { id: "AP", state: "Andhra Pradesh", value: 12 },
+    { id: "AP", state: "Andhra Pradesh", value: 20 },
     { id: "AR", state: "Arunachal Pradesh", value: 5 },
     { id: "AS", state: "Assam", value: 0 },
     { id: "BR", state: "Bihar", value: 5 },
     { id: "CT", state: "Chhattisgarh", value: 5 },
     { id: "GA", state: "Goa", value: 0 },
-    { id: "GJ", state: "Gujarat", value: 10 },
+    { id: "GJ", state: "Gujarat", value: 20 },
     { id: "HR", state: "Haryana", value: 8 },
     { id: "HP", state: "Himachal Pradesh", value: 0 },
     { id: "JH", state: "Jharkhand", value: 26 },
     { id: "KA", state: "Karnataka", value: 27 },
-    { id: "KL", state: "Kerala", value: 8 },
-    { id: "MP", state: "Madhya Pradesh", value: 0 },
+    { id: "KL", state: "Kerala", value: 15 },
+    { id: "MP", state: "Madhya Pradesh", value: 12 },
     { id: "MH", state: "Maharashtra", value: 20 },
     { id: "MN", state: "Manipur", value: 0 },
     { id: "ML", state: "Meghalaya", value: 0 },
@@ -99,21 +99,21 @@ const getHeatMapData = () => {
     { id: "RJ", state: "Rajasthan", value: 5 },
     { id: "SK", state: "Sikkim", value: 5 },
     { id: "TN", state: "Tamil Nadu", value: 5 },
-    { id: "TS", state: "Telangana", value: 5 },
+    { id: "TS", state: "Telangana", value: 15 },
     { id: "TR", state: "Tripura", value: 14 },
     { id: "UK", state: "Uttarakhand", value: 5 },
     { id: "UP", state: "Uttar Pradesh", value: 30 },
     { id: "WB", state: "West Bengal", value: 17 },
     { id: "WB", state: "West Bengal", value: 17 },
-    { id: "AN", state: "Andaman and Nicobar Islands", value: 5 },
+    { id: "AN", state: "Andaman and Nicobar Islands", value: 0 },
     { id: "CH", state: "Chandigarh", value: 5 },
     { id: "DN", state: "Dadra and Nagar Haveli", value: 19 },
     { id: "DD", state: "Daman and Diu", value: 20 },
     { id: "DL", state: "Delhi", value: 59 },
     { id: "JK", state: "Jammu and Kashmir", value: 0 },
     { id: "LA", state: "Ladakh", value: 0 },
-    { id: "LD", state: "Lakshadweep", value: 5 },
-    { id: "PY", state: "Puducherry", value: 5 },
+    { id: "LD", state: "Lakshadweep", value: 0 },
+    { id: "PY", state: "Puducherry", value: 0 },
   ];
 };
 
@@ -132,14 +132,14 @@ function MapChart() {
     fromColor: COLOR_RANGE[0],
     toColor: COLOR_RANGE[COLOR_RANGE.length - 1],
     min: 0,
-    max: 70,
+    max: 100,
   };
 
   // const colorScale = scaleQuantile()
   //   .domain(data.map((d) => d.value))
   //   .range(COLOR_RANGE);
 
-  const colorScale = scaleQuantile().domain([0, 70]).range(COLOR_RANGE);
+  const colorScale = scaleQuantile().domain([0, 100]).range(COLOR_RANGE);
 
   const onMouseEnter = (geo, current = { value: "NA" }) => {
     return () => {
@@ -156,9 +156,17 @@ function MapChart() {
   };
 
   return (
-    <div className="MapChart-full-width-height MapChart-container">
+    <div className="relative MapChart-full-width-height MapChart-container">
       {/* <h1 className="MapChart-no-margin MapChart-center">States and UTs</h1> */}
       <ReactTooltip>{tooltipContent}</ReactTooltip>
+      <div className="Mapcircle"></div>
+      <div className="Mapcircle_2"></div>
+      <div className="Mapcircle_3"></div>
+      <div className="Mapcircle_4"></div>
+      <div className="Mapcircle_5"></div>
+      <div className="Mapcircle_6"></div>
+      <div className="Mapcircle_7"></div>
+
       <ComposableMap
         projectionConfig={PROJECTION_CONFIG}
         projection="geoMercator"
