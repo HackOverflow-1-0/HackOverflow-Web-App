@@ -16,29 +16,25 @@ const Footer = () => {
           </div>
           <p>Follow us on:</p>
           <p>
-            <a href="https://phcet.tech/insta" target="_blank" rel="noreferrer">
+            <a href="https://ho2.tech/insta" target="_blank" rel="noreferrer">
               <Instagram className="icons instagram" fontSize="large" />
             </a>
 
             <a
-              href="https://phcet.tech/github"
+              href="https://github.com/HackOverflow-1-0"
               target="_blank"
               rel="noreferrer"
             >
               <GitHub className="icons twitter" fontSize="large" />
             </a>
             <a
-              href="https://www.linkedin.com/company/hack-overflow/"
+              href="https://ho2.tech/linkedin"
               target="_blank"
               rel="noreferrer"
             >
               <LinkedIn className="icons linkedin" fontSize="large" />
             </a>
-            <a
-              href="https://phcet.tech/twitter"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://ho2.tech/twitter" target="_blank" rel="noreferrer">
               <Twitter className="icons linkedin" fontSize="large" />
             </a>
           </p>
