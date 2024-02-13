@@ -159,13 +159,90 @@ function MapChart() {
     <div className="relative MapChart-full-width-height MapChart-container">
       {/* <h1 className="MapChart-no-margin MapChart-center">States and UTs</h1> */}
       <ReactTooltip>{tooltipContent}</ReactTooltip>
-      <div className="Mapcircle"></div>
-      <div className="Mapcircle_2"></div>
-      <div className="Mapcircle_3"></div>
-      <div className="Mapcircle_4"></div>
-      <div className="Mapcircle_5"></div>
-      <div className="Mapcircle_6"></div>
-      <div className="Mapcircle_7"></div>
+      <div className="Mapcircle flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          20
+        </span>
+      </div>
+      <div className="Mapcircle_2 flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          30
+        </span>
+      </div>
+      <div className="Mapcircle_3 flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          20
+        </span>
+      </div>
+      <div className="Mapcircle_4 flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          20
+        </span>
+      </div>
+      <div className="Mapcircle_5 flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          5
+        </span>
+      </div>
+      <div className="Mapcircle_6 flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          20
+        </span>
+      </div>
+      <div className="Mapcircle_7 flex items-center justify-center">
+        <span
+          className="text-[1rem] text-[#891a98]"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          20
+        </span>
+      </div>
 
       <ComposableMap
         projectionConfig={PROJECTION_CONFIG}
