@@ -1,21 +1,23 @@
 import React from "react";
-import video from "../../assets/videos/fast.webm";
+// import video from "../../assets/videos/fast.webm";
 import "./PreLoader.css";
+import animationData from "../../assets/lottie/lf30_editor_7zjzqz9z.json";
+import Lottie from "react-lottie";
 
 const PreLoader = () => {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // }
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
 
   return (
     // <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
     <div>
-      <video
+      {/* <video
         className="preloadervideo"
         autoPlay
         loop
@@ -23,7 +25,7 @@ const PreLoader = () => {
         style={{ objectFit: "cover" }}
       >
         <source src={video} type="video/webm" />
-      </video>
+      </video> */}
       {/* <Typewriter
         words={['Welcome to Hack-OverFlow!!!', 'Think!!', 'Code!!', 'Innovate!!']}
         loop={5}
@@ -34,11 +36,11 @@ const PreLoader = () => {
         delaySpeed={1000}
         style={{ fontSize: '42px', textAlign: 'center'}}
       /> */}
-      {/* <Lottie
+      <Lottie
         options={defaultOptions}
         height={400}
         width={400}
-      /> */}
+      />
       {/* <h1>loading...</h1> */}
       {/* <video src={video}></video> */}
     </div>
