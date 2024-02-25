@@ -11,8 +11,6 @@ import revaTech from "../assets/img/revatech3.png";
 import tvsWhite from "../assets/img/tvsWhite.png";
 import beeceptorWhite from "../assets/img/beeceptorWhite.png";
 import horusonWhite from "../assets/img/horusonWhite.png";
-import scribbrWhite from "../assets/img/scribbrWhite.png";
-import quillBotWhite from "../assets/img/quillBotWhite.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -90,7 +88,7 @@ export const Sponsors = () => {
                 textAlign: "center",
               }}
             >
-              Past Sponsors
+              Our Sponsors
             </h1>
           </div>
           {/* <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
@@ -189,13 +187,13 @@ export const Sponsors = () => {
           </div>
           <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-2 xl:gap-2">
             <GeneralSponsorCard
-              weblink={"https://www.horuson.com/"}
-              image={horusonWhite}
+              weblink={"https://revatech-ai.com/"}
+              image={revaTech}
               dataAos="fade-left"
             />
             <GeneralSponsorCard
-              weblink={"https://quillbot.com/"}
-              image={quillBotWhite}
+              weblink={"https://www.horuson.com/"}
+              image={horusonWhite}
               dataAos="fade-right"
             />
           </div>

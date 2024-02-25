@@ -4,13 +4,12 @@ import { filterableData } from "./filterableData";
 import { Image } from "./Image";
 import { Text } from "./Text";
 import "./ImageFilter.css";
-import LazyLoad from "react-lazyload"; // Import LazyLoad component
 
 const ImageFilter = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   // const buttonCaptions = ["all", "nature", "cars", "people"];
-  const buttonCaptions = ["all", "day 1", "day 2", "day 3", "winners"];
+  const buttonCaptions = ["all", "day 1", "day 2", "day 3","winners"];
 
   const filteredData = filterableData.filter(
     (item) => activeFilter === "all" || activeFilter === item.name
@@ -91,19 +90,18 @@ const ImageFilter = () => {
         {/* filtered cards display */}
         <main className="w-full grid lg:grid-cols-4 md:grid-cols-2 gap-x-5 gap-y-8 md:mt-8">
           {filteredData.map((item, index) => (
-            <LazyLoad key={index} height={200}>
-              <div
-                key={index}
-                className={`ImageGallery w-full cursor-pointer transition-all duration-200 rounded-lg shadow`}
-                onClick={() => handleImageClick(index)}
-              >
-                <Image
-                  className="rounded-t-lg w-full h-[200px] overflow-hidden"
-                  image={item.src}
-                  alt={item.name}
-                  objectCover="object-cover"
-                />
-                {/* <div className="p-5">
+            <div
+              key={index}
+              className={`ImageGallery w-full cursor-pointer transition-all duration-200 rounded-lg shadow`}
+              onClick={() => handleImageClick(index)}
+            >
+              <Image
+                className="rounded-t-lg w-full h-[200px] overflow-hidden"
+                image={item.src}
+                alt={item.name}
+                objectCover="object-cover"
+              />
+              {/* <div className="p-5">
               <Text
                 as="h5"
                 className="mb-2 text-2xl font-bold tracking-tight text-white"
@@ -114,8 +112,7 @@ const ImageFilter = () => {
                 {item.text}
               </Text>
             </div> */}
-              </div>
-            </LazyLoad>
+            </div>
           ))}
         </main>
       </div>
