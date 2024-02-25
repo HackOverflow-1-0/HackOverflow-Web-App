@@ -32,6 +32,7 @@ import ScrollToTop from "react-scroll-to-top";
 // import WinnerCard from "./components/PastWinners/WinnerCard";
 import FAQs from "./components/FAQ/FAQs";
 import { Special } from "./components/Special/Special";
+import PreLoader from "./components/PreLoader/PreLoader";
 // import Gal from "./components/galleryNew/gal";
 
 function App() {
@@ -39,6 +40,14 @@ function App() {
     window.innerWidth,
     window.innerHeight,
   ]);
+  const [loading, setLoading] = useState(true); // State variable for loading status
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 13000);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -68,66 +77,68 @@ function App() {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []); // Empty dependency array means this effect runs once, similar to componentDidMount
-
-  // const [isLoading, setIsLoading] = useState(true);
+  }, []);
 
   // useEffect(() => {
-  // const timer = setTimeout(() => {
-  // setIsLoading(false);
-  // }, 6000);
-  // return () => clearTimeout(timer);
+  //   window.onload = () => {
+  //     setLoading(false);
+  //   };
   // }, []);
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Fragment>
-              <ScrollToTop
-                className="scroll-to-top"
-                smooth
-                color="#fff"
-                style={{
-                  backgroundColor: "#891A98",
-                  borderRadius: "50%",
-                  width: "50px",
-                  height: "50px",
-                  right: "35px",
-                  bottom: "100px",
-                  // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
-                }}
-              />
-              <NavBar />
-              <Banner />
-              <Special />
-              <HackathonOverview />
-              {/* <Registercard/> for register form */}
-              <CollegeClub />
-              {/* <WinnerCard /> */}
-              {/* <GlobeComp /> */}
-              <GlobeNewComponent />
-              {/* <Prizes /> */}
-              <Schedule />
-              {/* <NewThemes /> */}
-              <Sponsors />
-              {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
-              <FAQs />
-              <About />
-              {/* <FaceGallery /> */}
-              {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
-              <Footer />
-              {windowSize[0] < 600 && <MobileNavbar />}
-            </Fragment>
-          }
-        />
+      {loading ? (
+        <PreLoader />
+      ) : (
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Fragment>
+                <ScrollToTop
+                  className="scroll-to-top"
+                  smooth
+                  color="#fff"
+                  style={{
+                    backgroundColor: "#891A98",
+                    borderRadius: "50%",
+                    width: "50px",
+                    height: "50px",
+                    right: "35px",
+                    bottom: "100px",
+                    // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
+                  }}
+                />
+                <NavBar />
+                <Banner />
+                <Special />
+                <HackathonOverview />
+                {/* <Registercard/> for register form */}
+                <CollegeClub />
+                {/* <WinnerCard /> */}
+                {/* <GlobeComp /> */}
+                <GlobeNewComponent />
+                {/* <Prizes /> */}
+                <Schedule />
+                {/* <NewThemes /> */}
+                <Sponsors />
+                {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
+                <FAQs />
+                <About />
+                {/* <FaceGallery /> */}
+                {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
+                <Footer />
+                {windowSize[0] < 600 && <MobileNavbar />}
+              </Fragment>
+            }
+          />
 
-        <Route path="/gallery" element={<GalleryLayout />} />
-        {/* <Route path="/gal" element={<Gal />} /> */}
-        {/* <Route path="/team" element={<TeamLayout />} /> */}
-      </Routes>
+          <Route path="/gallery" element={<GalleryLayout />} />
+          <Route path="/preloader" element={<PreLoader />} />
+          {/* <Route path="/gal" element={<Gal />} /> */}
+          {/* <Route path="/team" element={<TeamLayout />} /> */}
+        </Routes>
+      )}
     </BrowserRouter>
   );
 }

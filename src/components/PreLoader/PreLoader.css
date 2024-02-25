@@ -1,7 +1,7 @@
 /* .preloader {
   height: 50rem;
   background: rgb(10, 44, 179);
-} */
+}
 
 .preloadervideo {
   position: fixed;
@@ -14,14 +14,24 @@
 @media only screen and (max-width: 768px) {
   .preloadervideo {
     transform: translateX(-580px);
-    /* transform: translateY(-580px); */
+    transform: translateY(-580px);
 
   }
 }
 
-/* 
+
 @media only screen and (min-width: 293px) {
   .preloadervideo {
     width: 1536px;
+  }
+} */
+
+.preloader {
+  height: 100vh;
+}
+
+/* @media screen and (min-width: 640px) {
+  .preloader {
+    height: 100vh;
   }
 } */
