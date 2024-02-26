@@ -193,7 +193,7 @@ export const Sponsors = () => {
               dataAos="fade-left"
             />
             <GeneralSponsorCard
-              weblink={"https://www.horuson.com/"}
+              weblink={"https://quillbot.com/"}
               image={quillbotWhite}
               dataAos="fade-right"
             />
