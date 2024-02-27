@@ -35,3 +35,22 @@
     height: 100vh;
   }
 } */
+
+#orange-pink {
+  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-health {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.green-yellow {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
