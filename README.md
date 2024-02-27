@@ -2,7 +2,7 @@
 
 <p align="left">
   <a href="https://github.com/HackOverflow-1-0/HackOverflow-Web-App/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/HackOverflow-1-0/HackOverflow-Web-App?style=flat-square"/></a>
-  <!-- <a><img alt="compileSdkVersion" src="https://img.shields.io/badge/compileSdkVersion-33-green.svg?style=flat-square"/></a> -->
+  <a><img alt="compileSdkVersion" src="https://img.shields.io/npm/v/react?color=green?style=flat-square"/></a>
   <!-- <a href="https://github.com/HackOverflow-1-0/HackOverflow-Web-App/releases"><img alt="Release" src="https://img.shields.io/github/release/HackOverflow-1-0/HackOverflow-Web-App.svg?style=flat-square"/></a> -->
 </p>
 
