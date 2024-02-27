@@ -15,12 +15,13 @@ Official Web-App Repository of HackOverflow 2.0, a 3-day long National level Hac
 - [NodeJs](https://nodejs) (Backend)
 - [TailwindCSS](https://tailwindcss.com/) (TailwindCSS Integration)
 - [React-router](https://v5.reactrouter.com/) (Navigational components)
-- [Dialogflow ES](https://ipfs.io/) (Dedicated Chatbot Integration)
+- [Dialogflow ES](https://dialogflow.cloud.google.com/) (Dedicated Chatbot Integration)
 - [Animejs](https://animejs.com/) (JS Animation Library)
+- [Netlify](https://www.netlify.com/) (Hosting, Continuous Deployment and Serverless backend services)
 
 ## Requirements For Initial Setup
 
-- Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
+- Install [NodeJS](https://nodejs.org/en/), should work with any node version above 16.0.0
 
 ## Setting Up
 
