@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./InstagramReelsCards.css";
 
 const getRandomRotation = () => Math.floor(Math.random() * (5 - (-5) + 1)) + -5; // Random rotation between -5 and 5 degrees
 
@@ -40,7 +41,7 @@ const InstagramReelsCards = () => {
           </h1><br></br>
 
           {/* Card Container */}
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 md:space-x-1 lg:space-x-1 xl:space-x-20 2xl:space-x-28 justify-center mt-4 md:flex-col lg:flex-row">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 md:space-x-1 lg:space-x-10 xl:space-x-20 2xl:space-x-28 justify-center mt-4 md:flex-col lg:flex-row xl:flex-row">
             {/* First Card */}
             <div
               className="flex-none p-1 rounded-lg shadow-lg transform"
