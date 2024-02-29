@@ -34,6 +34,7 @@ import FAQs from "./components/FAQ/FAQs";
 import { Special } from "./components/Special/Special";
 import PreLoader from "./components/PreLoader/PreLoader";
 // import Gal from "./components/galleryNew/gal";
+import InstagramReelsCards from "./components/InstagramReelsCards";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -87,9 +88,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      {loading ? (
+      {/* {loading ? (
         <PreLoader />
-      ) : (
+      ) : ( */}
         <Routes>
           <Route
             path="/"
@@ -125,6 +126,7 @@ function App() {
                 {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
                 <FAQs />
                 <About />
+                <InstagramReelsCards/>
                 {/* <FaceGallery /> */}
                 {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
                 <Footer />

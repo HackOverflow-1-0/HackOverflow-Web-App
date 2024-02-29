@@ -18,7 +18,7 @@ const SocialMedia = () => {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://phcet.tech/insta"
+                href="https://www.instagram.com/hackoverflow.tech/"
               >
                 <svg
                   fill="#eee"
@@ -32,7 +32,7 @@ const SocialMedia = () => {
               </a>
             </li>
             <li className="my-4">
-              <a target="_blank" href="https://phcet.tech/github" rel="noreferrer">
+              <a target="_blank" href="https://github.com/HackOverflow-1-0" rel="noreferrer">
                 <svg
                   fill="#eee"
                   width="28"
