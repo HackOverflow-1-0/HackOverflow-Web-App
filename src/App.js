@@ -88,9 +88,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      {loading ? (
+      {/* {loading ? (
         <PreLoader />
-      ) : (
+      ) : ( */}
         <Routes>
           <Route
             path="/"

@@ -29,7 +29,7 @@ const InstagramReelsCards = () => {
         <div>
           {/* Latest Social Posts Section */}
           <h1
-            className="sm:text-[10px] md:text-[35px] lg:text-[45px] capitalize"
+            className="sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize"
             style={{
               fontFamily: 'Poppins, sans-serif',
               fontWeight: 700,
@@ -40,7 +40,7 @@ const InstagramReelsCards = () => {
           </h1><br></br>
 
           {/* Card Container */}
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-28 justify-center mt-4">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 md:space-x-1 lg:space-x-1 xl:space-x-20 2xl:space-x-28 justify-center mt-4 md:flex-col lg:flex-row">
             {/* First Card */}
             <div
               className="flex-none p-1 rounded-lg shadow-lg transform"
@@ -91,7 +91,7 @@ const InstagramReelsCards = () => {
               style={{
                 backgroundColor: '#7FFFD4', // Set your desired background color
                 rotate: `${getRandomRotation()}deg`,
-                height: '805px', // Set a fixed height
+                height: '810px', // Set a fixed height
                 overflow: 'hidden', // Hide overflow content
               }}
             >
