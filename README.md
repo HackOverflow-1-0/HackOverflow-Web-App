@@ -62,8 +62,7 @@ We welcome contributions to the HackOverflow 2.0 Web App project! To contribute,
 
 <!-- [![HoF Contributors](https://contrib.rocks/image?repo=HackOverflow-1-0/HackOverflow-Web-App&max=3)](https://github.com/HackOverflow-1-0/HackOverflow-Web-App/graphs/contributors) -->
 
-[![HoF Contributors](https://contrib.rocks/image?repo=HackOverflow-1-0/HackOverflow-Web-App&max=2)](https://github.com/HackOverflow-1-0/HackOverflow-Web-App/graphs/contributors)
-[![](https://contrib.rocks/image?repo=HackOverflow-1-0/HackOverflow-Web-App&max=3)](https://github.com/HackOverflow-1-0/HackOverflow-Web-App/graphs/contributors)
+[![HoF Contributors](https://contrib.rocks/image?repo=HackOverflow-1-0/HackOverflow-Web-App&max=3&exclude=1)](https://github.com/HackOverflow-1-0/HackOverflow-Web-App/graphs/contributors)
 
 ## License
 
