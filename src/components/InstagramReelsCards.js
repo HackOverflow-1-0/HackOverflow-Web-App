@@ -91,7 +91,7 @@ const InstagramReelsCards = () => {
               style={{
                 backgroundColor: '#7FFFD4', // Set your desired background color
                 rotate: `${getRandomRotation()}deg`,
-                height: '799px', // Set a fixed height
+                height: '805px', // Set a fixed height
                 overflow: 'hidden', // Hide overflow content
               }}
             >
