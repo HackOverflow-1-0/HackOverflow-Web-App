@@ -77,7 +77,9 @@ const FAQs = () => {
         <div
           onClick={() => handleToggle(index)}
           key={index}
-          className={`cursor-pointer faq ${activeIndex === index ? "active" : ""}`}
+          className={`cursor-pointer faq ${
+            activeIndex === index ? "active" : ""
+          }`}
         >
           <h3 className="faq-title">{faq.title}</h3>
           <p className="faq-text">{faq.text}</p>
@@ -86,6 +88,7 @@ const FAQs = () => {
               className={`chevron w-6 h-6 text-gray-800 dark:text-white ${
                 activeIndex === index ? "hidden" : ""
               }`}
+              onClick={() => handleToggle(index)}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -103,6 +106,7 @@ const FAQs = () => {
               className={`close w-6 h-6 text-gray-800 dark:text-white ${
                 activeIndex === index ? "" : "hidden"
               }`}
+              onClick={() => handleToggle(index)}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
