@@ -1,6 +1,12 @@
 @media screen and (min-width: 640px) and (max-width: 768px) {
-    .flex-col {
-      flex-direction: column !important;
-    }
+  .flex-col {
+    flex-direction: column !important;
   }
-  
+}
+
+/* Tilt animation on hover */
+.instagram-card:hover {
+  transform: rotate(3deg);
+  /* Adjust the tilt angle as needed */
+  transition: transform 0.3s ease;
+}
