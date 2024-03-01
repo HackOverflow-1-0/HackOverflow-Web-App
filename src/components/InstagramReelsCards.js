@@ -44,7 +44,7 @@ const InstagramReelsCards = () => {
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 md:space-x-1 lg:space-x-10 xl:space-x-20 2xl:space-x-28 justify-center mt-4 md:flex-col lg:flex-row xl:flex-row">
             {/* First Card */}
             <div
-              className="flex-none p-1 rounded-lg shadow-lg transform"
+              className="flex-none p-1 rounded-lg shadow-lg transform instagram-card"
               style={{
                 backgroundColor: '#FFD700', // Set your desired background color
                 rotate: `${getRandomRotation()}deg`,
@@ -66,7 +66,7 @@ const InstagramReelsCards = () => {
 
             {/* Second Card */}
             <div
-              className="flex-none p-1 rounded-lg shadow-lg"
+              className="flex-none p-1 rounded-lg shadow-lg transform instagram-card"
               style={{
                 backgroundColor: '#FFA07A', // Set your desired background color
                 rotate: `${getRandomRotation()}deg`,
@@ -88,7 +88,7 @@ const InstagramReelsCards = () => {
 
             {/* Third Card */}
             <div
-              className="flex-none p-1 rounded-lg shadow-lg transform"
+              className="flex-none p-1 rounded-lg shadow-lg transform instagram-card"
               style={{
                 backgroundColor: '#7FFFD4', // Set your desired background color
                 rotate: `${getRandomRotation()}deg`,
