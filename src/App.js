@@ -9,7 +9,7 @@ import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
 // import Themes from "./components/Themes/Themes";
 // import NewThemes from "./components/New Themes/NewThemes";
-import { Sponsors } from "./components/Sponsors";
+import Sponsors from "./components/Sponsors";
 // import MobileFAQ from "./components/FAQ/MobileFAQ";
 // import Prizes from "./components/Prizes/Prizes";
 import About from "./components/About";
@@ -46,7 +46,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 13000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -126,7 +126,7 @@ function App() {
                 {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
                 <FAQs />
                 <About />
-                <InstagramReelsCards/>
+                <InstagramReelsCards />
                 {/* <FaceGallery /> */}
                 {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
                 <Footer />

@@ -27,6 +27,24 @@
   background-clip: text;
 }
 
+/* Original styling for .SponsorText */
+.SponsorText {
+  box-shadow: inset 0px -4px 10px rgba(202, 28, 225, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 45px;
+  transition: box-shadow 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Hover effect with box shadow color related to background gradient */
+.SponsorText:hover {
+  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7); /* Adjust box shadow color */
+}
+
 .spon_p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;

@@ -32,9 +32,13 @@ export const Schedule = () => {
     <section className="schedule" id="schedule">
       <div className="container-fluid">
         <h1
-          className="text-center"
           // id="purple-pink"
-          style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
+          className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer"
+          style={{
+            fontFamily: "Poppins,sans-serif",
+            fontWeight: 700,
+            textAlign: "center",
+          }}
         >
           Schedule
         </h1>
@@ -86,8 +90,12 @@ export const Schedule = () => {
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
           <h1
-            className="text-center"
-            style={{ fontFamily: "Poppins,sans-serif", fontWeight: 700 }}
+            className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer"
+            style={{
+              fontFamily: "Poppins,sans-serif",
+              fontWeight: 700,
+              textAlign: "center",
+            }}
           >
             Key Dates
           </h1>

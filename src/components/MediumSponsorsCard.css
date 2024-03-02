@@ -4,14 +4,15 @@
   overflow: hidden;
   transition: 0.3s ease-in-out;
   /* box-shadow: 2px 3px 10px rgba(0, 0, 0, 2); */
-  box-shadow: rgb(85, 6, 95) 0px 4px 10px;
+  /* box-shadow: rgb(85, 6, 95) 0px 4px 10px; */
+  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7); /* Adjust box shadow color */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .mediumcard:hover {
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
   /* box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.7); */
   box-shadow: rgb(202, 28, 225) 0px 4px 10px;
 }
