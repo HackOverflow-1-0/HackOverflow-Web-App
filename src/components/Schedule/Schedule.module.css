@@ -46,14 +46,18 @@
 
 .keyDatesCards {
   border-radius: 10px;
-
-  background: #1b1c27;
-  box-shadow: #ab367c 0px 20px 20px, #967fd6b3 0px -12px 30px,
-    #ab367c 0px 4px 6px, #967fd6b3 0px 12px 13px, #ab367c 0px -3px 5px;
-
+  background: #1b1c27; /* Adjusted background color */
+  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7); /* Keep box shadow color */
   display: block;
   width: 560px;
   height: 230px;
+  transition: box-shadow 0.3s ease; /* Adding transition to box-shadow */
+  cursor: pointer;
+}
+
+.keyDatesCards:hover {
+  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7),
+    0px 0px 10px rgba(255, 130, 191, 0.5); /* Adding hover shadow effect */
 }
 
 /* .keyDatesCards::after {
