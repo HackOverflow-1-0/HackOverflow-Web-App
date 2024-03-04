@@ -17,6 +17,9 @@ import jamboreeWhite from "../assets/img/jamboreeWhiteNew.png";
 import bobbleWhite from "../assets/img/bobbleWhite.png";
 import languifyWhite from "../assets/img/languifyWhite.png";
 import interViewBuddyWhite from "../assets/img/interViewBuddyWhite.png";
+import philipsWhite from "../assets/img/philipsWhite.png";
+import noticebardWhite from "../assets/img/noticebardWhite.png";
+import goldenorioleWhite from "../assets/img/goldenorioleWhite.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -68,11 +71,18 @@ const Sponsors = () => {
           link: "https://www.imfs.co.in/",
           effect: "fade-left",
         },
+        // {
+        //   id: 5,
+        //   name: "Jamboree",
+        //   image: jamboreeWhite,
+        //   link: "https://www.jamboreeindia.com/",
+        //   effect: "fade-left",
+        // },
         {
           id: 5,
-          name: "Jamboree",
-          image: jamboreeWhite,
-          link: "https://www.jamboreeindia.com/",
+          name: "NoticeBard",
+          image: noticebardWhite,
+          link: "https://noticebard.com/",
           effect: "fade-left",
         },
         {
