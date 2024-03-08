@@ -1,0 +1,362 @@
+/* BAND COLORS */
+.bg-gradient-poverty {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.bg-gradient-poverty-text {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-hunger {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.bg-gradient-hunger-text {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-health {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.bg-gradient-health-text {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-education {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.bg-gradient-education-text {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-genderequality {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.bg-gradient-genderequality-text {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-cleanwater {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+}
+.bg-gradient-cleanwater-text {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-decentwork {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.bg-gradient-decentwork-text {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-industry {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.bg-gradient-industry-text {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-reduceinequalities {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.bg-gradient-reduceinequalities-text {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-cities {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.bg-gradient-cities-text {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-consumption {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+}
+.bg-gradient-consumption-text {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-climate {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.bg-gradient-climate-text {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-partnerships {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+}
+.bg-gradient-partnerships-text {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-marinelife {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.bg-gradient-marinelife-text {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-landlife {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.bg-gradient-landlife-text {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-peace {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.bg-gradient-peace-text {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-cleanenergy {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.bg-gradient-cleanenergy-text {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* BAND COLORS */
+
+#purple-pink {
+  background: linear-gradient(98.84deg, #a8519f 43.27%, #644ea0 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#green-yellow {
+  background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#orange-pink {
+  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#blue-cyan {
+  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+.cards-grid {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+  gap: 20px;
+}
+
+.theme-card {
+  height: 300px;
+  width: 200px;
+  border-radius: 13px;
+}
+
+.theme-card h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  transform: rotate(90deg) translate(90px, 80px);
+  color: #1b1c2e;
+}
+
+.theme-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 5px;
+  transform: translate(5px, -250px);
+  color: #1b1c2e;
+}
+.theme-card img {
+  height: 200px;
+  transform: translate(49px, 40px);
+  clip-path: inset(0px 50px 0px 0px);
+}
+.theme-card:nth-child(1) {
+  background: linear-gradient(
+    131.73deg,
+    #867dbb 0%,
+    rgba(154, 215, 211, 0.82) 100%
+  );
+}
+
+.theme-card:nth-child(1) h1 {
+  transform: rotate(90deg) translate(60px, 58px);
+}
+.theme-card:nth-child(2) h1 {
+  transform: rotate(90deg) translate(60px, 58px);
+}
+.theme-card:nth-child(1) img {
+  transform: translate(49px, -10px);
+}
+.theme-card:nth-child(2) img {
+  transform: translate(49px, -10px);
+}
+.theme-card:nth-child(1) p {
+  transform: translate(5px, -293px);
+}
+.theme-card:nth-child(2) {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+
+.theme-card:nth-child(3) {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+
+.theme-card:nth-child(3) h1 {
+  transform: rotate(90deg) translate(69px, 58px);
+}
+.theme-card:nth-child(3) img {
+  transform: translate(49px, -10px);
+}
+
+.theme-card:nth-child(3) p {
+  transform: translate(5px, -293px);
+}
+.theme-card:nth-child(4) {
+  background: linear-gradient(117.48deg, #a9519f 3.82%, #644ea0 86.54%);
+}
+.theme-card:nth-child(5) {
+  background: linear-gradient(
+    131.73deg,
+    #867dbb 0%,
+    rgba(154, 215, 211, 0.82) 100%
+  );
+}
+.theme-card:nth-child(6) {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+.theme-card:nth-child(7) {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.theme-card:nth-child(8) {
+  background: linear-gradient(113.47deg, #ffff80 7.16%, #ff80bf 91.62%);
+}
+
+@media only screen and (max-width: 768px) {
+  .cards-grid {
+    justify-content: center;
+  }
+
+  .theme-card p {
+    font-size: 0.75rem;
+  }
+
+  .theme-card:nth-child(1) p {
+    transform: translate(5px, -270px);
+  }
+  .theme-card:nth-child(2) p {
+    transform: translate(5px, -237px);
+  }
+
+  .theme-card:nth-child(3) h1 {
+    transform: rotate(90deg) translate(91px, 74px);
+  }
+  .theme-card:nth-child(3) p {
+    transform: translate(5px, -240px);
+  }
+  .theme-card:nth-child(4) p {
+    transform: translate(5px, -240px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clg-desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .about-us-h2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+  }
+  .about-us-p {
+    text-align: justify;
+  }
+  .clg-map h2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+  }
+}
+
+.CommunityImage {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: rgb(202, 28, 225) 0px 4px 10px; */
+  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.CommunityImage:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+}
+
+.sdglink {
+  text-decoration: none;
+  background: #891a98;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
