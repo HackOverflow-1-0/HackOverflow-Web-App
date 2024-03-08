@@ -5,9 +5,9 @@ const getRandomRotation = () => Math.floor(Math.random() * (5 - -5 + 1)) + -5; /
 
 const InstagramReelsCards = () => {
   const [cardLinks, setCardLinks] = useState([
-    "https://www.instagram.com/reel/C4DajNUtHhd/?utm_source=ig_embed&amp;utm_campaign=loading",
-    "https://www.instagram.com/reel/C35uDWLhkQq/?utm_source=ig_embed&amp;utm_campaign=loading",
-    "https://www.instagram.com/reel/C33BAWGJdD1/?utm_source=ig_embed&amp;utm_campaign=loading",
+    "https://www.instagram.com/reel/C4QwSFAJbeb/?utm_source=ig_embed&amp;utm_campaign=loading",
+    "https://www.instagram.com/reel/C4QAvzEtXWZ/?utm_source=ig_embed&amp;utm_campaign=loading",
+    "https://www.instagram.com/reel/C4NsdvtJpco/?utm_source=ig_embed&amp;utm_campaign=loading",
   ]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const InstagramReelsCards = () => {
         <div>
           {/* Latest Social Posts Section */}
           <h1
-            className="sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize"
+            className="text-center text-[45px] capitalize cursor-pointer"
             style={{
               fontFamily: "Poppins, sans-serif",
               fontWeight: 700,

@@ -26,7 +26,7 @@ export const Special = () => {
         <Container>
           <div className="relative p-4 lg:py-10 w-full">
             <h1
-              className="text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize"
+              className="text-center text-[45px] capitalize cursor-pointer"
               style={{
                 fontFamily: "Poppins,sans-serif",
                 fontWeight: 700,

@@ -51,15 +51,13 @@ export const NavBar = () => {
               backgroundColor: "transparent",
               border: "1px solid white",
               color: "white",
-              fontWeight: "300", 
+              fontWeight: "300",
             }}
             className="hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded d-md-none ml-auto"
             onClick={() => window.open("https://ho2.tech/brochure", "_blank")}
           >
             Brochure
           </button>
-
-
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -85,7 +83,7 @@ export const NavBar = () => {
                 Schedule
               </Nav.Link>
 
-              {/* <Nav.Link
+              <Nav.Link
                 href={getLinkHref("themes")}
                 className={
                   activeLink === "themes" ? "active navbar-link" : "navbar-link"
@@ -93,7 +91,7 @@ export const NavBar = () => {
                 onClick={() => setActiveLink("themes")}
               >
                 Themes
-              </Nav.Link> */}
+              </Nav.Link>
 
               <Nav.Link
                 href={getLinkHref("sponsors")}
@@ -166,7 +164,6 @@ export const NavBar = () => {
                 </button>
               </a>
             </div>
-
           </Navbar.Collapse>
         </Container>
         <ProgressBar />

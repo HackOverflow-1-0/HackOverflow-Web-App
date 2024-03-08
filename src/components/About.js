@@ -16,11 +16,11 @@ const About = () => {
         trafficFlow: true,
       },
       container: mapElement.current,
-      center: [73.1741628, 18.8932469],
+      center: [73.1762426, 18.8934723],
       zoom: 16,
     });
     var marker = new tt.Marker()
-      .setLngLat([73.1741628, 18.8932469])
+      .setLngLat([73.1762426, 18.8934723])
       .addTo(maps);
     // setMap(maps);
     return () => maps.remove();

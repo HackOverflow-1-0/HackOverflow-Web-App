@@ -8,7 +8,8 @@ import { Schedule } from "./components/Schedule/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
 import { Fragment, useEffect, useState } from "react";
 // import Themes from "./components/Themes/Themes";
-// import NewThemes from "./components/New Themes/NewThemes";
+import NewThemes from "./components/New Themes/NewThemes";
+import FutureCityTheme from "./components/FutureCityTheme/FutureCityTheme";
 import Sponsors from "./components/Sponsors";
 // import MobileFAQ from "./components/FAQ/MobileFAQ";
 // import Prizes from "./components/Prizes/Prizes";
@@ -35,6 +36,7 @@ import { Special } from "./components/Special/Special";
 import PreLoader from "./components/PreLoader/PreLoader";
 // import Gal from "./components/galleryNew/gal";
 import InstagramReelsCards from "./components/InstagramReelsCards";
+// import ShootingStar from "./components/ShootingStar/ShootingStar";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -46,7 +48,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 13000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -122,6 +124,7 @@ function App() {
                 {/* <Prizes /> */}
                 <Schedule />
                 {/* <NewThemes /> */}
+                <FutureCityTheme />
                 <Sponsors />
                 {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
                 <FAQs />

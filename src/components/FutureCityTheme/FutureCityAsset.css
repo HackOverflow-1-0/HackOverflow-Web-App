@@ -1,0 +1,54 @@
+/* .preloader {
+  height: 50rem;
+  background: rgb(10, 44, 179);
+}
+
+.preloadervideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .preloadervideo {
+    transform: translateX(-580px);
+    transform: translateY(-580px);
+
+  }
+}
+
+
+@media only screen and (min-width: 293px) {
+  .preloadervideo {
+    width: 1536px;
+  }
+} */
+
+/* .preloader {
+  height: 100vh;
+} */
+
+/* @media screen and (min-width: 640px) {
+    .preloader {
+      height: 100vh;
+    }
+  } */
+
+#orange-pink {
+  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-health {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+}
+.green-yellow {
+  background: linear-gradient(116.1deg, #80ffea 7.49%, #8aff80 92.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
