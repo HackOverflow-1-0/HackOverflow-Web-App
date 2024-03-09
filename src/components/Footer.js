@@ -2,8 +2,8 @@ import React from "react";
 import logo from "../assets/img/2024-logo.webp";
 
 import "./Footer.css";
-import { GitHub, Instagram, LinkedIn,X} from "@mui/icons-material";
-import XIcon from '@mui/icons-material/X'; // Import XIcon
+import { GitHub, Instagram, LinkedIn, X } from "@mui/icons-material";
+import XIcon from "@mui/icons-material/X"; // Import XIcon
 
 const Footer = () => {
   return (
@@ -36,7 +36,8 @@ const Footer = () => {
               <LinkedIn className="icons linkedin" fontSize="large" />
             </a>
             <a href="https://ho2.tech/twitter" target="_blank" rel="noreferrer">
-              <XIcon className="icons twitter" fontSize="large" /> {/* Replace Twitter with XIcon */}
+              <XIcon className="icons twitter" fontSize="large" />{" "}
+              {/* Replace Twitter with XIcon */}
             </a>
           </p>
         </div>
