@@ -248,110 +248,23 @@ function Teampage() {
     {
       image: "/sahil_bansal.webp",
       image1: "/sahil_bansal_white.webp",
-      id: "Sagar Maurya",
-      insta: "https://instagram.com/_sagar27_?igshid=YmMyMTA2M2Y=",
-      instahandle: "@_sagar27_",
-      linkedin: "https://www.linkedin.com/in/sagarmaurya",
-      Linkedinhandle: "Sagar Maurya",
-      github: "https://github.com/rookkiee?",
-      githubhandle: "rookkiee",
-      discord: "http://discordapp.com/users/Sagar#7961",
-      discordhandle: "Sagar#7961",
+      id: "Rajat Rai",
+      insta: "https://www.instagram.com/__rajat_rai__/",
+      instahandle: "@__rajat_rai__",
+      linkedin: "https://www.linkedin.com/in/rajatjrai",
+      Linkedinhandle: "rajatjrai",
+      github: "https://github.com/rajatrai30",
+      githubhandle: "rajatrai30",
+      discord: "http://discordapp.com/users/prince_rj_",
+      discordhandle: "prince_rj_",
 
-      name: " Management Lead",
+      name: "Management Lead",
 
       content:
         "I favor a systematic approach involving planning, organizing, implementing, and monitoring, blending science and art to achieve set goals.",
       key: "1",
     },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Sarthak Pant",
-      insta: "https://instagram.com/sarthak.pant31",
-      instahandle: "@sarthak.pant31",
-      linkedin: "https://www.linkedin.com/in/sarthak-pant-8844521b7/",
-      Linkedinhandle: "Sarthak Pant",
-      github: "https://github.com/sarthakpant772",
-      githubhandle: "sarthakpant772",
-      discord: "http://discordapp.com/users/Cyanide#0711",
-      discordhandle: "Cyanide#0711",
-
-      content:
-        "What does magic mean? The fact that I typed this message without any bugs.",
-      name: "Tech Lead",
-      key: "2",
-    },
-
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Amvi Sinha",
-      insta: "https://instagram.com/itsamviii?igshid=ZDdkNTZiNTM=",
-      instahandle: "@itsamviii",
-      linkedin: "https://www.linkedin.com/in/amvi-sinha-59a953203/",
-      Linkedinhandle: "Amvi Sinha",
-      github: "https://github.com/as0213",
-      githubhandle: "as0213",
-      discord: "http://discordapp.com/users/Amvi#2596",
-      discordhandle: "mv#2596",
-
-      content: "Hi, I am your GDSC Lead",
-      name: "Community Lead",
-      key: "3",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Sambhav Jain",
-      insta: "https://instagram.com/sambhavjn_17",
-      instahandle: "@sambhavjn_17",
-      github: "https://github.com/Sambhavjain9812",
-      githubhandle: "Sambhavjain9812",
-      discord: "http://discordapp.com/users/Sambhav#7534",
-      discordhandle: "Sambhav#7534",
-      linkedin: "https://www.linkedin.com/in/sambhav-jain-40907021b/",
-      Linkedinhandle: "Sambhav Jain",
-
-      content: " Stressed Blessed and Caffeine Obsessed ",
-      name: "Social Media and Content ",
-      key: "4",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Bhavya Aggarwal",
-      insta: "https://www.instagram.com/bhavya.aggarwall/",
-      instahandle: "@bhavya.aggarwall",
-      linkedin: "https://www.linkedin.com/in/bhavya-aggarwal-544488209/",
-      Linkedinhandle: "Bhavya Aggarwal",
-      github: "https://github.com/Bhavya0404",
-      githubhandle: "Bhavya0404",
-      discord: "http://discordapp.com/users/GameOnSpot#8227",
-      discordhandle: "GameOnSpot#8227",
-      content: "Figuring out cheat codes for the game called Life",
-      name: "Web Lead",
-      key: "5",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      insta: "https://instagram.com/_.medusaa.a._?igshid=ZmZhODViOGI=",
-      linkedin: "https://www.linkedin.com/in/aasmi-gill-a2268621b ",
-      github: "https://github.com/aasmigill",
-      githubhandle: "aasmigill",
-      discord: "http://discordapp.com/users/Aasmi#8369",
-      discordhandle: "Aasmi#8369",
-      instahandle: "@_.medusaa.a._",
-      Linkedinhandle: "Aasmi Gill",
-
-      id: "Aasmi Gill",
-      name: "Management Lead",
-      content: "an open book written in a cryptic dead language ",
-      key: "6",
-    },
   ];
-
   const TeamLeads = [
     {
       image: "/sahil_bansal.webp",
@@ -895,7 +808,7 @@ function Teampage() {
                   p={{ base: 4, md: 10 }}
                   mt={{ base: "-5", md: "5" }}
                   borderRadius={15}
-                  bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                  bg="linear-gradient(93.17deg, rgb(187 76 130 / 70%) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
                   boxShadow="inset 0px -4px 10px rgba(255, 130, 191, 0.7)"
                 >
                   <Grid
@@ -914,7 +827,7 @@ function Teampage() {
                           posArrayTeamLeads[selectedPosTeamLeads]?.image1
                         }
                         position="relative"
-                        ml={{ base: -4, md: 4 }}
+                        // ml={{ base: -4, md: 4 }}
                         mb={3}
                         width={{ base: "100%", md: "80%" }}
                         size={"auto"}

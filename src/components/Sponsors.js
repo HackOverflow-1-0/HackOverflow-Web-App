@@ -48,7 +48,7 @@ const Sponsors = () => {
           name: "Bobble AI",
           image: bobbleWhite,
           link: "https://bobble.ai/en/home",
-          SubSponsorcategory: "Silver",
+          SubSponsorcategory: "Merchent",
           effect: "fade-right",
         },
         {
@@ -56,7 +56,7 @@ const Sponsors = () => {
           name: "Aptech Panvel",
           image: appTech,
           link: "https://aptechpanvel.in/",
-          effect: "fade-up",
+          effect: "fade-left",
           SubSponsorcategory: "Silver",
         },
         {
@@ -353,6 +353,42 @@ const Sponsors = () => {
                     <hr className="text-[#767676] dark:text-[#767676]" />
                   </div>
 
+                  {/* Display Merchent Partner */}
+                  {sponsor.category === "Our" && (
+                    <div className="lg:px-56 lg:pt-1 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+                      <h1
+                        className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+                        style={{
+                          fontFamily: "Poppins,sans-serif",
+                          fontWeight: 400,
+                        }}
+                      >
+                        Merchandise Partner
+                      </h1>
+                    </div>
+                  )}
+                  {sponsor.items
+                    .filter(
+                      (item) =>
+                        sponsor.category === "Our" &&
+                        item.SubSponsorcategory === "Merchent"
+                    )
+                    .map((item, index) => (
+                      <div key={index}>
+                        <MediumSponsorsCard
+                          weblink={item.link}
+                          image={item.image}
+                          dataAos={item.effect}
+                          SubSponsorcategory={item.SubSponsorcategory}
+                        />
+                      </div>
+                    ))}
+                  {sponsor.category === "Our" && (
+                    <div className="pt-10">
+                      <hr className="text-[#767676] dark:text-[#767676]" />
+                    </div>
+                  )}
+
                   {/* Display Silver sponsors */}
                   <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
                     <h1
@@ -366,7 +402,7 @@ const Sponsors = () => {
                     </h1>
                   </div>
 
-                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64">
+                  <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-2 xl:gap-2">
                     {sponsor.items
                       .filter(
                         (item) =>
