@@ -867,10 +867,10 @@ function Teampage() {
           w="100%"
           justifyContent={"center"}
           display={"flex"}
-        //   paddingTop={"4rem"}
-        className="pt-36"
+          //   paddingTop={"4rem"}
+          className=""
         >
-          <Box minH="100vh" m={0} w="100%">
+          <Box m={0} w="100%">
             {/* <Nav /> */}
             <NavBar />
             {/* <Head /> */}
@@ -896,6 +896,7 @@ function Teampage() {
                   mt={{ base: "-5", md: "5" }}
                   borderRadius={15}
                   bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                  boxShadow="inset 0px -4px 10px rgba(255, 130, 191, 0.7)"
                 >
                   <Grid
                     templateAreas={`
@@ -1234,7 +1235,7 @@ function Teampage() {
                             }}
                             //color = {selectedTeam === "core" ? "white" : "gray.600"}
                           >
-                            Speakers
+                            Team
                           </Text>
                           <ChakraImage
                             src="/Line 3.webp"

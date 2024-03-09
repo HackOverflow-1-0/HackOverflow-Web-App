@@ -12,12 +12,12 @@ import tvsWhite from "../assets/img/tvsWhite.png";
 import beeceptorWhite from "../assets/img/beeceptorWhite.png";
 import horusonWhite from "../assets/img/horusonWhite.png";
 import quillbotWhite from "../assets/img/quillbotWhite.png";
-import imfsWhite from "../assets/img/imfsWhite.webp";
-import jamboreeWhite from "../assets/img/jamboreeWhiteNew.png";
+// import imfsWhite from "../assets/img/imfsWhite.webp";
+// import jamboreeWhite from "../assets/img/jamboreeWhiteNew.png";
 import bobbleWhite from "../assets/img/bobbleWhite.png";
 import languifyWhite from "../assets/img/languifyWhite.png";
-import interViewBuddyWhite from "../assets/img/interViewBuddyWhite.png";
-import philipsWhite from "../assets/img/philipsWhite.png";
+// import interViewBuddyWhite from "../assets/img/interViewBuddyWhite.png";
+// import philipsWhite from "../assets/img/philipsWhite.png";
 import noticebardWhite from "../assets/img/noticebardWhite.png";
 import goldenorioleWhite from "../assets/img/goldenorioleWhite.png";
 
@@ -48,6 +48,7 @@ const Sponsors = () => {
           name: "Bobble AI",
           image: bobbleWhite,
           link: "https://bobble.ai/en/home",
+          SubSponsorcategory: "Silver",
           effect: "fade-right",
         },
         {
@@ -56,6 +57,7 @@ const Sponsors = () => {
           image: appTech,
           link: "https://aptechpanvel.in/",
           effect: "fade-up",
+          SubSponsorcategory: "Silver",
         },
         {
           id: 3,
@@ -63,14 +65,16 @@ const Sponsors = () => {
           image: tvsWhite,
           link: "https://www.tvsmotor.com/",
           effect: "fade-down",
+          SubSponsorcategory: "Gold",
         },
-        {
-          id: 4,
-          name: "IMFS Mumbai",
-          image: imfsWhite,
-          link: "https://www.imfs.co.in/",
-          effect: "fade-left",
-        },
+        // {
+        //   id: 4,
+        //   name: "IMFS Mumbai",
+        //   image: imfsWhite,
+        //   link: "https://www.imfs.co.in/",
+        //   effect: "fade-left",
+        //   SubSponsorcategory: "Silver",
+        // },
         // {
         //   id: 5,
         //   name: "Jamboree",
@@ -84,6 +88,7 @@ const Sponsors = () => {
           image: noticebardWhite,
           link: "https://noticebard.com/",
           effect: "fade-left",
+          SubSponsorcategory: "General",
         },
         {
           id: 6,
@@ -91,20 +96,31 @@ const Sponsors = () => {
           image: languifyWhite,
           link: "https://www.languify.in/",
           effect: "fade-up",
+          SubSponsorcategory: "General",
         },
         {
           id: 7,
           name: "Quillbot",
           image: quillbotWhite,
           link: "https://quillbot.com/",
-          effect: "fade-down",
-        },
-        {
-          id: 8,
-          name: "InterView Buddy",
-          image: interViewBuddyWhite,
-          link: "https://interviewbuddy.net/",
           effect: "fade-right",
+          SubSponsorcategory: "General",
+        },
+        // {
+        //   id: 8,
+        //   name: "InterView Buddy",
+        //   image: interViewBuddyWhite,
+        //   link: "https://interviewbuddy.net/",
+        //   effect: "fade-right",
+        //   SubSponsorcategory: "General",
+        // },
+        {
+          id: 9,
+          name: "Golden Oriole",
+          image: goldenorioleWhite,
+          link: "https://www.goldenorioleedu.com/",
+          effect: "fade-right",
+          SubSponsorcategory: "Silver",
         },
       ],
     },
@@ -119,6 +135,7 @@ const Sponsors = () => {
           image: devfolioWhite,
           link: "https://devfolio.co/home/",
           effect: "fade-right",
+          SubSponsorcategory: "Gold",
         },
         {
           id: 2,
@@ -126,6 +143,7 @@ const Sponsors = () => {
           image: polygonWhite,
           link: "https://polygon.technology/",
           effect: "fade-up",
+          SubSponsorcategory: "Gold",
         },
         {
           id: 3,
@@ -133,6 +151,7 @@ const Sponsors = () => {
           image: appTech,
           link: "https://aptechpanvel.in/",
           effect: "fade-down",
+          SubSponsorcategory: "Gold",
         },
         {
           id: 4,
@@ -140,6 +159,7 @@ const Sponsors = () => {
           image: beeceptorWhite,
           link: "https://beeceptor.com/",
           effect: "fade-left",
+          SubSponsorcategory: "Gold",
         },
         {
           id: 5,
@@ -147,6 +167,7 @@ const Sponsors = () => {
           image: replitWhite,
           link: "https://replit.com/",
           effect: "fade-left",
+          SubSponsorcategory: "Silver",
         },
         {
           id: 6,
@@ -154,6 +175,7 @@ const Sponsors = () => {
           image: solanaWhite,
           link: "https://solana.com/",
           effect: "fade-down",
+          SubSponsorcategory: "Silver",
         },
         {
           id: 7,
@@ -161,6 +183,7 @@ const Sponsors = () => {
           image: filecoinWhite,
           link: "https://filecoin.io/",
           effect: "fade-up",
+          SubSponsorcategory: "Silver",
         },
         {
           id: 8,
@@ -168,11 +191,34 @@ const Sponsors = () => {
           image: tvsWhite,
           link: "https://www.tvsmotor.com/",
           effect: "fade-right",
+          SubSponsorcategory: "Silver",
+        },
+        {
+          id: 9,
+          name: "Horuson",
+          image: horusonWhite,
+          link: "https://www.horuson.com/",
+          effect: "fade-left",
+          SubSponsorcategory: "General",
+        },
+        {
+          id: 10,
+          name: "Reva Tech",
+          image: revaTech,
+          link: "https://revatech-ai.com/",
+          effect: "fade-right",
+          SubSponsorcategory: "General",
         },
         // Add more gold sponsors here
       ],
     },
   ]);
+
+  const hasMediaPartner = sponsors.find(
+    (sponsor) =>
+      sponsor.category === "Past" &&
+      sponsor.items.some((item) => item.SubSponsorcategory === "Media")
+  );
 
   // Function to toggle accordion item open/close state
   const toggleAccordion = (index) => {
@@ -256,10 +302,205 @@ const Sponsors = () => {
                 </h1>
               </div>
               {sponsor.open && (
+                <>
+                  {/* Display Gold sponsors */}
+                  <div className="lg:px-56 lg:pt-1 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+                    <h1
+                      className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+                      style={{
+                        fontFamily: "Poppins,sans-serif",
+                        fontWeight: 400,
+                      }}
+                    >
+                      Gold Sponsor
+                    </h1>
+                  </div>
+                  {sponsor.items
+                    .filter(
+                      (item) =>
+                        sponsor.category === "Our" &&
+                        item.SubSponsorcategory === "Gold"
+                    )
+                    .map((item, index) => (
+                      <div key={index}>
+                        <MediumSponsorsCard
+                          weblink={item.link}
+                          image={item.image}
+                          dataAos={item.effect}
+                          SubSponsorcategory={item.SubSponsorcategory}
+                        />
+                      </div>
+                    ))}
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-64">
+                    {sponsor.items
+                      .filter(
+                        (item) =>
+                          sponsor.category === "Past" &&
+                          item.SubSponsorcategory === "Gold"
+                      )
+                      .map((item, index) => (
+                        <div key={index}>
+                          <MediumSponsorsCard
+                            weblink={item.link}
+                            image={item.image}
+                            dataAos={item.effect}
+                            SubSponsorcategory={item.SubSponsorcategory}
+                          />
+                        </div>
+                      ))}
+                  </div>
+                  <div className="pt-10">
+                    <hr className="text-[#767676] dark:text-[#767676]" />
+                  </div>
+
+                  {/* Display Silver sponsors */}
+                  <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+                    <h1
+                      className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+                      style={{
+                        fontFamily: "Poppins,sans-serif",
+                        fontWeight: 400,
+                      }}
+                    >
+                      Silver Sponsor
+                    </h1>
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64">
+                    {sponsor.items
+                      .filter(
+                        (item) =>
+                          sponsor.category === "Our" &&
+                          item.SubSponsorcategory === "Silver"
+                      )
+                      .map((item, index) => (
+                        <div key={index}>
+                          <MediumSponsorsCard
+                            weblink={item.link}
+                            image={item.image}
+                            dataAos={item.effect}
+                            SubSponsorcategory={item.SubSponsorcategory}
+                          />
+                        </div>
+                      ))}
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-64">
+                    {sponsor.items
+                      .filter(
+                        (item) =>
+                          sponsor.category === "Past" &&
+                          item.SubSponsorcategory === "Silver"
+                      )
+                      .map((item, index) => (
+                        <div key={index}>
+                          <MediumSponsorsCard
+                            weblink={item.link}
+                            image={item.image}
+                            dataAos={item.effect}
+                            SubSponsorcategory={item.SubSponsorcategory}
+                          />
+                        </div>
+                      ))}
+                  </div>
+                  <div className="pt-10">
+                    <hr className="text-[#767676] dark:text-[#767676]" />
+                  </div>
+
+                  {/* Display General sponsors */}
+                  <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+                    <h1
+                      className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+                      style={{
+                        fontFamily: "Poppins,sans-serif",
+                        fontWeight: 400,
+                      }}
+                    >
+                      General Sponsor
+                    </h1>
+                  </div>
+                  <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-2 xl:gap-2">
+                    {sponsor.items
+                      .filter(
+                        (item) =>
+                          sponsor.category === "Past" &&
+                          item.SubSponsorcategory === "General"
+                      )
+                      .map((item, index) => (
+                        <div key={index}>
+                          <GeneralSponsorCard
+                            weblink={item.link}
+                            image={item.image}
+                            dataAos={item.effect}
+                            SubSponsorcategory={item.SubSponsorcategory}
+                          />
+                        </div>
+                      ))}
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64">
+                    {sponsor.items
+                      .filter(
+                        (item) =>
+                          sponsor.category === "Our" &&
+                          item.SubSponsorcategory === "General"
+                      )
+                      .map((item, index) => (
+                        <div key={index}>
+                          <MediumSponsorsCard
+                            weblink={item.link}
+                            image={item.image}
+                            dataAos={item.effect}
+                            SubSponsorcategory={item.SubSponsorcategory}
+                          />
+                        </div>
+                      ))}
+                  </div>
+                  <div className="pt-10">
+                    <hr className="text-[#767676] dark:text-[#767676]" />
+                  </div>
+
+                  {/* Display Media Partner
+                  {!hasMediaPartner && (
+                    <div className="lg:px-56 lg:pt-1 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
+                      <h1
+                        className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
+                        style={{
+                          fontFamily: "Poppins,sans-serif",
+                          fontWeight: 400,
+                        }}
+                      >
+                        Media Partner
+                      </h1>
+                    </div>
+                  )}
+                  {sponsor.items
+                    .filter(
+                      (item) =>
+                        sponsor.category === "Our" &&
+                        item.SubSponsorcategory === "Media"
+                    )
+                    .map((item, index) => (
+                      <div key={index}>
+                        <MediumSponsorsCard
+                          weblink={item.link}
+                          image={item.image}
+                          dataAos={item.effect}
+                          SubSponsorcategory={item.SubSponsorcategory}
+                        />
+                      </div>
+                    ))}
+                  {!hasMediaPartner && (
+                    <div className="pt-10">
+                      <hr className="text-[#767676] dark:text-[#767676]" />
+                    </div>
+                  )} */}
+                </>
+              )}
+              {/* {sponsor.open && (
                 <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-64">
                   {sponsor.items.map((item) => (
                     <div key={item.id}>
-                      {/* Render sponsor card here based on category */}
                       {sponsor.category === "Our" && (
                         <MediumSponsorsCard
                           weblink={item.link}
@@ -277,7 +518,7 @@ const Sponsors = () => {
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
             </div>
           ))}
         </Container>
