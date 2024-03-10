@@ -109,7 +109,11 @@ export const Schedule = () => {
           >
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
-                <div className="col-5" style={{ padding: "2rem" }}>
+                <div
+                  id="blue-cyan"
+                  className="col-5"
+                  style={{ padding: "2rem" }}
+                >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>31st</h1>
                   <h3 style={{ fontSize: "25px" }}>January</h3>
                 </div>
@@ -130,9 +134,13 @@ export const Schedule = () => {
           >
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
-                <div className="col-5" style={{ padding: "2rem" }}>
+                <div
+                  className="col-5"
+                  id="purple-pink"
+                  style={{ padding: "2rem" }}
+                >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>29th</h1>
-                  <h3 style={{ fontSize: "25px" }}>February</h3>
+                  <h3 style={{ fontSize: "25px" }}>Feb</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Registrations Ends</h1>
@@ -153,7 +161,11 @@ export const Schedule = () => {
           >
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
-                <div className="col-5" style={{ padding: "2rem" }}>
+                <div
+                  className="col-5"
+                  id="green-yellow"
+                  style={{ padding: "2rem" }}
+                >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>14th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
@@ -177,7 +189,11 @@ export const Schedule = () => {
           >
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
-                <div className="col-5" style={{ padding: "2rem" }}>
+                <div
+                  className="col-5"
+                  id="orange-pink"
+                  style={{ padding: "2rem" }}
+                >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>16th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>

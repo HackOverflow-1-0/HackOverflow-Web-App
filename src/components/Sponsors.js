@@ -402,7 +402,7 @@ const Sponsors = () => {
                     </h1>
                   </div>
 
-                  <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-2 xl:gap-2">
+                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
                     {sponsor.items
                       .filter(
                         (item) =>
