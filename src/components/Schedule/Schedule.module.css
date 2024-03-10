@@ -50,7 +50,7 @@
   box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7); /* Keep box shadow color */
   display: block;
   width: 560px;
-  height: 230px;
+  height: 265px;
   transition: box-shadow 0.3s ease; /* Adding transition to box-shadow */
   cursor: pointer;
 }

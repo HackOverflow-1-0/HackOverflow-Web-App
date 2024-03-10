@@ -23,14 +23,16 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 // Import Swiper styles
 import "swiper/css";
 import {
-  FaFacebook,
+  // FaFacebook,
   FaDiscord,
   FaTwitter,
   FaGithub,
-  FaYoutube,
+  // FaYoutube,
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
+import XIcon from "@mui/icons-material/X";
 //import css
 import "./AppTeam.css";
 import "./Animation.css";
@@ -246,484 +248,233 @@ const CurrentTeamNav = (props) => {
 function Teampage() {
   const Mentors = [
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Rajat Rai",
-      insta: "https://www.instagram.com/__rajat_rai__/",
-      instahandle: "@__rajat_rai__",
-      linkedin: "https://www.linkedin.com/in/rajatjrai",
-      Linkedinhandle: "rajatjrai",
-      github: "https://github.com/rajatrai30",
-      githubhandle: "rajatrai30",
-      discord: "http://discordapp.com/users/prince_rj_",
-      discordhandle: "prince_rj_",
-
-      name: "Management Lead",
-
+      image: "/reveal1.png",
+      image1: "/reveal1.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Web Mentor",
+      // content:
+      // "I favor a systematic approach involving planning, organizing, implementing, and monitoring, blending science and art to achieve set goals.",
       content:
-        "I favor a systematic approach involving planning, organizing, implementing, and monitoring, blending science and art to achieve set goals.",
+        "I'll soon be swooping in to unveil my mentorship in the epic realm of HackOverflow 2.0! 🎉",
       key: "1",
+    },
+    {
+      image: "/reveal2.png",
+      image1: "/reveal2.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "App Mentor",
+      content:
+        " The countdown is on as I prepare to unleash my mentorship powers in the electrifying world of HackOverflow 2.0! 🎩✨ Get ready to unlock your full coding potential and embark on a journey of innovation and discovery.",
+      key: "2",
+    },
+    {
+      image: "/reveal3.png",
+      image1: "/reveal3.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Cloud Mentor",
+      content:
+        "🚀 Calling all aspiring coders! 📣 Prepare to be inspired and empowered as I gear up to reveal myself as your guide and mentor in the epic saga of HackOverflow 2.0! 🌟",
+      key: "3",
     },
   ];
   const TeamLeads = [
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      insta: "https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=",
-      linkedin: "https://www.linkedin.com/in/sanat-bhatia-031072233/ ",
-      github: "https://github.com/TheCringedSoul",
-      githubhandle: "TheCringedSoul",
-      discord: "http://discordapp.com/users/TheCringedSoul#7900",
-      discordhandle: "TheCringedSoul#7900",
-      instahandle: "@sanatbhatia",
-      Linkedinhandle: "Sanat Bhatia",
-      id: "Sanat Bhatia",
-      name: "UI/UX Lead",
-      content: '"I am silently judging your font choice."',
+      image: "/anjani.png",
+      image1: "/anjani.png",
+      id: "Anjani Kumar Thakur",
+      // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
+      // instahandle: "@sanatbhatia",
+      xtwitter: "https://twitter.com/lifeofanjkt",
+      xtwitterhandle: "@lifeofanjkt",
+      linkedin: "https://www.linkedin.com/in/anjkt/",
+      Linkedinhandle: "anjkt",
+      github: "https://github.com/anjkt",
+      githubhandle: "@anjkt",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Judge",
+      content:
+        "🧐 As one of the discerning judges for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
       key: "1",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Sahilsher Singh",
-      insta: "https://media.tenor.com/e-OsuDsXxgEAAAAd/nouns-dao.gif",
-      instahandle: "Instagram",
-      linkedin: "https://www.linkedin.com/in/sahilsher-singh/",
-      Linkedinhandle: " Sahilsher Singh",
-      github: "https://github.com/Sandhu-Sahil",
-      githubhandle: "Sandhu-Sahil",
-      discord: "http://discordapp.com/users/Sahil Sandhu#5673",
-      discordhandle: "Sahil Sandhu#5673",
-
+      image: "/nikita.png",
+      image1: "/nikita.png",
+      id: "Nikita Gandhi",
+      // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
+      // instahandle: "@sanatbhatia",
+      xtwitter: "https://twitter.com/Nikkitagandhi",
+      xtwitterhandle: "Nikkitagandhi",
+      linkedin: "https://www.linkedin.com/in/nikita-gandhi01/",
+      Linkedinhandle: "nikita-gandhi01",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://discordapp.com/users/nikita1494",
+      discordhandle: "nikita1494",
+      name: "Judge",
       content:
-        "Who cares? I mean, it's sort of exciting, isn't it? Breaking the rules.",
-      name: "Technical Lead",
+        "👨‍⚖️ As a judge for HackOverflow 2.0, I'm silently appraising your innovation and execution along with the flawless implementation🚀.",
       key: "2",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Rajat Rai",
-      insta: "https://instagram.com/mid.nightmemories10",
-      instahandle: "@mid.nightmemories10",
-      github: "https://github.com/Shivangi10-10",
-      githubhandle: "Shivangi10-10",
-      discord: "http://discordapp.com/users/shivangi_suyash",
-      discordhandle: "shivangi_suyash",
-      linkedin: "https://www.linkedin.com/in/shivangi-suyash-05a484259",
-      Linkedinhandle: "Rajat Rai",
+      image: "/reveal4.png",
+      image1: "/reveal4.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      // insta: "https://hack-overflow-2.tech/",
+      // instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Coming Soon",
+      // name: "Judge",
       content:
-        ' "The only way to do great work is to love what you do." - Steve Jobs',
-      name: "Community Lead",
+        "🔍 Attention all HackOverflow 2.0 contenders! 🚀 As one of the vigilant judges, I'm discreetly analyzing your coding ingenuity💻.",
       key: "3",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Aryan Kulshrestha",
-      insta: "https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=",
-      instahandle: "@_aryan_15_9",
-      linkedin: "https://www.linkedin.com/in/aryan-kulshrestha-993248221",
-      Linkedinhandle: " Aryan Kulshrestha",
-      github: "https://github.com/aryankul15",
-      githubhandle: "aryankul15",
-      discord: "https://discordapp.com/users/Aryan Kulshrestha#5249",
-      discordhandle: "Aryan Kulshrestha#5249",
-
-      content:
-        "Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ",
-      name: "Management & PR Lead      ",
-      key: "4",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      insta: "https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=",
-      instahandle: "@_parthahuja12_",
-      linkedin: "https://www.linkedin.com/in/parth-ahuja-a0229622b/",
-      Linkedinhandle: "Parth Ahuja",
-      github: "https://github.com/ravenclaw03",
-      githubhandle: "ravenclaw03",
-      discord: "http://discordapp.com/users/ravenclaw03#4283",
-      discordhandle: "ravenclaw03#4283",
-      id: "Parth Ahuja",
-      content:
-        "What is meant for you will find you even if you feel like it has already passed you.",
-      name: "Social Media Lead",
-      key: "5",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      insta: "https://instagram.com/_justhappy.uknow?igshid=YmMyMTA2M2Y",
-      instahandle: "@_justhappy.uknow",
-      linkedin: "https://www.linkedin.com/in/pariyashi-sahu-b91614243/",
-      Linkedinhandle: "Pariyashi Sahu",
-      github: "https://github.com/justhappyuknow",
-      githubhandle: "justhappyuknow",
-      discord: "http://discordapp.com/users/Pariyashihere#9072",
-      discordhandle: "Pariyashihere#9072",
-      id: "Pariyashi Sahu",
-      content:
-        "Void full of space, learning and improving myself while gazing the stars at night!",
-      name: "Content Lead",
-      key: "6",
-    },
-
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Kanav Agarwal",
-      insta: "https://www.instagram.com/kanav_ag/",
-      instahandle: "@kanav_ag",
-      linkedin: "https://www.linkedin.com/in/kanav-agarwal-30663421b/",
-      Linkedinhandle: "Kanav Agarwal",
-      github: "https://github.com/Kanav31",
-      githubhandle: "Kanav31",
-      discord: "http://discordapp.com/users/Kanav Agarwal#9540",
-      discordhandle: "Kanav Agarwal#9540",
-      content:
-        " Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.",
-      name: "Management & PR Lead   ",
-      key: "7",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Tanay Kedia",
-      insta: "https://instagram.com/tanay_7",
-      instahandle: "@tanay_7",
-      linkedin: "https://www.linkedin.com/in/tanay-k-755340177",
-      Linkedinhandle: "Tanay Kedia",
-      github: "https://github.com/tanayk07",
-      githubhandle: "tanayk07",
-      discord: "http://discordapp.com/users/Tanay#3729",
-      discordhandle: "Tanay#3729",
-      content: '"Making the World a better place" -Gavin Belson',
-      name: "Technical Advisor",
-      key: "8",
-    },
-
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Vishesh Raheja",
-      insta: "https://instagram.com/rogue__amoeba",
-      instahandle: "@rogue__amoeba",
-      linkedin: "https://www.linkedin.com/in/vishesh-raheja",
-      Linkedinhandle: "Vishesh Raheja",
-      github: "https://github.com/entropyconquers",
-      githubhandle: "entropyconquers",
-      discord: "https://discordapp.com/users/deadbeat_galvanometer#2452",
-      discordhandle: "ViShEsH#2452",
-      content:
-        "I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.",
-      name: "Web Dev Lead",
-      key: "9",
     },
   ];
   const CoreTeam = [
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Samarpreet Singh",
-      insta: "https://www.instagram.com/sam_p_28",
-      instahandle: "sam_p_28",
-      linkedin: "https://www.linkedin.com/in/samar28",
-      Linkedinhandle: "Samarpeet Singh",
-      github: "https://github.com/Samar-28",
-      githubhandle: "Samar-28",
-      discord: "http://discordapp.com/users/sam28p",
-      discordhandle: "Sam_28",
+      image: "/reveal5.png",
+      image1: "/reveal5.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Finance Head",
       content: "Crafting Digital Excellence, One Line of Code at a Time.",
-      name: "Full Stack Dev              ",
       key: "1",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Jinendra Jain",
-      insta: "https://instagram.com/hattori.03",
-      instahandle: "hattori.03",
-      linkedin: "https://www.linkedin.com/in/jjinendra3/",
-      Linkedinhandle: "Jinendra  Jain",
-      github: "hhttps://github.com/jjinendra3",
-      githubhandle: "jjinendra3",
-      discord: "http://discordapp.com/users/jim_k_schrute",
-      discordhandle: "jim_k_schrute",
-
-      content: "Code is like humour. If you have to explain it, it's bad",
-      name: "Full Stack & App Developer",
+      image: "/reveal6.png",
+      image1: "/reveal6.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "PR Head",
+      content: "Crafting Digital Excellence, One Line of Code at a Time.",
       key: "2",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Rajat Rai",
-      insta: "https://www.instagram.com/_shivansh04/",
-      instahandle: "@_shivansh04",
-      linkedin: "https://www.linkedin.com/in/shivansh-pandey-03619a166/",
-      Linkedinhandle: "Shivansh Pandey",
-      github: "https://github.com/Shivansh-25",
-      githubhandle: "Shivansh-25",
-      discord: "https://discordapp.com/users/513042268190408714",
-      discordhandle: "Shivansh#4027",
-
-      content: "“If you think math is hard, try web design.” ",
-      name: "Web Dev",
+      image: "/reveal7.png",
+      image1: "/reveal7.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Dev Head",
+      content: "Crafting Digital Excellence, One Line of Code at a Time.",
       key: "3",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Sunpreet Singh",
-      insta: "https://instagram.com/sunpreet_singh_28",
-      instahandle: "sunpreet_singh_28",
-      linkedin: "https://www.linkedin.com/in/sun28",
-      Linkedinhandle: "Sunpreet Singh",
-      github: "https://github.com/sun-28",
-      githubhandle: "sun-28",
-      discord: "http://discordapp.com/users/_sun_28",
-      discordhandle: "_sun_28",
-      content: `"Programming isn't about what you know; it's about what you can figure out." - Chris Pine`,
-      name: "Full Stack Dev             ",
+      image: "/reveal8.png",
+      image1: "/reveal8.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      content: "Crafting Digital Excellence, One Line of Code at a Time.",
+      name: "Media Head",
       key: "4",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Harsh Kumawat",
-      insta: "https://instagram.com/harshk04/",
-      instahandle: "harshk04",
-      linkedin: "https://www.linkedin.com/in/harsh-kumawat-069bb324b/",
-      Linkedinhandle: "Harsh Kumawat",
-      github: "https://github.com/harshk04",
-      githubhandle: "harshk04",
-      discord: "https://discordapp.com/users/harshk04",
-      discordhandle: "harshk04",
-
-      content:
-        "Fascinated by learning since it is something that requires ardent pursuit and diligent attention.",
-      name: "ML Developer",
+      image: "/reveal9.png",
+      image1: "/reveal9.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      content: "Crafting Digital Excellence, One Line of Code at a Time.",
+      name: "Creative Head",
       key: "5",
     },
     {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: " Nishant Singh Rajput ",
-      insta:
-        " https://instagram.com/n.i.s.h.a.n.t.singhrajput?igshid=YWYwM2I1ZDdmOQ== ",
-      instahandle: "   n.i.s.h.a.n.tsinghrajput   ",
-
-      linkedin: "  https://www.linkedin.com/in/nishant-singh-846952297   ",
-
-      Linkedinhandle: " Nishant Singh  ",
-
-      github: "   https://github.com/nishant0309singh   ",
-      githubhandle: "   nishant0309singh    ",
-
-      discord: "  https://discordapp.com/users/1165601220266819658     ",
-      discordhandle: "  nishant__0309 ",
-
-      content: "   Your words are the code that unlocks the future    ",
-
-      name: "   Content writer    ",
+      image: "/reveal10.png",
+      image1: "/reveal10.png",
+      id: "😊",
+      xtwitter: "https://hack-overflow-2.tech/",
+      xtwitterhandle: "@coming_soon",
+      insta: "https://hack-overflow-2.tech/",
+      instahandle: "@coming_soon",
+      linkedin: "https://hack-overflow-2.tech/",
+      Linkedinhandle: "@coming_soon",
+      github: "https://hack-overflow-2.tech/",
+      githubhandle: "@coming_soon",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      content: "Crafting Digital Excellence, One Line of Code at a Time.",
+      name: "Graphics Head",
       key: "6",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Siddhant Roy",
-      insta: "https://instagram.com/siddhant_roy_?igshid=NzZlODBkYWE4Ng==",
-      instahandle: "siddhant_roy_",
-      linkedin:
-        "https://www.linkedin.com/in/siddhant-roy-6602b0213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      Linkedinhandle: "Siddhant Roy",
-      github: "https://github.com/roy-sid",
-      githubhandle: "roy-sid",
-      discord: "http://discordapp.com/users/746399819936825524",
-      discordhandle: "siddhant_roy_",
-
-      content: "Strategically navigating the digital landscape",
-      name: "Management     ",
-      key: "7",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Atharva Goel",
-      insta: "https://instagram.com/atharvagoel_145?igshid=MzMyNGUyNmU2YQ==",
-      instahandle: "atharvagoel_145",
-      linkedin:
-        "https://www.linkedin.com/in/atharva-goel-625b99200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      Linkedinhandle: "Atharva Goel",
-      github: "https://github.com/Atharwahh",
-      githubhandle: "Atharwahh",
-      discord: "https://discord.com/users/521704122332741633",
-      discordhandle: "Atharva",
-      content: "Juggling tasks and laughs, that's our management craft.",
-      name: "Management and PR",
-      key: "8",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Samarth Narayan",
-      insta: "https://instagram.com/samarth123_",
-      instahandle: "samarth123_",
-      linkedin: "https://www.linkedin.com/in/samarth-narayan-4a4998250",
-      Linkedinhandle: "Samarth Narayan",
-      github: "https://github.com/samarth-5",
-      githubhandle: "samarth-5",
-      discord: "https://discordapp.com/users/957355819538735196",
-      discordhandle: "samarth_5_",
-
-      content:
-        "I'm a frontend developer transitioning to full-stack & mastering Java-based Data Structures & Algorithms (DSA).",
-      name: "Frontend Developer",
-      key: "9",
-    },
-
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Ankita Jha",
-      insta: "https://www.instagram.com/ankitaa.jhaaa/?next=%2F",
-      instahandle: "ankitaa.jhaaa",
-      linkedin: "https://www.linkedin.com/in/ankita-jha-aa4666258/",
-      Linkedinhandle: "Ankita Jha",
-      github: "https://github.com/ankitajhaa",
-      githubhandle: "ankitajhaa",
-      discord: "https://discordapp.com/users/689798109873963034",
-      discordhandle: "Ankita#0213",
-
-      content: "Coordinating algorithms to sway in rhythm",
-      name: "Social Media",
-      key: "10",
-    },
-
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Rishita Singh",
-      insta: "https://www.instagram.com/rishitasingh.18/",
-      instahandle: "rishitasingh.18",
-      linkedin: "https://www.linkedin.com/in/rishita-singh-3b139a259",
-      Linkedinhandle: "Rishita Singh",
-      github: "https://github.com/rishitas18",
-      githubhandle: "rishitas18",
-      discord: "https://discord.com/channels/@rishita.18",
-      discordhandle: "rishita.18",
-
-      content:
-        "Either write something worth reading or do something worth writing ",
-      name: "Content Writer",
-      key: "11",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Khushi Agarwal",
-      insta: "https://instagram.com/khushi_agarwal_?igshid=OGQ5ZDc2ODk2ZA==",
-      instahandle: "Khushi_agarwal_",
-      linkedin:
-        "https://www.linkedin.com/in/khushi-agarwal-61634124a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      Linkedinhandle: "Khushi Agarwal",
-      github: "https://github.com/KhushiAgarwal-01",
-      githubhandle: "KhushiAgarwal-01",
-      discord: "http://discordapp.com/users/Khushi2387",
-      discordhandle: "Khushi Agarwal#0157",
-      content: "Nothing can dim the light that shines from within",
-      name: "Management and PR",
-      key: "12",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Priyanshi Rana",
-      insta:
-        "https://instagram.com/priya_chaudhary_23_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr",
-      instahandle: "priya_chaudhary_23_",
-      linkedin:
-        "https://www.linkedin.com/in/priyanshi-rana-b54489297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      Linkedinhandle: "Priyanshi Rana",
-      content:
-        "I have discovered in life that there are ways of getting almost anywhere you want to go, if you really want to go",
-      name: "Management And PR",
-      key: "13",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Anmol Dhuwalia",
-      insta: "https://www.instagram.com/anmoxll/",
-      instahandle: "anmoxll",
-      linkedin: "www.linkedin.com/in/anmol-dhuwalia",
-      Linkedinhandle: "Anmol Dhuwalia",
-      github: "https://github.com/anmoldhuwalia",
-      githubhandle: "anmoldhuwalia",
-      discord: "https://discord.com/channels/953524336784982038",
-      discordhandle: "Andhu",
-
-      content:
-        "Hello, I'm Anmol Dhuwalia, and I'm thrilled to be the social media and design enthusiast at our GDSC Hub. ",
-      name: "Social media and designing",
-      key: "14",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Jigyasa Sumani",
-      insta:
-        "https://media.tenor.com/qYySZ9y7e2YAAAAC/hermione-granger-wand.gif",
-      instahandle: "Instagram",
-      linkedin: "https://www.linkedin.com/in/jigyasasumani",
-      Linkedinhandle: "Jigyasa Sumani",
-      github: "https://github.com/jigyasasumani",
-      githubhandle: "jigyasasumani",
-      discord: "https://discordapp.com/users/jigyasasumani#6590",
-      discordhandle: "jigyasasumani#6590",
-
-      content:
-        "I'm a little scary sometimes, you know that? Brilliant... but scary",
-      name: "Web Developer",
-      key: "15",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "Tushar Jaiswal",
-      insta: "https://instagram.com/tushar.zeno",
-      instahandle: "tushar.zeno",
-      linkedin: "https://in.linkedin.com/in/tushar-jaiswal-6755701b7",
-      Linkedinhandle: "Tushar Jaiswal",
-      github: "https://github.com/zeno29",
-      githubhandle: "zeno29",
-      discord: "https://discordapp.com/users/tushar0704#0000",
-      discordhandle: "tushar0704",
-      content:
-        "Not all engineers develop codes, some capture memories and develop photographs",
-      name: "Photgrapher",
-      key: "16",
-    },
-    {
-      image: "/sahil_bansal.webp",
-      image1: "/sahil_bansal_white.webp",
-      id: "SAHIL BANSAL",
-      insta:
-        "https://instagram.com/sahil_0810?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-      instahandle: "sahil_0810",
-      linkedin:
-        "https://www.linkedin.com/in/sahil-bansal-22321224a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      Linkedinhandle: "Sahil Bansal",
-      github: "https://github.com/Sahill0810",
-      githubhandle: " sahill0810",
-      discord:
-        "https://discord.com/channels/1165930677368262678/1165930677368262681",
-      discordhandle: "sahil_0810",
-      content: `A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
-      name: "Management & PR",
-      key: "17",
     },
   ];
 
@@ -827,6 +578,7 @@ function Teampage() {
                           posArrayTeamLeads[selectedPosTeamLeads]?.image1
                         }
                         position="relative"
+                        className="cursor-pointer"
                         // ml={{ base: -4, md: 4 }}
                         mb={3}
                         width={{ base: "100%", md: "80%" }}
@@ -849,8 +601,8 @@ function Teampage() {
 
                         //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
                       >
-                        Hi, my name is{" "}
-                        <span className="gradient-text">
+                        Hi, my name is {/* <span className="gradient-text"> */}
+                        <span>
                           {posArrayTeamLeads[selectedPosTeamLeads]?.id}
                         </span>
                       </Text>
@@ -900,16 +652,25 @@ function Teampage() {
                             <HStack>
                               <Link
                                 href={
-                                  posArrayTeamLeads[selectedPosTeamLeads]?.insta
+                                  posArrayTeamLeads[selectedPosTeamLeads]
+                                    ?.xtwitter
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
-                                <FaInstagram className="gfg-div" />{" "}
+                                <XIcon
+                                  style={{ fontSize: "3.7vw" }}
+                                  className="gfg-div"
+                                />{" "}
                               </Link>
                               <Link
                                 href={
-                                  posArrayTeamLeads[selectedPosTeamLeads]?.insta
+                                  posArrayTeamLeads[selectedPosTeamLeads]
+                                    ?.xtwitter
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
                                 <Text
@@ -920,7 +681,7 @@ function Teampage() {
                                 >
                                   {
                                     posArrayTeamLeads[selectedPosTeamLeads]
-                                      ?.instahandle
+                                      ?.xtwitterhandle
                                   }
                                 </Text>
                               </Link>
@@ -942,6 +703,8 @@ function Teampage() {
                                     ?.linkedin
                                 }
                                 display={"inline"}
+                                target="_blank"
+                                rel="noreferrer"
                               >
                                 <FaLinkedin className="gfg-div" />{" "}
                               </Link>
@@ -950,6 +713,8 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.linkedin
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
                                 <Text
@@ -981,6 +746,8 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.github
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
                                 <FaGithub className="gfg-div" />
@@ -990,6 +757,8 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.github
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
                                 <Text
@@ -1020,6 +789,8 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.discord
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
                                 <FaDiscord className="gfg-div" />{" "}
@@ -1029,6 +800,8 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.discord
                                 }
+                                target="_blank"
+                                rel="noreferrer"
                                 display={"inline"}
                               >
                                 <Text
@@ -1077,9 +850,11 @@ function Teampage() {
                             fontSize={{ base: "4vw", md: 30 }}
                             fontFamily={"Gilroy-Bold"}
                             className="cursor-pointer"
+                            // id="orange-pink"
                             _hover={{
                               bgGradient:
-                                "linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)",
+                                // "linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)",
+                                "linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%)",
                               bgClip: "text",
                             }}
                           >
@@ -1109,9 +884,11 @@ function Teampage() {
                             fontSize={{ base: "4vw", md: 30 }}
                             fontFamily={"Gilroy-Bold"}
                             className="cursor-pointer"
+                            // id="orange-pink"
                             _hover={{
                               bgGradient:
-                                "linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)",
+                                // "linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)",
+                                "linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%)",
                               bgClip: "text",
                             }}
                             //color = {selectedTeam === "core" ? "white" : "gray.600"}
@@ -1141,9 +918,11 @@ function Teampage() {
                             fontSize={{ base: "4vw", md: 30 }}
                             fontFamily={"Gilroy-Bold"}
                             className="cursor-pointer"
+                            // id="orange-pink"
                             _hover={{
                               bgGradient:
-                                "linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)",
+                                // "linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)",
+                                "linear-gradient(98.84deg, #a8519f 43.27%, #644ea0 71.84%)",
                               bgClip: "text",
                             }}
                             //color = {selectedTeam === "core" ? "white" : "gray.600"}
@@ -1166,6 +945,7 @@ function Teampage() {
                       mt={4}
                       alignContent="center"
                       position={"relative"}
+                      className="cursor-pointer"
                       w="100%"
                       ml={50}
                     >

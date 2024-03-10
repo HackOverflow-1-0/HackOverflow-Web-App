@@ -37,7 +37,7 @@ import PreLoader from "./components/PreLoader/PreLoader";
 // import Gal from "./components/galleryNew/gal";
 import InstagramReelsCards from "./components/InstagramReelsCards";
 // import ShootingStar from "./components/ShootingStar/ShootingStar";
-// import AppTeam from "./components/AppTeam/AppTeam";
+import AppTeam from "./components/AppTeam/AppTeam";
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -126,7 +126,7 @@ function App() {
                 <Schedule />
                 {/* <NewThemes /> */}
                 <FutureCityTheme />
-                {/* <AppTeam /> */}
+                <AppTeam />
                 <Sponsors />
                 {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
                 <FAQs />
