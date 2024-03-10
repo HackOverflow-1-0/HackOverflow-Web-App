@@ -20,6 +20,7 @@ import languifyWhite from "../assets/img/languifyWhite.png";
 // import philipsWhite from "../assets/img/philipsWhite.png";
 import noticebardWhite from "../assets/img/noticebardWhite.png";
 import goldenorioleWhite from "../assets/img/goldenorioleWhite.png";
+import aeccDark from "../assets/img/aeccWhite.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -49,7 +50,7 @@ const Sponsors = () => {
           image: bobbleWhite,
           link: "https://bobble.ai/en/home",
           SubSponsorcategory: "Merchent",
-          effect: "fade-right",
+          effect: "fade-up",
         },
         {
           id: 2,
@@ -87,15 +88,15 @@ const Sponsors = () => {
           name: "NoticeBard",
           image: noticebardWhite,
           link: "https://noticebard.com/",
-          effect: "fade-left",
-          SubSponsorcategory: "General",
+          effect: "fade-down",
+          SubSponsorcategory: "Media",
         },
         {
           id: 6,
           name: "Languify",
           image: languifyWhite,
           link: "https://www.languify.in/",
-          effect: "fade-up",
+          effect: "fade-right",
           SubSponsorcategory: "General",
         },
         {
@@ -103,7 +104,7 @@ const Sponsors = () => {
           name: "Quillbot",
           image: quillbotWhite,
           link: "https://quillbot.com/",
-          effect: "fade-right",
+          effect: "fade-left",
           SubSponsorcategory: "General",
         },
         // {
@@ -119,6 +120,14 @@ const Sponsors = () => {
           name: "Golden Oriole",
           image: goldenorioleWhite,
           link: "https://www.goldenorioleedu.com/",
+          effect: "fade-down",
+          SubSponsorcategory: "Silver",
+        },
+        {
+          id: 10,
+          name: "AECC Global",
+          image: aeccDark,
+          link: "https://www.aeccglobal.in/",
           effect: "fade-right",
           SubSponsorcategory: "Silver",
         },
@@ -363,7 +372,7 @@ const Sponsors = () => {
                           fontWeight: 400,
                         }}
                       >
-                        Merchandise Partner
+                        Merchandising Partner
                       </h1>
                     </div>
                   )}
@@ -402,7 +411,7 @@ const Sponsors = () => {
                     </h1>
                   </div>
 
-                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64">
                     {sponsor.items
                       .filter(
                         (item) =>
@@ -455,7 +464,7 @@ const Sponsors = () => {
                       General Sponsor
                     </h1>
                   </div>
-                  <div className="grid grid-cols-1 gap-2 xl:grid xl:grid-cols-2 xl:gap-2">
+                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
                     {sponsor.items
                       .filter(
                         (item) =>
@@ -474,7 +483,8 @@ const Sponsors = () => {
                       ))}
                   </div>
 
-                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64">
+                  {/* <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64"> */}
+                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
                     {sponsor.items
                       .filter(
                         (item) =>
@@ -496,8 +506,8 @@ const Sponsors = () => {
                     <hr className="text-[#767676] dark:text-[#767676]" />
                   </div>
 
-                  {/* Display Media Partner
-                  {!hasMediaPartner && (
+                  {/* Display Media Partner */}
+                  {sponsor.category === "Our" && (
                     <div className="lg:px-56 lg:pt-1 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
                       <h1
                         className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
@@ -526,11 +536,11 @@ const Sponsors = () => {
                         />
                       </div>
                     ))}
-                  {!hasMediaPartner && (
+                  {sponsor.category === "Our" && (
                     <div className="pt-10">
                       <hr className="text-[#767676] dark:text-[#767676]" />
                     </div>
-                  )} */}
+                  )}
                 </>
               )}
               {/* {sponsor.open && (
