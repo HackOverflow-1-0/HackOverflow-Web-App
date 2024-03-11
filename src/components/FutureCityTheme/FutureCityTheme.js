@@ -24,7 +24,7 @@ const FutureCityTheme = () => {
           <div className="md:py-6 pb-8 px-2 lg:px-10 flex flex-col lg:flex-row justify-center items-center gap-8">
             <div className="lg:w-1/2 xl:w-[50%] p-6 lg:py-12 flex flex-col items-center justify-center md:items-start">
               <h2 className="about-us-h2 mb-4" id="blue-cyan">
-                The concept of Smart City by HackOverflow 2.0.
+                The concept of Smart City by HackOverflow 2.0
               </h2>
               <p
                 className="about-us-p text-justify mb-4"
