@@ -307,45 +307,9 @@ function Teampage() {
       key: "3",
     },
   ];
+
+  // JUDGES ARRAY.........
   const TeamLeads = [
-    {
-      image: "/anjani.png",
-      image1: "/anjani.png",
-      id: "Anjani Kumar Thakur",
-      // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
-      // instahandle: "@sanatbhatia",
-      xtwitter: "https://twitter.com/lifeofanjkt",
-      xtwitterhandle: "@lifeofanjkt",
-      linkedin: "https://www.linkedin.com/in/anjkt/",
-      Linkedinhandle: "anjkt",
-      github: "https://github.com/anjkt",
-      githubhandle: "@anjkt",
-      discord: "https://hack-overflow-2.tech/",
-      discordhandle: "@coming_soon",
-      name: "Judge",
-      content:
-        "🧐 As one of the discerning judges for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
-      key: "1",
-    },
-    // {
-    //   image: "/nikita.png",
-    //   image1: "/nikita.png",
-    //   id: "Nikita Gandhi",
-    //   // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
-    //   // instahandle: "@sanatbhatia",
-    //   xtwitter: "https://twitter.com/Nikkitagandhi",
-    //   xtwitterhandle: "Nikkitagandhi",
-    //   linkedin: "https://www.linkedin.com/in/nikita-gandhi01/",
-    //   Linkedinhandle: "nikita-gandhi01",
-    //   github: "https://hack-overflow-2.tech/",
-    //   githubhandle: "@coming_soon",
-    //   discord: "https://discordapp.com/users/nikita1494",
-    //   discordhandle: "nikita1494",
-    //   name: "Judge",
-    //   content:
-    //     "👨‍⚖️ As a judge for HackOverflow 2.0, I'm silently appraising your innovation and execution along with the flawless implementation🚀.",
-    //   key: "2",
-    // },
     {
       image: "/reveal4.png",
       image1: "/reveal4.png",
@@ -364,6 +328,25 @@ function Teampage() {
       name: "Judge",
       content:
         "🔍 Attention all HackOverflow 2.0 contenders! 🚀 As one of the vigilant judges, I'm discreetly analyzing your coding ingenuity💻.",
+      key: "1",
+    },
+    {
+      image: "/anjani.png",
+      image1: "/anjani.png",
+      id: "Anjani Kumar Thakur",
+      // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
+      // instahandle: "@sanatbhatia",
+      xtwitter: "https://twitter.com/lifeofanjkt",
+      xtwitterhandle: "@lifeofanjkt",
+      linkedin: "https://www.linkedin.com/in/anjkt/",
+      Linkedinhandle: "anjkt",
+      github: "https://github.com/anjkt",
+      githubhandle: "@anjkt",
+      discord: "https://hack-overflow-2.tech/",
+      discordhandle: "@coming_soon",
+      name: "Judge",
+      content:
+        "🧐 As one of the discerning judges for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
       key: "2",
     },
     {
@@ -384,6 +367,25 @@ function Teampage() {
       content: "Crafting Digital Excellence, One Line of Code at a Time.",
       key: "3",
     },
+    // {
+    //   image: "/nikita.png",
+    //   image1: "/nikita.png",
+    //   id: "Nikita Gandhi",
+    //   // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
+    //   // instahandle: "@sanatbhatia",
+    //   xtwitter: "https://twitter.com/Nikkitagandhi",
+    //   xtwitterhandle: "Nikkitagandhi",
+    //   linkedin: "https://www.linkedin.com/in/nikita-gandhi01/",
+    //   Linkedinhandle: "nikita-gandhi01",
+    //   github: "https://hack-overflow-2.tech/",
+    //   githubhandle: "@coming_soon",
+    //   discord: "https://discordapp.com/users/nikita1494",
+    //   discordhandle: "nikita1494",
+    //   name: "Judge",
+    //   content:
+    //     "👨‍⚖️ As a judge for HackOverflow 2.0, I'm silently appraising your innovation and execution along with the flawless implementation🚀.",
+    //   key: "2",
+    // },
   ];
   // GUESTS ARRAY STARTS HERE..................
   const CoreTeam = [
