@@ -21,6 +21,7 @@ import languifyWhite from "../assets/img/languifyWhite.png";
 import noticebardWhite from "../assets/img/noticebardWhite.png";
 import goldenorioleWhite from "../assets/img/goldenorioleWhite.png";
 import aeccDark from "../assets/img/aeccWhite.png";
+import scribbrDark from "../assets/img/scribbrDark.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -130,6 +131,14 @@ const Sponsors = () => {
           link: "https://www.aeccglobal.in/",
           effect: "fade-right",
           SubSponsorcategory: "Silver",
+        },
+        {
+          id: 11,
+          name: "Scribbr",
+          image: scribbrDark,
+          link: "https://www.scribbr.com/",
+          effect: "fade-left",
+          SubSponsorcategory: "Bronze",
         },
       ],
     },
@@ -483,8 +492,8 @@ const Sponsors = () => {
                       ))}
                   </div>
 
-                  {/* <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64"> */}
-                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-3 xl:gap-64">
+                    {/* <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2"> */}
                     {sponsor.items
                       .filter(
                         (item) =>
