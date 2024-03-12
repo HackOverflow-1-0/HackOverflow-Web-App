@@ -105,7 +105,7 @@ const Sponsors = () => {
           name: "Quillbot",
           image: quillbotWhite,
           link: "https://quillbot.com/",
-          effect: "fade-left",
+          effect: "fade-down",
           SubSponsorcategory: "Bronze",
         },
         // {
