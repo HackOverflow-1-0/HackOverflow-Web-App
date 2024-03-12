@@ -97,7 +97,7 @@ const Sponsors = () => {
           image: languifyWhite,
           link: "https://www.languify.in/",
           effect: "fade-right",
-          SubSponsorcategory: "General",
+          SubSponsorcategory: "Bronze",
         },
         {
           id: 7,
@@ -105,7 +105,7 @@ const Sponsors = () => {
           image: quillbotWhite,
           link: "https://quillbot.com/",
           effect: "fade-left",
-          SubSponsorcategory: "General",
+          SubSponsorcategory: "Bronze",
         },
         // {
         //   id: 8,
@@ -208,7 +208,7 @@ const Sponsors = () => {
           image: horusonWhite,
           link: "https://www.horuson.com/",
           effect: "fade-left",
-          SubSponsorcategory: "General",
+          SubSponsorcategory: "Bronze",
         },
         {
           id: 10,
@@ -216,7 +216,7 @@ const Sponsors = () => {
           image: revaTech,
           link: "https://revatech-ai.com/",
           effect: "fade-right",
-          SubSponsorcategory: "General",
+          SubSponsorcategory: "Bronze",
         },
         // Add more gold sponsors here
       ],
@@ -372,7 +372,7 @@ const Sponsors = () => {
                           fontWeight: 400,
                         }}
                       >
-                        Merchandising Partner
+                        Official Merchandising Partner
                       </h1>
                     </div>
                   )}
@@ -452,7 +452,7 @@ const Sponsors = () => {
                     <hr className="text-[#767676] dark:text-[#767676]" />
                   </div>
 
-                  {/* Display General sponsors */}
+                  {/* Display Bronze sponsors */}
                   <div className="lg:px-56 lg:pt-10 space-y-8 fonts-space-grotesk text-[#fafafa] flex space-x-2 justify-center">
                     <h1
                       className="py-6 capitalize text-[2rem] lg:text-[2.5rem] font-normal"
@@ -461,7 +461,7 @@ const Sponsors = () => {
                         fontWeight: 400,
                       }}
                     >
-                      General Sponsor
+                      Bronze Sponsor
                     </h1>
                   </div>
                   <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
@@ -469,7 +469,7 @@ const Sponsors = () => {
                       .filter(
                         (item) =>
                           sponsor.category === "Past" &&
-                          item.SubSponsorcategory === "General"
+                          item.SubSponsorcategory === "Bronze"
                       )
                       .map((item, index) => (
                         <div key={index}>
@@ -489,7 +489,7 @@ const Sponsors = () => {
                       .filter(
                         (item) =>
                           sponsor.category === "Our" &&
-                          item.SubSponsorcategory === "General"
+                          item.SubSponsorcategory === "Bronze"
                       )
                       .map((item, index) => (
                         <div key={index}>
