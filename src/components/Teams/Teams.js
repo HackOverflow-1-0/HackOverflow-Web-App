@@ -246,6 +246,7 @@ const CurrentTeamNav = (props) => {
 };
 
 function Teampage() {
+  // MENTORS SECTION .......................////////////////////////////
   const Mentors = [
     {
       image: "/reveal1.png",
@@ -308,7 +309,7 @@ function Teampage() {
     },
   ];
 
-  // JUDGES ARRAY.........
+  // JUDGES ARRAY.................................//////////////////////////////
   const TeamLeads = [
     {
       image: "/vaibhav.png",
@@ -331,24 +332,43 @@ function Teampage() {
       key: "1",
     },
     {
-      image: "/anjani.png",
-      image1: "/anjani.png",
-      id: "Anjani Kumar Thakur",
+      image: "/sumit.png",
+      image1: "/sumit.png",
+      id: "Sumit Kumar",
       // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
       // instahandle: "@sanatbhatia",
-      xtwitter: "https://twitter.com/lifeofanjkt",
-      xtwitterhandle: "@lifeofanjkt",
-      linkedin: "https://www.linkedin.com/in/anjkt/",
-      Linkedinhandle: "anjkt",
-      github: "https://github.com/anjkt",
-      githubhandle: "@anjkt",
+      xtwitter: "https://twitter.com/SumitKu67694538",
+      xtwitterhandle: "@SumitKu67694538",
+      linkedin: "https://www.linkedin.com/in/sumit-kumar-54068b141/",
+      Linkedinhandle: "sumit-kumar-54068b141",
+      github: "https://github.com/sumit276",
+      githubhandle: "@sumit276",
       discord: "https://hack-overflow-2.tech/",
       discordhandle: "@coming_soon",
       name: "Judge 2",
       content:
-        "🧐 As one of the discerning judges for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
+        "👩‍⚖️ Welcome, participants. As your judge, I'm eager to see your creativity unleashed💻🕵️‍♀️",
       key: "2",
     },
+    // {
+    //   image: "/anjani.png",
+    //   image1: "/anjani.png",
+    //   id: "Anjani Kumar Thakur",
+    //   // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
+    //   // instahandle: "@sanatbhatia",
+    //   xtwitter: "https://twitter.com/lifeofanjkt",
+    //   xtwitterhandle: "@lifeofanjkt",
+    //   linkedin: "https://www.linkedin.com/in/anjkt/",
+    //   Linkedinhandle: "anjkt",
+    //   github: "https://github.com/anjkt",
+    //   githubhandle: "@anjkt",
+    //   discord: "https://hack-overflow-2.tech/",
+    //   discordhandle: "@coming_soon",
+    //   name: "Judge 2",
+    //   content:
+    //     "🧐 As one of the discerning judges for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
+    //   key: "2",
+    // },
     {
       image: "/nitin.png",
       image1: "/nitin.png",
@@ -368,6 +388,25 @@ function Teampage() {
         "👨‍⚖️Attention all participants!! As one of your judges, I'm here to assess your performance with a discerning eye🌟.",
       key: "3",
     },
+    // {
+    //   image: "/sumit.png",
+    //   image1: "/sumit.png",
+    //   id: "Sumit Kumar",
+    //   // insta: "https://www.linkedin.com/in/nikita-gandhi01/",
+    //   // instahandle: "@sanatbhatia",
+    //   xtwitter: "https://twitter.com/SumitKu67694538",
+    //   xtwitterhandle: "@SumitKu67694538",
+    //   linkedin: "https://www.linkedin.com/in/sumit-kumar-54068b141/",
+    //   Linkedinhandle: "sumit-kumar-54068b141",
+    //   github: "https://github.com/sumit276",
+    //   githubhandle: "@sumit276",
+    //   discord: "https://hack-overflow-2.tech/",
+    //   discordhandle: "@coming_soon",
+    //   name: "Judge 4",
+    //   content:
+    //     "👩‍⚖️ Welcome, participants. As your judge, I'm eager to see your creativity unleashed💻🕵️‍♀️",
+    //   key: "4",
+    // },
     // {
     //   image: "/sumit.png",
     //   image1: "/sumit.png",
