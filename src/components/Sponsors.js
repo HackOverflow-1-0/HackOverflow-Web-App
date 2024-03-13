@@ -19,7 +19,7 @@ import languifyWhite from "../assets/img/languifyWhite.png";
 // import interViewBuddyWhite from "../assets/img/interViewBuddyWhite.png";
 // import philipsWhite from "../assets/img/philipsWhite.png";
 import noticebardWhite from "../assets/img/noticebardWhite.png";
-import goldenorioleWhite from "../assets/img/goldenorioleWhite.png";
+import goldenorioleWhite from "../assets/img/goldenoriolenew.png";
 import aeccDark from "../assets/img/aeccWhite.png";
 import scribbrDark from "../assets/img/scribbrDark.png";
 
