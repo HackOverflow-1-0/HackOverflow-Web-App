@@ -364,10 +364,31 @@ function Teampage() {
       discord: "https://hack-overflow-2.tech/",
       discordhandle: "@coming_soon",
       name: "Judge 3",
-      content: "Crafting Digital Excellence, One Line of Code at a Time.",
+      content:
+        "👨‍⚖️Attention all participants!! As one of your judges, I'm here to assess your performance with a discerning eye🌟.",
       key: "3",
     },
+    // {
+    //   image: "/sumit.png",
+    //   image1: "/sumit.png",
+    //   id: "Sumit Kumar",
+    //   xtwitter: "https://twitter.com/SumitKu67694538",
+    //   xtwitterhandle: "@SumitKu67694538",
+    //   // insta: "https://hack-overflow-2.tech/",
+    //   // instahandle: "@coming_soon",
+    //   linkedin: "https://www.linkedin.com/in/sumit-kumar-54068b141/",
+    //   Linkedinhandle: "sumit-kumar-54068b141",
+    //   github: "https://github.com/sumit276",
+    //   githubhandle: "@sumit276",
+    //   discord: "https://hack-overflow-2.tech/",
+    //   discordhandle: "@coming_soon",
+    //   name: "Judge 4",
+    //   content:
+    //     "👩‍⚖️ Welcome, participants. As your judge, I'm eager to see your creativity unleashed💻🕵️‍♀️",
+    //   key: "4",
+    // },
   ];
+
   // GUESTS ARRAY STARTS HERE..................
   const CoreTeam = [
     {
