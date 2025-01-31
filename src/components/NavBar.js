@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/2024-logo.webp";
+import logo from "../assets/img/H0 3.0 assets/3.0 logo 2025.png";
 import ProgressBar from "./progressBar/ProgressBar";
 import { Link, useLocation } from "react-router-dom";
 

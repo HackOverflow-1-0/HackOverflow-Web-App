@@ -114,7 +114,7 @@ export const Schedule = () => {
                   className="col-5"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>31st</h1>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>30th</h1>
                   <h3 style={{ fontSize: "25px" }}>January</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
