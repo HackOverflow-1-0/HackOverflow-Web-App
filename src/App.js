@@ -83,11 +83,11 @@ function App() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   window.onload = () => {
-  //     setLoading(false);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.onload = () => {
+      setLoading(false);
+    };
+  }, []);
 
   return (
     <BrowserRouter>

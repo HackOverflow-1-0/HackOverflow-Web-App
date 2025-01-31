@@ -13,7 +13,7 @@ const Background = (props) => {
 
   return (
     <>
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -29,7 +29,7 @@ const Background = (props) => {
           src={isMobile ? backgroundVideoMobile : backgroundVideoDesktop}
           type="video/webm"
         />
-      </video>
+      </video> */}
       <div className="absolute top-0 left-0 right-0 background-video">
         {props.children}
       </div>
@@ -43,7 +43,7 @@ const Background = (props) => {
             textAlign: "center",
           }}
         >
-          Registrations Closed
+          Registrations Open!
         </button>
       </div>
     </>
