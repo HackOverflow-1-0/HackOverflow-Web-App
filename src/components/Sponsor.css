@@ -18,9 +18,7 @@
   /* font-size: 20px; */
   font-size: 27px;
   background: linear-gradient(
-    107deg,
-    #aa367c 16.1%,
-    rgba(150, 127, 214, 0.7) 54.35%
+    107deg, #5B8F81 16.1%, rgba(130, 180, 165, 0.7) 54.35%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,9 +50,7 @@
   /* font-size: 10px; */
   font-size: 15px;
   background: linear-gradient(
-    107deg,
-    #aa367c 16.1%,
-    rgba(150, 127, 214, 0.7) 54.35%
+    107deg, #5B8F81 16.1%, rgba(130, 180, 165, 0.7) 54.35%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,10 +60,10 @@
 .spon_us {
   width: 21rem;
   height: 25rem;
-  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  box-shadow: rgb(91, 143, 129) 0px 4px 10px;
   border-radius: 20px;
   margin: auto;
-  background: url("/src/assets/img/HO.png") 94% 122% / 63% no-repeat transparent;
+  background: url("/src/assets/img/ho2.png") 94% 122% / 63% no-repeat transparent;
   padding: 3rem 6rem 3rem 5rem;
   background-repeat: no-repeat;
   /* background-position: 106% 120%; */
@@ -89,10 +85,9 @@
 }
 
 .spon_coll:hover {
+
   background: linear-gradient(
-    107deg,
-    #aa367c 16.1%,
-    rgba(150, 127, 214, 0.7) 54.35%
+    107deg, #5B8F81 16.1%, rgba(130, 180, 165, 0.7) 54.35%
   );
 }
 
@@ -183,7 +178,7 @@
     width: 61rem;
     height: 32rem;
     padding: 3rem 5rem 3rem 5rem;
-    background: url("/src/assets/img/HO.png") 123% 67% / 46% no-repeat
+    background: url("/src/assets/img/ho2.png") 123% 67% / 46% no-repeat
       transparent;
   }
   .boxx {
@@ -197,7 +192,7 @@
     height: 28rem;
     padding: 3rem 5rem 2rem 3rem;
     background-position: 120% 120%;
-    background: url("/src/assets/img/HO.png") 119% 122% / 41% no-repeat
+    background: url("/src/assets/img/ho2.png") 119% 122% / 41% no-repeat
       transparent;
   }
   .boxx {
