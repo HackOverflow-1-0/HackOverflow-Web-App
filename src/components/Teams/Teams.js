@@ -726,7 +726,7 @@ function Teampage() {
                       >
                         <Box height="35px">
                           <Box
-                            _hover={{ color: "#833AB4" }}
+                            _hover={{ color: "#5B8F81" }}
                             color={"white"}
                             width={{ base: "20px", md: "35px" }}
                             height={{ base: "20px", md: "40px" }}
