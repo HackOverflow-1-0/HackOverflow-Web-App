@@ -133,7 +133,7 @@ const Gal = () => {
                         textAlign: "center",
                     }}
                 >
-                    Memories of HackOverflow 1.0
+                    Memories of HackOverflow 3.0
                 </h1>
                 {/* Buttons for category selection */}
                 <div className="grid grid-cols-2 md:flex md:flex-row md:justify-center md:gap-4 lg:grid-cols-2 xl:grid-cols-3 mt-4 mx-4">
@@ -142,7 +142,7 @@ const Gal = () => {
                             }`}
                         onClick={() => handleCategoryChange("all")}
                     >
-                        All
+                        HackOverflow1.o
                     </button>
                     <button
                         className={`focus:outline-none border-2 border-purple-600 hover:bg-purple-700 font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize ${selectedCategory === "day1" ? "bg-purple-600" : ""

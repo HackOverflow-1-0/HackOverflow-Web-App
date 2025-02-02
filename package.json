@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@chakra-ui/react": "^2.10.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@formkit/auto-animate": "^0.8.1",
     "@kommunicate/kommunicate-chatbot-plugin": "^0.0.7",
     "@leenguyen/react-flip-clock-countdown": "^1.4.0",

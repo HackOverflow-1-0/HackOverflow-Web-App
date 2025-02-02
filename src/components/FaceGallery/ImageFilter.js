@@ -9,7 +9,7 @@ const ImageFilter = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   // const buttonCaptions = ["all", "nature", "cars", "people"];
-  const buttonCaptions = ["all", "day 1", "day 2", "day 3","winners"];
+  const buttonCaptions = ["all", "HackOverflow 1.0", "HackOverflow 2.0","winners"];
 
   const filteredData = filterableData.filter(
     (item) => activeFilter === "all" || activeFilter === item.name

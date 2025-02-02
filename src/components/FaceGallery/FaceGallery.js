@@ -11,7 +11,7 @@ const FaceGallery = () => {
           textAlign: "center",
         }}
       >
-        Memories of HackOverflow 1.0
+        Memories of HackOverflow
       </h1>
       <ImageFilter />
     </div>

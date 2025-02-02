@@ -33,7 +33,7 @@ export const Special = () => {
                 textAlign: "center",
               }}
             >
-              Dates
+              Dates 
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3 xl:gap-64">
