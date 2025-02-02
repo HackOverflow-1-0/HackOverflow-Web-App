@@ -1,0 +1,340 @@
+#root {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .MapChart-full-width-height {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .MapChart-container {
+    width: calc(100% + 60rem);
+    height: calc(100% + 60rem);
+    padding: 16px;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .MapChart-container {
+      width: calc(100% + 90rem);
+      height: calc(100% + 90rem);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .MapChart-container {
+      width: calc(100% + 120rem);
+      height: calc(100% + 120rem);
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .MapChart-container {
+      width: calc(100% + 65rem);
+      height: calc(100% + 65rem);
+    }
+  }
+  
+  @media screen and (min-width: 1536px) {
+    .MapChart-container {
+      width: calc(100% + 80rem);
+      height: calc(100% + 80rem);
+    }
+  }
+  
+  .MapChart-no-margin {
+    margin: 0;
+  }
+  
+  .MapChart-display-flex {
+    display: flex;
+  }
+  
+  .MapChart-fill {
+    flex: 1;
+  }
+  
+  .MapChart-center {
+    text-align: center;
+  }
+  
+  .MapChart-mt16 {
+    margin-top: 16px;
+  }
+  
+  #blue-cyan {
+    background: linear-gradient(98.84deg, #5b8f81 43.27%, #84b4b5 71.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  #purple-pink {
+    background: linear-gradient(98.84deg, #5b8f81 43.27%, #644ea0 71.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  #green-yellow {
+    background: linear-gradient(98.84deg, #5b8f81 43.27%, #8aff81 71.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  #orange-pink {
+    background: linear-gradient(98.84deg, #5b8f81 43.27%, #ff82bf 71.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .Mapcircle {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 120px;
+    bottom: 0;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle {
+      width: 50px;
+      height: 50px;
+      left: 33px;
+      bottom: 30px;
+    }
+  }
+  
+  .Mapcircle_2 {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -185px;
+    left: 62px;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle_2 {
+      width: 50px;
+      height: 50px;
+      left: 33px;
+      bottom: -16px;
+    }
+  }
+  
+  .Mapcircle_3 {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 184px;
+    left: 40px;
+    right: 120px;
+    bottom: 0;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle_3 {
+      width: 50px;
+      height: 50px;
+      left: 48px;
+      bottom: 53px;
+    }
+  }
+  
+  .Mapcircle_4 {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 44px;
+    left: 271px;
+    right: 120px;
+    bottom: 78px;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle_4 {
+      width: 50px;
+      height: 50px;
+      top: 44px;
+      left: 271px;
+      right: 120px;
+      bottom: 128px;
+    }
+  }
+  
+  .Mapcircle_5 {
+    background: transparent;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 44px;
+    left: 548px;
+    right: 120px;
+    bottom: 212px;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle_5 {
+      top: 58px;
+      left: 464px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  .Mapcircle_6 {
+    background: transparent;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    right: 237px;
+    bottom: 52px;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle_6 {
+      width: 50px;
+      height: 50px;
+      top: 1px;
+      left: 67px;
+      right: 237px;
+      bottom: 68px;
+    }
+  }
+  
+  .Mapcircle_7 {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 184px;
+    left: 148px;
+    right: 120px;
+    bottom: 73px;
+    z-index: 2;
+    border: 3px solid #5b8f81;
+    box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+    -webkit-animation: zoomIn 4s infinite;
+    animation: zoomIn 4s infinite;
+    -webkit-animation-delay: 1ms;
+    animation-delay: 1ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Mapcircle_7 {
+      left: 138px;
+      bottom: 125px;
+    }
+  }
+  
+  /* Keyframes for the zoom-in animation */
+  @-webkit-keyframes zoomIn {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

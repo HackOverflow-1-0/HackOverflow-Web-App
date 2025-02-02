@@ -342,7 +342,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* box-shadow: rgb(202, 28, 225) 0px 4px 10px; */
-  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7);
+  box-shadow: inset 0px -4px 10px rgba(130, 180, 165, 0.7);
   overflow: hidden;
   transition: transform 0.3s;
   cursor: pointer;
@@ -350,12 +350,12 @@
 
 .CommunityImage:hover {
   transform: scale(1.05);
-  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  box-shadow:  rgba(47, 94, 83, 0.6) 0px 4px 10px;
 }
 
 .sdglink {
   text-decoration: none;
-  background: #891a98;
+  background: #5b8f81;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -24,7 +24,9 @@
 
 .Description {
   border-radius: 23px;
-  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  box-shadow: rgba(91, 143, 129, 0.6) 0px 4px 10px;
+
+
   /* box-shadow: rgb(202, 28, 225) 0px 4px 20px; */
   /* box-shadow: rgb(48, 3, 54) 0px 4px 10px; */
   width: 100%;
@@ -61,7 +63,7 @@
 }
 .carousel-control-next-icon:hover,
 .carousel-control-prev-icon:hover {
-  background-color: #92239d;
+  background-color: #5B8F81;
   border-radius: 4px;
 }
 

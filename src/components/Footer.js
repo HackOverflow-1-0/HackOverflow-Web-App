@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/img/2024-logo.webp";
+import logo from "../assets/img/H0 3.0 assets/3.0 logo 2025.png";
 
 import "./Footer.css";
 import { GitHub, Instagram, LinkedIn, X } from "@mui/icons-material";
@@ -42,7 +42,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <p>© 2024 HackOverflow 2.0</p>
+          <p>© 2025 HackOverflow 3.0</p>
           {/* <p>
             {" "}
             <a href="mailto:hackathon@phcet.tech">hackathon@phcet.tech</a>

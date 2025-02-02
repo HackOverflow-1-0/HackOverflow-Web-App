@@ -641,8 +641,9 @@ function Teampage() {
                   p={{ base: 4, md: 10 }}
                   mt={{ base: "-5", md: "5" }}
                   borderRadius={15}
-                  bg="linear-gradient(93.17deg, rgb(187 76 130 / 70%) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-                  boxShadow="inset 0px -4px 10px rgba(255, 130, 191, 0.7)"
+                  bg="linear-gradient(93.17deg, rgba(91, 143, 129, 0.7) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                  
+                  boxShadow="inset 0px -4px 10px rgba(91, 143, 129, 0.7)"
                 >
                   <Grid
                     templateAreas={`

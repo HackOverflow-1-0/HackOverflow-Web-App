@@ -31,14 +31,8 @@ const PROJECTION_CONFIG = {
 // ];
 
 const COLOR_RANGE = [
-  "#D8C2F2",
-  "#C1A8EB",
-  "#AB91E4",
-  "#967FD6",
-  "#805FCB",
-  "#6D4FBC",
-  "#5B439E",
-  "#4A388F",
+  "#5B8F81", "#5B8F81", "#5B8F81", "#5B8F81",
+  "#5B8F81", "#5B8F81", "#5B8F81", "#5B8F81"
 ];
 
 // const COLOR_RANGE = [
@@ -63,7 +57,7 @@ const geographyStyle = {
     outline: "none",
   },
   hover: {
-    fill: "#a11991",
+    fill: "#2F5E53",
     transition: "all 250ms",
     outline: "none",
     cursor: "pointer",
@@ -161,7 +155,7 @@ function MapChart() {
       <ReactTooltip>{tooltipContent}</ReactTooltip>
       <div className="Mapcircle flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
@@ -173,7 +167,7 @@ function MapChart() {
       </div>
       <div className="Mapcircle_2 flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
@@ -185,7 +179,7 @@ function MapChart() {
       </div>
       <div className="Mapcircle_3 flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
@@ -197,7 +191,7 @@ function MapChart() {
       </div>
       <div className="Mapcircle_4 flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
@@ -209,7 +203,7 @@ function MapChart() {
       </div>
       <div className="Mapcircle_5 flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
@@ -221,7 +215,7 @@ function MapChart() {
       </div>
       <div className="Mapcircle_6 flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
@@ -233,7 +227,7 @@ function MapChart() {
       </div>
       <div className="Mapcircle_7 flex items-center justify-center">
         <span
-          className="text-[1rem] text-[#891a98]"
+          className="text-[1rem] text-[ #E1A87A]"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 500,
