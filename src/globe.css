@@ -74,6 +74,12 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+#green-teal {
+  background: linear-gradient(98.84deg, #5b8f81 43.27%, #a1d5a0 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 @media screen and (max-width: 420px) {
   .states-h1 {

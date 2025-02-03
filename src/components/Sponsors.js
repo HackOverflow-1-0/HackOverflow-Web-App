@@ -42,7 +42,7 @@ const Sponsors = () => {
   const [sponsors, setSponsors] = useState([
     {
       category: "Our",
-      categoryStyle: "orange-pink",
+      categoryStyle: "green-teal",
       open: true, // Set default to open
       items: [
         {

@@ -83,7 +83,10 @@ select:focus {
 }
 
 .scroll-to-top:hover {
-  background-color: rgb(202, 28, 225) 0px 4px 20px;
+  background: 
+  linear-gradient(
+    107deg, #5B8F81 16.1%, rgba(130, 180, 165, 0.7) 54.35%
+  );
 }
 
 .scroll-to-top svg {
@@ -691,7 +694,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url("./assets/img/footer-bg.png");
+  background-image: url("./assets/img/FooterH3.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
