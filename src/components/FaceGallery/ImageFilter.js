@@ -75,16 +75,17 @@ const ImageFilter = () => {
       <div className="GallerySection">
         <div className="flex w-full justify-center pb-4 md:justify-center items-start md:gap-6 gap-3 flex-wrap">
           {buttonCaptions.map((filter) => (
-            <Button
-              key={filter}
-              onClick={() => handleFilterClick(filter)}
-              type="button"
-              className={`focus:outline-none border-2 border-purple-600 hover:bg-purple-700 font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize ${
-                activeFilter === filter ? "bg-purple-600" : " "
-              }`}
-            >
-              {filter === "all" ? "Show all" : filter}
-            </Button>
+           <Button
+           key={filter}
+           onClick={() => handleFilterClick(filter)}
+           type="button"
+           className={`focus:outline-none border-2 border-[#5B8F81] hover:bg-[#5B8F81] font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize ${
+               activeFilter === filter ? "bg-[#5B8F81]" : ""
+           }`}
+       >
+           {filter}
+       </Button>
+       
           ))}
         </div>
         {/* filtered cards display */}

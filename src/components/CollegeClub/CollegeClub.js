@@ -43,7 +43,7 @@ const CollegeClub = () => {
         <div className="relative topContainer flex flex-col justify-center items-center">
           {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
           <h1
-            id="orange-pink"
+             id="green-yellow"
             className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
             style={{
               fontFamily: "Poppins,sans-serif",
@@ -121,7 +121,7 @@ const CollegeClub = () => {
       </section>
       <div className="navbar-text flex justify-center">
         <Link to="/gallery">
-          <button className="SeeMoreButton bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+          <button className="SeeMoreButton bg-[#9B96B3] hover:bg-[#5B8F81] text-white font-bold py-2 px-4 rounded">
             See More...
           </button>
         </Link>

@@ -8,7 +8,7 @@ const Register = () => {
   return (
     <section className="register">
       <div className="container">
-        <h1 className="text-center register-h1">Register Now!!</h1>
+        <h1 className="text-center register-h1" id="green-yellow" >Register Now!!</h1>
         <div className="row ">
           <div className="col">
             <div className="row">
