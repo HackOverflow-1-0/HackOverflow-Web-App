@@ -1,0 +1,347 @@
+Index: src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport ReactDOM from \"react-dom/client\";\r\nimport \"./index.css\";\r\nimport App from \"./App\";\r\nimport Kommunicate from \"@kommunicate/kommunicate-chatbot-plugin\";\r\n\r\nKommunicate.init(process.env.REACT_APP_CHAT_TOKEN, {\r\n  automaticChatOpenOnNavigation: true,\r\n  popupWidget: true,\r\n});\r\n\r\nconst root = ReactDOM.createRoot(document.getElementById(\"root\"));\r\nroot.render(\r\n  <>\r\n    <App />\r\n  </>\r\n);\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/index.js b/src/index.js
+--- a/src/index.js	(revision b3709ebb45ee9173999b73b611a4455d93db495b)
++++ b/src/index.js	(date 1738401250666)
+@@ -3,15 +3,21 @@
+ import "./index.css";
+ import App from "./App";
+ import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
++import {DevSupport} from "@react-buddy/ide-toolbox";
++import {ComponentPreviews, useInitial} from "./dev";
+ 
+ Kommunicate.init(process.env.REACT_APP_CHAT_TOKEN, {
+-  automaticChatOpenOnNavigation: true,
+-  popupWidget: true,
++    automaticChatOpenOnNavigation: true,
++    popupWidget: true,
+ });
+ 
+ const root = ReactDOM.createRoot(document.getElementById("root"));
+ root.render(
+-  <>
+-    <App />
+-  </>
++    <>
++        <DevSupport ComponentPreviews={ComponentPreviews}
++                    useInitialHook={useInitial}
++        >
++            <App/>
++        </DevSupport>
++    </>
+ );
+Index: src/components/BannerText/BannerText.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import \"./BannerText.css\";\r\n\r\nconst BannerText = () => {\r\n  return (\r\n    <div class=\"sign\">\r\n      {/* <span class=\"fast-flicker\">H</span>ack<span class=\"flicker\">O</span>ver\r\n      <span class=\"fast-flicker\">f</span>\r\n      <span class=\"flicker\">low</span>1.0 */}\r\n      HackOverflow 2.0\r\n    </div>\r\n  );\r\n};\r\nexport default BannerText;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/BannerText/BannerText.js b/src/components/BannerText/BannerText.js
+--- a/src/components/BannerText/BannerText.js	(revision b3709ebb45ee9173999b73b611a4455d93db495b)
++++ b/src/components/BannerText/BannerText.js	(date 1738406220730)
+@@ -6,7 +6,7 @@
+       {/* <span class="fast-flicker">H</span>ack<span class="flicker">O</span>ver
+       <span class="fast-flicker">f</span>
+       <span class="flicker">low</span>1.0 */}
+-      HackOverflow 2.0
++      HackOverflow 3.0
+     </div>
+   );
+ };
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"hack-overlfow-2.0\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@chakra-ui/react\": \"^2.8.2\",\r\n    \"@emotion/react\": \"^11.10.5\",\r\n    \"@emotion/styled\": \"^11.10.5\",\r\n    \"@formkit/auto-animate\": \"^0.8.1\",\r\n    \"@kommunicate/kommunicate-chatbot-plugin\": \"^0.0.7\",\r\n    \"@leenguyen/react-flip-clock-countdown\": \"^1.4.0\",\r\n    \"@mui/icons-material\": \"^5.15.11\",\r\n    \"@mui/material\": \"^5.11.8\",\r\n    \"@mui/styled-engine-sc\": \"^5.11.0\",\r\n    \"@rumess/react-flip-countdown\": \"^1.2.6\",\r\n    \"@testing-library/jest-dom\": \"^5.16.4\",\r\n    \"@testing-library/react\": \"^13.3.0\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"@tomtom-international/web-sdk-maps\": \"^6.23.0\",\r\n    \"animate.css\": \"^4.1.1\",\r\n    \"animejs\": \"^3.2.1\",\r\n    \"aos\": \"^2.3.4\",\r\n    \"axios\": \"^1.3.0\",\r\n    \"bootstrap\": \"^5.1.3\",\r\n    \"bootstrap-icons\": \"^1.10.3\",\r\n    \"cors\": \"^2.8.5\",\r\n    \"dotenv\": \"^16.3.1\",\r\n    \"dracula-ui\": \"^1.0.6\",\r\n    \"express\": \"^4.18.1\",\r\n    \"flowbite\": \"^2.2.1\",\r\n    \"framer-motion\": \"^8.5.5\",\r\n    \"gapi-script\": \"^1.2.0\",\r\n    \"lottie-react\": \"^2.3.1\",\r\n    \"nodemailer\": \"^6.7.5\",\r\n    \"process\": \"^0.11.10\",\r\n    \"react\": \"^18.1.0\",\r\n    \"react-auto-image-slider\": \"^1.0.0\",\r\n    \"react-bootstrap\": \"^2.7.0\",\r\n    \"react-bootstrap-icons\": \"^1.8.2\",\r\n    \"react-countdown\": \"^2.3.5\",\r\n    \"react-countdown-circle-timer\": \"^3.1.0\",\r\n    \"react-countup\": \"^6.4.0\",\r\n    \"react-dom\": \"^18.1.0\",\r\n    \"react-ga\": \"^3.3.1\",\r\n    \"react-globe.gl\": \"^2.23.3\",\r\n    \"react-intersection-observer\": \"^9.4.3\",\r\n    \"react-multi-carousel\": \"^2.8.1\",\r\n    \"react-on-screen\": \"^2.1.1\",\r\n    \"react-photo-album\": \"^2.3.1\",\r\n    \"react-preloaders\": \"^3.0.3\",\r\n    \"react-responsive-carousel\": \"^3.2.23\",\r\n    \"react-router\": \"^6.7.0\",\r\n    \"react-router-dom\": \"^6.7.0\",\r\n    \"react-router-hash-link\": \"^2.4.3\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"react-scroll-to-top\": \"^3.0.0\",\r\n    \"react-simple-maps\": \"^3.0.0\",\r\n    \"react-simple-typewriter\": \"^5.0.1\",\r\n    \"react-tooltip\": \"^4.1.2\",\r\n    \"sass\": \"^1.58.0\",\r\n    \"sass-loader\": \"^13.2.0\",\r\n    \"source-map-loader\": \"^4.0.1\",\r\n    \"styled-components\": \"^5.3.6\",\r\n    \"swiper\": \"^11.0.5\",\r\n    \"typewriter-effect\": \"^2.19.0\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  },\r\n  \"devDependencies\": {\r\n    \"tailwindcss\": \"^3.2.4\"\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision b3709ebb45ee9173999b73b611a4455d93db495b)
++++ b/package.json	(date 1738401167050)
+@@ -63,7 +63,10 @@
+     "styled-components": "^5.3.6",
+     "swiper": "^11.0.5",
+     "typewriter-effect": "^2.19.0",
+-    "web-vitals": "^2.1.4"
++    "web-vitals": "^2.1.4",
++    "@react-buddy/ide-toolbox": "^2.4.0",
++    "@react-buddy/palette-chakra-ui": "^2.3.1",
++    "@react-buddy/palette-mui": "^5.0.1"
+   },
+   "scripts": {
+     "start": "react-scripts start",
+Index: src/components/Background.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport backgroundVideoDesktop from \"../assets/img/bg/bg-desktop.webm\";\r\nimport backgroundVideoMobile from \"../assets/img/bg/bg-phone.webm\";\r\nimport \"./Background.css\";\r\n\r\nconst Background = (props) => {\r\n  const isMobile = window.innerWidth < 450;\r\n\r\n  const handleRegisterButtonClick = () => {\r\n    // Replace 'your_registration_link' with the actual registration link\r\n    window.open(\"https://ho2.tech/register\", \"_blank\");\r\n  };\r\n\r\n  return (\r\n    <>\r\n      {/* <video\r\n        autoPlay\r\n        loop\r\n        muted\r\n        className=\"relative bg-video\"\r\n        id=\"home\"\r\n        style={{\r\n          objectFit: \"cover\",\r\n          ...(isMobile && { width: \"100%\", height: \"80vh\" }),\r\n          maxWidth: \"100%\",\r\n        }}\r\n      >\r\n        <source\r\n          src={isMobile ? backgroundVideoMobile : backgroundVideoDesktop}\r\n          type=\"video/webm\"\r\n        />\r\n      </video> */}\r\n      <div className=\"absolute top-0 left-0 right-0 background-video\">\r\n        {props.children}\r\n      </div>\r\n      <div className=\"absolute top-[35rem] sm:top-[18rem] md:top-[79rem] lg:top-[30rem] xl:top-[36rem] 2xl:top-[45rem] left-0 right-0 flex justify-center\">\r\n        <button\r\n          className=\"button-86\"\r\n          onClick={handleRegisterButtonClick}\r\n          style={{\r\n            fontFamily: \"Poppins,sans-serif\",\r\n            fontWeight: 700,\r\n            textAlign: \"center\",\r\n          }}\r\n        >\r\n          Registrations Open!\r\n        </button>\r\n      </div>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default Background;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Background.js b/src/components/Background.js
+--- a/src/components/Background.js	(revision b3709ebb45ee9173999b73b611a4455d93db495b)
++++ b/src/components/Background.js	(date 1738407059292)
+@@ -13,7 +13,7 @@
+ 
+   return (
+     <>
+-      {/* <video
++      <video
+         autoPlay
+         loop
+         muted
+@@ -29,7 +29,7 @@
+           src={isMobile ? backgroundVideoMobile : backgroundVideoDesktop}
+           type="video/webm"
+         />
+-      </video> */}
++      </video>
+       <div className="absolute top-0 left-0 right-0 background-video">
+         {props.children}
+       </div>
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision b3709ebb45ee9173999b73b611a4455d93db495b)
++++ b/package-lock.json	(date 1738401208468)
+@@ -17,6 +17,9 @@
+         "@mui/icons-material": "^5.15.11",
+         "@mui/material": "^5.11.8",
+         "@mui/styled-engine-sc": "^5.11.0",
++        "@react-buddy/ide-toolbox": "^2.4.0",
++        "@react-buddy/palette-chakra-ui": "^2.3.1",
++        "@react-buddy/palette-mui": "^5.0.1",
+         "@rumess/react-flip-countdown": "^1.2.6",
+         "@testing-library/jest-dom": "^5.16.4",
+         "@testing-library/react": "^13.3.0",
+@@ -2225,6 +2228,80 @@
+         "react": ">=18"
+       }
+     },
++    "node_modules/@chakra-ui/icons": {
++      "version": "1.1.7",
++      "resolved": "https://registry.npmjs.org/@chakra-ui/icons/-/icons-1.1.7.tgz",
++      "integrity": "sha512-YIHxey/B4M2PyFASlHXtAWFyW+tsAtGAChOJ8dsM2kpu1MbVUqm/6nMI1KIFd7Te5IWuNYA75rAHBdLI0Yu61A==",
++      "license": "MIT",
++      "peer": true,
++      "dependencies": {
++        "@chakra-ui/icon": "2.0.5",
++        "@types/react": "^17.0.15"
++      },
++      "peerDependencies": {
++        "@chakra-ui/system": ">=1.0.0",
++        "react": ">=16.8.6"
++      }
++    },
++    "node_modules/@chakra-ui/icons/node_modules/@chakra-ui/icon": {
++      "version": "2.0.5",
++      "resolved": "https://registry.npmjs.org/@chakra-ui/icon/-/icon-2.0.5.tgz",
++      "integrity": "sha512-ZrqRvCCIxGr4qFd/r1pmtd9tobRmv8KAxV7ygFoc/t4vOSKTcVIjhE12gsI3FzgvXM15ZFVwsxa1zodwgo5neQ==",
++      "license": "MIT",
++      "peer": true,
++      "dependencies": {
++        "@chakra-ui/utils": "1.10.4"
++      },
++      "peerDependencies": {
++        "@chakra-ui/system": ">=1.0.0",
++        "react": ">=16.8.6"
++      }
++    },
++    "node_modules/@chakra-ui/icons/node_modules/@chakra-ui/utils": {
++      "version": "1.10.4",
++      "resolved": "https://registry.npmjs.org/@chakra-ui/utils/-/utils-1.10.4.tgz",
++      "integrity": "sha512-AM91VQQxw8F4F1WDA28mqKY6NFIOuzc2Ekkna88imy2OiqqmYH0xkq8J16L2qj4cLiLozpYqba3C79pWioy6FA==",
++      "license": "MIT",
++      "peer": true,
++      "dependencies": {
++        "@types/lodash.mergewith": "4.6.6",
++        "css-box-model": "1.2.1",
++        "framesync": "5.3.0",
++        "lodash.mergewith": "4.6.2"
++      }
++    },
++    "node_modules/@chakra-ui/icons/node_modules/@types/lodash.mergewith": {
++      "version": "4.6.6",
++      "resolved": "https://registry.npmjs.org/@types/lodash.mergewith/-/lodash.mergewith-4.6.6.tgz",
++      "integrity": "sha512-RY/8IaVENjG19rxTZu9Nukqh0W2UrYgmBj5sdns4hWRZaV8PqR7wIKHFKzvOTjo4zVRV7sVI+yFhAJql12Kfqg==",
++      "license": "MIT",
++      "peer": true,
++      "dependencies": {
++        "@types/lodash": "*"
++      }
++    },
++    "node_modules/@chakra-ui/icons/node_modules/@types/react": {
++      "version": "17.0.83",
++      "resolved": "https://registry.npmjs.org/@types/react/-/react-17.0.83.tgz",
++      "integrity": "sha512-l0m4ArKJvmFtR4e8UmKrj1pB4tUgOhJITf+mADyF/p69Ts1YAR/E+G9XEM0mHXKVRa1dQNHseyyDNzeuAXfXQw==",
++      "license": "MIT",
++      "peer": true,
++      "dependencies": {
++        "@types/prop-types": "*",
++        "@types/scheduler": "^0.16",
++        "csstype": "^3.0.2"
++      }
++    },
++    "node_modules/@chakra-ui/icons/node_modules/framesync": {
++      "version": "5.3.0",
++      "resolved": "https://registry.npmjs.org/framesync/-/framesync-5.3.0.tgz",
++      "integrity": "sha512-oc5m68HDO/tuK2blj7ZcdEBRx3p1PjrgHazL8GYEpvULhrtGIFbQArN6cQS2QhW8mitffaB+VYzMjDqBxxQeoA==",
++      "license": "MIT",
++      "peer": true,
++      "dependencies": {
++        "tslib": "^2.1.0"
++      }
++    },
+     "node_modules/@chakra-ui/image": {
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/@chakra-ui/image/-/image-2.1.0.tgz",
+@@ -7094,6 +7171,43 @@
+         "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
+       }
+     },
++    "node_modules/@react-buddy/ide-toolbox": {
++      "version": "2.4.0",
++      "resolved": "https://registry.npmjs.org/@react-buddy/ide-toolbox/-/ide-toolbox-2.4.0.tgz",
++      "integrity": "sha512-TWHX6gwa0Gop7215uHhjFMbYLLdjM/b9rr0wYE3E0m7GNJ56gbPpbZiq86w9uI8zksl827acqGeT437MkuO64w==",
++      "license": "Apache-2.0",
++      "peerDependencies": {
++        "react": "^17.0.0 || ^18.0.0"
++      }
++    },
++    "node_modules/@react-buddy/palette-chakra-ui": {
++      "version": "2.3.2",
++      "resolved": "https://registry.npmjs.org/@react-buddy/palette-chakra-ui/-/palette-chakra-ui-2.3.2.tgz",
++      "integrity": "sha512-jKAmJxZHfGL814hcJmtBFfLu06NAnlH1s1l7U08otUShilIBqv4CI1mFNa3V/RA6iNRLZOqrxKCNggyNrvf1Ng==",
++      "license": "Apache-2.0",
++      "dependencies": {
++        "@react-buddy/ide-toolbox": "^2.4.0"
++      },
++      "peerDependencies": {
++        "@chakra-ui/icons": "^1.1.7",
++        "@chakra-ui/react": "^2.2.1",
++        "react": "^17.0.0 || ^18.0.0"
++      }
++    },
++    "node_modules/@react-buddy/palette-mui": {
++      "version": "5.0.2",
++      "resolved": "https://registry.npmjs.org/@react-buddy/palette-mui/-/palette-mui-5.0.2.tgz",
++      "integrity": "sha512-X9gdm+fwmvZTiOMWtCtljyJtSEYNH2F6qHtmht7liQUkNW8e61icu2vfLWYtwz9XG1QxFuPbev5RCsh/+Ewldw==",
++      "license": "Apache-2.0",
++      "dependencies": {
++        "@react-buddy/ide-toolbox": "^2.4.0"
++      },
++      "peerDependencies": {
++        "@mui/icons-material": "^5.0.1",
++        "@mui/material": "^5.0.1",
++        "react": "^17.0.0 || ^18.0.0"
++      }
++    },
+     "node_modules/@remix-run/router": {
+       "version": "1.3.0",
+       "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.3.0.tgz",
+@@ -27063,6 +27177,68 @@
+         "@chakra-ui/shared-utils": "2.0.5"
+       }
+     },
++    "@chakra-ui/icons": {
++      "version": "1.1.7",
++      "resolved": "https://registry.npmjs.org/@chakra-ui/icons/-/icons-1.1.7.tgz",
++      "integrity": "sha512-YIHxey/B4M2PyFASlHXtAWFyW+tsAtGAChOJ8dsM2kpu1MbVUqm/6nMI1KIFd7Te5IWuNYA75rAHBdLI0Yu61A==",
++      "peer": true,
++      "requires": {
++        "@chakra-ui/icon": "2.0.5",
++        "@types/react": "^17.0.15"
++      },
++      "dependencies": {
++        "@chakra-ui/icon": {
++          "version": "2.0.5",
++          "resolved": "https://registry.npmjs.org/@chakra-ui/icon/-/icon-2.0.5.tgz",
++          "integrity": "sha512-ZrqRvCCIxGr4qFd/r1pmtd9tobRmv8KAxV7ygFoc/t4vOSKTcVIjhE12gsI3FzgvXM15ZFVwsxa1zodwgo5neQ==",
++          "peer": true,
++          "requires": {
++            "@chakra-ui/utils": "1.10.4"
++          }
++        },
++        "@chakra-ui/utils": {
++          "version": "1.10.4",
++          "resolved": "https://registry.npmjs.org/@chakra-ui/utils/-/utils-1.10.4.tgz",
++          "integrity": "sha512-AM91VQQxw8F4F1WDA28mqKY6NFIOuzc2Ekkna88imy2OiqqmYH0xkq8J16L2qj4cLiLozpYqba3C79pWioy6FA==",
++          "peer": true,
++          "requires": {
++            "@types/lodash.mergewith": "4.6.6",
++            "css-box-model": "1.2.1",
++            "framesync": "5.3.0",
++            "lodash.mergewith": "4.6.2"
++          }
++        },
++        "@types/lodash.mergewith": {
++          "version": "4.6.6",
++          "resolved": "https://registry.npmjs.org/@types/lodash.mergewith/-/lodash.mergewith-4.6.6.tgz",
++          "integrity": "sha512-RY/8IaVENjG19rxTZu9Nukqh0W2UrYgmBj5sdns4hWRZaV8PqR7wIKHFKzvOTjo4zVRV7sVI+yFhAJql12Kfqg==",
++          "peer": true,
++          "requires": {
++            "@types/lodash": "*"
++          }
++        },
++        "@types/react": {
++          "version": "17.0.83",
++          "resolved": "https://registry.npmjs.org/@types/react/-/react-17.0.83.tgz",
++          "integrity": "sha512-l0m4ArKJvmFtR4e8UmKrj1pB4tUgOhJITf+mADyF/p69Ts1YAR/E+G9XEM0mHXKVRa1dQNHseyyDNzeuAXfXQw==",
++          "peer": true,
++          "requires": {
++            "@types/prop-types": "*",
++            "@types/scheduler": "^0.16",
++            "csstype": "^3.0.2"
++          }
++        },
++        "framesync": {
++          "version": "5.3.0",
++          "resolved": "https://registry.npmjs.org/framesync/-/framesync-5.3.0.tgz",
++          "integrity": "sha512-oc5m68HDO/tuK2blj7ZcdEBRx3p1PjrgHazL8GYEpvULhrtGIFbQArN6cQS2QhW8mitffaB+VYzMjDqBxxQeoA==",
++          "peer": true,
++          "requires": {
++            "tslib": "^2.1.0"
++          }
++        }
++      }
++    },
+     "@chakra-ui/image": {
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/@chakra-ui/image/-/image-2.1.0.tgz",
+@@ -30785,6 +30961,28 @@
+         "@swc/helpers": "^0.4.14"
+       }
+     },
++    "@react-buddy/ide-toolbox": {
++      "version": "2.4.0",
++      "resolved": "https://registry.npmjs.org/@react-buddy/ide-toolbox/-/ide-toolbox-2.4.0.tgz",
++      "integrity": "sha512-TWHX6gwa0Gop7215uHhjFMbYLLdjM/b9rr0wYE3E0m7GNJ56gbPpbZiq86w9uI8zksl827acqGeT437MkuO64w==",
++      "requires": {}
++    },
++    "@react-buddy/palette-chakra-ui": {
++      "version": "2.3.2",
++      "resolved": "https://registry.npmjs.org/@react-buddy/palette-chakra-ui/-/palette-chakra-ui-2.3.2.tgz",
++      "integrity": "sha512-jKAmJxZHfGL814hcJmtBFfLu06NAnlH1s1l7U08otUShilIBqv4CI1mFNa3V/RA6iNRLZOqrxKCNggyNrvf1Ng==",
++      "requires": {
++        "@react-buddy/ide-toolbox": "^2.4.0"
++      }
++    },
++    "@react-buddy/palette-mui": {
++      "version": "5.0.2",
++      "resolved": "https://registry.npmjs.org/@react-buddy/palette-mui/-/palette-mui-5.0.2.tgz",
++      "integrity": "sha512-X9gdm+fwmvZTiOMWtCtljyJtSEYNH2F6qHtmht7liQUkNW8e61icu2vfLWYtwz9XG1QxFuPbev5RCsh/+Ewldw==",
++      "requires": {
++        "@react-buddy/ide-toolbox": "^2.4.0"
++      }
++    },
+     "@remix-run/router": {
+       "version": "1.3.0",
+       "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.3.0.tgz",
