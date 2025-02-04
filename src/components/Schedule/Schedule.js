@@ -114,8 +114,8 @@ export const Schedule = () => {
                   className="col-5"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>30th</h1>
-                  <h3 style={{ fontSize: "25px" }}>January</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
+                  <h3 style={{ fontSize: "25px" }}>February</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Registrations Starts</h1>
@@ -139,8 +139,8 @@ export const Schedule = () => {
                   id="purple-pink"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>29th</h1>
-                  <h3 style={{ fontSize: "25px" }}>Feb</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Registrations Ends</h1>
