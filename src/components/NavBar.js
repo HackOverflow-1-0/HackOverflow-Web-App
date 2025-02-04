@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/2024-logo.webp";
+import logo from "../assets/img/H0 3.0 assets/3.0 logo 2025.png";
 import ProgressBar from "./progressBar/ProgressBar";
 import { Link, useLocation } from "react-router-dom";
 
@@ -53,7 +53,7 @@ export const NavBar = () => {
               color: "white",
               fontWeight: "300",
             }}
-            className="hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded d-md-none ml-auto"
+            className="hover:bg-[#5B8F81] text-white font-bold py-2 px-4 rounded d-md-none ml-auto"
             onClick={() => window.open("https://ho2.tech/brochure", "_blank")}
           >
             Brochure
@@ -159,7 +159,7 @@ export const NavBar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+                <button className="bg-[#9B96B3] hover:bg-[#5B8F81] text-white font-bold py-2 px-4 rounded">
                   Brochure
                 </button>
               </a>

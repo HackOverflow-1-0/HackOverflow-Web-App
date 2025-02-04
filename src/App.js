@@ -83,11 +83,11 @@ function App() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   window.onload = () => {
-  //     setLoading(false);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.onload = () => {
+      setLoading(false);
+    };
+  }, []);
 
   return (
     <BrowserRouter>
@@ -104,7 +104,7 @@ function App() {
                   smooth
                   color="#fff"
                   style={{
-                    backgroundColor: "#891A98",
+                    backgroundColor: "#5B8F81",
                     borderRadius: "50%",
                     width: "50px",
                     height: "50px",

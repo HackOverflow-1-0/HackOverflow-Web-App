@@ -43,7 +43,7 @@ const CollegeClub = () => {
         <div className="relative topContainer flex flex-col justify-center items-center">
           {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
           <h1
-            id="orange-pink"
+            id="green-yellow"
             className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
             style={{
               fontFamily: "Poppins,sans-serif",

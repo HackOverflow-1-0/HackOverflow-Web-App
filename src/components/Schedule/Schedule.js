@@ -1,5 +1,5 @@
 import colorSharp2 from "../../assets/img/color-sharp2.png";
-import offlineDesktopView from "../../assets/img/offline_web-resize.webp";
+import offlineDesktopView from "../../assets/img/timeline_website.png";
 import offlineMobileView from "../../assets/img/offline_mobile-resize-min.svg";
 import onlineDesktopView from "../../assets/img/online_web.png";
 import onlineMobileView from "../../assets/img/online_mobile.png";
@@ -114,8 +114,8 @@ export const Schedule = () => {
                   className="col-5"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>31st</h1>
-                  <h3 style={{ fontSize: "25px" }}>January</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
+                  <h3 style={{ fontSize: "25px" }}>February</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Registrations Starts</h1>
@@ -139,8 +139,8 @@ export const Schedule = () => {
                   id="purple-pink"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>29th</h1>
-                  <h3 style={{ fontSize: "25px" }}>Feb</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Registrations Ends</h1>

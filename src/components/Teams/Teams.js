@@ -266,7 +266,7 @@ function Teampage() {
       // content:
       // "I favor a systematic approach involving planning, organizing, implementing, and monitoring, blending science and art to achieve set goals.",
       content:
-        "I'll soon be swooping in to unveil my mentorship in the epic realm of HackOverflow 2.0! 🎉",
+        "I'll soon be swooping in to unveil my mentorship in the epic realm of HackOverflow 3.0! 🎉",
       key: "1",
     },
     {
@@ -285,7 +285,7 @@ function Teampage() {
       discordhandle: "@coming_soon",
       name: "App Mentor",
       content:
-        " The countdown is on as I prepare to unleash my mentorship powers in the electrifying world of HackOverflow 2.0! 🎩✨ Get ready to unlock your full coding potential and embark on a journey of innovation and discovery.",
+        " The countdown is on as I prepare to unleash my mentorship powers in the electrifying world of HackOverflow 3.0! 🎩✨ Get ready to unlock your full coding potential and embark on a journey of innovation and discovery.",
       key: "2",
     },
     {
@@ -304,7 +304,7 @@ function Teampage() {
       discordhandle: "@coming_soon",
       name: "Cloud Mentor",
       content:
-        "🚀 Calling all aspiring coders! 📣 Prepare to be inspired and empowered as I gear up to reveal myself as your guide and mentor in the epic saga of HackOverflow 2.0! 🌟",
+        "🚀 Calling all aspiring coders! 📣 Prepare to be inspired and empowered as I gear up to reveal myself as your guide and mentor in the epic saga of HackOverflow 3.0! 🌟",
       key: "3",
     },
   ];
@@ -328,7 +328,7 @@ function Teampage() {
       // name: "Coming Soon",
       name: "Judge 1",
       content:
-        "🔍 Attention all HackOverflow 2.0 contenders! 🚀 As one of the vigilant judges, I'm discreetly analyzing your coding ingenuity💻.",
+        "🔍 Attention all HackOverflow 3.0 contenders! 🚀 As one of the vigilant judges, I'm discreetly analyzing your coding ingenuity💻.",
       key: "1",
     },
     {
@@ -366,7 +366,7 @@ function Teampage() {
     //   discordhandle: "@coming_soon",
     //   name: "Judge 2",
     //   content:
-    //     "🧐 As one of the discerning judges for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
+    //     "🧐 As one of the discerning judges for HackOverflow 3.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
     //   key: "2",
     // },
     {
@@ -446,7 +446,7 @@ function Teampage() {
       discordhandle: "nikita1494",
       name: "Guest 1",
       content:
-        "👨‍⚖️ As a Guest for HackOverflow 2.0, I'm silently appraising your innovation and execution along with the flawless implementation🚀.",
+        "👨‍⚖️ As a Guest for HackOverflow 3.0, I'm silently appraising your innovation and execution along with the flawless implementation🚀.",
       key: "1",
     },
     {
@@ -465,7 +465,7 @@ function Teampage() {
       discordhandle: "@coming_soon",
       name: "Guest 2",
       content:
-        "🧐 As one of the discerning guest for HackOverflow 2.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
+        "🧐 As one of the discerning guest for HackOverflow 3.0, I'm discreetly evaluating your coding finesse💻🕵️‍♀️",
       key: "2",
     },
     {
@@ -641,8 +641,9 @@ function Teampage() {
                   p={{ base: 4, md: 10 }}
                   mt={{ base: "-5", md: "5" }}
                   borderRadius={15}
-                  bg="linear-gradient(93.17deg, rgb(187 76 130 / 70%) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-                  boxShadow="inset 0px -4px 10px rgba(255, 130, 191, 0.7)"
+                  bg="linear-gradient(93.17deg, rgba(91, 143, 129, 0.7) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                  
+                  boxShadow="inset 0px -4px 10px rgba(91, 143, 129, 0.7)"
                 >
                   <Grid
                     templateAreas={`
@@ -725,7 +726,7 @@ function Teampage() {
                       >
                         <Box height="35px">
                           <Box
-                            _hover={{ color: "#833AB4" }}
+                            _hover={{ color: "#5B8F81" }}
                             color={"white"}
                             width={{ base: "20px", md: "35px" }}
                             height={{ base: "20px", md: "40px" }}

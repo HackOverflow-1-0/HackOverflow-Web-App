@@ -43,7 +43,7 @@ const Background = (props) => {
             textAlign: "center",
           }}
         >
-          Registrations Closed
+          Registrations Open!
         </button>
       </div>
     </>

@@ -44,18 +44,18 @@
   ); */
   background: linear-gradient(
     60deg,
-    rgba(170, 54, 124, 0.8) 0%,
-    rgba(73, 47, 189, 0.8) 100%,
-    rgba(26, 188, 156, 0.8) 100%
-  );
-  border-radius: 10px;
+    rgba(91, 143, 129, 0.8) 0%,   /* Muted Teal */
+    rgba(47, 94, 83, 0.8) 50%,   /* Dark Forest Green */
+    rgba(26, 188, 156, 0.8) 100%  /* Turquoise */
+);
+    border-radius: 10px;
 }
 
 .button-86::after {
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
-  background: #ffffff15;
+  background: #5B8F81;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
