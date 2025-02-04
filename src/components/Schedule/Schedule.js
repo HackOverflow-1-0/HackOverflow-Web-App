@@ -32,6 +32,7 @@ export const Schedule = () => {
     <section className="schedule" id="schedule">
       <div className="container-fluid">
         <h1
+         id="green-yellow"
           // id="purple-pink"
           className="text-center text-[45px] capitalize cursor-pointer"
           style={{
@@ -90,11 +91,13 @@ export const Schedule = () => {
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
           <h1
+           id="green-yellow"
             className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer"
             style={{
               fontFamily: "Poppins,sans-serif",
               fontWeight: 700,
               textAlign: "center",
+              
             }}
           >
             Key Dates
@@ -110,9 +113,9 @@ export const Schedule = () => {
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div
-                  id="blue-cyan"
-                  className="col-5"
-                  style={{ padding: "2rem" }}
+                   className="col-5"
+                   id="green-yellow"
+                   style={{ padding: "2rem" }}
                 >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
                   <h3 style={{ fontSize: "25px" }}>February</h3>
@@ -136,7 +139,7 @@ export const Schedule = () => {
               <div className="row">
                 <div
                   className="col-5"
-                  id="purple-pink"
+                  id="green-yellow"
                   style={{ padding: "2rem" }}
                 >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
@@ -190,9 +193,9 @@ export const Schedule = () => {
             <div className={`${classes.keyDatesCards} my-5`}>
               <div className="row">
                 <div
-                  className="col-5"
-                  id="orange-pink"
-                  style={{ padding: "2rem" }}
+                 className="col-5"
+                 id="green-yellow"
+                 style={{ padding: "2rem" }}
                 >
                   <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>16th</h1>
                   <h3 style={{ fontSize: "25px" }}>March</h3>

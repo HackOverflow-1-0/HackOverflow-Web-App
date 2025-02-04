@@ -26,6 +26,7 @@ export const Special = () => {
         <Container>
           <div className="relative p-4 lg:py-10 w-full">
             <h1
+            id="green-yellow"
               className="text-center text-[45px] capitalize cursor-pointer"
               style={{
                 fontFamily: "Poppins,sans-serif",
@@ -33,7 +34,7 @@ export const Special = () => {
                 textAlign: "center",
               }}
             >
-              Dates
+              Dates   
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3 xl:gap-64">

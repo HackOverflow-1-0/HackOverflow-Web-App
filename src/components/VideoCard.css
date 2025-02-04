@@ -4,7 +4,7 @@
   overflow: hidden;
   transition: 0.3s ease-in-out;
   /* box-shadow: 2px 3px 10px rgba(0, 0, 0, 2); */
-  box-shadow: rgb(48, 3, 54) 0px 4px 10px;
+  box-shadow: rgb(34, 54, 41) 0px 4px 10px;
   /* box-shadow: rgb(85, 6, 95) 0px 4px 10px; */
   border-radius: 35px;
   display: flex;
@@ -16,7 +16,7 @@
 .mainvideocard:hover {
   transition: 0.3s ease-in-out;
   /* box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.7); */
-  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  box-shadow: rgb(91, 143, 129) 0px 4px 10px;
 }
 .mainvideocard img {
   width: 10rem;

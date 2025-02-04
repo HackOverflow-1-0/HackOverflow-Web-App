@@ -16,6 +16,7 @@ const HackathonOverview = (props) => {
           </Col>
           <Col lg={6}>
             <h1
+          id="green-yellow"
               style={{
                 fontFamily: "Poppins, sans-serif",
                 fontWeight: 700,

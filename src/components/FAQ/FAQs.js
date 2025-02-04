@@ -63,6 +63,7 @@ const FAQs = () => {
     <div className="p-4 faq-container">
       <div className="relative p-4 lg:py-10 w-full">
         <h1
+         id="green-yellow"
           className="text-center text-[45px] capitalize cursor-pointer"
           style={{
             fontFamily: "Poppins,sans-serif",

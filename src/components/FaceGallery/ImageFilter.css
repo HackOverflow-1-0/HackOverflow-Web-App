@@ -95,7 +95,7 @@
 
 .GallerySection {
   border-radius: 21px;
-  box-shadow: rgb(202, 28, 225) 0px 4px 20px;
+  box-shadow: rgb(91, 143, 129) 0px 4px 20px;
   padding: 50px;
 }
 
@@ -103,12 +103,12 @@
   overflow: hidden;
   transition: transform 0.3s;
   cursor: pointer;
-  box-shadow: rgb(85, 6, 95) 0px 4px 10px;
-  border: 1px solid #891a98;
+  box-shadow: rgb(6, 95, 25) 0px 4px 10px;
+  border: 1px solid #5B8F81;
 }
 
 .ImageGallery:hover {
-  box-shadow: rgb(202, 28, 225) 0px 4px 10px;
+  box-shadow: rgb(91, 143, 129) 0px 4px 10px;
 }
 
 .ClickedImage img {

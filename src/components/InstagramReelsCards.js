@@ -30,11 +30,13 @@ const InstagramReelsCards = () => {
         <div>
           {/* Latest Social Posts Section */}
           <h1
+          id="green-yellow"
             className="text-center text-[45px] capitalize cursor-pointer"
             style={{
               fontFamily: "Poppins, sans-serif",
               fontWeight: 700,
               textAlign: "center",
+              
             }}
           >
             Latest Social Posts

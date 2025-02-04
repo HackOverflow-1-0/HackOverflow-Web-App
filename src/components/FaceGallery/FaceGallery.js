@@ -3,7 +3,7 @@ const FaceGallery = () => {
   return (
     <div className="pt-32 w-full min-h-screen" id="gallery">
       <h1
-        id="orange-pink"
+        id="green-yellow"
         className="pt-2 text-[30px] sm:text-[36px] md:text-[35px] lg:text-[45px]"
         style={{
           fontFamily: "Poppins,sans-serif",
@@ -11,7 +11,7 @@ const FaceGallery = () => {
           textAlign: "center",
         }}
       >
-        Memories of HackOverflow 1.0
+        Memories of HackOverflow
       </h1>
       <ImageFilter />
     </div>

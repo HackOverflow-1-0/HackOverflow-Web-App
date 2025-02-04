@@ -46,8 +46,8 @@
 
 .keyDatesCards {
   border-radius: 10px;
-  background: #1b1c27; /* Adjusted background color */
-  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7); /* Keep box shadow color */
+  background: #050a3f; /* Adjusted background color */
+  box-shadow: inset 0px -4px 10px rgb(91, 143, 129); /* Keep box shadow color */
   display: block;
   width: 560px;
   height: 265px;
@@ -56,8 +56,8 @@
 }
 
 .keyDatesCards:hover {
-  box-shadow: inset 0px -4px 10px rgba(255, 130, 191, 0.7),
-    0px 0px 10px rgba(255, 130, 191, 0.5); /* Adding hover shadow effect */
+  box-shadow: inset 0px -4px 10px rgba(45, 197, 83, 0.7),
+    0px 0px 10px rgba(46, 197, 84, 0.7); /* Adding hover shadow effect */
 }
 
 /* .keyDatesCards::after {

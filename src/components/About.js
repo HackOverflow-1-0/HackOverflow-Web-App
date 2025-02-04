@@ -31,7 +31,7 @@ const About = () => {
         <div className="container py-6">
           <div className="row">
             <div className="col-lg-6 col-sm-12 clg-desc">
-              <h1 className="about-us-h2">About PHCET</h1>
+              <h1 className="about-us-h2" id="green-yellow">About PHCET</h1>
               <p
                 className="about-us-p text-justify"
                 style={{
@@ -53,7 +53,7 @@ const About = () => {
               </p>
             </div>
             <div className="col-lg-6 col-sm-12 clg-map">
-              <h1>How to reach..</h1>
+              <h1 id="green-yellow">How to reach..</h1>
               <p>
                 <div className="maps-card" id="map" ref={mapElement} />
                 <div className="maps-button navbar-text">
