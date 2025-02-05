@@ -28,36 +28,36 @@ const MobileNavbar = (props) => {
         setValue(newValue);
       }}
       className="bottom-navbar"
-      style={{ backgroundColor: "#1b1c27" }}
+      style={{ backgroundColor: "#365048" }}
     >
       <Nav.Link href={getLinkHref("home")}>
         <BottomNavigationAction
           label="Home"
-          icon={<Home style={{ fill: "#aa367c" }} />}
+          icon={<Home style={{ fill: "#FFFFFF" }} />}
         />
       </Nav.Link>
       <Nav.Link href={getLinkHref("schedule")}>
         <BottomNavigationAction
           label="Schedule"
-          icon={<Schedule style={{ fill: "#aa367c" }} />}
+          icon={<Schedule style={{ fill: "#FFFFFF" }} />}
         />
       </Nav.Link>
       <Nav.Link href={getLinkHref("themes")}>
         <BottomNavigationAction
           label="Themes"
-          icon={<Category style={{ fill: "#aa367c" }} />}
+          icon={<Category style={{ fill: "#FFFFFF" }} />}
         />
       </Nav.Link>
       <Nav.Link href={getLinkHref("sponsors")}>
         <BottomNavigationAction
           label="Sponsors"
-          icon={<Flare style={{ fill: "#aa367c" }} />}
+          icon={<Flare style={{ fill: "#FFFFFF" }} />}
         />
       </Nav.Link>
       <Nav.Link href={getLinkHref("about")}>
         <BottomNavigationAction
           label="About"
-          icon={<Info style={{ fill: "#aa367c" }} />}
+          icon={<Info style={{ fill: "#FFFFFF" }} />}
         />
       </Nav.Link>
     </BottomNavigation>

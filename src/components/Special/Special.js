@@ -21,11 +21,11 @@ export const Special = () => {
   return (
     <>
       <section className="relative pt-12">
-        <img
+        {/* <img
           className="SpecialBackgroundImage"
           alt="hackathon"
           src={colorSharp2}
-        ></img>
+        ></img> */}
         <Container>
           <div className="relative p-4 lg:py-10 w-full">
             <h1

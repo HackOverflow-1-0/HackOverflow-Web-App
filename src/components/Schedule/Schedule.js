@@ -217,11 +217,11 @@ export const Schedule = () => {
           </Stack>
         </div> */}
       </div>
-      <img
+      {/* <img
         className="background-image-right"
         alt="hackathon"
         src={colorSharp2}
-      ></img>
+      ></img> */}
     </section>
   );
 };

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 #hackathon-overview-section {
-  background: #1b1c27;
+  background: #1b2726;
   padding: 0 0 50px 0;
   position: relative;
   margin-top: 6%;
@@ -11,6 +11,8 @@
 .hackathon-overview-text {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+
+
   font-size: 1.4rem;
 }
 

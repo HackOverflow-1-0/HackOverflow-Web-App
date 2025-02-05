@@ -8,7 +8,7 @@ const Background = (props) => {
 
   const handleRegisterButtonClick = () => {
     // Replace 'your_registration_link' with the actual registration link
-    window.open("https://ho2.tech/register", "_blank");
+    window.open("https://forms.gle/C4fr1BQKXDFo3FJa6", "_blank");
   };
 
   return (
