@@ -31,8 +31,8 @@ const PROJECTION_CONFIG = {
 // ];
 
 const COLOR_RANGE = [
-  "#5B8F81", "#5B8F81", "#5B8F81", "#5B8F81",
-  "#5B8F81", "#5B8F81", "#5B8F81", "#5B8F81"
+  "#5B8F81", "#4A7A6E", "#40655B", "#365048",
+  "#2C3B35", "#222622", "#6FA295", "#85B5A9"
 ];
 
 // const COLOR_RANGE = [

@@ -12,7 +12,7 @@ const SocialMedia = () => {
     <>
       <div className="" style={{ height: "296px", width: "28px" }} data-aos="fade-down" data-aos-delay="1000" data-aos-easing="ease-in-out">
         <div className="w-4 flex flex-col items-center justify-start socialmedia">
-          <div class="w-[4px] bg-[#aa367c] h-12 Linefit" />
+          <div class="w-[4px] bg-[#5B8F81] h-12 Linefit" />
           <ul className="socialmedia-link">
             <li className="my-4">
               <a
@@ -45,7 +45,7 @@ const SocialMedia = () => {
               </a>
             </li>
             <li className="my-4">
-              <a target="_blank" href="https://ho2.tech/twitter" rel="noreferrer">
+              <a target="_blank" href="https://x.com/hackoverflow_" rel="noreferrer">
               <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
               </a>
             </li>

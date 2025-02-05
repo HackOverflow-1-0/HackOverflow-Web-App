@@ -269,7 +269,7 @@ const Sponsors = () => {
                 </h1>
                 <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
                   <a
-                    href="https://ho2.tech/sponsor"
+                    href="https://hackoverflow3.tech/docs/sponsorBrochure.pdf"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -280,7 +280,7 @@ const Sponsors = () => {
                     </div>
                   </a>
                   <a
-                    href="mailto:hackoverflow@mes.ac.in?subject=Sponsor%20request%20for%20HACKOVERFLOW%202.0%20-%20HACKATHON%202024"
+                    href="mailto:admin@hackoverflow3.tech?subject=Sponsor%20request%20for%20HACKOVERFLOW%202.0%20-%20HACKATHON%202024"
                     target="_blank"
                     rel="noreferrer"
                   >

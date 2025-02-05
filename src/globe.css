@@ -49,19 +49,6 @@
   font-weight: 900;
 }
 
-#blue-cyan {
-  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-}
-#purple-pink {
-  background: linear-gradient(98.84deg, #a8519f 43.27%, #644ea0 71.84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 #green-yellow {
   background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
   -webkit-background-clip: text;
@@ -76,6 +63,36 @@
 }
 #green-teal {
   background: linear-gradient(98.84deg, #5b8f81 43.27%, #a1d5a0 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#blue-cyan {
+  background: linear-gradient(98.84deg, #80d0ff 43.27%, #80ffea 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#purple-pink {
+  background: linear-gradient(98.84deg, #a8519f 43.27%, #644ea0 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#dark-green-light-green {
+  background: linear-gradient(98.84deg, #263337 43.27%, #5B8F81 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#light-green-grey {
+  background: linear-gradient(98.84deg, #DFEEE0 43.27%, #848484 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#medium-green-light-green {
+  background: linear-gradient(98.84deg, #5B8F81 43.27%, #DFEEE0 71.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

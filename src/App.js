@@ -125,7 +125,7 @@ function App() {
                 {/* <Prizes /> */}
                 <Schedule />
                 {/* <NewThemes /> */}
-                <FutureCityTheme />
+                {/* <FutureCityTheme /> */}
                 <AppTeam />
                 <Sponsors />
                 {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}

@@ -8,3 +8,14 @@
   right: 0;
   z-index: -4;
 }
+
+.special-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjust as needed to match video card width */
+  max-height: 200px; /* Adjust as needed to match video card height */
+  object-fit: cover;
+  margin: auto; /* Center the image */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 7px 12px rgba(91, 143, 129, 0.5); /* Background shadow with color #5B8F81 */
+}

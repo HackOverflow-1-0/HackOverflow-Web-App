@@ -1,6 +1,6 @@
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import offlineDesktopView from "../../assets/img/timeline_website.png";
-import offlineMobileView from "../../assets/img/offline_mobile-resize-min.svg";
+import offlineMobileView from "../../assets/img/offline_mobile-resize.png";
 import onlineDesktopView from "../../assets/img/online_web.png";
 import onlineMobileView from "../../assets/img/online_mobile.png";
 import "animate.css";
@@ -169,8 +169,8 @@ export const Schedule = () => {
                   id="green-yellow"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>14th</h1>
-                  <h3 style={{ fontSize: "25px" }}>March</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>To Be</h1>
+                  <h3 style={{ fontSize: "25px" }}>Announced</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Hackathon Starts!!!</h1>
@@ -197,8 +197,8 @@ export const Schedule = () => {
                  id="green-yellow"
                  style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>16th</h1>
-                  <h3 style={{ fontSize: "25px" }}>March</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>To Be</h1>
+                  <h3 style={{ fontSize: "25px" }}>Announced</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Hackathon Ends</h1>
