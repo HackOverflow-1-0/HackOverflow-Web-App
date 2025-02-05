@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+ 
 
-/* CSS */
 .button-86 {
   all: unset;
   width: 178px;
@@ -37,11 +37,7 @@
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.8) -5.91%,
-    rgba(73, 47, 189, 0.8) 111.58%
-  ); */
+  
   background: linear-gradient(
     60deg,
     rgba(170, 54, 124, 0.8) 0%,
@@ -77,4 +73,121 @@
 .button-86:active::after {
   transition: 0s;
   transform: translate(0, 5%);
+} */
+
+ 
+
+
+/* Button.module.css */
+
+.button-86 {
+  margin: 100px;
+  padding: 15px 50px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+  animation: runningShadow 3s infinite linear;
+}
+
+@keyframes runningShadow {
+  0% {
+    box-shadow: 0 0 10px #122c27, 0 0 10px #0f6759, 0 0 10px #b9d4d4, 0 0 10px #656261;
+  }
+  25% {
+    box-shadow: 0 0 15px #1c3939, 0 0 15px #185b5a, 0 0 15px #bbb2b9, 0 0 15px #7b7a7a;
+  }
+  50% {
+    box-shadow: 0 0 20px #bbb2b9, 0 0 10px #7b7a7a, 0 0 10px #1c3939, 0 0 10px #185b5a;
+  }
+  75% {
+    box-shadow: 0 0 15px #7b7a7a, 0 0 15px #1c3939, 0 0 15px #185b5a, 0 0 15px #bbb2b9;
+  }
+  100% {
+    box-shadow: 0 0 10px #122c27, 0 0 10px #0f6759, 0 0 10px #b9d4d4, 0 0 10px #656261;
+  }
+}
+
+.button-86::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #9bdccc, #308a72, #113b35);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.button-86::before {
+  content: "";
+  background: linear-gradient(45deg, #122c27, #0f6759, #b9d4d4, #656261, #1c3939, #185b5a, #bbb2b9, #7b7a7a);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-86:hover {
+  transform: scale(1.1);
+  animation: runningShadowHover 1.5s infinite linear;
+}
+
+@keyframes runningShadowHover {
+  0% {
+    box-shadow: 0 0 10px #122c27, 0 0 10px #0f6759, 0 0 10px #b9d4d4, 0 0 10px #656261;
+  }
+  25% {
+    box-shadow: 0 0 15px #1c3939, 0 0 15px #185b5a, 0 0 15px #bbb2b9, 0 0 15px #7b7a7a;
+  }
+  50% {
+    box-shadow: 0 0 20px #bbb2b9, 0 0 10px #7b7a7a, 0 0 10px #1c3939, 0 0 10px #185b5a;
+  }
+  75% {
+    box-shadow: 0 0 15px #7b7a7a, 0 0 15px #1c3939, 0 0 15px #185b5a, 0 0 15px #bbb2b9;
+  }
+  100% {
+    box-shadow: 0 0 10px #122c27, 0 0 10px #0f6759, 0 0 10px #b9d4d4, 0 0 10px #656261;
+  }
+}
+
+.button-86:hover::before {
+  opacity: 1;
+  filter: blur(10px);
+}
+
+.button-86:active:after {
+  background: transparent;
+}
+
+.button-86:active {
+  color: #000;
+  font-weight: bold;
 }
