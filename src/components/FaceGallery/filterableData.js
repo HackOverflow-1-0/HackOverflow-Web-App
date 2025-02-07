@@ -1,7 +1,7 @@
 // import image_1 from "../../assets/img/Events/college-club-events-23/image1.webp";
 // import image_2 from "../../assets/img/Events/college-club-events-23/image2.webp";
 // import image_3 from "../../assets/img/Events/college-club-events-23/image3.webp";
-import image_4 from "../../assets/img/Events/college-club-events-23/image4.webp";
+import image_4 from "../../assets/img/Events/college-club-events-23/image4.JPG";
 
 //HackOverflow 1.0
 
@@ -23,19 +23,18 @@ import image12 from "../../assets/img/Events/1.0/HackOverflow 1.0/DSC_8219.webp"
 
 //HackOverflow 2.0
 
-import image16 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0235.webp";
-import image17 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0238.webp";
-import image18 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0242.webp";
-import image19 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0246.webp";
-import image20 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0258.webp";
-import image21 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0312.webp";
-import image22 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0330.webp";
-import image23 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0349.webp";
-import image27 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0366.webp";
-import image28 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0374.webp";
-import image29 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0383.webp";
-import image30 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0506.webp";
-
+import image16 from "../../assets/img/Events/1.0/HackOverflow 2.0/_MG_8046.JPG";
+import image17 from "../../assets/img/Events/1.0/HackOverflow 2.0/_MG_8256.JPG";
+import image18 from "../../assets/img/Events/1.0/HackOverflow 2.0/_MG_8302.JPG";
+import image19 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0123.JPG";
+import image20 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0167.JPG";
+import image21 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0219.JPG";
+import image22 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0238.JPG";
+import image23 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_0462.JPG";
+import image27 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_7864.JPG";
+import image28 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_7925.JPG";
+import image29 from "../../assets/img/Events/1.0/HackOverflow 2.0/DSC_8071.JPG";
+import image30 from "../../assets/img/Events/1.0/HackOverflow 2.0/IMG_8507.JPG";
 
 
 //day 3
@@ -114,6 +113,7 @@ export const filterableData = [
     name: "HackOverflow 1.0",
     src: image12,
   },
+  
   // DAY 2
   {
     name: "HackOverflow 2.0",

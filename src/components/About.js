@@ -62,7 +62,7 @@ const About = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button className="open-maps bg-[#9B96B3] hover:bg-[#891A98] text-white font-bold py-2 px-4 rounded">
+                    <button className="open-maps bg-[#9B96B3] hover:bg-[#365048] text-white font-bold py-2 px-4 rounded">
                       Open Maps
                     </button>
                   </a>

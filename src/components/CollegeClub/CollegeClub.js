@@ -25,13 +25,13 @@ import React from "react";
 // import image21 from "../../assets/img/college-club-events/image21.JPG";
 
 // NEW IMAGES IMPORT
-import image1 from "../../assets/img/Events/college-club-events-23/image1.webp";
-import image2 from "../../assets/img/Events/college-club-events-23/image2.webp";
-import image3 from "../../assets/img/Events/college-club-events-23/image3.webp";
-import image4 from "../../assets/img/Events/college-club-events-23/image4.webp";
-import image5 from "../../assets/img/Events/college-club-events-23/image5.webp";
-import image6 from "../../assets/img/Events/college-club-events-23/image6.webp";
-import image7 from "../../assets/img/Events/college-club-events-23/image7.webp";
+import image1 from "../../assets/img/Events/college-club-events-23/image1.JPG";
+import image2 from "../../assets/img/Events/college-club-events-23/image2.JPG";
+import image3 from "../../assets/img/Events/college-club-events-23/image3.JPG";
+import image4 from "../../assets/img/Events/college-club-events-23/image4.JPG";
+import image5 from "../../assets/img/Events/college-club-events-23/image5.JPG";
+import image6 from "../../assets/img/Events/college-club-events-23/image6.JPG";
+import image7 from "../../assets/img/Events/college-club-events-23/image7.JPG";
 import "./CollegeClub.css";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
@@ -121,7 +121,7 @@ const CollegeClub = () => {
       </section>
       <div className="navbar-text flex justify-center">
         <Link to="/gallery">
-          <button className="SeeMoreButton bg-[#9B96B3] hover:bg-[#5B8F81] text-white font-bold py-2 px-4 rounded">
+          <button className="SeeMoreButton bg-[#365048] hover:bg-[#5B8F81] text-white font-bold py-2 px-4 rounded">
             See More...
           </button>
         </Link>

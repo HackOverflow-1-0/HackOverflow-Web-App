@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="490e4eb7-ae44-40f1-bba0-a4ff6a9dfede" name="Changes" comment="Schedule.js Change" />
+    <list default="true" id="490e4eb7-ae44-40f1-bba0-a4ff6a9dfede" name="Changes" comment="Schedule.js Change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg/bg-desktop.webm" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/bg/bg-desktop.webm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg/bg-phone.webm" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/bg/bg-phone.webm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Background.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,17 +42,17 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOI07uzs6J9jxe",
-        "number": 159
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOI07uzs6J9jxe&quot;,
+        &quot;number&quot;: 159
       },
-      "lastSeen": 1738665261038
+      &quot;lastSeen&quot;: 1738665261038
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/HackOverflow-1-0/HackOverflow-Web-App.git&quot;,
@@ -60,25 +70,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.index.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/VM Disc/HackOverflow Web/HackOverflow-Web-App",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.React Buddy Preview.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "D:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/VM Disc/HackOverflow Web/HackOverflow-Web-App&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.React Buddy Preview.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -120,6 +130,9 @@
       <workItem from="1738657816247" duration="442000" />
       <workItem from="1738659577525" duration="389000" />
       <workItem from="1738665162483" duration="197000" />
+      <workItem from="1738753796316" duration="118000" />
+      <workItem from="1738771592894" duration="1870000" />
+      <workItem from="1738906022563" duration="393000" />
     </task>
     <task id="LOCAL-00001" summary="Theme Change">
       <option name="closed" value="true" />

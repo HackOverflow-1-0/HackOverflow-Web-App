@@ -6,13 +6,13 @@ import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Special.css";
-// import VideoCard from "../VideoCard";
-// import Video1 from "../../assets/img/15.webm";
-// import Video2 from "../../assets/img/16.webm";
-// import Video3 from "../../assets/img/17.webm";
-import Image1 from '../../assets/img/TBA_dates(T).png';
-import Image2 from '../../assets/img/TBA_dates(B).png';
-import Image3 from '../../assets/img/TBA_dates(A).png';
+import VideoCard from "../VideoCard";
+import Video1 from "../../assets/img/20.mp4";
+import Video2 from "../../assets/img/21.mp4";
+import Video3 from "../../assets/img/22.mp4";
+// import Image1 from '../../assets/img/TBA_dates(T).png';
+// import Image2 from '../../assets/img/TBA_dates(B).png';
+// import Image3 from '../../assets/img/TBA_dates(A).png';
 
 export const Special = () => {
   useEffect(() => {
@@ -41,11 +41,11 @@ export const Special = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3 xl:gap-64">
-            {/* <VideoCard video={Video1} weblink={"https://ho2.tech/register"} />
-            <VideoCard video={Video2} weblink={"https://ho2.tech/register"} />
-            <VideoCard video={Video3} weblink={"https://ho2.tech/register"} /> */}
+            <VideoCard video={Video1} weblink={"https://forms.gle/C4fr1BQKXDFo3FJa6"} />
+            <VideoCard video={Video2} weblink={"https://forms.gle/C4fr1BQKXDFo3FJa6"} />
+            <VideoCard video={Video3} weblink={"https://forms.gle/C4fr1BQKXDFo3FJa6"} />
             
-            <a href="https://ho2.tech/register" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://ho2.tech/register" target="_blank" rel="noopener noreferrer">
               <img src={Image1} alt="Description 1" className="special-image" />
             </a>
             <a href="https://ho2.tech/register" target="_blank" rel="noopener noreferrer">
@@ -53,7 +53,7 @@ export const Special = () => {
             </a>
             <a href="https://ho2.tech/register" target="_blank" rel="noopener noreferrer">
               <img src={Image3} alt="Description 3" className="special-image" />
-            </a>
+            </a> */}
             
           </div>
           {/* <div className="pt-10">

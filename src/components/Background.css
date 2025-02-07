@@ -5,13 +5,6 @@
   }
 }
 
-/* @media only screen and (min-width: 1024px) {
-  video {
-    transform: translateX(-100px);
-    height: 700px;
-  }
-} */
-
 @media only screen and (min-width: 1080px) {
   video {
     transform: translateX(1px);
@@ -39,7 +32,6 @@
     height: 700px;
   }
 }
-
 
 @media only screen and (min-width: 1280px) {
   video {
@@ -73,67 +65,56 @@
   }
 }
 
-
-/* @media only screen and (min-width: 768px) and (max-width: 1068px) {
-  video {
-    height: 876px;
-    transform: translateX(-133px);
-  }
-} */
-
-/* Media query for screens 1172px and above */
-@media (min-width: 1172px){
+@media (min-width: 1172px) {
   .absolute {
-    top: 32rem; /* Adjust the value based on your design */
+    top: 29rem; /* Adjusted by 10px */
   }
 }
 
-@media (min-width: 1154px) and (min-width: 1165px){
+@media (min-width: 1154px) and (min-width: 1165px) {
   .absolute {
-    top: 33rem; /* Adjust the value based on your design */
+    top: 30rem; /* Adjusted by 10px */
   }
 }
-
 
 @media (min-width: 1300px) {
   .absolute {
-    top: 34rem; /* Adjust the value based on your design */
+    top: 31rem; /* Adjusted by 10px */
   }
 }
 
 @media (min-width: 1350px) {
   .absolute {
-    top: 36rem; /* Adjust the value based on your design */
+    top: 33rem; /* Adjusted by 10px */
   }
 }
 
-
 @media (min-width: 1400px) {
   .absolute {
-    top: 40rem; /* Adjust the value based on your design */
+    top: 37rem; /* Adjusted by 10px */
   }
 }
 
 @media (min-width: 1600px) {
   .absolute {
-    top: 12rem; /* Adjust the value based on your design */
+    top: 8rem; /* Adjusted by 10px */
   }
 }
 
 @media (min-width: 1840px) {
   .absolute {
-    top: 64rem; /* Adjust the value based on your design */
+    top: 61rem; /* Adjusted by 10px */
   }
 }
 
 @media (min-width: 1900px) {
   .absolute {
-    top: 80rem; /* Adjust the value based on your design */
+    top: 77rem; /* Adjusted by 10px */
   }
 }
 
 @media (min-width: 1600px) {
   .absolute {
-    top: 45rem; /* Adjust the value based on your design */
+    top: 42rem; /* Adjusted by 10px */
   }
 }

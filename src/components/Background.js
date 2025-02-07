@@ -21,8 +21,10 @@ const Background = (props) => {
         id="home"
         style={{
           objectFit: "cover",
-          ...(isMobile && { width: "100%", height: "80vh" }),
-          maxWidth: "100%",
+          width: "100%",
+          height: "100%",
+          maxWidth: "2560px",
+          maxHeight: "1400px",
         }}
       >
         <source
@@ -33,7 +35,7 @@ const Background = (props) => {
       <div className="absolute top-0 left-0 right-0 background-video">
         {props.children}
       </div>
-      <div className="absolute top-[35rem] sm:top-[18rem] md:top-[79rem] lg:top-[30rem] xl:top-[36rem] 2xl:top-[45rem] left-0 right-0 flex justify-center">
+      <div className="absolute top-10 left-0 right-0 flex justify-center">
         <button  
           className="button-86"
           onClick={handleRegisterButtonClick}
@@ -41,10 +43,7 @@ const Background = (props) => {
             fontFamily: "Poppins,sans-serif",
             fontWeight: 700,
             textAlign: "center",
-            
-          
-          
-        
+            marginTop: '10px', // Move the button downwards by 10px
           }}
         >
           Registrations Open!

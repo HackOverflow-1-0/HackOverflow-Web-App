@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <p>Follow us on:</p>
           <p>
-            <a href="https://ho2.tech/insta" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/hackoverflow.tech/" target="_blank" rel="noreferrer">
               <Instagram className="icons instagram" fontSize="large" />
             </a>
 
@@ -29,13 +29,13 @@ const Footer = () => {
               <GitHub className="icons twitter" fontSize="large" />
             </a>
             <a
-              href="https://ho2.tech/linkedin"
+              href="https://www.linkedin.com/company/hack-overflow/"
               target="_blank"
               rel="noreferrer"
             >
               <LinkedIn className="icons linkedin" fontSize="large" />
             </a>
-            <a href="https://ho2.tech/twitter" target="_blank" rel="noreferrer">
+            <a href="https://x.com/hackoverflow_" target="_blank" rel="noreferrer">
               <XIcon className="icons twitter" fontSize="large" />{" "}
               {/* Replace Twitter with XIcon */}
             </a>
