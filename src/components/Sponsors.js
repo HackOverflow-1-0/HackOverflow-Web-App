@@ -537,7 +537,7 @@ const Sponsors = () => {
                       Bronze Sponsor
                     </h1>
                   </div>
-                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-64">
                     {sponsor.items
                       .filter(
                         (item) =>
@@ -546,7 +546,7 @@ const Sponsors = () => {
                       )
                       .map((item, index) => (
                         <div key={index}>
-                          <GeneralSponsorCard
+                          <MediumSponsorsCard
                             weblink={item.link}
                             image={item.image}
                             dataAos={item.effect}
