@@ -45,6 +45,7 @@ const Sponsors = () => {
     //   categoryStyle: "green-teal",
     //   open: true, // Set default to open
     //   items: [
+<<<<<<< HEAD
     //     {
     //       id: 1,
     //       name: "Bobble AI",
@@ -69,6 +70,32 @@ const Sponsors = () => {
     //       effect: "fade-down",
     //       SubSponsorcategory: "Gold",
     //     },
+=======
+    //     // {
+    //     //   id: 1,
+    //     //   name: "Bobble AI",
+    //     //   image: bobbleWhite,
+    //     //   link: "https://bobble.ai/en/home",
+    //     //   SubSponsorcategory: "Merchent",
+    //     //   effect: "fade-up",
+    //     // },
+    //     // {
+    //     //   id: 2,
+    //     //   name: "Aptech Panvel",
+    //     //   image: appTech,
+    //     //   link: "https://aptechpanvel.in/",
+    //     //   effect: "fade-left",
+    //     //   SubSponsorcategory: "Silver",
+    //     // },
+    //     // {
+    //     //   id: 3,
+    //     //   name: "TVS Motor",
+    //     //   image: tvsWhite,
+    //     //   link: "https://www.tvsmotor.com/",
+    //     //   effect: "fade-down",
+    //     //   SubSponsorcategory: "Gold",
+    //     // },
+>>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     //     // {
     //     //   id: 4,
     //     //   name: "IMFS Mumbai",
@@ -92,6 +119,7 @@ const Sponsors = () => {
     //       effect: "fade-down",
     //       SubSponsorcategory: "Media",
     //     },
+<<<<<<< HEAD
     //     {
     //       id: 6,
     //       name: "Languify",
@@ -108,6 +136,24 @@ const Sponsors = () => {
     //       effect: "fade-down",
     //       SubSponsorcategory: "Bronze",
     //     },
+=======
+    //     // {
+    //     //   id: 6,
+    //     //   name: "Languify",
+    //     //   image: languifyWhite,
+    //     //   link: "https://www.languify.in/",
+    //     //   effect: "fade-right",
+    //     //   SubSponsorcategory: "Bronze",
+    //     // },
+    //     // {
+    //     //   id: 7,
+    //     //   name: "Quillbot",
+    //     //   image: quillbotWhite,
+    //     //   link: "https://quillbot.com/",
+    //     //   effect: "fade-down",
+    //     //   SubSponsorcategory: "Bronze",
+    //     // },
+>>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     //     // {
     //     //   id: 8,
     //     //   name: "InterView Buddy",
@@ -116,6 +162,7 @@ const Sponsors = () => {
     //     //   effect: "fade-right",
     //     //   SubSponsorcategory: "General",
     //     // },
+<<<<<<< HEAD
     //     {
     //       id: 9,
     //       name: "Golden Oriole",
@@ -140,6 +187,32 @@ const Sponsors = () => {
     //       effect: "fade-left",
     //       SubSponsorcategory: "Bronze",
     //     },
+=======
+    //     // {
+    //     //   id: 9,
+    //     //   name: "Golden Oriole",
+    //     //   image: goldenorioleWhite,
+    //     //   link: "https://www.goldenorioleedu.com/",
+    //     //   effect: "fade-down",
+    //     //   SubSponsorcategory: "Silver",
+    //     // },
+    //     // {
+    //     //   id: 10,
+    //     //   name: "AECC Global",
+    //     //   image: aeccDark,
+    //     //   link: "https://www.aeccglobal.in/",
+    //     //   effect: "fade-right",
+    //     //   SubSponsorcategory: "Silver",
+    //     // },
+    //     // {
+    //     //   id: 11,
+    //     //   name: "Scribbr",
+    //     //   image: scribbrDark,
+    //     //   link: "https://www.scribbr.com/",
+    //     //   effect: "fade-left",
+    //     //   SubSponsorcategory: "Bronze",
+    //     // },
+>>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     //   ],
     // },
     {
@@ -209,7 +282,7 @@ const Sponsors = () => {
           image: tvsWhite,
           link: "https://www.tvsmotor.com/",
           effect: "fade-right",
-          SubSponsorcategory: "Silver",
+          SubSponsorcategory: "Gold",
         },
         {
           id: 9,
@@ -229,6 +302,7 @@ const Sponsors = () => {
         },
         {
           id: 11,
+<<<<<<< HEAD
           name: "TVS Motor",
           image: tvsWhite,
           link: "https://www.tvsmotor.com/",
@@ -244,6 +318,70 @@ const Sponsors = () => {
                 SubSponsorcategory: "Silver",
               },
         
+=======
+          name: "Aptech Panvel",
+          image: appTech,
+          link: "https://aptechpanvel.in/",
+          effect: "fade-left",
+          SubSponsorcategory: "Silver",
+        },
+        {
+          id: 12,
+          name: "Bobble AI",
+          image: bobbleWhite,
+          link: "https://bobble.ai/en/home",
+          SubSponsorcategory: "Gold",
+          effect: "fade-up",
+        },
+        {
+          id: 13,
+          name: "Languify",
+          image: languifyWhite,
+          link: "https://www.languify.in/",
+          effect: "fade-right",
+          SubSponsorcategory: "Bronze",
+        },
+        {
+          id: 14,
+          name: "Quillbot",
+          image: quillbotWhite,
+          link: "https://quillbot.com/",
+          effect: "fade-down",
+          SubSponsorcategory: "Bronze",
+        },
+        {
+          id: 15,
+          name: "Golden Oriole",
+          image: goldenorioleWhite,
+          link: "https://www.goldenorioleedu.com/",
+          effect: "fade-down",
+          SubSponsorcategory: "Silver",
+        },
+        {
+          id: 16,
+          name: "AECC Global",
+          image: aeccDark,
+          link: "https://www.aeccglobal.in/",
+          effect: "fade-right",
+          SubSponsorcategory: "Silver",
+        },
+        {
+          id: 17,
+          name: "Scribbr",
+          image: scribbrDark,
+          link: "https://www.scribbr.com/",
+          effect: "fade-left",
+          SubSponsorcategory: "Bronze",
+        },
+        {
+          id: 5,
+          name: "NoticeBard",
+          image: noticebardWhite,
+          link: "https://noticebard.com/",
+          effect: "fade-down",
+          SubSponsorcategory: "Silver",
+        },
+>>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
         // Add more gold sponsors here
       ],
     },
@@ -490,7 +628,7 @@ const Sponsors = () => {
                       Bronze Sponsor
                     </h1>
                   </div>
-                  <div className="grid grid-cols-1 gap-4 xl:grid xl:grid-cols-2 xl:gap-2">
+                  <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 xl:grid xl:grid-cols-4 xl:gap-64">
                     {sponsor.items
                       .filter(
                         (item) =>
@@ -499,7 +637,7 @@ const Sponsors = () => {
                       )
                       .map((item, index) => (
                         <div key={index}>
-                          <GeneralSponsorCard
+                          <MediumSponsorsCard
                             weblink={item.link}
                             image={item.image}
                             dataAos={item.effect}
