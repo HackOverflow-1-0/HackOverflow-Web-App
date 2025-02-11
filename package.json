@@ -13,13 +13,8 @@
     "@mui/material": "^5.16.14",
     "@mui/styled-engine-sc": "^5.11.0",
     "@react-buddy/ide-toolbox": "^2.4.0",
-<<<<<<< HEAD
-    "@react-buddy/palette-chakra-ui": "^2.3.1",
-    "@react-buddy/palette-mui": "^5.0.1",
-=======
     "@react-buddy/palette-chakra-ui": "^2.3.2",
     "@react-buddy/palette-mui": "^5.0.2",
->>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     "@rumess/react-flip-countdown": "^1.2.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -74,7 +69,10 @@
     "styled-components": "^5.3.6",
     "swiper": "^11.2.2",
     "typewriter-effect": "^2.19.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@react-buddy/ide-toolbox": "^2.4.0",
+    "@react-buddy/palette-chakra-ui": "^2.3.1",
+    "@react-buddy/palette-mui": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
