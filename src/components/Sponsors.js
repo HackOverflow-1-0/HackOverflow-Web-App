@@ -45,32 +45,6 @@ const Sponsors = () => {
     //   categoryStyle: "green-teal",
     //   open: true, // Set default to open
     //   items: [
-<<<<<<< HEAD
-    //     {
-    //       id: 1,
-    //       name: "Bobble AI",
-    //       image: bobbleWhite,
-    //       link: "https://bobble.ai/en/home",
-    //       SubSponsorcategory: "Merchent",
-    //       effect: "fade-up",
-    //     },
-    //     {
-    //       id: 2,
-    //       name: "Aptech Panvel",
-    //       image: appTech,
-    //       link: "https://aptechpanvel.in/",
-    //       effect: "fade-left",
-    //       SubSponsorcategory: "Silver",
-    //     },
-    //     {
-    //       id: 3,
-    //       name: "TVS Motor",
-    //       image: tvsWhite,
-    //       link: "https://www.tvsmotor.com/",
-    //       effect: "fade-down",
-    //       SubSponsorcategory: "Gold",
-    //     },
-=======
     //     // {
     //     //   id: 1,
     //     //   name: "Bobble AI",
@@ -95,7 +69,6 @@ const Sponsors = () => {
     //     //   effect: "fade-down",
     //     //   SubSponsorcategory: "Gold",
     //     // },
->>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     //     // {
     //     //   id: 4,
     //     //   name: "IMFS Mumbai",
@@ -119,24 +92,6 @@ const Sponsors = () => {
     //       effect: "fade-down",
     //       SubSponsorcategory: "Media",
     //     },
-<<<<<<< HEAD
-    //     {
-    //       id: 6,
-    //       name: "Languify",
-    //       image: languifyWhite,
-    //       link: "https://www.languify.in/",
-    //       effect: "fade-right",
-    //       SubSponsorcategory: "Bronze",
-    //     },
-    //     {
-    //       id: 7,
-    //       name: "Quillbot",
-    //       image: quillbotWhite,
-    //       link: "https://quillbot.com/",
-    //       effect: "fade-down",
-    //       SubSponsorcategory: "Bronze",
-    //     },
-=======
     //     // {
     //     //   id: 6,
     //     //   name: "Languify",
@@ -153,7 +108,6 @@ const Sponsors = () => {
     //     //   effect: "fade-down",
     //     //   SubSponsorcategory: "Bronze",
     //     // },
->>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     //     // {
     //     //   id: 8,
     //     //   name: "InterView Buddy",
@@ -162,32 +116,6 @@ const Sponsors = () => {
     //     //   effect: "fade-right",
     //     //   SubSponsorcategory: "General",
     //     // },
-<<<<<<< HEAD
-    //     {
-    //       id: 9,
-    //       name: "Golden Oriole",
-    //       image: goldenorioleWhite,
-    //       link: "https://www.goldenorioleedu.com/",
-    //       effect: "fade-down",
-    //       SubSponsorcategory: "Silver",
-    //     },
-    //     {
-    //       id: 10,
-    //       name: "AECC Global",
-    //       image: aeccDark,
-    //       link: "https://www.aeccglobal.in/",
-    //       effect: "fade-right",
-    //       SubSponsorcategory: "Silver",
-    //     },
-    //     {
-    //       id: 11,
-    //       name: "Scribbr",
-    //       image: scribbrDark,
-    //       link: "https://www.scribbr.com/",
-    //       effect: "fade-left",
-    //       SubSponsorcategory: "Bronze",
-    //     },
-=======
     //     // {
     //     //   id: 9,
     //     //   name: "Golden Oriole",
@@ -212,7 +140,6 @@ const Sponsors = () => {
     //     //   effect: "fade-left",
     //     //   SubSponsorcategory: "Bronze",
     //     // },
->>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
     //   ],
     // },
     {
@@ -302,23 +229,6 @@ const Sponsors = () => {
         },
         {
           id: 11,
-<<<<<<< HEAD
-          name: "TVS Motor",
-          image: tvsWhite,
-          link: "https://www.tvsmotor.com/",
-          effect: "fade-down",
-          SubSponsorcategory: "Gold",
-        },
-        {
-                id: 12,
-                name: "Aptech Panvel",
-                image: appTech,
-                link: "https://aptechpanvel.in/",
-                effect: "fade-left",
-                SubSponsorcategory: "Silver",
-              },
-        
-=======
           name: "Aptech Panvel",
           image: appTech,
           link: "https://aptechpanvel.in/",
@@ -381,7 +291,6 @@ const Sponsors = () => {
           effect: "fade-down",
           SubSponsorcategory: "Silver",
         },
->>>>>>> 22b132ed2cbb5b944fde727a277210878f8daaa3
         // Add more gold sponsors here
       ],
     },
