@@ -16,7 +16,7 @@ const AppTeam = () => {
           textAlign: "center",
         }}
       >
-        Judges
+        Judges of HackOverflow 2.0
       </h1>
 
       <section className="">
