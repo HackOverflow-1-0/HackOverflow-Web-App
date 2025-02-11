@@ -6,14 +6,51 @@
   <component name="ChangeListManager">
     <list default="true" id="490e4eb7-ae44-40f1-bba0-a4ff6a9dfede" name="Changes" comment="Schedule.js Change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/bg/bg-desktop.webm" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/bg/bg-desktop.webm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/bg/bg-phone.webm" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/bg/bg-phone.webm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_0123.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_0167.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_0219.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_0238.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_0462.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_7864.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_7925.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/DSC_8071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/IMG_8507.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/_MG_8046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/_MG_8256.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/1.0/twmp/_MG_8302.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_0068.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_0123.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_0167.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_0219.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_0238.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_0462.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_7864.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_7925.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/DSC_8071.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/IMG_2219.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/IMG_8507.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_DSC1879.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_MG_7679.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_MG_8045.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_MG_8046.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_MG_8183.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_MG_8256.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/_MG_8302.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Events/temp/image7.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Background.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Background.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CollegeClub/CollegeClub.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Schedule/Schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Schedule/Schedule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Special/Special.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Special/Special.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Special/Special.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Special/Special.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sponsors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sponsors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +109,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Ngrok.Ngrok Run.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -84,7 +122,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.React Buddy Preview.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -97,6 +135,14 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Ngrok Run" type="ngrok-deploy" factoryName="Ngrok" server-name="Ngrok">
+      <deployment type="Ngrok">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -133,6 +179,13 @@
       <workItem from="1738753796316" duration="118000" />
       <workItem from="1738771592894" duration="1870000" />
       <workItem from="1738906022563" duration="393000" />
+      <workItem from="1738921119862" duration="352000" />
+      <workItem from="1739085814432" duration="558000" />
+      <workItem from="1739086409855" duration="109000" />
+      <workItem from="1739086538257" duration="1268000" />
+      <workItem from="1739092787037" duration="13000" />
+      <workItem from="1739175404269" duration="277000" />
+      <workItem from="1739180549311" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="Theme Change">
       <option name="closed" value="true" />

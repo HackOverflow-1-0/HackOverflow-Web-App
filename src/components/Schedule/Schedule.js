@@ -169,8 +169,8 @@ export const Schedule = () => {
                   id="green-yellow"
                   style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>To Be</h1>
-                  <h3 style={{ fontSize: "25px" }}>Announced</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>20th</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Hackathon Starts!!!</h1>
@@ -197,8 +197,8 @@ export const Schedule = () => {
                  id="green-yellow"
                  style={{ padding: "2rem" }}
                 >
-                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>To Be</h1>
-                  <h3 style={{ fontSize: "25px" }}>Announced</h3>
+                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>23rd</h1>
+                  <h3 style={{ fontSize: "25px" }}>March</h3>
                 </div>
                 <div className="col-7" style={{ padding: "2rem" }}>
                   <h1>Hackathon Ends</h1>

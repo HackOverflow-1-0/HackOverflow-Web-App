@@ -28,6 +28,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
+}
+
+.section.banner {
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
 }
 
 .welcometoText {

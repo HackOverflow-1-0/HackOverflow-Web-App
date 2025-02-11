@@ -1,120 +1,28 @@
-@media only screen and (min-width: 768px) {
-  video {
-    transform: translateX(1px);
-    height: 700px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+/* Positioning the Registration Button */
+.button-container {
+  position: absolute;
+  top: 75vh;
+  right: 43%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 450px) {
+  .button-container {
+    top: 65vh; /* Moves button lower */
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    justify-content: center;
   }
 }
 
-@media only screen and (min-width: 1080px) {
-  video {
-    transform: translateX(1px);
-    height: 700px;
-  }
-}
-
-@media only screen and (min-width: 1036px) {
-  video {
-    transform: translateX(1px);
-    height: 700px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  video {
-    transform: translateX(1px);
-    height: 700px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  video {
-    transform: translateX(1px);
-    height: 700px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  video {
-    transform: none;
-    height: 700px;
-    width: 1700px;
-  }
-}
-
-@media only screen and (min-width: 1038px) {
-  video {
-    transform: none;
-    height: 700px;
-    width: 2000px;
-  }
-}
-
-@media only screen and (min-width: 1536px) {
-  video {
-    transform: none;
-    height: 600px;
-    width: 1700px;
-  }
-}
-
-@media only screen and (min-width: 1903px) {
-  video {
-    transform: none;
-    height: 1000px;
-    width: 2200px;
-  }
-}
-
-@media (min-width: 1172px) {
-  .absolute {
-    top: 29rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1154px) and (min-width: 1165px) {
-  .absolute {
-    top: 30rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1300px) {
-  .absolute {
-    top: 31rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1350px) {
-  .absolute {
-    top: 33rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1400px) {
-  .absolute {
-    top: 37rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1600px) {
-  .absolute {
-    top: 8rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1840px) {
-  .absolute {
-    top: 61rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1900px) {
-  .absolute {
-    top: 77rem; /* Adjusted by 10px */
-  }
-}
-
-@media (min-width: 1600px) {
-  .absolute {
-    top: 42rem; /* Adjusted by 10px */
-  }
+/* Preventing Other Components from Shifting */
+main, section, .content-wrapper {
+  position: relative; /* Ensures layout remains unaffected */
 }
