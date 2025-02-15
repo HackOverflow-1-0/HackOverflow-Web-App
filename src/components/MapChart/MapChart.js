@@ -31,8 +31,12 @@ const PROJECTION_CONFIG = {
 // ];
 
 const COLOR_RANGE = [
-  "#5B8F81", "#4A7A6E", "#40655B", "#365048",
-  "#2C3B35", "#222622", "#6FA295", "#85B5A9"
+  "#DFEEE0", // Lightest - low participation
+  "#C5E0C9",
+  "#A8D1B2",
+  "#8BC29B",
+  "#6EB384",
+  "#5B8F81", // Darkest - high participation
 ];
 
 // const COLOR_RANGE = [
@@ -46,7 +50,7 @@ const COLOR_RANGE = [
 //   "#261D46",
 // ];
 
-const DEFAULT_COLOR = "#6E57B2";
+const DEFAULT_COLOR = "#DFEEE0"; // Default color for states with no participation
 
 const getRandomInt = () => {
   return parseInt(Math.random() * 100);
@@ -55,12 +59,16 @@ const getRandomInt = () => {
 const geographyStyle = {
   default: {
     outline: "none",
+    stroke: "#5B8F81",
+    strokeWidth: 0.5,
   },
   hover: {
-    fill: "#2F5E53",
+    fill: "#7DFFE4",
     transition: "all 250ms",
     outline: "none",
     cursor: "pointer",
+    stroke: "#5B8F81",
+    strokeWidth: 1,
   },
   pressed: {
     outline: "none",
@@ -70,44 +78,43 @@ const geographyStyle = {
 // will generate random heatmap data on every call
 const getHeatMapData = () => {
   return [
-    { id: "AP", state: "Andhra Pradesh", value: 20 },
-    { id: "AR", state: "Arunachal Pradesh", value: 5 },
-    { id: "AS", state: "Assam", value: 0 },
-    { id: "BR", state: "Bihar", value: 5 },
-    { id: "CT", state: "Chhattisgarh", value: 5 },
-    { id: "GA", state: "Goa", value: 0 },
-    { id: "GJ", state: "Gujarat", value: 20 },
-    { id: "HR", state: "Haryana", value: 8 },
-    { id: "HP", state: "Himachal Pradesh", value: 0 },
-    { id: "JH", state: "Jharkhand", value: 26 },
-    { id: "KA", state: "Karnataka", value: 27 },
-    { id: "KL", state: "Kerala", value: 15 },
-    { id: "MP", state: "Madhya Pradesh", value: 12 },
-    { id: "MH", state: "Maharashtra", value: 20 },
-    { id: "MN", state: "Manipur", value: 0 },
-    { id: "ML", state: "Meghalaya", value: 0 },
-    { id: "MZ", state: "Mizoram", value: 0 },
-    { id: "NL", state: "Nagaland", value: 0 },
-    { id: "OD", state: "Odisha", value: 0 },
-    { id: "PB", state: "Punjab", value: 5 },
-    { id: "RJ", state: "Rajasthan", value: 5 },
+    { id: "AP", state: "Andhra Pradesh", value: 40 },
+    { id: "AR", state: "Arunachal Pradesh", value: 10 },
+    { id: "AS", state: "Assam", value: 15 },
+    { id: "BR", state: "Bihar", value: 25 },
+    { id: "CT", state: "Chhattisgarh", value: 20 },
+    { id: "GA", state: "Goa", value: 5 },
+    { id: "GJ", state: "Gujarat", value: 45 },
+    { id: "HR", state: "Haryana", value: 35 },
+    { id: "HP", state: "Himachal Pradesh", value: 10 },
+    { id: "JH", state: "Jharkhand", value: 20 },
+    { id: "KA", state: "Karnataka", value: 80 },
+    { id: "KL", state: "Kerala", value: 30 },
+    { id: "MP", state: "Madhya Pradesh", value: 40 },
+    { id: "MH", state: "Maharashtra", value: 90 },
+    { id: "MN", state: "Manipur", value: 5 },
+    { id: "ML", state: "Meghalaya", value: 5 },
+    { id: "MZ", state: "Mizoram", value: 5 },
+    { id: "NL", state: "Nagaland", value: 5 },
+    { id: "OD", state: "Odisha", value: 25 },
+    { id: "PB", state: "Punjab", value: 30 },
+    { id: "RJ", state: "Rajasthan", value: 35 },
     { id: "SK", state: "Sikkim", value: 5 },
-    { id: "TN", state: "Tamil Nadu", value: 5 },
-    { id: "TS", state: "Telangana", value: 15 },
-    { id: "TR", state: "Tripura", value: 14 },
-    { id: "UK", state: "Uttarakhand", value: 5 },
-    { id: "UP", state: "Uttar Pradesh", value: 30 },
-    { id: "WB", state: "West Bengal", value: 17 },
-    { id: "WB", state: "West Bengal", value: 17 },
-    { id: "AN", state: "Andaman and Nicobar Islands", value: 0 },
-    { id: "CH", state: "Chandigarh", value: 5 },
-    { id: "DN", state: "Dadra and Nagar Haveli", value: 19 },
-    { id: "DD", state: "Daman and Diu", value: 20 },
-    { id: "DL", state: "Delhi", value: 59 },
-    { id: "JK", state: "Jammu and Kashmir", value: 0 },
-    { id: "LA", state: "Ladakh", value: 0 },
-    { id: "LD", state: "Lakshadweep", value: 0 },
-    { id: "PY", state: "Puducherry", value: 0 },
+    { id: "TN", state: "Tamil Nadu", value: 60 },
+    { id: "TS", state: "Telangana", value: 70 },
+    { id: "TR", state: "Tripura", value: 10 },
+    { id: "UK", state: "Uttarakhand", value: 20 },
+    { id: "UP", state: "Uttar Pradesh", value: 85 },
+    { id: "WB", state: "West Bengal", value: 55 },
+    { id: "AN", state: "Andaman and Nicobar Islands", value: 5 },
+    { id: "CH", state: "Chandigarh", value: 15 },
+    { id: "DN", state: "Dadra and Nagar Haveli", value: 5 },
+    { id: "DD", state: "Daman and Diu", value: 5 },
+    { id: "DL", state: "Delhi", value: 75 },
+    { id: "JK", state: "Jammu and Kashmir", value: 20 },
+    { id: "LA", state: "Ladakh", value: 5 },
+    { id: "LD", state: "Lakshadweep", value: 5 },
+    { id: "PY", state: "Puducherry", value: 10 },
   ];
 };
 

@@ -7,8 +7,45 @@ import "animate.css";
 import "./Schedule.css";
 // import TrackVisibility from "react-on-screen";
 import classes from "./Schedule.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo, useCallback } from "react";
 // import { Stack } from "@mui/material";
+
+// Memoized image component for better performance
+const ScheduleImage = memo(({ src, alt }) => (
+  <img
+    src={src}
+    alt={alt}
+    loading="lazy"
+    decoding="async"
+    width="100%"
+    height="auto"
+  />
+));
+
+// Memoized date card component
+const DateCard = memo(({ date, month, title, description }) => (
+  <div
+    className="col"
+    style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    <div className={`${classes.keyDatesCards} my-5`}>
+      <div className="row">
+        <div className="col-5" id="green-yellow" style={{ padding: "2rem" }}>
+          <h1 style={{ fontWeight: "bold", fontSize: date.length > 3 ? "55px" : "70px" }}>{date}</h1>
+          <h3 style={{ fontSize: "25px" }}>{month}</h3>
+        </div>
+        <div className="col-7" style={{ padding: "2rem" }}>
+          <h1>{title}</h1>
+          <h5>{description}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+));
 
 export const Schedule = () => {
   const [path, setPath] = useState("offline");
@@ -18,15 +55,55 @@ export const Schedule = () => {
     window.innerHeight,
   ]);
 
+  // Memoized resize handler
+  const handleWindowResize = useCallback(() => {
+    setWindowSize([window.innerWidth, window.innerHeight]);
+  }, []);
+
   useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
-    };
+    // Preload images
+    const images = [offlineDesktopView, offlineMobileView, onlineDesktopView, onlineMobileView];
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
     window.addEventListener("resize", handleWindowResize);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  });
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, [handleWindowResize]);
+
+  // Memoized image source selection
+  const currentImage = windowSize[0] > 600 || windowSize[1] > 2000
+    ? (path === "offline" ? offlineDesktopView : onlineDesktopView)
+    : (path === "offline" ? offlineMobileView : onlineMobileView);
+
+  // Date cards data
+  const dateCards = [
+    {
+      date: "5th",
+      month: "February",
+      title: "Registrations Starts",
+      description: "Registrations starts, register yourself soon"
+    },
+    {
+      date: "5th",
+      month: "March",
+      title: "Registrations Ends",
+      description: "Registrations ends, get your name registered by this date"
+    },
+    {
+      date: "20th",
+      month: "March",
+      title: "Hackathon Starts!!!",
+      description: "Get your programming skills ready as the event will start soon."
+    },
+    {
+      date: "23rd",
+      month: "March",
+      title: "Hackathon Ends",
+      description: "36 hour long hackathon will end and winners will be announced."
+    }
+  ];
 
   return (
     <section className="schedule" id="schedule">
@@ -63,28 +140,7 @@ export const Schedule = () => {
             </div>
           </div>
           <div className="col">
-            {path === "offline" && (
-              <img
-                src={
-                  windowSize[0] > 600 || windowSize[1] > 2000
-                    ? offlineDesktopView
-                    : offlineMobileView
-                }
-                alt={"schedule"}
-                // style={{ marginTop: "40px" }}
-              />
-            )}
-            {path === "online" && (
-              <img
-                src={
-                  windowSize[0] > 600 || windowSize[1] > 2000
-                    ? onlineDesktopView
-                    : onlineMobileView
-                }
-                alt={"schedule"}
-                // style={{ marginTop: "40px" }}
-              />
-            )}
+            <ScheduleImage src={currentImage} alt="schedule" />
           </div>
         </div>
       </div>
@@ -102,114 +158,9 @@ export const Schedule = () => {
           >
             Key Dates
           </h1>
-          <div
-            className="col"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className={`${classes.keyDatesCards} my-5`}>
-              <div className="row">
-                <div
-                   className="col-5"
-                   id="green-yellow"
-                   style={{ padding: "2rem" }}
-                >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
-                  <h3 style={{ fontSize: "25px" }}>February</h3>
-                </div>
-                <div className="col-7" style={{ padding: "2rem" }}>
-                  <h1>Registrations Starts</h1>
-                  <h5>Registrations starts, register yourself soon</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className={`${classes.keyDatesCards} my-5`}>
-              <div className="row">
-                <div
-                  className="col-5"
-                  id="green-yellow"
-                  style={{ padding: "2rem" }}
-                >
-                  <h1 style={{ fontWeight: "bold", fontSize: "70px" }}>5th</h1>
-                  <h3 style={{ fontSize: "25px" }}>March</h3>
-                </div>
-                <div className="col-7" style={{ padding: "2rem" }}>
-                  <h1>Registrations Ends</h1>
-                  <h5>
-                    Registrations ends, get your name registered by this date
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className={`${classes.keyDatesCards} my-5`}>
-              <div className="row">
-                <div
-                  className="col-5"
-                  id="green-yellow"
-                  style={{ padding: "2rem" }}
-                >
-                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>20th</h1>
-                  <h3 style={{ fontSize: "25px" }}>March</h3>
-                </div>
-                <div className="col-7" style={{ padding: "2rem" }}>
-                  <h1>Hackathon Starts!!!</h1>
-                  <h5>
-                    Get your programming skills ready as the event will start
-                    soon.
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div className={`${classes.keyDatesCards} my-5`}>
-              <div className="row">
-                <div
-                 className="col-5"
-                 id="green-yellow"
-                 style={{ padding: "2rem" }}
-                >
-                  <h1 style={{ fontWeight: "bold", fontSize: "55px" }}>23rd</h1>
-                  <h3 style={{ fontSize: "25px" }}>March</h3>
-                </div>
-                <div className="col-7" style={{ padding: "2rem" }}>
-                  <h1>Hackathon Ends</h1>
-                  <h5>
-                    36 hour long hackathon will end and winners will be
-                    announced.
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
+          {dateCards.map((card, index) => (
+            <DateCard key={index} {...card} />
+          ))}
         </div>
         {/* <div className="row">
           <Stack>
@@ -225,3 +176,5 @@ export const Schedule = () => {
     </section>
   );
 };
+
+export default memo(Schedule);

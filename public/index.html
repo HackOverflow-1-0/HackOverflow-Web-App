@@ -54,6 +54,27 @@
       type="image/x-icon"
       href="../public/hack-overflow-logo.ico"
     />
+    <link rel="preload" as="image" href="/path/to/critical-image.webp">
+    <link rel="preconnect" href="https://your-cdn-domain.com">
+    <link rel="preload" as="video" href="/path/to/your/main-video.mp4" type="video/mp4">
+    <link rel="preload" as="image" href="/path/to/first-glimpse-image.webp" type="image/webp">
+    <link rel="dns-prefetch" href="https://your-cdn-domain.com">
+    <!-- Preload critical resources for HackathonOverview -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="/path/to/vr-illustration.webp"
+      type="image/webp"
+    >
+    
+    <!-- Preload critical fonts if any -->
+    <link 
+      rel="preload" 
+      as="font"
+      href="/path/to/your-font.woff2"
+      type="font/woff2"
+      crossorigin
+    >
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

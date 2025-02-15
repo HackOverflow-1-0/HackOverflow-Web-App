@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 // import logo from "../../assets/img/hack-overflow-logo.png";
 // import fir from "../../assets/img/first.png"
 // import banneriamge from "../../assets/img/hackathon.jpg";
@@ -25,20 +25,30 @@ import React from "react";
 // import image21 from "../../assets/img/college-club-events/image21.JPG";
 
 // NEW IMAGES IMPORT
-import image1 from "../../assets/img/Events/college-club-events-23/image1.JPG";
-import image2 from "../../assets/img/Events/college-club-events-23/image2.JPG";
-import image3 from "../../assets/img/Events/college-club-events-23/image3.JPG";
-import image4 from "../../assets/img/Events/college-club-events-23/image4.JPG";
-import image5 from "../../assets/img/Events/college-club-events-23/image5.JPG";
-import image6 from "../../assets/img/Events/college-club-events-23/image6.JPG";
-import image7 from "../../assets/img/Events/college-club-events-23/image7.JPG";
+import image1 from "../../assets/img/Events/college-club-events-23/image1.webp";
+import image2 from "../../assets/img/Events/college-club-events-23/image2.webp";
+import image3 from "../../assets/img/Events/college-club-events-23/image3.webp";
+import image4 from "../../assets/img/Events/college-club-events-23/image4.webp";
+import image5 from "../../assets/img/Events/college-club-events-23/image5.webp";
+import image6 from "../../assets/img/Events/college-club-events-23/image6.webp";
+import image7 from "../../assets/img/Events/college-club-events-23/image7.webp";
 import "./CollegeClub.css";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import OptimizedImage from '../common/OptimizedImage';
 
 const CollegeClub = () => {
+  // Preload images
+  React.useEffect(() => {
+    const imageUrls = [image1, image2, image3];
+    imageUrls.forEach(url => {
+      const img = new Image();
+      img.src = url;
+    });
+  }, []);
+
   return (
-    <>
+    <Suspense fallback={<div className="loading-skeleton">Loading...</div>}>
       <section className="top pb-6">
         <div className="relative topContainer flex flex-col justify-center items-center">
           {/* <div class="absolute h-[4px] bg-[#7b1072] w-24" /> */}
@@ -60,58 +70,62 @@ const CollegeClub = () => {
                 className="border-white d-block h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
               >
                 <Carousel.Item>
-                  <img
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image1}
                     alt="First slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
+                    fetchpriority="high"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image2}
                     alt="Second slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
+                    fetchpriority="high"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image3}
-                    alt="Second slide"
+                    alt="Third slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
+                    fetchpriority="high"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image4}
-                    alt="Second slide"
+                    alt="Fourth slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image5}
-                    alt="Second slide"
+                    alt="Fifth slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image6}
-                    alt="Second slide"
+                    alt="Sixth slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
-
-                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                  <OptimizedImage
                     src={image7}
-                    alt="Second slide"
+                    alt="Seventh slide"
+                    className="d-block w-screen h-[235px] sm:h-[450px] lg:h-[550px] xl:h-[550px]"
+                    priority={true}
                   />
                 </Carousel.Item>
               </Carousel>
@@ -142,7 +156,7 @@ const CollegeClub = () => {
                     </ImageSlider>
                 </div>
             </div> */}
-    </>
+    </Suspense>
   );
 };
 

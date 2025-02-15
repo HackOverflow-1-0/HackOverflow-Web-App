@@ -1,7 +1,7 @@
-// import image_1 from "../../assets/img/Events/college-club-events-23/image1.webp";
-// import image_2 from "../../assets/img/Events/college-club-events-23/image2.webp";
-// import image_3 from "../../assets/img/Events/college-club-events-23/image3.webp";
-import image_4 from "../../assets/img/Events/college-club-events-23/image4.JPG";
+import image_1 from "../../assets/img/Events/college-club-events-23/image1.webp";
+import image_2 from "../../assets/img/Events/college-club-events-23/image2.webp";
+import image_3 from "../../assets/img/Events/college-club-events-23/image3.webp";
+import image_4 from "../../assets/img/Events/college-club-events-23/image4.webp";
 
 //HackOverflow 1.0
 

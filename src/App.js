@@ -1,93 +1,113 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { Fragment, useEffect, useState, Suspense, useCallback } from "react";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
-import Footer from "./components/Footer";
-import { Schedule } from "./components/Schedule/Schedule";
 import HackathonOverview from "./components/HackthonOverview";
-import { Fragment, useEffect, useState } from "react";
-// import Themes from "./components/Themes/Themes";
-// import NewThemes from "./components/New Themes/NewThemes";
-import FutureCityTheme from "./components/FutureCityTheme/FutureCityTheme";
-import Sponsors from "./components/Sponsors";
-// import MobileFAQ from "./components/FAQ/MobileFAQ";
-// import Prizes from "./components/Prizes/Prizes";
-import About from "./components/About";
-import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
-// import GlobeComp from "./globe";
-import { GlobeNewComponent } from "./components/GlobeNewComponent/GlobeNewComponent";
-import CollegeClub from "./components/CollegeClub/CollegeClub";
-// import FaceGallery from "./components/FaceGallery/FaceGallery";
-import GalleryLayout from "./components/GalleryLayout";
-// import TeamLayout from "./components/TeamLayout";
-// import Teampage from "./components/Teams/Teams";
-// import ImageSeparatorGallery from "./components/FaceGallery/FaceGallery";
-// import AppFeature from "./components/AppFeature/AppFeature";
-// import Register from "./components/Register/Register";
-// import RegisterMobile from "./components/Register/RegisterMobile";
-// import PreLoader from "./components/PreLoader/PreLoader";
-import ScrollToTop from "react-scroll-to-top";
-// import InstaFeeds from "./components/InstaDisplay/InstaFeeds";
-// import Loadop from "./components/loadop";
-// import WinnerCard from "./components/PastWinners/WinnerCard";
-import FAQs from "./components/FAQ/FAQs";
 import { Special } from "./components/Special/Special";
 import PreLoader from "./components/PreLoader/PreLoader";
-// import Gal from "./components/galleryNew/gal";
-import InstagramReelsCards from "./components/InstagramReelsCards";
-// import ShootingStar from "./components/ShootingStar/ShootingStar";
-import AppTeam from "./components/AppTeam/AppTeam";
+import ScrollToTop from "react-scroll-to-top";
+import CollegeClub from './components/CollegeClub/CollegeClub';
+import { GlobeNewComponent } from './components/GlobeNewComponent/GlobeNewComponent';
+import { Schedule } from './components/Schedule/Schedule';
+import AppTeam from './components/AppTeam/AppTeam';
+import Sponsors from './components/Sponsors';
+import FAQs from './components/FAQ/FAQs';
+import About from './components/About';
+import InstagramReelsCards from './components/InstagramReelsCards';
+import Footer from './components/Footer';
+import MobileNavbar from './components/MobileNavbar/MobileNavbar';
+import GalleryLayout from './components/GalleryLayout';
+
+// Optimized component wrapper with intersection observer
+const OptimizedComponent = ({ children, id }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '50px'
+      }
+    );
+
+    const element = document.getElementById(id);
+    if (element) observer.observe(element);
+
+    return () => observer.disconnect();
+  }, [id]);
+
+  return (
+    <div id={id} style={{ minHeight: '10px' }}>
+      {isVisible && children}
+    </div>
+  );
+};
 
 function App() {
-  const [windowSize, setWindowSize] = useState([
-    window.innerWidth,
-    window.innerHeight,
-  ]);
-  const [loading, setLoading] = useState(true); // State variable for loading status
+  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+  const [loading, setLoading] = useState(true);
+
+  const handleWindowResize = useCallback(() => {
+    setWindowSize([window.innerWidth, window.innerHeight]);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 13000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
-    };
-
-    // componentDidMount logic
-    (function () {
-      var kommunicateSettings = {
-        appId: process.env.REACT_APP_CHAT_TOKEN,
-        popupWidget: true,
-        automaticChatOpenOnNavigation: true,
-      };
-
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-      var h = document.getElementsByTagName("head")[0];
-      h.appendChild(s);
-      window.kommunicate = window.kommunicate || {};
-      window.kommunicate._globals = kommunicateSettings;
-    })();
 
     window.addEventListener("resize", handleWindowResize);
+    
+    // Optimize scroll performance
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          // Your scroll handling code here
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
+      clearTimeout(timer);
       window.removeEventListener("resize", handleWindowResize);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleWindowResize]);
 
-  // useEffect(() => {
-  //   window.onload = () => {
-  //     setLoading(false);
-  //   };
-  // }, []);
+  // Kommunicate chat widget with delayed initialization
+  useEffect(() => {
+    if (!loading) {
+      const timer = setTimeout(() => {
+        const kommunicateSettings = {
+          appId: process.env.REACT_APP_CHAT_TOKEN,
+          popupWidget: true,
+          automaticChatOpenOnNavigation: true,
+        };
+
+        const s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        document.head.appendChild(s);
+        window.kommunicate = window.kommunicate || {};
+        window.kommunicate._globals = kommunicateSettings;
+      }, 2000); // Delay chat widget load
+
+      return () => clearTimeout(timer);
+    }
+  }, [loading]);
 
   return (
     <BrowserRouter>
@@ -110,40 +130,61 @@ function App() {
                     height: "50px",
                     right: "35px",
                     bottom: "100px",
-                    // boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'
                   }}
                 />
                 <NavBar />
                 <Banner />
-                <Special />
-                <HackathonOverview />
-                {/* <Registercard/> for register form */}
-                <CollegeClub />
-                {/* <WinnerCard /> */}
-                {/* <GlobeComp /> */}
-                <GlobeNewComponent />
-                {/* <Prizes /> */}
-                <Schedule />
-                {/* <NewThemes /> */}
-                {/* <FutureCityTheme /> */}
-                <AppTeam />
-                <Sponsors />
-                {/* {windowSize[0] < 1200 ? <MobileFAQ /> : <FAQ />} */}
-                <FAQs />
-                <About />
-                <InstagramReelsCards />
-                {/* <FaceGallery /> */}
-                {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
-                <Footer />
+                
+                <OptimizedComponent id="special">
+                  <Special />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="hackathon">
+                  <HackathonOverview />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="college">
+                  <CollegeClub />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="globe">
+                  <GlobeNewComponent />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="schedule">
+                  <Schedule />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="appteam">
+                  <AppTeam />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="sponsors">
+                  <Sponsors />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="faqs">
+                  <FAQs />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="about">
+                  <About />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="instagram">
+                  <InstagramReelsCards />
+                </OptimizedComponent>
+
+                <OptimizedComponent id="footer">
+                  <Footer />
+                </OptimizedComponent>
+
                 {windowSize[0] < 600 && <MobileNavbar />}
               </Fragment>
             }
           />
-
           <Route path="/gallery" element={<GalleryLayout />} />
           <Route path="/preloader" element={<PreLoader />} />
-          {/* <Route path="/gal" element={<Gal />} /> */}
-          {/* <Route path="/team" element={<TeamLayout />} /> */}
         </Routes>
       )}
     </BrowserRouter>

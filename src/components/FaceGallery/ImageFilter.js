@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, lazy, Suspense } from "react";
 import Button from "./Button";
 import { filterableData } from "./filterableData";
 import { Image } from "./Image";
-import { Text } from "./Text";
 import "./ImageFilter.css";
 
 const ImageFilter = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-  // const buttonCaptions = ["all", "nature", "cars", "people"];
-  const buttonCaptions = ["all", "HackOverflow 1.0", "HackOverflow 2.0","winners"];
+  const buttonCaptions = useMemo(() => ["all", "HackOverflow 1.0", "HackOverflow 2.0", "winners"], []);
 
-  const filteredData = filterableData.filter(
-    (item) => activeFilter === "all" || activeFilter === item.name
+  // Memoize filtered data to prevent unnecessary recalculations
+  const filteredData = useMemo(() => 
+    filterableData.filter((item) => activeFilter === "all" || activeFilter === item.name),
+    [activeFilter]
   );
 
   const handleFilterClick = (filter) => {
@@ -24,76 +24,74 @@ const ImageFilter = () => {
     setSelectedImageIndex(index);
   };
 
+  const handleCloseModal = () => {
+    setSelectedImageIndex(null);
+  };
+
   const handleOverlayClick = (event) => {
     if (event.target === event.currentTarget) {
       handleCloseModal();
     }
   };
 
-  const handleCloseModal = () => {
-    setSelectedImageIndex(null);
-  };
-
   const handlePrevImage = () => {
-    setSelectedImageIndex((prevIndex) => {
-      return prevIndex !== null
-        ? (prevIndex - 1 + filteredData.length) % filteredData.length
-        : null;
-    });
+    setSelectedImageIndex((prevIndex) => 
+      prevIndex !== null ? (prevIndex - 1 + filteredData.length) % filteredData.length : null
+    );
   };
 
   const handleNextImage = () => {
-    setSelectedImageIndex((prevIndex) => {
-      return prevIndex !== null ? (prevIndex + 1) % filteredData.length : null;
-    });
+    setSelectedImageIndex((prevIndex) => 
+      prevIndex !== null ? (prevIndex + 1) % filteredData.length : null
+    );
   };
 
-  // Handle keyboard events
   useEffect(() => {
-    // Set scroll position to top when the component mounts
     window.scrollTo(0, 0);
 
     const handleKeyDown = (event) => {
-      if (event.key === "ArrowLeft") {
-        handlePrevImage();
-      } else if (event.key === "ArrowRight") {
-        handleNextImage();
-      } else if (event.key === "Escape") {
-        handleCloseModal();
+      switch(event.key) {
+        case "ArrowLeft":
+          handlePrevImage();
+          break;
+        case "ArrowRight":
+          handleNextImage();
+          break;
+        case "Escape":
+          handleCloseModal();
+          break;
+        default:
+          break;
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [handlePrevImage, handleNextImage, handleCloseModal]);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <section className="PaddingGallery w-full flex flex-col gap-12 py-10 lg:px-16 md:px-10">
       <div className="GallerySection">
         <div className="flex w-full justify-center pb-4 md:justify-center items-start md:gap-6 gap-3 flex-wrap">
           {buttonCaptions.map((filter) => (
-           <Button
-           key={filter}
-           onClick={() => handleFilterClick(filter)}
-           type="button"
-           className={`focus:outline-none border-2 border-[#5B8F81] hover:bg-[#5B8F81] font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize ${
-               activeFilter === filter ? "bg-[#5B8F81]" : ""
-           }`}
-       >
-           {filter}
-       </Button>
-       
+            <Button
+              key={filter}
+              onClick={() => handleFilterClick(filter)}
+              type="button"
+              className={`focus:outline-none border-2 border-[#5B8F81] hover:bg-[#5B8F81] font-medium rounded-lg text-sm px-5 text-white py-2.5 mb-2 capitalize ${
+                activeFilter === filter ? "bg-[#5B8F81]" : ""
+              }`}
+            >
+              {filter}
+            </Button>
           ))}
         </div>
-        {/* filtered cards display */}
+
         <main className="w-full grid lg:grid-cols-4 md:grid-cols-2 gap-x-5 gap-y-8 md:mt-8">
           {filteredData.map((item, index) => (
             <div
-              key={index}
-              className={`ImageGallery w-full cursor-pointer transition-all duration-200 rounded-lg shadow`}
+              key={item.src}
+              className="ImageGallery w-full cursor-pointer transition-all duration-200 rounded-lg shadow"
               onClick={() => handleImageClick(index)}
             >
               <Image
@@ -101,55 +99,47 @@ const ImageFilter = () => {
                 image={item.src}
                 alt={item.name}
                 objectCover="object-cover"
+                loading="lazy"
               />
-              {/* <div className="p-5">
-              <Text
-                as="h5"
-                className="mb-2 text-2xl font-bold tracking-tight text-white"
-              >
-                {item.title}
-              </Text>
-              <Text as="p" className="mb-3 font-normal text-gray-400">
-                {item.text}
-              </Text>
-            </div> */}
             </div>
           ))}
         </main>
       </div>
-      {/* Modal for displaying selected image */}
+
       {selectedImageIndex !== null && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center"
-          onClick={handleOverlayClick} // Added event listener to the overlay
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={handleOverlayClick}
         >
-          <div className="relative">
-            <Button
-              type="button"
-              className="absolute top-4 right-4 text-white"
+          <div className="relative max-w-4xl w-full mx-4">
+            <button
+              className="absolute top-4 right-4 text-white z-10"
               onClick={handleCloseModal}
-            ></Button>
+              aria-label="Close modal"
+            >
+              ✕
+            </button>
             <Image
-              className="ClickedImage rounded-lg w-full h-[400px] object-cover"
+              className="ClickedImage rounded-lg w-full max-h-[80vh] object-contain"
               image={filteredData[selectedImageIndex].src}
               alt={filteredData[selectedImageIndex].name}
+              loading="eager"
             />
-            <div className="absolute top-1/2 sm:top-[65%] lg:hidden transform -translate-y-1/2 flex justify-between w-full">
-              <Button
-                type="button"
-                className="text-white text-[1rem] bg-[#891A98] rounded-md flex justify-center items-center"
+            <div className="absolute top-1/2 w-full px-4 flex justify-between transform -translate-y-1/2">
+              <button
+                className="text-white bg-[#5B8F81] rounded-md p-2"
                 onClick={handlePrevImage}
+                aria-label="Previous image"
               >
-                <span className="m-2">&lt;</span>
-              </Button>
-
-              <Button
-                type="button"
-                className="text-white text-[1rem] bg-[#891A98] rounded-md flex justify-center items-center"
+                ←
+              </button>
+              <button
+                className="text-white bg-[#5B8F81] rounded-md p-2"
                 onClick={handleNextImage}
+                aria-label="Next image"
               >
-                <span className="m-2">&gt;</span>
-              </Button>
+                →
+              </button>
             </div>
           </div>
         </div>

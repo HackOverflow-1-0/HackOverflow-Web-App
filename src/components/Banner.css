@@ -204,19 +204,31 @@
 }
 
 .socialMedia {
-  display: none;
-  top: 25rem;
-  font-size: 2.5rem;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
   left: 48px;
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-  text-align: center;
+  z-index: 100;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.socialMedia.aos-animate {
+  opacity: 1;
+}
+
+.socialMedia.aos-animate[data-aos="fade-right"] {
+  transform: translate3d(0, -50%, 0);
 }
 
 .socialMain {
-  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 48px;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -225,5 +237,11 @@
   }
   .socialMain {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .socialMedia, .socialMain {
+    display: none;
   }
 }

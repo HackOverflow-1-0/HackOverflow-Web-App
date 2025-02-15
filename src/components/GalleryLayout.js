@@ -1,33 +1,55 @@
-import {useState, useEffect} from "react";
-// import { NavBar } from "./NavBar";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 import { NavBar } from "./NavBar";
 import Footer from "./Footer";
-import FaceGallery from "./FaceGallery/FaceGallery";
-import MobileNavbar from "./MobileNavbar/MobileNavbar";
+
+// Preload components
+const MobileNavbar = lazy(() => import("./MobileNavbar/MobileNavbar"));
+const FaceGallery = lazy(() => import("./FaceGallery/FaceGallery"));
+
+// Loading component with fade effect
+const LoadingFallback = () => (
+  <div className="loading-fade">
+    <div className="loading-spinner"></div>
+  </div>
+);
 
 const GalleryLayout = () => {
-  const [windowSize, setWindowSize] = useState([
-    window.innerWidth,
-    window.innerHeight,
-  ]);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
+    // Debounced resize handler
+    let timeoutId = null;
+    const handleResize = () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setIsMobile(window.innerWidth < 600);
+      }, 100);
     };
-    window.addEventListener("resize", handleWindowResize);
+
+    window.addEventListener('resize', handleResize);
+    
+    // Simulate minimum loading time for smooth transition
+    const loadTimer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+
     return () => {
-      window.removeEventListener("resize", handleWindowResize);
+      window.removeEventListener('resize', handleResize);
+      if (timeoutId) clearTimeout(timeoutId);
+      clearTimeout(loadTimer);
     };
-  }, []); // Empty dependency array means this effect runs once, similar to componentDidMount
+  }, []);
 
   return (
-    <>
+    <div className={`layout-container ${isLoading ? 'loading' : 'loaded'}`}>
       <NavBar />
-      {windowSize[0] < 600 && <MobileNavbar />}
-      <FaceGallery />
+      <Suspense fallback={<LoadingFallback />}>
+        {isMobile && <MobileNavbar />}
+        <FaceGallery />
+      </Suspense>
       <Footer />
-    </>
+    </div>
   );
 };
 

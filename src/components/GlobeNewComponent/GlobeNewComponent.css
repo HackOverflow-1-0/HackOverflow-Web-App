@@ -4,6 +4,8 @@
 .globe-h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  margin-top: 4rem;
+  color: #7DFFE4;
 }
 
 @media screen and (max-width: 900px) {
@@ -44,37 +46,60 @@
   }
 } */
 
+/* Base styles for all state names */
 .states-h1 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#blue-cyan {
-  background: linear-gradient(98.84deg, #8680bb 43.27%, #84b4b5 71.84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-}
-#purple-pink {
-  background: linear-gradient(98.84deg, #a8519f 43.27%, #644ea0 71.84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-#green-yellow {
-  background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-#orange-pink {
-  background: linear-gradient(98.84deg, #ffff80 43.27%, #ff82bf 71.84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Individual state gradients */
+.states-h1 h1#blue-cyan {
+  background-image: linear-gradient(98.84deg, #5B8F81 43.27%, #7DFFE4 71.84%);
 }
 
+.states-h1 h1#purple-pink {
+  background-image: linear-gradient(98.84deg, #6EB384 43.27%, #A8D1B2 71.84%);
+}
+
+.states-h1 h1#green-yellow {
+  background-image: linear-gradient(98.84deg, #7DFFE4 43.27%, #DFEEE0 71.84%);
+}
+
+.states-h1 h1#orange-pink {
+  background-image: linear-gradient(98.84deg, #8BC29B 43.27%, #C5E0C9 71.84%);
+}
+
+/* Remaining states */
+.states-h1 h1:nth-of-type(5) {
+  background-image: linear-gradient(98.84deg, #5B8F81 43.27%, #8BC29B 71.84%);
+}
+
+.states-h1 h1:nth-of-type(6) {
+  background-image: linear-gradient(98.84deg, #6EB384 43.27%, #DFEEE0 71.84%);
+}
+
+.states-h1 h1:nth-of-type(7) {
+  background-image: linear-gradient(98.84deg, #A8D1B2 43.27%, #7DFFE4 71.84%);
+}
+
+.states-h1 h1:nth-of-type(8) {
+  background-image: linear-gradient(98.84deg, #C5E0C9 43.27%, #5B8F81 71.84%);
+}
+
+/* Ensure gradients work across browsers */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .states-h1 h1 {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Media query for mobile */
 @media screen and (max-width: 420px) {
   .states-h1 {
     display: flex;
@@ -82,4 +107,8 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+.states-h1 {
+  margin-top: 1.5rem;
 }
