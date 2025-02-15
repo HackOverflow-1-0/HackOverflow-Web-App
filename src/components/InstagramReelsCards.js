@@ -44,7 +44,7 @@ const InstagramReelsCards = () => {
     };
   }, [loadInstagramScript]);
 
-  const cardColors = ["#5B8F81", "#6EB384", "#7DFFE4"];
+  const cardColors = ["#5B8F81", "#6EB384", "#5B8F81"];
 
   return (
     <section className="instagram-section">
