@@ -119,7 +119,7 @@ const HackathonOverview = () => {
                 rel="noreferrer"
                 className="inline-block"
               >
-                <button className="bg-[#5B8F81] hover:bg-[#5B8F81] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                <button className="bg-[#5B8F81] hover:bg-[#00FFFF] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
                   Join Discord Channel
                 </button>
               </a>
