@@ -1,55 +1,51 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
-import { NavBar } from "./NavBar";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
-
-// Preload components
-const MobileNavbar = lazy(() => import("./MobileNavbar/MobileNavbar"));
-const FaceGallery = lazy(() => import("./FaceGallery/FaceGallery"));
-
-// Loading component with fade effect
-const LoadingFallback = () => (
-  <div className="loading-fade">
-    <div className="loading-spinner"></div>
-  </div>
-);
+import FaceGallery from "./FaceGallery/FaceGallery";
+import MobileNavbar from "./MobileNavbar/MobileNavbar";
 
 const GalleryLayout = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
-  const [isLoading, setIsLoading] = useState(true);
+  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // Debounced resize handler
-    let timeoutId = null;
-    const handleResize = () => {
-      if (timeoutId) clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        setIsMobile(window.innerWidth < 600);
-      }, 100);
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
     };
-
-    window.addEventListener('resize', handleResize);
-    
-    // Simulate minimum loading time for smooth transition
-    const loadTimer = setTimeout(() => {
-      setIsLoading(false);
-    }, 300);
-
+    window.addEventListener("resize", handleWindowResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
-      if (timeoutId) clearTimeout(timeoutId);
-      clearTimeout(loadTimer);
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
+  // Function to navigate back to home
+  const goToHome = () => {
+    navigate("/#home");
+  };
+
   return (
-    <div className={`layout-container ${isLoading ? 'loading' : 'loaded'}`}>
-      <NavBar />
-      <Suspense fallback={<LoadingFallback />}>
-        {isMobile && <MobileNavbar />}
-        <FaceGallery />
-      </Suspense>
+    <>
+      {/* Back to Home Button Fixed at Top-Right */}
+      <div
+        style={{
+          position: "fixed",
+          top: "10px",
+          right: "20px",
+          zIndex: "1000", // Ensures it's above other elements
+        }}
+      >
+        <button
+          onClick={goToHome}
+          className="bg-[#5B8F81] hover:bg-[#4A776D] text-white font-bold py-2 px-4 rounded shadow-lg"
+        >
+          Back to Home
+        </button>
+      </div>
+
+      {windowSize[0] < 600 && <MobileNavbar />}
+      <FaceGallery />
       <Footer />
-    </div>
+    </>
   );
 };
 
