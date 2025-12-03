@@ -73,7 +73,7 @@ const FutureCityTheme = () => {
               >
                 <span>Theme</span>
                 <span>-</span>
-                <span id="green-yellow">Dynamic World</span>
+                <span id="green-yellow">Revealing Soon</span>
               </motion.h1>
             </div>
 
@@ -112,21 +112,18 @@ const FutureCityTheme = () => {
             layout
           >
             <h2 className="theme-subtitle" id="blue-cyan">
-              The concept of Dynamic World by HackOverflow 3.0
+              Code the Unknown: HackOverflow 4.0 Awaits
             </h2>
             <div className="theme-description">
               <p>
-                Welcome to the reign of invention, where your code transforms the world! HackOverflow 3.0
-                is proud to present this year's{" "}
+                Get ready for{" "}
                 <span id="blue-cyan" className="highlight">
-                  Theme: Dynamic World
-                </span>
-                . The Dynamic World demands thinkers, problem-solvers,
-                and disruptors who can break boundaries and create real-world impact.
+                  HackOverflow 4.0
+                </span>{" "}
+                our mission is to define the future. We've crafted a theme that demands disruption, genius, and real-world impact. This challenge requires cutting-edge skills, pushing you past familiar tech boundaries. The stakes are high, and the world is waiting for your revolutionary code.
               </p>
               <p>
-                For the <span id="orange-pink">HackOverflow 3.0</span>, your mission is to unleash your brilliant ideas to develop projects that revolutionize urban living,
-                transforming how we live, work, and interact with our environments.
+                The theme is locked, but the reveal is <span id="orange-pink">Launching Soon</span>, initiating the ultimate technical sprint. HackOverflow 4.0 is where elite teams gather to conquer the unknown and create meaningful solutions. Assemble your team, prepare for the crucible, and secure your legacy.
               </p>
             </div>
           </motion.div>
