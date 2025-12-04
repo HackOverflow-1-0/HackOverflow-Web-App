@@ -309,7 +309,7 @@ const Sponsors = () => {
                 <div className="boxx flex flex-col items-start gap-3 sm:flex sm:flex-row sm:items-center sm:gap-4">
                   <a
                   // href="https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/Brochure/sponsorBrochure.pdf"
-                    href="/docs/sponsorBrochure.pdf"
+                    href="/docs/SponsorBrochure.pdf"
                     download="HackOverflow_4.0_Sponsorship_Brochure.pdf"
                     target="_blank"
                     rel="noreferrer"
