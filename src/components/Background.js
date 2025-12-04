@@ -39,7 +39,7 @@ const Background = (props) => {
             className="button-86"
             onClick={handleRegisterButtonClick}
           >
-            Registrations Closed
+            Coming Soon
           </button>
         </div>
       </div>

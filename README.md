@@ -7,7 +7,7 @@
     <a><img alt="compileSdkVersion" src="https://img.shields.io/netlify/90c9ca1e-5522-4e28-8e1e-eeb081298d2e?color=green?style=flat-square"/></a>
 </p>
 
-Official Web-App Repository of HackOverflow 3.0, a 3-day long National level Hackathon organized by Dept. of Computer Engineering, PHCET.
+Official Web-App Repository of HackOverflow 4.0, a 3-day long National level Hackathon organized by Dept. of Computer Engineering, PHCET.
 
 ## Technology Stack & Tools
 
@@ -51,7 +51,7 @@ npm run start
 
 ## Contributing
 
-We welcome contributions to the HackOverflow 3.0 Web App project! To contribute, please follow these steps:
+We welcome contributions to the HackOverflow 4.0 Web App project! To contribute, please follow these steps:
 
 1. Fork this repository
 2. Create a new branch for your changes
