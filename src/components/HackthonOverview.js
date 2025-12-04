@@ -35,8 +35,8 @@ const StatCounter = memo(({ value, label }) => {
 // Pre-defined stats to avoid re-renders
 const stats = [
   { value: 100000, label: "Prize Pool" },
-  { value: 200, label: "Registrations" },
-  { value: 50, label: "Teams" },
+  { value: 220, label: "Registrations" },
+  { value: 60, label: "Teams" },
   { value: 17, label: "Themes" },
   { value: 10, label: "Companies" },
   { value: 20, label: "Sponsors" }
@@ -80,7 +80,7 @@ const HackathonOverview = () => {
     <section className="overview-section" id="overview-section">
       <div className="container mx-auto px-4">
         <h1 className="text-[#7DFFE4] text-center text-[45px] font-bold mb-8">
-          What is HackOverflow 3.0?
+          What is HackOverflow 4.0?
         </h1>
         
         <div className="flex flex-wrap items-center justify-center">
